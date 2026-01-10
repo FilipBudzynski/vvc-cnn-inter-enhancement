@@ -2,7 +2,7 @@
 paths:
   encoder_path: "./bin/vvenc/bin/release-static/vvencFFapp"
   data_dir: "./data"
-  output_dir: "./encoded_output"
+  output_dir: "./outputs/encoded"
 
 # Encoding Parameters
 # Use lists to trigger multiple runs per video

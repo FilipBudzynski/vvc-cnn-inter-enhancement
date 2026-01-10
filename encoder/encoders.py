@@ -12,7 +12,7 @@ class Encoder(abc.ABC):
         pass
 
 
-class VVencFFapp(Encoder):
+class VVencEncoder(Encoder):
     def __init__(self, executable_path: str):
         self.executable = executable_path
 

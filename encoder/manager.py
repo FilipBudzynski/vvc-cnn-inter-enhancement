@@ -1,17 +1,16 @@
-import yaml
 import re
+import os
 from pathlib import Path
-from concurrent.futures import ProcessPoolExecutor
-from encoders import Encoder, VVencFFapp
+from typing import Any
 from dataclasses import dataclass
+from concurrent.futures import ProcessPoolExecutor
+from encoder.encoders import Encoder
 
 
 @dataclass
-class DatasetManager:
-    def __init__(self, config_path: str, encoder: Encoder):
-        with open(config_path, "r") as f:
-            self.cfg = yaml.safe_load(f)
-
+class EncoderManager:
+    def __init__(self, config: Any, encoder: Encoder):
+        self.cfg = config
         self.encoder = encoder
         self.output_path = Path(self.cfg["paths"]["output_dir"])
         self.output_path.mkdir(parents=True, exist_ok=True)
@@ -64,19 +63,9 @@ class DatasetManager:
         tasks = self._generate_tasks()
         print(f"Starting dataset generation: {len(tasks)} tasks.")
 
-        with ProcessPoolExecutor(
-            max_workers=self.cfg["execution"]["max_workers"]
-        ) as executor:
+        max_cpu = self.cfg["execution"]["max_workers"] or os.cpu_count()
+        with ProcessPoolExecutor(max_workers=max_cpu) as executor:
             results = list(executor.map(self.encoder.encode, tasks))
 
         for r in results:
             print(r)
-
-
-if __name__ == "__main__":
-    with open("config.yaml", "r") as f:
-        config = yaml.safe_load(f)
-
-    vvenc = VVencFFapp(executable_path=config["paths"]["encoder_path"])
-    manager = DatasetManager("config.yaml", vvenc)
-    manager.run()
