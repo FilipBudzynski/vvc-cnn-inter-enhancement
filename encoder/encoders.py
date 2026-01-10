@@ -2,49 +2,40 @@ import subprocess
 import abc
 from pathlib import Path
 
+from encoder.config import EncodingTaskParams
+
 
 class Encoder(abc.ABC):
     """Abstract Base Class for Video Encoder."""
 
     @abc.abstractmethod
-    def encode(self, task: dict) -> str:
+    def encode(self, task: EncodingTaskParams) -> str:
         """Execute the encoding process for a specific task."""
         pass
 
 
 class VVencEncoder(Encoder):
     def __init__(self, executable_path: str):
+        if not executable_path:
+            self.executable_path = "./bin/vvencFFapp"
         self.executable = executable_path
 
-    def encode(self, task: dict) -> str:
-        # vvencFFapp standard CLI
+    def encode(self, task: EncodingTaskParams) -> str:
         cmd = [
             self.executable,
-            "-i",
-            task["input_file"],
-            "-s",
-            f"{task['width']}x{task['height']}",
-            "-r",
-            str(task["fps"]),
-            "-f",
-            str(task["frames"]),
-            "-q",
-            str(task["qp"]),
-            "-b",
-            task["bitstream_out"],
-            "-o",
-            task["recon_out"],
-            "--preset",
-            task.get("preset", "fast"),
-            "--alf",
-            str(task.get("alf", 1)),
-            "--sao",
-            str(task.get("sao", 1)),
+            "-i", task.input_file,
+            "-s", f"{task.width}x{task.height}",
+            "-r", str(task.fps),
+            "-f", str(task.frames),
+            "-q", str(task.qp),
+            "-b", task.bitstream_out,
+            "-o", task.recon_out,
+            "--preset", task.preset,
+            "--alf", str(task.alf),
+            "--sao", str(task.sao)
         ]
-
-        log_path = Path(task["bitstream_out"]).with_suffix(".log")
-        with open(log_path, "w") as log_file:
-            subprocess.run(
-                cmd, stdout=log_file, stderr=subprocess.PIPE, text=True, check=True
-            )
-        return task["bitstream_out"]
+        
+        log_path = Path(task.bitstream_out).with_suffix('.log')
+        with open(log_path, 'w') as log_file:
+            subprocess.run(cmd, stdout=log_file, stderr=subprocess.PIPE, text=True, check=True)
+        return task.bitstream_out

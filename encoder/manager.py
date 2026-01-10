@@ -1,71 +1,69 @@
 import re
-import os
 from pathlib import Path
-from typing import Any
+from typing import List
 from dataclasses import dataclass
 from concurrent.futures import ProcessPoolExecutor
+from encoder.config import Config, EncodingTaskParams
 from encoder.encoders import Encoder
 
 
 @dataclass
 class EncoderManager:
-    def __init__(self, config: Any, encoder: Encoder):
+    def __init__(self, config: Config, encoder: Encoder):
         self.cfg = config
         self.encoder = encoder
-        self.output_path = Path(self.cfg["paths"]["output_dir"])
+        self.output_path = Path(self.cfg.output_dir)
         self.output_path.mkdir(parents=True, exist_ok=True)
 
-    def _parse_info(self, info_path):
-        """Extracts metadata from .info files."""
+    def _parse_info(self, info_path: Path):
         content = info_path.read_text()
-        return {
-            "width": int(re.search(r"Width\s+:\s+(\d+)", content).group(1)),
-            "height": int(re.search(r"Height\s+:\s+(\d+)", content).group(1)),
-            "fps": round(
-                float(re.search(r"Frame rate\s+:\s+([\d.]+)", content).group(1))
-            ),
-        }
+        width = int(re.search(r"width[:=\s]+(\d+)", content, re.I).group(1))
+        height = int(re.search(r"height[:=\s]+(\d+)", content, re.I).group(1))
+        fps_match = re.search(r"rate[:=\s]+([\d./]+)", content, re.I)
 
-    def _generate_tasks(self):
-        """Creates the list of encoding configurations (the 'Grid Search')."""
+        fps_str = fps_match.group(1) if fps_match else "30"
+        fps = round(eval(fps_str)) if "/" in fps_str else round(float(fps_str))
+
+        return {"width": width, "height": height, "fps": fps}
+
+    def _generate_tasks(self) -> List[EncodingTaskParams]:
         tasks = []
-        data_dir = Path(self.cfg["paths"]["data_dir"])
+        data_dir = Path(self.cfg.data_dir)
 
         for yuv_file in data_dir.glob("*.yuv"):
-            info_file = list(data_dir.glob(f"{yuv_file.stem}*.info"))[0]
-
-            if not info_file.exists():
+            info_candidates = list(data_dir.glob(f"{yuv_file.stem}*.info"))
+            if not info_candidates:
                 continue
 
-            meta = self._parse_info(info_file)
+            meta = self._parse_info(info_candidates[0])
 
-            # Nested loops to create permutations based on YAML
-            for qp in self.cfg["encoding_params"]["qp"]:
+            for qp in self.cfg.qp:
                 stem = yuv_file.stem
-                suffix = f"QP{qp}"
 
-                tasks.append(
-                    {
-                        "input_file": str(yuv_file),
-                        "width": meta["width"],
-                        "height": meta["height"],
-                        "fps": meta["fps"],
-                        "frames": self.cfg["encoding_params"]["frames_to_encode"],
-                        "qp": qp,
-                        "bitstream_out": str(self.output_path / f"{stem}_{suffix}.vvc"),
-                        "recon_out": str(self.output_path / f"{stem}_{suffix}_rec.yuv"),
-                        "preset": self.cfg["encoding_params"].get("preset", "fast"),
-                    }
+                task = EncodingTaskParams(
+                    input_file=str(yuv_file),
+                    width=meta["width"],
+                    height=meta["height"],
+                    fps=meta["fps"],
+                    frames=self.cfg.frames_to_encode,
+                    qp=qp,
+                    bitstream_out=str(self.output_path / f"{stem}_QP{qp}.vvc"),
+                    recon_out=str(self.output_path / f"{stem}_QP{qp}_rec.yuv"),
+                    preset=self.cfg.preset,
+                    alf=self.cfg.alf,
+                    sao=self.cfg.sao,
                 )
+                tasks.append(task)
         return tasks
 
     def run(self):
         tasks = self._generate_tasks()
-        print(f"Starting dataset generation: {len(tasks)} tasks.")
+        print(
+            f"Starting dataset generation: {len(tasks)} tasks using {self.cfg.max_workers} workers."
+        )
 
-        max_cpu = self.cfg["execution"]["max_workers"] or os.cpu_count()
-        with ProcessPoolExecutor(max_workers=max_cpu) as executor:
+        with ProcessPoolExecutor(max_workers=self.cfg.max_workers) as executor:
             results = list(executor.map(self.encoder.encode, tasks))
 
         for r in results:
-            print(r)
+            print(f"Success: {r}")
