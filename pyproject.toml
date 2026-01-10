@@ -1,0 +1,15 @@
+[project]
+name = "vvc-cnn-inter-enhancement"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "tqdm",
+    "argparse-dataclass",
+    "pydantic",
+    "torchmetrics",
+    "torchmetrics[image]",
+    "requests>=2.32.5",
+    "pyyaml>=6.0.3",
+]

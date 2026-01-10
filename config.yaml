@@ -1,0 +1,22 @@
+# Path Configuration
+paths:
+  encoder_path: "./bin/vvenc/bin/release-static/vvencFFapp"
+  data_dir: "./data"
+  output_dir: "./encoded_output"
+
+# Encoding Parameters
+# Use lists to trigger multiple runs per video
+encoding_params:
+  qp: [27] # [22, 27, 32, 37]
+  frames_to_encode: 64
+  preset: "fast"      # vvenc presets: faster, fast, medium, slow, slower
+  
+# Tool Toggles (1 for on, 0 for off)
+tools:
+  alf: [1]
+  sao: [1]
+  dbf: [1]
+
+# Execution Settings
+execution:
+  max_workers: 4      # Number of parallel encodings
