@@ -1,29 +1,54 @@
+from dataclasses import dataclass, field
 import subprocess
+import abc
+
+from decoder.config import DecodingTaskParams
 
 
-class VTMDecoder:
-    def __init__(self, executable_path: str):
-        self.executable = executable_path
+@dataclass
+class Decoder(abc.ABC):
+    """Abstract Base Class for Video Decoder."""
 
-    def decode(self, bitstream_path: str, output_yuv: str, trace_file: str) -> str:
+    executable: str
+
+    @abc.abstractmethod
+    def decode(self, task: DecodingTaskParams) -> str:
+        """Decodes bitstream and extracts block-level statistics."""
+        pass
+
+
+@dataclass
+class VTMDecoder(Decoder):
+    executable: str = field(
+        default="./bin/vtm/bin/umake/clang-15.0/x86_64/release/DecoderAnalyserApp",
+    )
+
+    def decode(self, task: DecodingTaskParams) -> str:
         """
         Decodes bitstream and extracts block-level statistics.
         """
         cmd = [
             self.executable,
             "-b",
-            bitstream_path,
+            task.bitstream_path,
             "-o",
-            output_yuv,
-            f"--TraceFile={trace_file}",
-            "--TraceRule=D_BLOCK_STATISTICS:all",
+            task.output_yuv,
+            f"--TraceFile={task.trace_file}",
+            "--TraceRule=D_BLOCK_STATISTICS_ALL:poc>=0",
         ]
 
-        subprocess.run(
-            cmd,
-            stdout=subprocess.DEVNULL,
-            stderr=subprocess.PIPE,
-            text=True,
-            check=True,
-        )
-        return trace_file
+        # subprocess.run(
+        #     cmd,
+        #     stdout=subprocess.DEVNULL,
+        #     stderr=subprocess.PIPE,
+        #     text=True,
+        #     check=True,
+        # )
+        try:
+            subprocess.run(cmd, capture_output=True, text=True, check=True)
+        except subprocess.CalledProcessError as e:
+            print("\n--- VTM Error Output ---")
+            print(e.stderr)  
+            print("------------------------")
+            raise e
+        return task.trace_file

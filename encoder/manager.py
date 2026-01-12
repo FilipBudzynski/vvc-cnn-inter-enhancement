@@ -8,14 +8,22 @@ from encoder.encoders import Encoder
 
 
 @dataclass
+class Metadata:
+    width: int
+    height: int
+    fps: int
+
+
+@dataclass
 class EncoderManager:
-    def __init__(self, config: Config, encoder: Encoder):
-        self.cfg = config
-        self.encoder = encoder
-        self.output_path = Path(self.cfg.output_dir)
+    cfg: Config
+    encoder: Encoder
+
+    def __post_init__(self):
+        self.output_path = Path(self.cfg.output_dir).resolve()
         self.output_path.mkdir(parents=True, exist_ok=True)
 
-    def _parse_info(self, info_path: Path):
+    def _parse_info(self, info_path: Path) -> Metadata:
         content = info_path.read_text()
         width = int(re.search(r"width[:=\s]+(\d+)", content, re.I).group(1))
         height = int(re.search(r"height[:=\s]+(\d+)", content, re.I).group(1))
@@ -24,7 +32,7 @@ class EncoderManager:
         fps_str = fps_match.group(1) if fps_match else "30"
         fps = round(eval(fps_str)) if "/" in fps_str else round(float(fps_str))
 
-        return {"width": width, "height": height, "fps": fps}
+        return Metadata(width=width, height=height, fps=fps)
 
     def _generate_tasks(self) -> List[EncodingTaskParams]:
         tasks = []
@@ -35,16 +43,16 @@ class EncoderManager:
             if not info_candidates:
                 continue
 
-            meta = self._parse_info(info_candidates[0])
+            metadata = self._parse_info(info_candidates[0])
 
             for qp in self.cfg.qp:
                 stem = yuv_file.stem
 
                 task = EncodingTaskParams(
                     input_file=str(yuv_file),
-                    width=meta["width"],
-                    height=meta["height"],
-                    fps=meta["fps"],
+                    width=metadata.width,
+                    height=metadata.height,
+                    fps=metadata.fps,
                     frames=self.cfg.frames_to_encode,
                     qp=qp,
                     bitstream_out=str(self.output_path / f"{stem}_QP{qp}.vvc"),
@@ -67,3 +75,5 @@ class EncoderManager:
 
         for r in results:
             print(f"Success: {r}")
+
+        return results

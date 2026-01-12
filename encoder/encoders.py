@@ -1,6 +1,8 @@
+from dataclasses import dataclass, field
 import subprocess
 import abc
 from pathlib import Path
+from typing import TypeAlias
 
 from encoder.config import EncodingTaskParams
 
@@ -14,11 +16,9 @@ class Encoder(abc.ABC):
         pass
 
 
+@dataclass
 class VVencEncoder(Encoder):
-    def __init__(self, executable_path: str):
-        if not executable_path:
-            self.executable_path = "./bin/vvencFFapp"
-        self.executable = executable_path
+    executable: str = field(default="./bin/vvenc/bin/release-static/vvencFFapp")
 
     def encode(self, task: EncodingTaskParams) -> str:
         cmd = [
@@ -32,10 +32,12 @@ class VVencEncoder(Encoder):
             "-o", task.recon_out,
             "--preset", task.preset,
             "--alf", str(task.alf),
-            "--sao", str(task.sao)
+            "--sao", str(task.sao),
         ]
-        
-        log_path = Path(task.bitstream_out).with_suffix('.log')
-        with open(log_path, 'w') as log_file:
-            subprocess.run(cmd, stdout=log_file, stderr=subprocess.PIPE, text=True, check=True)
+
+        log_path = Path(task.bitstream_out).with_suffix(".log")
+        with open(log_path, "w") as log_file:
+            subprocess.run(
+                cmd, stdout=log_file, stderr=subprocess.PIPE, text=True, check=True
+            )
         return task.bitstream_out
