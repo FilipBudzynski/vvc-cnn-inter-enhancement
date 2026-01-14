@@ -14,12 +14,16 @@ class BlockStatToken:
     value: Any
 
 
+VTM_DECODER_BLOCK_REGEX = (
+    r"BlockStat: POC (\d+) @\(\s*(\d+),\s*(\d+)\) \[\s*(\d+)x\s*(\d+)\] {param}=(.+)"
+)
+
+
 class BaseHandler:
     def __init__(self, param_name):
         self.param_name = param_name
-        self.base_regex = re.compile(
-            rf"BlockStat: POC (\d+) @\(\s*(\d+),\s*(\d+)\) \[\s*(\d+)x\s*(\d+)\] {self.param_name}=(.+)"
-        )
+        formatted_regex = VTM_DECODER_BLOCK_REGEX.format(param=self.param_name)
+        self.base_regex = re.compile(formatted_regex)
 
     def match_and_create(self, line: str) -> Optional[BlockStatToken]:
         match = self.base_regex.search(line)
