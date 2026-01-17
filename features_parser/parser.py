@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from typing import Any, List, Optional
+from typing import Any, DefaultDict, List, NamedTuple, Optional
 import re
 
 
@@ -14,6 +14,11 @@ class BlockStatToken:
     value: Any
 
 
+class MotionVector(NamedTuple):
+    x: float = 0.0
+    y: float = 0.0
+
+
 VTM_DECODER_BLOCK_REGEX = (
     r"BlockStat: POC (\d+) @\(\s*(\d+),\s*(\d+)\) \[\s*(\d+)x\s*(\d+)\] {param}=(.+)"
 )
@@ -25,7 +30,7 @@ class BaseHandler:
         formatted_regex = VTM_DECODER_BLOCK_REGEX.format(param=self.param_name)
         self.base_regex = re.compile(formatted_regex)
 
-    def match_and_create(self, line: str) -> Optional[BlockStatToken]:
+    def parse(self, line: str) -> Optional[BlockStatToken]:
         match = self.base_regex.search(line)
         if match:
             poc, x, y, w, h, raw_val = match.groups()
@@ -55,13 +60,13 @@ class VectorHandler(BaseHandler):
     def process_value(self, raw_val: str):
         nums = re.findall(r"-?\d+", raw_val)
         if len(nums) >= 2:
-            return (float(nums[0]), float(nums[1]))
-        return (0.0, 0.0)
+            return MotionVector(float(nums[0]), float(nums[1]))
+        return MotionVector()
 
 
 class VTMParser:
     def __init__(self):
-        self.handlers = [
+        self.handlers: List[BaseHandler] = [
             ScalarHandler("QP"),
             ScalarHandler("PredMode"),
             ScalarHandler("Depth"),
@@ -70,12 +75,23 @@ class VTMParser:
         ]
         self.tokens: List[BlockStatToken] = []
 
+    def group_on_poc(self):
+        if not self.tokens:
+            return {}
+
+        self.tokens.sort(key=lambda t: (t.poc, t.y, t.x))
+        grouped = DefaultDict(list)
+        for token in self.tokens:
+            grouped[token.poc].append(token)
+
+        return dict(grouped)
+
     def parse(self, line_iterator):
         for line in line_iterator:
             if not line.startswith("BlockStat:"):
                 continue
             for handler in self.handlers:
-                token = handler.match_and_create(line)
+                token = handler.parse(line)
                 if token:
                     self.tokens.append(token)
                     break
@@ -83,4 +99,5 @@ class VTMParser:
 
     def parse_file(self, file_path: str):
         with open(file_path, "r") as f:
-            return self.parse(f)
+            self.parse(f)
+        return self.group_on_poc()

@@ -2,3 +2,6 @@
 *.info
 *__pycache__*
 *.python-version
+encoded_output/
+bin/vtm/
+bin/vvenc/

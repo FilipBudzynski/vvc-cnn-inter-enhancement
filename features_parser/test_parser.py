@@ -43,13 +43,33 @@ class TestVTMParser(unittest.TestCase):
         self.assertEqual(qp_token.w, 8)
         self.assertEqual(qp_token.h, 4)
 
+    def test_poc_ordering(self):
+        shuffled_log = [
+            "BlockStat: POC 33 @( 0, 0) [ 8x 8] QP=22\n",
+            "BlockStat: POC 31 @( 0, 0) [ 8x 8] QP=18\n",
+            "BlockStat: POC 31 @( 0, 0) [ 16x 16] QP=9\n",
+            "BlockStat: POC 32 @( 0, 0) [ 8x 8] QP=20\n"
+            "BlockStat: POC 12 @( 0, 0) [ 8x 8] QP=30\n"
+            "BlockStat: POC 22 @( 0, 0) [ 16x 16] QP=29\n",
+        ]
+
+        self.parser.parse(shuffled_log)
+        grouped = self.parser.group_on_poc()
+
+        pocs = list(grouped.keys())
+        self.assertEqual(pocs, [31, 32, 33])
+
+        self.assertEqual(grouped[31][0].value, 18)
+        self.assertEqual(grouped[31][1].value, 9)
+
     def test_vector_parsing(self):
         self.parser.parse(self.log_content)
 
         token = self.parser.tokens[1]
         self.assertIsNotNone(token)
         self.assertEqual(token.param, "MVL0")
-        self.assertEqual(token.value, (-4.0, 12.0))
+        self.assertEqual(token.value.x, -4.0)
+        self.assertEqual(token.value.y, 12.0)
         self.assertEqual(token.poc, 31)
         self.assertEqual(token.x, 8)
         self.assertEqual(token.w, 8)
