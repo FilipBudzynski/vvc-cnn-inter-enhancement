@@ -1,22 +1,13 @@
-from dataclasses import dataclass
-from typing import Any, DefaultDict, List, NamedTuple, Optional
+from abc import abstractmethod, ABC
+from typing import DefaultDict, List, Optional
 import re
 
-
-@dataclass
-class BlockStatToken:
-    poc: int
-    x: int
-    y: int
-    w: int
-    h: int
-    param: str
-    value: Any
-
-
-class MotionVector(NamedTuple):
-    x: float = 0.0
-    y: float = 0.0
+from features_parser.tokens import (
+    BlockStatToken,
+    MotionVector,
+    ScalarToken,
+    VectorToken,
+)
 
 
 VTM_DECODER_BLOCK_REGEX = (
@@ -24,7 +15,7 @@ VTM_DECODER_BLOCK_REGEX = (
 )
 
 
-class BaseHandler:
+class BaseHandler(ABC):
     def __init__(self, param_name):
         self.param_name = param_name
         formatted_regex = VTM_DECODER_BLOCK_REGEX.format(param=self.param_name)
@@ -35,33 +26,38 @@ class BaseHandler:
         if match:
             poc, x, y, w, h, raw_val = match.groups()
             clean_val = self.process_value(raw_val.strip())
-            return BlockStatToken(
-                int(poc), int(x), int(y), int(w), int(h), self.param_name, clean_val
-            )
+            return self.tokenize(int(poc), int(x), int(y), int(w), int(h), clean_val)
         return None
 
+    @abstractmethod
     def process_value(self, raw_val: str):
-        raise NotImplementedError
+        pass
+
+    def tokenize(self, poc, x, y, w, h, value) -> BlockStatToken:
+        return BlockStatToken(poc, x, y, w, h, self.param_name, value)
 
 
 class ScalarHandler(BaseHandler):
     """Handles scalar values like QP"""
 
     def process_value(self, raw_val: str):
-        try:
-            return float(raw_val)
-        except ValueError:
-            return 0.0
+        return float(raw_val)
+
+    def tokenize(self, poc, x, y, w, h, value) -> ScalarToken:
+        return ScalarToken(poc, x, y, w, h, self.param_name, value)
 
 
 class VectorHandler(BaseHandler):
     """Handles vector like values '{x, y}' converting it to tuple (float, float)"""
 
-    def process_value(self, raw_val: str):
+    def process_value(self, raw_val: str) -> MotionVector:
         nums = re.findall(r"-?\d+", raw_val)
         if len(nums) >= 2:
             return MotionVector(float(nums[0]), float(nums[1]))
         return MotionVector()
+
+    def tokenize(self, poc, x, y, w, h, value) -> VectorToken:
+        return VectorToken(poc, x, y, w, h, self.param_name, value)
 
 
 class VTMParser:
