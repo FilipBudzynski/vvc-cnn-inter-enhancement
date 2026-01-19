@@ -16,7 +16,8 @@ if __name__ == "__main__":
 
     bitstream_path = enc_mgr.run()
 
-    dec_config = DEC_BASE_CONFIG.bitstream_path = bitstream_path
+    dec_config = DEC_BASE_CONFIG
+    dec_config.bitstream_input = bitstream_path
     vtm_dec = VTMDecoder()
-    dec_mgr = DecoderManager(DEC_BASE_CONFIG, decoder=vtm_dec)
+    dec_mgr = DecoderManager(dec_config, decoder=vtm_dec)
     dec_mgr.run()

@@ -7,7 +7,8 @@ from typing import List, Optional
 class Config:
     """Base configuration for the decoder."""
 
-    bitstream_path: List[str] = field(default_factory=list)
+    bitstream_input: List[str] = field(default_factory=list)
+    output_path: str = "./output/decoded"
     max_workers: Optional[int] = os.cpu_count()
 
 
@@ -18,6 +19,6 @@ BASE_CONFIG = Config()
 class DecodingTaskParams:
     """Represents a single decoding job."""
 
-    bitstream_path: str = "./output/encoded"
-    output_yuv: str = "./output/decoded"
-    trace_file: str = "./output/decoded"
+    bitstream_input: str
+    output_yuv: str
+    trace_file: str

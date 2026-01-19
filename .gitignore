@@ -2,6 +2,8 @@
 *.info
 *__pycache__*
 *.python-version
-encoded_output/
+output/
 bin/vtm/
 bin/vvenc/
+AGENTS.md
+.DS_Store

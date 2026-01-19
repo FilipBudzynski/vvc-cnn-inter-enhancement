@@ -33,6 +33,10 @@ class VVencEncoder(Encoder):
             "--preset", task.preset,
             "--alf", str(task.alf),
             "--sao", str(task.sao),
+            "--InputChromaFormat", "420",  # Explicit YUV420 input
+            "--ChromaFormatIDC", "420",    # Explicit YUV420 output
+            "--InternalBitDepth", "8",       # Ensure 8-bit internal processing
+            "--OutputBitDepth", "8",         # Ensure 8-bit output
         ]
 
         log_path = Path(task.bitstream_out).with_suffix(".log")

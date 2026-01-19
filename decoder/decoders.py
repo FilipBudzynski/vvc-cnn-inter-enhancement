@@ -30,11 +30,12 @@ class VTMDecoder(Decoder):
         cmd = [
             self.executable,
             "-b",
-            task.bitstream_path,
+            task.bitstream_input,
             "-o",
             task.output_yuv,
             f"--TraceFile={task.trace_file}",
             "--TraceRule=D_BLOCK_STATISTICS_ALL:poc>=0",
+            "--OutputBitDepth=8",  # Ensure 8-bit output to match input
         ]
 
         # subprocess.run(

@@ -14,13 +14,17 @@ class DecoderManager:
 
     def _generate_tasks(self) -> List[DecodingTaskParams]:
         tasks: List[DecodingTaskParams] = []
-        for b in self.cfg.bitstream_path:
+        self.output_path = Path(self.cfg.output_path).resolve()
+        self.output_path.mkdir(parents=True, exist_ok=True)
+
+        for b in self.cfg.bitstream_input:
             b_path = Path(b)
+            file_name = b_path.stem
             tasks.append(
                 DecodingTaskParams(
-                    bitstream_path=str(b_path),
-                    output_yuv=str(b_path.with_suffix(".vtm_rec.yuv")),
-                    trace_file=str(b_path.with_suffix(".csv")),
+                    bitstream_input=str(b_path),
+                    output_yuv=str(self.output_path / f"{file_name}_vtm_rec.yuv"),
+                    trace_file=str(self.output_path / f"{file_name}.csv"),
                 )
             )
 

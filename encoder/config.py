@@ -8,7 +8,7 @@ class Config:
     """Base configuration for the encoder."""
 
     data_dir: str = "./data"
-    output_dir: str = "./encoded_output"
+    output_dir: str = "./output/encoded"
     encoder_path: str = "./bin/vvencFFapp"
     qp: List[int] = field(default_factory=lambda: [23])
     frames_to_encode: int = 64
