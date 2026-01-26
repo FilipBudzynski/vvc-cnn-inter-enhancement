@@ -2,10 +2,10 @@ import re
 from pathlib import Path
 from typing import List
 from dataclasses import dataclass
-from concurrent.futures import ProcessPoolExecutor
+from concurrent.futures import ProcessPoolExecutor, as_completed
 from encoder.config import Config, EncodingTaskParams
 from encoder.encoders import Encoder
-
+from tqdm import tqdm
 
 @dataclass
 class Metadata:
@@ -72,8 +72,21 @@ class EncoderManager:
 
         with ProcessPoolExecutor(max_workers=self.cfg.max_workers) as executor:
             results = list(executor.map(self.encoder.encode, tasks))
+            future_to_task = {executor.submit(self.encoder.encode, t): t for t in tasks}
 
-        for r in results:
-            print(f"Success: {r}")
+            # Add a progress bar logging
+            with tqdm(total=len(tasks), desc="Encoding Videos", unit="task") as pbar:
+                for future in as_completed(future_to_task):
+                    task = future_to_task[future]
+                    try:
+                        res = future.result()
+                        results.append(res)
+                        pbar.set_postfix(
+                            {"file": Path(task.input_file).stem, "qp": task.qp}
+                        )
+                    except Exception as e:
+                        print(f"\n[ERROR] Task failed for {task.input_file}: {e}")
+
+                    pbar.update(1)
 
         return results

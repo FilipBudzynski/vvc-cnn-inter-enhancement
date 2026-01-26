@@ -3,6 +3,7 @@ from typing import DefaultDict, List, Optional
 import re
 
 from features_parser.tokens import (
+    SEQUENCE_SIZE_TOKEN,
     BlockStatToken,
     MotionVector,
     ScalarToken,
@@ -13,6 +14,7 @@ from features_parser.tokens import (
 VTM_DECODER_BLOCK_REGEX = (
     r"BlockStat: POC (\d+) @\(\s*(\d+),\s*(\d+)\) \[\s*(\d+)x\s*(\d+)\] {param}=(.+)"
 )
+VTM_SEQUENCE_SIZE_REGEX = r"\[(\d+)x\s*(\d+)\]"
 
 
 class BaseHandler(ABC):
@@ -70,6 +72,8 @@ class VTMParser:
             VectorHandler("MVL1"),
         ]
         self.tokens: List[BlockStatToken] = []
+        self.height = 0
+        self.width = 0
 
     def group_on_poc(self):
         if not self.tokens:
@@ -84,6 +88,12 @@ class VTMParser:
 
     def parse(self, line_iterator):
         for line in line_iterator:
+            if SEQUENCE_SIZE_TOKEN in line:
+                match = re.search(VTM_SEQUENCE_SIZE_REGEX, line)
+                if match:
+                    self.width = int(match.group(1))
+                    self.height = int(match.group(2))
+                continue
             if not line.startswith("BlockStat:"):
                 continue
             for handler in self.handlers:
@@ -92,6 +102,9 @@ class VTMParser:
                     self.tokens.append(token)
                     break
         return self.tokens
+
+    def get_heigth_and_width(self):
+        return self.height, self.width
 
     def parse_file(self, file_path: str):
         with open(file_path, "r") as f:

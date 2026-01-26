@@ -1,12 +1,10 @@
 import os
-
-# import torch
-from torch.utils.data import DataLoader
-
-# from torchvision import transforms
+import torch
+from torch.utils.data import ConcatDataset, DataLoader
 import pytorch_lightning as pl
-from config import DataloaderConfig, DatasetConfig
-
+from pathlib import Path
+import random
+from enhancer.config import DataloaderConfig, DatasetConfig
 from enhancer.vtm_dataset import VTMDataset
 
 
@@ -55,43 +53,52 @@ class VVCDataModule(pl.LightningDataModule):
 
     def setup(self, stage=None):
         """
-        Swapping VVCDataset for VTMDataset.
-        We assume your dataset_config (from config.yaml) now contains:
+        We assume your dataset_config (from config.yaml) contains:
         - dec_yuv, orig_yuv, trace, width, height
         """
-        if stage == "fit":
-            self.train_dataset = VTMDataset(
-                decoded_yuv_filepath=self.dataset_config.train.decoded_yuv_filepath,
-                original_yuv_filepath=self.dataset_config.train.original_yuv_file_path,
-                vtm_trace_path=self.dataset_config.train.vtm_trace_filepath,
-                width=self.dataset_config.train.width,
-                height=self.dataset_config.train.height,
-                chunk_transform=self.chunk_transform(),
-            )
+        all_videos = self._build_dataset_list(self.dataset_config.train_dir)
+        random.seed(42)
+        random.shuffle(all_videos)
+        n = len(all_videos)
+        train_end = int(n * 0.8)
+        validate_end = int(n * 0.9)
 
-            # Virtual epoch calculation
+        train_videos = all_videos[:train_end]
+        validate_videos = all_videos[train_end:validate_end]
+        test_videos = all_videos[validate_end:]
+
+        if stage == "fit" or stage is None:
+            self.train_dataset = ConcatDataset(train_videos)
+            self.validate_dataset = ConcatDataset(validate_videos)
+
             steps_per_real_epoch = len(self.train_dataset) / self.config.n_step
             print(f"Training: {steps_per_real_epoch:.2f} virtual steps per real epoch")
 
-            self.validate_dataset = VTMDataset(
-                decoded_yuv_filepath=self.dataset_config.val.decoded_yuv_filepath,
-                original_yuv_filepath=self.dataset_config.val.original_yuv_file_path,
-                vtm_trace_path=self.dataset_config.val.vtm_trace_filepath,
-                width=self.dataset_config.val.width,
-                height=self.dataset_config.val.height,
-                chunk_transform=self.chunk_transform(),
-            )
-
         if stage in ("test", "predict"):
-            # For testing, we use the test split from config
-            self.test_dataset = VTMDataset(
-                decoded_yuv_filepath=self.dataset_config.test.decoded_yuv_filepath,
-                original_yuv_filepath=self.dataset_config.test.original_yuv_file_path,
-                vtm_trace_path=self.dataset_config.test.vtm_trace_filepath,
-                width=self.dataset_config.test.width,
-                height=self.dataset_config.test.height,
-                chunk_transform=self.chunk_transform(),
+            self.test_dataset = ConcatDataset(test_videos)
+
+    def _build_dataset_list(self, directory: str):
+        """Helper to pair files and return a list of VTMDatasets"""
+        datasets = []
+        base_path = Path(directory)
+
+        for dec_file in base_path.glob("*_rec.yuv"):
+            stem = dec_file.name.split("_QP")[0]
+            trace_file = dec_file.with_suffix(".csv").name.replace("_rec", "")
+            trace_path = base_path / trace_file
+
+            original_file = f"{stem}.yuv"
+            datasets.append(
+                VTMDataset(
+                    decoded_yuv_filepath=str(dec_file),
+                    original_yuv_filepath=os.path.join(
+                        self.dataset_config.original_dir, original_file
+                    ),
+                    vtm_trace_path=str(trace_path),
+                    patch_size=128,
+                )
             )
+        return datasets
 
     def train_dataloader(self):
         assert (
@@ -101,7 +108,7 @@ class VVCDataModule(pl.LightningDataModule):
             self.train_dataset,
             batch_size=self.config.batch_size,
             shuffle=True,
-            pin_memory=True,
+            pin_memory=torch.cuda.is_available(),
             num_workers=os.cpu_count() or 4,
         )
         return LoaderWrapper(data_loader, self.config.n_step)

@@ -86,7 +86,7 @@ class NetworkConfig(BaseModel):
     load_from: Optional[str] = None
     save_to: Optional[str] = None
 
-    input_shape: Tuple[int, int, int] = (132, 132, 3)
+    input_shape: Tuple[int, int, int] = (128, 128, 3)
 
 
 class EnhancerConfig(NetworkConfig):
@@ -94,8 +94,7 @@ class EnhancerConfig(NetworkConfig):
     metadata_features: int = 32
     with_mask: bool = True
 
-    # input_shape is 8 for 1 luma channel and 7 additional VTM features
-    input_shape: Tuple[int, int, int] = (8, 132, 132)
+    input_shape: Tuple[int, int, int] = (10, 128, 128)
 
 
 class DiscriminatorConfig(NetworkConfig):
@@ -103,6 +102,11 @@ class DiscriminatorConfig(NetworkConfig):
 
 
 class DatasetConfig(BaseModel):
+    original_dir: str = ""
+    train_dir: str = ""
+    val_dir: str = ""
+    test_dir: str = ""
+
     train: SubDatasetConfig = SubDatasetConfig()
     val: SubDatasetConfig = SubDatasetConfig()
     test: SubDatasetConfig = SubDatasetConfig()

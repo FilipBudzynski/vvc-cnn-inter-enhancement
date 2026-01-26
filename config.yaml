@@ -1,22 +1,62 @@
-# Path Configuration
-paths:
-  encoder_path: "./bin/vvenc/bin/release-static/vvencFFapp"
-  data_dir: "./data"
-  output_dir: "./outputs/encoded"
+# # Path Configuration
+# paths:
+#   encoder_path: "./bin/vvenc/bin/release-static/vvencFFapp"
+#   data_dir: "./data"
+#   output_dir: "./outputs/encoded"
+#
+# # Encoding Parameters
+# # Use lists to trigger multiple runs per video
+# encoding_params:
+#   # qp: [27] # [22, 27, 32, 37]
+#   frames_to_encode: 64
+#   preset: "fast"      # vvenc presets: faster, fast, medium, slow, slower
+#
+# # Tool Toggles (1 for on, 0 for off)
+# tools:
+#   alf: [0]
+#   sao: [0]
+#   dbf: [0]
+#
+# # Execution Settings
+# execution:
+#   max_workers: 4      # Number of parallel encodings
+# ----------------------------------------------------------
+dataset:
+  orig_dir: "data/originals"        
+  train_dir: "output/encoded/train" 
+  val_dir: "output/encoded/val"
+  test_dir: "output/encoded/test"
 
-# Encoding Parameters
-# Use lists to trigger multiple runs per video
-encoding_params:
-  qp: [27] # [22, 27, 32, 37]
-  frames_to_encode: 64
-  preset: "fast"      # vvenc presets: faster, fast, medium, slow, slower
+dataloader:
+  batch_size: 8
+  n_step: 1000       
+  val_batch_size: 1
+  val_n_step: 20
+  num_workers: 4
+
+enhancer:
+  implementation: "res"           # We'll use Residual for 10-channels
+  input_shape: [10, 128, 128]     # 3 YUV + 7 VTM Features
+  save_to: "experiments/enhancer/vtm_res_v1.pth"
+  load_from: null
   
-# Tool Toggles (1 for on, 0 for off)
-tools:
-  alf: [1]
-  sao: [1]
-  dbf: [1]
+  structure:
+    blocks:
+      - kernel_size: 3
+        padding: 1
+        features: 64
+      - kernel_size: 3
+        padding: 1
+        features: 64
+      - kernel_size: 3
+        padding: 1
+        features: 64
 
-# Execution Settings
-execution:
-  max_workers: 4      # Number of parallel encodings
+trainer:
+  mode: enhancer
+  channels_grad_scales: [0.666, 0.166, 0.166] 
+  enhancer:
+    epochs: 200
+    enhancer_lr: 0.0001
+    enhancer_scheduler_gamma: 0.5
+    enhancer_scheduler_milestones: [50, 100, 150]

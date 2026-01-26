@@ -3,6 +3,7 @@ from dataclasses import dataclass
 from typing import Any, NamedTuple
 import numpy as np
 
+SEQUENCE_SIZE_TOKEN = "Sequence size:"
 
 @dataclass()
 class BlockStatToken:

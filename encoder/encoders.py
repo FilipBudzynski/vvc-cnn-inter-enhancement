@@ -25,16 +25,17 @@ class VVencEncoder(Encoder):
             self.executable,
             "-i", task.input_file,
             "-s", f"{task.width}x{task.height}",
-            "-r", str(task.fps),
+            "-fr", str(task.fps),
             "-f", str(task.frames),
-            "-q", str(task.qp),
+            # "-q", str(task.qp),
             "-b", task.bitstream_out,
             "-o", task.recon_out,
             "--preset", task.preset,
+            "--qpa", "1",                    # Enable QP adaptation
             "--alf", str(task.alf),
             "--sao", str(task.sao),
-            "--InputChromaFormat", "420",  # Explicit YUV420 input
-            "--ChromaFormatIDC", "420",    # Explicit YUV420 output
+            "--InputChromaFormat", "420",    # Explicit YUV420 input
+            "--ChromaFormatIDC", "420",      # Explicit YUV420 output
             "--InternalBitDepth", "8",       # Ensure 8-bit internal processing
             "--OutputBitDepth", "8",         # Ensure 8-bit output
         ]

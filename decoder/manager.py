@@ -1,10 +1,11 @@
-from concurrent.futures import ProcessPoolExecutor
+from concurrent.futures import ProcessPoolExecutor, as_completed
 from dataclasses import dataclass
 from pathlib import Path
 from typing import List
 
 from decoder.config import Config, DecodingTaskParams
 from decoder.decoders import Decoder
+from tqdm import tqdm
 
 
 @dataclass
@@ -39,8 +40,23 @@ class DecoderManager:
 
         print(f"Starting VTM Metadata Extraction: {len(tasks)} tasks.")
 
+        all_results = []
         with ProcessPoolExecutor(max_workers=self.cfg.max_workers) as executor:
-            results = list(executor.map(self.decoder.decode, tasks))
+            # results = list(executor.map(self.decoder.decode, tasks))
+            future_to_task = {executor.submit(self.decoder.decode, t): t for t in tasks}
 
-        for r in results:
-            print(r)
+
+            with tqdm(total=len(tasks), desc="Decoding & Tracing", unit="file") as pbar:
+                for future in as_completed(future_to_task):
+                    task = future_to_task[future]
+                    try:
+                        res = future.result()
+                        all_results.append(res)
+                        pbar.set_postfix({"file": Path(task.bitstream_input).name})
+                    except Exception as e:
+                        print(
+                            f"\n[ERROR] Decoding failed for {task.bitstream_input}: {e}"
+                        )
+
+                    pbar.update(1)
+        return all_results
