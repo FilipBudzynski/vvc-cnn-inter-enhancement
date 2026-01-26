@@ -12,4 +12,6 @@ dependencies = [
     "torchmetrics[image]",
     "requests>=2.32.5",
     "pyyaml>=6.0.3",
+    "pytorch-lightning>=2.6.0",
+    "matplotlib>=3.10.8",
 ]

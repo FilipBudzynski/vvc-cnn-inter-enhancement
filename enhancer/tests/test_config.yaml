@@ -1,0 +1,7 @@
+dataset:
+  train:
+    decoded_yuv_filepath: "output/decoded/foreman_cif_QP23_vtm_rec.yuv"
+    original_yuv_file_path: "output/encoded/foreman_cif_QP23_rec.yuv"
+    vtm_trace_filepath: "output/decoded/foreman_cif_QP23.csv"
+    width: 352
+    height: 288
