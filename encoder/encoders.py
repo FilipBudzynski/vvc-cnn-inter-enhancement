@@ -21,11 +21,15 @@ class VVencEncoder(Encoder):
     executable: str = field(default="./bin/vvenc/bin/release-static/vvencFFapp")
 
     def encode(self, task: EncodingTaskParams) -> str:
+        if Path(task.bitstream_out).exists():
+            print(f"Bitstream file {task.bitstream_out} already exists.")
+            return task.bitstream_out
+
         cmd = [
             self.executable,
             "-i", task.input_file,
             "-s", f"{task.width}x{task.height}",
-            "-r", str(task.fps),
+            "-fr", str(task.fps),
             "-f", str(task.frames),
             "-q", str(task.qp),
             "-b", task.bitstream_out,

@@ -13,9 +13,9 @@ encoding_params:
   
 # Tool Toggles (1 for on, 0 for off)
 tools:
-  alf: [1]
-  sao: [1]
-  dbf: [1]
+  alf: [0]
+  sao: [0]
+  dbf: [0]
 
 # Execution Settings
 execution:

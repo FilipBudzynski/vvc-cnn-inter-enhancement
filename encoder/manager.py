@@ -27,7 +27,8 @@ class EncoderManager:
         content = info_path.read_text()
         width = int(re.search(r"width[:=\s]+(\d+)", content, re.I).group(1))
         height = int(re.search(r"height[:=\s]+(\d+)", content, re.I).group(1))
-        fps_match = re.search(r"rate[:=\s]+([\d./]+)", content, re.I)
+        # fps_match = re.search(r"rate[:=\s]+([\d./]+)", content, re.I)
+        fps_match = re.search(r"Frame\s*rate[:=\s]+([\d./]+)", content, re.I)
 
         fps_str = fps_match.group(1) if fps_match else "30"
         fps = round(eval(fps_str)) if "/" in fps_str else round(float(fps_str))

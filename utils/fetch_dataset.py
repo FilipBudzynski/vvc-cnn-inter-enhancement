@@ -10,7 +10,62 @@ DEFAULT_FOLDER = "data"
 BASE_URL = "https://media.xiph.org/video/derf/y4m/"
 
 SELECTED_VIDEOS = [
-    "crew_cif.y4m",
+    "crew_cif.y4m",          # ~45MB - Main test video (already have)
+    "akiyo_cif.y4m",         # ~20MB - Additional test video
+    "bridge_close_cif.y4m",  # ~20MB - Additional test video
+    "bus_cif.y4m",           # ~20MB - Additional CIF video
+    "carphone_qcif.y4m",     # ~10MB - Small QCIF video
+    "claire_qcif.y4m",       # ~10MB - Small QCIF video
+
+    # 
+    # "720p50_mobcal_ter.y4m",
+    # "720p50_parkrun_ter.y4m",
+    # "720p50_shields_ter.y4m",
+    # "720p5994_stockholm_ter.y4m",
+    "FourPeople_1280x720_60.y4m",
+    "KristenAndSara_1280x720_60.y4m",
+    "blue_sky_1080p25.y4m",
+    "bowing_qcif.y4m",
+    "city_cif.y4m",
+    "coastguard_cif.y4m",
+    "container_cif.y4m",
+    "deadline_cif.y4m",
+    "ducks_take_off_420_720p50.y4m",
+    "flower_cif.y4m",
+    "football_sif.y4m",
+    "foreman_cif.y4m",
+    "garden_sif.y4m",
+    "grandma_qcif.y4m",
+    "hall_monitor_cif.y4m",
+    "harbour_4cif.y4m",
+    "highway_qcif.y4m",
+    "husky_cif.y4m",
+    "ice_4cif.y4m",
+    "in_to_tree_420_720p50.y4m",
+    "mad900_cif.y4m",
+    "miss_am_qcif.y4m",
+    "mobile_cif.y4m",
+    "mother_daughter_cif.y4m",
+    "mthr_dotr_qcif.y4m",
+    "news_cif.y4m",
+    "old_town_cross_420_720p50.y4m",
+    "pamphlet_cif.y4m",
+    "paris_cif.y4m",
+    "park_joy_420_720p50.y4m",
+    "riverbed_1080p25.y4m",
+    "salesman_qcif.y4m",
+    "sign_irene_cif.y4m",
+    "silent_cif.y4m",
+    #"sintel_trailer_2k_480p24.y4m",
+    "soccer_4cif.y4m",
+    "station2_1080p25.y4m",
+    "students_cif.y4m",
+    "suzie_qcif.y4m",
+    "tempete_cif.y4m",
+    "tennis_sif.y4m",
+    "trevor_qcif.y4m",
+    "tt_sif.y4m",
+    "waterfall_cif.y4m",
 ]
 
 
@@ -34,13 +89,8 @@ def download_videos(target: str) -> None:
         target_filename = os.path.join(target, video)
 
         if os.path.exists(target_filename):
-            should_proceed = (
-                input(f"file {target_filename} already exists, overwrite it? (y/n)")
-                .strip()
-                .upper()
-            )
-            if should_proceed != "Y":
-                continue
+            print(f"Skipping {video} - already exists")
+            continue
 
         with requests.get(url, stream=True) as data:
             data.raise_for_status()
