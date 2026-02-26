@@ -121,7 +121,7 @@ class VVCDataModule(pl.LightningDataModule):
             self.validate_dataset,
             batch_size=self.config.val_batch_size,
             shuffle=False,  # Usually better to keep val stable
-            pin_memory=True,
+            pin_memory=torch.cuda.is_available(),
             num_workers=os.cpu_count() or 4,
         )
         return LoaderWrapper(data_loader, self.config.val_n_step)
@@ -134,11 +134,9 @@ class VVCDataModule(pl.LightningDataModule):
             self.test_dataset,
             batch_size=1 if self.test_full_frames else self.config.test_batch_size,
             shuffle=shuffle,
-            pin_memory=True,
+            pin_memory=torch.cuda.is_available(),
             num_workers=os.cpu_count() or 4,
         )
 
     def chunk_transform(self):
-        # Our VTMDataset already converts to Tensor and normalizes.
-        # If you need extra Augmentation (like RandomCrops), add them here.
-        return None
+        return NotImplementedError
