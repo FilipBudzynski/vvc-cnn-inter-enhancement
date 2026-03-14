@@ -13,8 +13,8 @@ class Config:
     qp: List[int] = field(default_factory=lambda: [23])
     frames_to_encode: int = 64
     preset: str = "fast"
-    alf: int = 1
-    sao: int = 1
+    alf: int = 0
+    sao: int = 0
     max_workers: Optional[int] = os.cpu_count()
 
 

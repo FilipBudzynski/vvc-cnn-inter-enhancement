@@ -7,6 +7,7 @@ from encoder.config import Config, EncodingTaskParams
 from encoder.encoders import Encoder
 from tqdm import tqdm
 
+
 @dataclass
 class Metadata:
     width: int
@@ -25,14 +26,20 @@ class EncoderManager:
 
     def _parse_info(self, info_path: Path) -> Metadata:
         content = info_path.read_text()
-        width = int(re.search(r"width[:=\s]+(\d+)", content, re.I).group(1))
-        height = int(re.search(r"height[:=\s]+(\d+)", content, re.I).group(1))
-        fps_match = re.search(r"rate[:=\s]+([\d./]+)", content, re.I)
 
-        fps_str = fps_match.group(1) if fps_match else "30"
-        fps = round(eval(fps_str)) if "/" in fps_str else round(float(fps_str))
+        width = int(re.search(r"^Width\s+:\s+(\d+)", content, re.M).group(1))
+        height = int(re.search(r"^Height\s+:\s+(\d+)", content, re.M).group(1))
+        fps_match = re.search(r"FrameRate_Num\s+:\s+(\d+)", content)
 
-        return Metadata(width=width, height=height, fps=fps)
+        fps_match = re.search(r"^Frame rate\s+:\s+([\d.]+)", content, re.M)
+
+        if fps_match:
+            fps = float(fps_match.group(1))
+        else:
+            # Fallback to 30fps
+            fps = 30.0
+
+        return Metadata(width=width, height=height, fps=round(fps))
 
     def _generate_tasks(self) -> List[EncodingTaskParams]:
         tasks = []
@@ -69,9 +76,9 @@ class EncoderManager:
         print(
             f"Starting dataset generation: {len(tasks)} tasks using {self.cfg.max_workers} workers."
         )
+        results = []
 
         with ProcessPoolExecutor(max_workers=self.cfg.max_workers) as executor:
-            results = list(executor.map(self.encoder.encode, tasks))
             future_to_task = {executor.submit(self.encoder.encode, t): t for t in tasks}
 
             # Add a progress bar logging

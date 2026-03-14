@@ -15,4 +15,5 @@ dependencies = [
     "pytorch-lightning>=2.6.0",
     "matplotlib>=3.10.8",
     "pytest>=9.0.2",
+    "wandb>=0.25.0",
 ]

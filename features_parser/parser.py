@@ -10,7 +10,6 @@ from features_parser.tokens import (
     VectorToken,
 )
 
-
 VTM_DECODER_BLOCK_REGEX = (
     r"BlockStat: POC (\d+) @\(\s*(\d+),\s*(\d+)\) \[\s*(\d+)x\s*(\d+)\] {param}=(.+)"
 )
@@ -64,6 +63,13 @@ class VectorHandler(BaseHandler):
 
 class VTMParser:
     def __init__(self):
+        self.wanted_params = [
+            "QP",
+            "PredMode",
+            "Depth",
+            "MVL0",
+            "MVL1",
+        ]
         self.handlers: List[BaseHandler] = [
             ScalarHandler("QP"),
             ScalarHandler("PredMode"),
@@ -87,6 +93,7 @@ class VTMParser:
         return dict(grouped)
 
     def parse(self, line_iterator):
+        param_matchers = [f"{p}=" for p in self.wanted_params]
         for line in line_iterator:
             if SEQUENCE_SIZE_TOKEN in line:
                 match = re.search(VTM_SEQUENCE_SIZE_REGEX, line)
@@ -96,6 +103,10 @@ class VTMParser:
                 continue
             if not line.startswith("BlockStat:"):
                 continue
+
+            if not any(matcher in line for matcher in param_matchers):
+                continue
+
             for handler in self.handlers:
                 token = handler.parse(line)
                 if token:

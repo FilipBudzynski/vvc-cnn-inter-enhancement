@@ -20,7 +20,7 @@ class Decoder(abc.ABC):
 @dataclass
 class VTMDecoder(Decoder):
     executable: str = field(
-        default="./bin/vtm/bin/umake/clang-15.0/x86_64/release/DecoderAnalyserApp",
+        default="./bin/vtm/bin/umake/gcc-15.2/x86_64/release/DecoderAnalyserApp",
     )
 
     def decode(self, task: DecodingTaskParams) -> str:

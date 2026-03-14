@@ -107,10 +107,6 @@ class DatasetConfig(BaseModel):
     val_dir: str = ""
     test_dir: str = ""
 
-    train: SubDatasetConfig = SubDatasetConfig()
-    val: SubDatasetConfig = SubDatasetConfig()
-    test: SubDatasetConfig = SubDatasetConfig()
-
 
 class TrainingMode(Enum):
     GAN = "gan"
@@ -184,13 +180,13 @@ class Config(BaseModel):
             data = yaml.safe_load(f)
 
         print("\n--- DEBUG: RAW YAML DATA ---")
-        print(data) 
+        print(data)
         print("---------------------------\n")
 
         model = cls.model_validate(data)
-        
+
         print("--- DEBUG: POJECTED CONFIG OBJECT ---")
-        print(model.dataset.train)
+        print(model.dataset.train_dir)
         print("------------------------------------\n")
 
         model = cls.model_validate(data)
