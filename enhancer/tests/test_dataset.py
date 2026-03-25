@@ -1,28 +1,24 @@
-import torch
-
-# If the error persists after pip install,
-# you can tell Pyright to ignore it for now:
-import matplotlib.pyplot as plt  # type: ignore
+import os
+import matplotlib.pyplot as plt
 from enhancer.config import Config
 from enhancer.vtm_dataset import VTMDataset
 import numpy as np
+import yaml
 
 
 def test_vtm_dataset():
-    # 1. Load config
-    try:
-        # Using the path you provided in previous turns
-        cfg = Config.load("enhancer/tests/test_config.yaml")
-        dataset_cfg = cfg.dataset.train
-    except Exception as e:
-        print(f"Could not load config.yaml: {e}")
-        return
+    # Load the raw YAML directly to avoid the 'str' attribute error
+    with open("enhancer/tests/test_config.yaml", "r") as f:
+        raw_cfg = yaml.safe_load(f)
+    
+    # Access the dictionary keys directly
+    dataset_cfg = raw_cfg['dataset']
 
     print("--- Initializing VTMDataset ---")
     dataset = VTMDataset(
-        decoded_yuv_filepath=dataset_cfg.decoded_yuv_filepath,
-        original_yuv_filepath=dataset_cfg.original_yuv_file_path,
-        vtm_trace_path=dataset_cfg.vtm_trace_filepath,
+        decoded_yuv_filepath=dataset_cfg['decoded_yuv_filepath'],
+        original_yuv_filepath=dataset_cfg['original_yuv_file_path'],
+        vtm_trace_path=dataset_cfg['vtm_trace_filepath'],
     )
 
     ds_len = len(dataset)
@@ -34,7 +30,7 @@ def test_vtm_dataset():
         )
         return
 
-    x, y, info = dataset[0]
+    x, y, info = dataset[8]
 
     print(f"Dataset Item POC: {info['poc']} | Crop: {info['top']},{info['left']}")
     print(f"Input Shape: {x.shape}")  # Should be [10, 128, 128]
@@ -53,9 +49,10 @@ def test_vtm_dataset():
     qp_map = x[3].numpy()
     pred_mode = x[4].numpy()
     depth_map = x[5].numpy()
-    mv_x = x[6].numpy()
+    bound_map = x[6].numpy()
+    mv_x = x[7].numpy()
 
-    fig, axes = plt.subplots(2, 4, figsize=(20, 10))
+    fig, axes = plt.subplots(2, 5, figsize=(22, 10))
 
     # Row 0: Pixel Data
     axes[0, 0].imshow(dec_y, cmap="gray")
@@ -81,11 +78,16 @@ def test_vtm_dataset():
     axes[1, 2].imshow(depth_map, cmap="magma")
     axes[1, 2].set_title("Block Depth (x[5])")
 
-    axes[1, 3].imshow(mv_x, cmap="coolwarm")
-    axes[1, 3].set_title("Motion Vector X (x[6])")
+    axes[1, 3].imshow(bound_map, cmap="gray")
+    axes[1, 3].set_title("Tree Map (Boundary)")
+
+    axes[1, 4].imshow(mv_x, cmap="coolwarm")
+    axes[1, 4].set_title("Motion Vector X (x[6])")
 
     plt.tight_layout()
-    plt.show()
+    output_path = "dataset_verification.png"
+    plt.savefig(output_path)
+    # plt.show()
 
 
 if __name__ == "__main__":

@@ -72,3 +72,5 @@ class VectorToken(BlockStatToken):
 
         maps[name_x][self.y : self.y + self.h, self.x : self.x + self.w] = self.value.x
         maps[name_y][self.y : self.y + self.h, self.x : self.x + self.w] = self.value.y
+
+

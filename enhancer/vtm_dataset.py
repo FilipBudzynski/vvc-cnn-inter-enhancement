@@ -62,6 +62,7 @@ class VTMDataset(Dataset):
             "QP",
             "PredMode",
             "Depth",
+            "Boundary",
             "MVL0_X",
             "MVL0_Y",
             "MVL1_X",

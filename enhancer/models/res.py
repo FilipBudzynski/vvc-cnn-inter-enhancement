@@ -229,3 +229,24 @@ class ResNet(nn.Sequential):
                     tanh=config.output_block.tanh,
                 ),
             )
+
+
+class GlobalResNetWrapper(nn.Module):
+    """
+    Wraps the ResNet to implement Global Residual Learning.
+    The model learns to predict ONLY the noise/artifacts.
+    """
+
+    def __init__(self, resnet_model: ResNet):
+        super().__init__()
+        self.resnet = resnet_model
+
+    def forward(self, x: Tensor) -> Tensor:
+        # 1. Grab the VVC input (first 3 YUV channels)
+        identity = x[:, :3, :, :]
+
+        # 2. ResNet processes all 11 channels and predicts the residual
+        residual = self.resnet(x)
+
+        # 3. Final output = Compressed Input + Predicted Correction
+        return identity + residual

@@ -109,7 +109,6 @@ class DatasetConfig(BaseModel):
 
 
 class TrainingMode(Enum):
-    GAN = "gan"
     ENHANCER = "enhancer"
     DISCRIMINATOR = "discriminator"
 
@@ -142,9 +141,8 @@ class ModeTrainingConfig(BaseModel):
 
 
 class TrainerConfig(BaseModel):
-    mode: TrainingMode = TrainingMode.GAN
+    mode: TrainingMode = TrainingMode.ENHANCER
 
-    gan: ModeTrainingConfig = ModeTrainingConfig()
     enhancer: ModeTrainingConfig = ModeTrainingConfig()
     discriminator: ModeTrainingConfig = ModeTrainingConfig()
 
@@ -155,9 +153,7 @@ class TrainerConfig(BaseModel):
 
     @property
     def current(self) -> ModeTrainingConfig:
-        if self.mode == TrainingMode.GAN:
-            return self.gan
-        elif self.mode == TrainingMode.ENHANCER:
+        if self.mode == TrainingMode.ENHANCER:
             return self.enhancer
         elif self.mode == TrainingMode.DISCRIMINATOR:
             return self.discriminator

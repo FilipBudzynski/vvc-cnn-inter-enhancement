@@ -8,9 +8,13 @@ from pytorch_lightning.loggers import WandbLogger
 # Your project imports
 from enhancer.datamodule import VVCDataModule
 from enhancer.trainer import TrainerModule
-from enhancer.models.res import ResNet
+from enhancer.models.res import GlobalResNetWrapper, ResNet
 from enhancer.models.dense import DenseNet
 from enhancer.config import Config, NetworkImplementation
+
+from enhancer.config import TrainerConfig, ModeTrainingConfig, TrainingMode
+
+torch.serialization.add_safe_globals([TrainerConfig, ModeTrainingConfig, TrainingMode])
 
 
 def main():
@@ -22,6 +26,7 @@ def main():
     parser.add_argument("--train", action="store_true")
     parser.add_argument("--test", action="store_true")
     parser.add_argument("--config", "-c", default="config.yaml")
+    parser.add_argument("--checkpoint", "-ckpt", type=str, default=None)
     args = parser.parse_args()
 
     # 1. Load Config
@@ -34,7 +39,8 @@ def main():
 
     # 3. Model Selection
     if config.enhancer.implementation == NetworkImplementation.RES:
-        model = ResNet(config.enhancer)
+        core_res = ResNet(config.enhancer)
+        model = GlobalResNetWrapper(core_res)
     else:
         model = DenseNet(config.enhancer)
 
@@ -42,7 +48,8 @@ def main():
     module = TrainerModule(config=config.trainer, enhancer=model)
 
     # 5. Logger
-    wandb_logger = WandbLogger(project="vvc-cnn-inter", name="resnet-10ch-baseline")
+    run_name = "resnet-11ch-boundry-32QP"
+    wandb_logger = WandbLogger(project="vvc-cnn-inter", name=run_name)
 
     # 6. Lightning Trainer
     trainer = pl.Trainer(
@@ -57,8 +64,8 @@ def main():
             LearningRateMonitor(logging_interval="step"),
             ModelCheckpoint(
                 dirpath="checkpoints",
-                filename="vvc-{epoch:02d}-{val_psnr:.2f}",
-                monitor="val_psnr",
+                filename=run_name + "-{epoch:02d}-{val_psnr_Y:.2f}",
+                monitor="val_psnr_Y",
                 mode="max",
                 save_top_k=2,
             ),
@@ -73,7 +80,7 @@ def main():
             torch.save(model.state_dict(), config.enhancer.save_to)
 
     if args.test:
-        trainer.test(module, data_module)
+        trainer.test(module, data_module, ckpt_path=args.checkpoint)
 
 
 if __name__ == "__main__":

@@ -1,6 +1,7 @@
 from abc import abstractmethod, ABC
 from typing import DefaultDict, List, Optional
 import re
+import numpy as np
 
 from features_parser.tokens import (
     SEQUENCE_SIZE_TOKEN,

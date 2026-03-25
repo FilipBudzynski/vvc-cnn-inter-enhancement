@@ -10,7 +10,7 @@ class Config:
     data_dir: str = "./data"
     output_dir: str = "./output/encoded"
     encoder_path: str = "./bin/vvencFFapp"
-    qp: List[int] = field(default_factory=lambda: [23])
+    qp: List[int] = field(default_factory=lambda: [32])
     frames_to_encode: int = 64
     preset: str = "fast"
     alf: int = 0

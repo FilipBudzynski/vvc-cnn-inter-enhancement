@@ -18,4 +18,14 @@ class FeatureMapGenerator:
 
         for token in tokens:
             token.paint(maps, self.width, self.height)
+
+        boundary_map = np.zeros((self.height, self.width), dtype=np.float32)
+
+        for token in tokens:
+            if "Depth" in token.param:
+                boundary_map[token.y, token.x : token.x + token.w] = 1.0
+                boundary_map[token.y : token.y + token.h, token.x] = 1.0
+
+        maps["Boundary"] = boundary_map
+
         return maps

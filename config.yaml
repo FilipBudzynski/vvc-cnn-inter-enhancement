@@ -11,22 +11,27 @@ dataloader:
 
 enhancer:
   implementation: "res"
-  input_shape: [10, 128, 128]
+  input_shape: [11, 128, 128]
   activation: "prelu"
   reflect_padding: true
-  save_to: "experiments/enhancer/vtm_res_v1.pth"
+  save_to: "experiments/enhancer/vtm_res_v3.pth"
   load_from: null
   structure:
     blocks:
-      - kernel_size: 3
-        padding: 1
-        features: 64
-      - kernel_size: 3
-        padding: 1
-        features: 64
-      - kernel_size: 3
-        padding: 1
-        features: 64
+      - { num_layers: 2, features: 64, kernel_size: 3, padding: 1 }
+      - { num_layers: 2, features: 64, kernel_size: 3, padding: 1 }
+      - { num_layers: 2, features: 64, kernel_size: 3, padding: 1 }
+      - { num_layers: 2, features: 64, kernel_size: 3, padding: 1 }
+      - { num_layers: 2, features: 64, kernel_size: 3, padding: 1 }
+      # - kernel_size: 3
+      #   padding: 1
+      #   features: 64
+      # - kernel_size: 3
+      #   padding: 1
+      #   features: 64
+      # - kernel_size: 3
+      #   padding: 1
+      #   features: 64
   output_block:
     features: 3
     kernel_size: 3
@@ -36,8 +41,7 @@ enhancer:
 
 trainer:
   mode: "enhancer"
-  # This 'current' block is what our TrainerModule expects
-  current:
+  enhancer:
     epochs: 200
     enhancer_lr: 0.0001
     num_samples: 4
