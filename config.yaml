@@ -5,33 +5,36 @@ dataset:
   test_dir: "output/decoded"
 
 dataloader:
-  batch_size: 16 # Increased for RTX 5070
+  batch_size: 8
   val_batch_size: 4
-  num_workers: 8 # More workers to feed that fast GPU
+  num_workers: 4
 
 enhancer:
   implementation: "res"
-  input_shape: [11, 128, 128]
+  input_shape: [3, 128, 128]
   activation: "prelu"
   reflect_padding: true
-  save_to: "experiments/enhancer/vtm_res_v3.pth"
+  with_mask: true
+  metadata_size: 8
+  use_sota_metadata: true
+  metadata_features: 16
+  save_to: "experiments/enhancer/vtm_resnet_v6.pth"
   load_from: null
+  features:
+    features: 64
+    kernel_size: 7
+    stride: 1
+    padding: 3
+    pool: false
+    dense: false
+    res: true
   structure:
     blocks:
-      - { num_layers: 2, features: 64, kernel_size: 3, padding: 1 }
-      - { num_layers: 2, features: 64, kernel_size: 3, padding: 1 }
-      - { num_layers: 2, features: 64, kernel_size: 3, padding: 1 }
-      - { num_layers: 2, features: 64, kernel_size: 3, padding: 1 }
-      - { num_layers: 2, features: 64, kernel_size: 3, padding: 1 }
-      # - kernel_size: 3
-      #   padding: 1
-      #   features: 64
-      # - kernel_size: 3
-      #   padding: 1
-      #   features: 64
-      # - kernel_size: 3
-      #   padding: 1
-      #   features: 64
+      - { num_layers: 4, features: 64, kernel_size: 7, padding: 3, stride: 1 }
+      - { num_layers: 4, features: 96, kernel_size: 5, padding: 2, stride: 1 }
+      - { num_layers: 4, features: 64, kernel_size: 3, padding: 1, stride: 1 }
+      - { num_layers: 4, features: 48, kernel_size: 3, padding: 1, stride: 1 }
+      - { num_layers: 4, features: 32, kernel_size: 3, padding: 1, stride: 1 }
   output_block:
     features: 3
     kernel_size: 3
@@ -42,9 +45,9 @@ enhancer:
 trainer:
   mode: "enhancer"
   enhancer:
-    epochs: 200
+    epochs: 500
     enhancer_lr: 0.0001
     num_samples: 4
     enhancer_scheduler: True
-    enhancer_scheduler_gamma: 0.5
-    enhancer_scheduler_milestones: [50, 100, 150]
+    enhancer_scheduler_gamma: 0.1
+    enhancer_scheduler_milestones: [50, 100, 150, 200, 250, 300, 350, 400, 450]

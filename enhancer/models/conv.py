@@ -145,11 +145,6 @@ class OutputBlock(nn.Sequential):
         if tanh:
             self.add_module("tanh", nn.Tanh())
 
-        conv_module = self._modules["conv"]
-        if isinstance(conv_module, nn.Conv2d):
-            nn.init.zeros_(conv_module.weight)
-            if conv_module.bias is not None:
-                nn.init.zeros_(conv_module.bias)
 
 class Features(ConvLayer):
     """The initial feature extraction layer."""

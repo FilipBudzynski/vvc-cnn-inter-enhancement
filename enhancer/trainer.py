@@ -1,15 +1,28 @@
 import torch
 import pytorch_lightning as pl
-from torchmetrics.functional import peak_signal_noise_ratio as psnr
-from torchmetrics.functional import structural_similarity_index_measure as ssim
+from torchmetrics.image import PeakSignalNoiseRatio, StructuralSimilarityIndexMeasure
 from pytorch_lightning.loggers.wandb import WandbLogger
 from pytorch_lightning.utilities.types import OptimizerLRScheduler
 import wandb
-from typing import Any, cast
+from typing import Any, Tuple
 
-# Absolute imports
 from enhancer.models.loss import CharbonnierLoss
 from enhancer.config import TrainerConfig
+
+
+def safe_ms_ssim(pred, target, data_range=1.0, win_size=11):
+    """MS-SSIM that handles smaller images gracefully."""
+    h, w = pred.shape[2], pred.shape[3]
+    min_size = (win_size - 1) * 16
+    
+    if h <= min_size or w <= min_size:
+        return pred.mean() * 0  # Return 0 if too small (will result in loss = 1)
+    
+    try:
+        from enhancer.ssim import ms_ssim
+        return ms_ssim(pred, target, data_range=data_range, win_size=win_size)
+    except:
+        return pred.mean() * 0
 
 
 class TrainerModule(pl.LightningModule):
@@ -25,77 +38,114 @@ class TrainerModule(pl.LightningModule):
         self.config = config.current
         self.criterion = CharbonnierLoss()
 
-        # Pull num_samples safely from config
         self.num_samples: int = getattr(self.config, "num_samples", 4)
+        
+        self.channel_weights = [0.66666, 0.66666, 0.66666]
 
-    def forward(self, x: torch.Tensor) -> torch.Tensor:
-        """
-        x is a single tensor of shape [Batch, 10, H, W]
-        (3 YUV channels + 7 metadata channels)
-        """
-        return self.enhancer(x)
+        # Initialize metrics once in __init__
+        self.psnr_metric = PeakSignalNoiseRatio(data_range=1.0)
+        self.ssim_metric = StructuralSimilarityIndexMeasure(data_range=1.0)
+
+    def forward(self, x: torch.Tensor, metadata: torch.Tensor = None) -> torch.Tensor:
+        """Forward pass - handles both legacy (concatenated) and SOTA (separate) formats."""
+        output = self.enhancer(x, metadata)
+        return output.clamp(0, 1)
 
     def _split_channels(self, tensor: torch.Tensor):
-        """Splits a YUV tensor [B, 3, H, W] into individual Y, U, and V components."""
         return tensor[:, 0:1], tensor[:, 1:2], tensor[:, 2:3]
 
-    def _calculate_weighted_loss(
+    def _calculate_loss(
         self, pred: torch.Tensor, target: torch.Tensor
-    ) -> tuple[torch.Tensor, tuple[torch.Tensor, ...]]:
-        """Calculates Charbonnier loss with channel weighting."""
+    ) -> Tuple[torch.Tensor, Tuple[torch.Tensor, ...]]:
         pY, pU, pV = self._split_channels(pred)
         tY, tU, tV = self._split_channels(target)
+        
+        weights = torch.tensor(self.channel_weights, device=pred.device)
 
-        loss_Y = self.criterion(pY, tY)
-        loss_U = self.criterion(pU, tU)
-        loss_V = self.criterion(pV, tV)
-
-        total_loss = (1.0 * loss_Y) + (0.5 * loss_U) + (0.5 * loss_V)
-        return total_loss, (loss_Y, loss_U, loss_V)
+        mseY = torch.nn.functional.mse_loss(pY, tY)
+        mseU = torch.nn.functional.mse_loss(pU, tU)
+        mseV = torch.nn.functional.mse_loss(pV, tV)
+        mse_loss = (weights * torch.stack([mseY, mseU, mseV])).sum()
+        
+        l1Y = torch.nn.functional.l1_loss(pY, tY)
+        l1U = torch.nn.functional.l1_loss(pU, tU)
+        l1V = torch.nn.functional.l1_loss(pV, tV)
+        l1_loss = (weights * torch.stack([l1Y, l1U, l1V])).sum()
+        
+        # Use class-level SSIM metric
+        ssim_loss_Y = 1.0 - self.ssim_metric(pY, tY)
+        ssim_loss_U = 1.0 - self.ssim_metric(pU, tU)
+        ssim_loss_V = 1.0 - self.ssim_metric(pV, tV)
+        ssim_loss = (weights * torch.stack([ssim_loss_Y, ssim_loss_U, ssim_loss_V])).sum()
+        
+        # MS-SSIM
+        ms_ssim_loss_Y = 1.0 - safe_ms_ssim(pY, tY, data_range=1.0, win_size=9)
+        ms_ssim_loss_U = 1.0 - safe_ms_ssim(pU, tU, data_range=1.0, win_size=9)
+        ms_ssim_loss_V = 1.0 - safe_ms_ssim(pV, tV, data_range=1.0, win_size=9)
+        ms_ssim_loss = (weights * torch.stack([ms_ssim_loss_Y, ms_ssim_loss_U, ms_ssim_loss_V])).sum()
+        
+        # Piotr's loss: 0.1*ms_ssim + 0.1*ssim + mse + 0.5*l1
+        total_loss = (
+            0.1 * ms_ssim_loss + 
+            0.1 * ssim_loss + 
+            mse_loss + 
+            0.5 * l1_loss
+        )
+        
+        return total_loss, (mse_loss, l1_loss, ssim_loss, ms_ssim_loss)
 
     def training_step(self, batch: Any, _batch_idx: int) -> torch.Tensor:
-        x, y, _ = batch
-        # --- DIAGNOSTIC PRINTS ---
-        if _batch_idx == 0:
-            print(f"\n--- DATA RANGE CHECK ---")
-            print(
-                f"Input (VVC)  | Min: {x[:, :3].min():.4f} | Max: {x[:, :3].max():.4f}"
-            )
-            print(f"Target (RAW) | Min: {y.min():.4f} | Max: {y.max():.4f}")
-            print(
-                f"Metadata     | Min: {x[:, 3:].min():.4f} | Max: {x[:, 3:].max():.4f}"
-            )
-            print(f"------------------------\n")
-        # -------------------------
+        # New format: (yuv, original, metadata, info)
+        # Legacy format: (x_concat, original, _)
+        if len(batch) >= 4:
+            yuv, original, metadata, info = batch
+            # SOTA mode: YUV + metadata separately
+            enhanced = self(yuv, metadata)
+        else:
+            x, y, _ = batch
+            # Legacy mode: concatenated
+            enhanced = self(x)
+            original = y
 
-        enhanced = self(x)
-        loss, _ = self._calculate_weighted_loss(enhanced, y)
+        loss, _ = self._calculate_loss(enhanced, original)
 
         self.log("train_loss", loss, prog_bar=True, on_step=True, on_epoch=True)
 
         with torch.no_grad():
-            batch_psnr = psnr(enhanced, y, data_range=1.0)
+            batch_psnr = self.psnr_metric(enhanced, original)
             self.log("train_psnr", batch_psnr, prog_bar=True)
+
+        if _batch_idx == 0:
+            print(f"\n--- DATA RANGE CHECK ---")
+            yuv_input = yuv if len(batch) >= 4 else x[:, :3]
+            print(f"Input (VVC)  | Min: {yuv_input.min():.4f} | Max: {yuv_input.max():.4f}")
+            print(f"Target (RAW) | Min: {original.min():.4f} | Max: {original.max():.4f}")
+            print(f"------------------------\n")
 
         return loss
 
     def validation_step(self, batch: Any, batch_idx: int) -> torch.Tensor:
-        x, y, _ = batch
-        enhanced = self(x)
-        loss, _ = self._calculate_weighted_loss(enhanced, y)
+        if len(batch) >= 4:
+            yuv, original, metadata, info = batch
+            enhanced = self(yuv, metadata)
+        else:
+            x, y, _ = batch
+            enhanced = self(x)
+            original = y
 
-        # Piotr style: split and calculate on 0-1 range
+        loss, _ = self._calculate_loss(enhanced, original)
+
         eY, eU, eV = self._split_channels(enhanced)
-        oY, oU, oV = self._split_channels(y)
-        iY, _, _ = self._split_channels(x[:, :3])
+        oY, oU, oV = self._split_channels(original)
+        
+        yuv_input = yuv if len(batch) >= 4 else x[:, :3]
+        iY, _, _ = self._split_channels(yuv_input)
 
-        # PSNR on Y channel (Data range 1.0)
-        val_psnr_y = cast(torch.Tensor, psnr(eY, oY, data_range=1.0))
-        ref_psnr_y = cast(torch.Tensor, psnr(iY, oY, data_range=1.0))
+        val_psnr_y = self.psnr_metric(eY, oY)
+        ref_psnr_y = self.psnr_metric(iY, oY)
 
-        # SSIM on Y channel
-        val_ssim_y = cast(torch.Tensor, ssim(eY, oY, data_range=1.0))
-        ref_ssim_y = cast(torch.Tensor, ssim(iY, oY, data_range=1.0))
+        val_ssim_y = self.ssim_metric(eY, oY)
+        ref_ssim_y = self.ssim_metric(iY, oY)
 
         self.log("val_ssim_Y", val_ssim_y, prog_bar=True)
         self.log("val_gain_ssim_Y", val_ssim_y - ref_ssim_y, prog_bar=True)
@@ -104,43 +154,50 @@ class TrainerModule(pl.LightningModule):
         self.log("val_psnr_Y", val_psnr_y, prog_bar=True)
         self.log("val_gain_psnr_Y", val_psnr_y - ref_psnr_y, prog_bar=True)
 
-        # Piotr also logs U and V PSNR specifically
-        self.log("val_psnr_U", psnr(eU, oU, data_range=1.0))
-        self.log("val_psnr_V", psnr(eV, oV, data_range=1.0))
+        self.log("val_psnr_U", self.psnr_metric(eU, oU))
+        self.log("val_psnr_V", self.psnr_metric(eV, oV))
 
         if batch_idx == 0:
-            self._log_wandb_images(x[:, :3], enhanced, y, "val")
+            self._log_wandb_images(yuv_input, enhanced, original, "val")
 
         return loss
 
     def test_step(self, batch: Any, batch_idx: int) -> None:
-        x, orig_chunks, _ = batch
+        if len(batch) >= 4:
+            yuv, original, metadata, info = batch
+            enhanced = self(yuv, metadata)
+            
+            # Test with zeroed metadata
+            yuv_zeroed = yuv.clone()
+            if metadata is not None:
+                metadata_zeroed = torch.zeros_like(metadata)
+                enhanced_zeroed = self(yuv_zeroed, metadata_zeroed)
+            else:
+                enhanced_zeroed = enhanced
+        else:
+            x, orig_chunks, _ = batch
+            enhanced = self(x)
+            original = orig_chunks
+            
+            x_zeroed = x.clone()
+            x_zeroed[:, 3:] = 0.0
+            enhanced_zeroed = self(x_zeroed)
 
-        # 1. Standard Inference (using real metadata)
-        enhanced = self(x)
-
-        # 2. Zero-Metadata Diagnostic (Hacking metadata to zero)
-        x_zeroed = x.clone()
-        x_zeroed[:, 3:] = 0.0
-        enhanced_zeroed = self(x_zeroed)
-
-        # Split channels for metrics
         eY, _, _ = self._split_channels(enhanced)
         eY_zero, _, _ = self._split_channels(enhanced_zeroed)
-        oY, _, _ = self._split_channels(orig_chunks)
-        iY, _, _ = self._split_channels(x[:, :3])
+        oY, _, _ = self._split_channels(original)
+        
+        yuv_input = yuv if len(batch) >= 4 else x[:, :3]
+        iY, _, _ = self._split_channels(yuv_input)
 
-        # Metrics
-        t_psnr_y = psnr(eY * 255.0, oY * 255.0, data_range=255.0)
-        z_psnr_y = psnr(eY_zero * 255.0, oY * 255.0, data_range=255.0)
-        r_psnr_y = psnr(iY * 255.0, oY * 255.0, data_range=255.0)
+        t_psnr_y = self.psnr_metric(eY, oY)
+        z_psnr_y = self.psnr_metric(eY_zero, oY)
+        r_psnr_y = self.psnr_metric(iY, oY)
 
-        # Print to terminal for immediate feedback
         print(f"\n--- Batch {batch_idx} Results ---")
         print(f"Ref PSNR Y (VVC): {r_psnr_y:.4f}")
         print(f"Model PSNR Y (Real Meta): {t_psnr_y:.4f}")
         print(f"Model PSNR Y (Zero Meta): {z_psnr_y:.4f}")
-        print(f"Mean VVC-vs-RAW Diff: {(x[:, :3] - orig_chunks).abs().mean():.6f}")
 
         self.log_dict(
             {
@@ -152,10 +209,9 @@ class TrainerModule(pl.LightningModule):
         )
 
         if batch_idx == 0:
-            self._log_wandb_images(x[:, :3], enhanced, orig_chunks, "test")
+            self._log_wandb_images(yuv_input, enhanced, original, "test")
 
     def _yuv_to_rgb(self, yuv: torch.Tensor) -> torch.Tensor:
-        """Converts YUV [3, H, W] to RGB [3, H, W] for WandB."""
         y, u, v = yuv[0], yuv[1], yuv[2]
         r = y + 1.402 * (v - 0.5)
         g = y - 0.344136 * (u - 0.5) - 0.714136 * (v - 0.5)
@@ -169,12 +225,9 @@ class TrainerModule(pl.LightningModule):
         img_list = []
 
         for i in range(count):
-            # Convert to RGB before sending to WandB
             lq = self._yuv_to_rgb(chunks[i].detach().cpu()).permute(1, 2, 0).numpy()
             pred = self._yuv_to_rgb(enhanced[i].detach().cpu()).permute(1, 2, 0).numpy()
-            gt = (
-                self._yuv_to_rgb(orig_chunks[i].detach().cpu()).permute(1, 2, 0).numpy()
-            )
+            gt = self._yuv_to_rgb(orig_chunks[i].detach().cpu()).permute(1, 2, 0).numpy()
 
             img_list.extend(
                 [
@@ -186,32 +239,25 @@ class TrainerModule(pl.LightningModule):
         self.logger.experiment.log({f"{stage}_previews": img_list})
 
     def configure_optimizers(self) -> OptimizerLRScheduler:
-        max_epochs = self.config.epochs
+        weight_decay = self.config.enhancer_lr / 10
+        
         optimizer = torch.optim.Adam(
-            self.parameters(), lr=self.config.enhancer_lr, weight_decay=1e-4
+            self.parameters(), 
+            lr=self.config.enhancer_lr, 
+            betas=(0.5, 0.999), 
+            weight_decay=weight_decay
         )
 
-        # 1. Linear Warmup: Start at 10% of LR and reach 100% in 5 epochs
-        warmup_steps = 5
-        scheduler1 = torch.optim.lr_scheduler.LinearLR(
-            optimizer, start_factor=0.1, end_factor=1.0, total_iters=warmup_steps
-        )
-
-        # 2. Cosine Decay: After warmup, slowly decay the LR in a curve
-        # This is better than Plateau because it keeps the model "moving"
-        scheduler2 = torch.optim.lr_scheduler.CosineAnnealingLR(
-            optimizer, T_max=max_epochs - warmup_steps
-        )
-
-        # Combine them: scheduler1 for 5 epochs, then scheduler2
-        combined_scheduler = torch.optim.lr_scheduler.SequentialLR(
-            optimizer, schedulers=[scheduler1, scheduler2], milestones=[warmup_steps]
+        scheduler = torch.optim.lr_scheduler.MultiStepLR(
+            optimizer,
+            milestones=[50, 100, 150, 200, 250, 300, 350, 400, 450],
+            gamma=0.1
         )
 
         return {
             "optimizer": optimizer,
             "lr_scheduler": {
-                "scheduler": combined_scheduler,
+                "scheduler": scheduler,
                 "interval": "epoch",
                 "frequency": 1,
             },

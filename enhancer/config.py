@@ -10,6 +10,7 @@ class DataloaderConfig(BaseModel):
     test_n_step: int = 5
 
     batch_size: int = 8
+    num_workers: int = 4
     val_batch_size: int = 64
     test_batch_size: int = 64  # full video
 
@@ -90,6 +91,7 @@ class NetworkConfig(BaseModel):
 
 
 class EnhancerConfig(NetworkConfig):
+    use_sota_metadata: bool = False
     metadata_size: int = 7
     metadata_features: int = 32
     with_mask: bool = True

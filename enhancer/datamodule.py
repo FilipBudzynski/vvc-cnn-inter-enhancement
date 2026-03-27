@@ -21,7 +21,6 @@ class VVCDataModule(pl.LightningDataModule):
         self.test_full_frames = test_full_frames
 
     def setup(self, stage: Optional[str] = None):
-        # We use the train_dir to find all video pairs
         all_videos = self._build_dataset_list(self.dataset_config.train_dir)
 
         random.seed(42)
@@ -45,16 +44,11 @@ class VVCDataModule(pl.LightningDataModule):
         orig_dir = Path("data")
 
         for dec_file in base_path.glob("*_rec.yuv"):
-            # 1. Get the name without the reconstructed extensions
-            # This handles both "_vtm_rec.yuv" and "_rec.yuv"
             base_stem = dec_file.name.replace("_vtm_rec.yuv", "").replace(
                 "_rec.yuv", ""
             )
-
-            # 2. Extract video name for original file (everything before _QP)
             video_name = base_stem.split("_QP")[0]
 
-            # 3. Construct paths
             trace_path = base_path / f"{base_stem}.csv"
             original_file = orig_dir / f"{video_name}.yuv"
 
@@ -70,14 +64,9 @@ class VVCDataModule(pl.LightningDataModule):
                         datasets.append(ds)
                 except Exception as e:
                     print(f"❌ Error initializing {base_stem}: {e}")
-            else:
-                if not trace_path.exists():
-                    print(f"❌ Missing Trace: {trace_path}")
-                if not original_file.exists():
-                    print(f"❌ Missing Original: {original_file}")
 
         if not datasets:
-            print("🚨 WARNING: No datasets were loaded. Check your file naming!")
+            print("🚨 WARNING: No datasets were loaded.")
         else:
             print(f"✅ Successfully loaded {len(datasets)} videos.")
 
@@ -91,7 +80,7 @@ class VVCDataModule(pl.LightningDataModule):
             self.train_dataset,
             batch_size=self.config.batch_size,
             shuffle=True,
-            num_workers=4,
+            num_workers=self.config.num_workers,
             pin_memory=True,
             prefetch_factor=2,
             persistent_workers=True,
@@ -106,7 +95,7 @@ class VVCDataModule(pl.LightningDataModule):
             batch_size=self.config.val_batch_size,
             shuffle=False,
             pin_memory=True,
-            num_workers=4,
+            num_workers=self.config.num_workers,
             persistent_workers=True,
         )
 
@@ -114,7 +103,6 @@ class VVCDataModule(pl.LightningDataModule):
         if self.test_dataset is None:
             raise RuntimeError("Test dataset not initialized. Did you call setup()?")
 
-        # Fallback for test_batch_size if not in config
         t_batch = getattr(self.config, "test_batch_size", 1)
         batch_size = 1 if self.test_full_frames else t_batch
 
@@ -123,5 +111,5 @@ class VVCDataModule(pl.LightningDataModule):
             batch_size=batch_size,
             shuffle=False,
             pin_memory=True,
-            num_workers=4,
+            num_workers=self.config.num_workers,
         )

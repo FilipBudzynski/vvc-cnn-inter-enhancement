@@ -5,11 +5,9 @@ from pytorch_lightning.callbacks import LearningRateMonitor, ModelCheckpoint
 from pytorch_lightning.callbacks.progress import TQDMProgressBar
 from pytorch_lightning.loggers import WandbLogger
 
-# Your project imports
 from enhancer.datamodule import VVCDataModule
 from enhancer.trainer import TrainerModule
-from enhancer.models.res import GlobalResNetWrapper, ResNet
-from enhancer.models.dense import DenseNet
+from enhancer.models.enhancer import Enhancer
 from enhancer.config import Config, NetworkImplementation
 
 from enhancer.config import TrainerConfig, ModeTrainingConfig, TrainingMode
@@ -18,7 +16,6 @@ torch.serialization.add_safe_globals([TrainerConfig, ModeTrainingConfig, Trainin
 
 
 def main():
-    # RTX 5070 Optimization
     if torch.cuda.is_available():
         torch.set_float32_matmul_precision("high")
 
@@ -29,36 +26,25 @@ def main():
     parser.add_argument("--checkpoint", "-ckpt", type=str, default=None)
     args = parser.parse_args()
 
-    # 1. Load Config
     config = Config.load(args.config)
 
-    # 2. DataModule
     data_module = VVCDataModule(
         dataset_config=config.dataset, dataloader_config=config.dataloader
     )
 
-    # 3. Model Selection
-    if config.enhancer.implementation == NetworkImplementation.RES:
-        core_res = ResNet(config.enhancer)
-        model = GlobalResNetWrapper(core_res)
-    else:
-        model = DenseNet(config.enhancer)
+    model = Enhancer(config.enhancer)
 
-    # 4. Trainer Module
     module = TrainerModule(config=config.trainer, enhancer=model)
 
-    # 5. Logger
-    run_name = "resnet-11ch-boundry-32QP"
+    run_name = "Lanister-resnet-11ch-32QP"
     wandb_logger = WandbLogger(project="vvc-cnn-inter", name=run_name)
 
-    # 6. Lightning Trainer
     trainer = pl.Trainer(
-        # fast_dev_run=True,
         num_sanity_val_steps=1,
         accelerator="gpu",
         devices=1,
         max_epochs=config.trainer.current.epochs,
-        precision="16-mixed",  # Faster training on RTX 5000 series
+        precision="16-mixed",
         callbacks=[
             TQDMProgressBar(refresh_rate=10),
             LearningRateMonitor(logging_interval="step"),
@@ -73,7 +59,6 @@ def main():
         logger=wandb_logger,
     )
 
-    # 7. Run
     if args.train:
         trainer.fit(module, data_module)
         if config.enhancer.save_to:
