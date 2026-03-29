@@ -1,46 +1,47 @@
-# VVC Video Enhancement with CNN
+# Blackfyre - VVC Video Enhancement with Temporal Attention
 
-Master's thesis project: Improving quality of VVC-encoded video using convolutional neural networks.
+Master's thesis: Improving quality of VVC-encoded video using CNNs.
 
-## Models
+## Results
 
-| Model | Architecture | PSNR Gain | SSIM | Metadata | Temporal | Motion Comp. |
-|-------|--------------|-----------|------|----------|----------|--------------|
-| **Hightower** | Simple concat | +0.33 dB | 0.95 | 8 ch | No | No |
-| **Blackfyre** | Temporal Attention | +0.42 dB | 0.96 | 19 ch | 3 frames | No |
-| **Targaryen** | Three-Stream | TBD | TBD | 8 ch | 3 frames | Yes |
+| Metric | Value |
+|--------|-------|
+| **PSNR Gain** | **+0.42 dB** |
+| SSIM | 0.955 |
+| Input PSNR | ~36 dB |
+| Enhanced PSNR | ~36.4 dB |
 
-### Model Details
+## Architecture
 
-- **Hightower** - Baseline: concatenates F-1, F0, F+1 frames with 8-channel metadata
-- **Blackfyre** - Adds temporal attention to learn pixel-wise frame weights
-- **Targaryen** - Three-stream architecture with motion compensation using VVC motion vectors
+Blackfyre uses **Temporal Attention** to learn pixel-wise which neighboring frame (F-1, F0, F+1) to focus on for enhancement.
+
+Key features:
+- 3-frame temporal context (F-1, F0, F+1)
+- 19-channel decoder metadata (QP, Depth, SkipFlag, etc.)
+- Pixel-wise attention weights learned during training
+- Metadata-guided attention for compression-aware enhancement
+
+See [BLACKFYRE.md](BLACKFYRE.md) for full details.
 
 ## Quick Start
 
 ```bash
-# Activate environment
 source .venv/bin/activate
-
-# Train Blackfyre
 python train_blackfyre.py
+```
 
-# Or train Targaryen (in three-stream worktree)
+## Files
+
+- `train_blackfyre.py` - Training script
+- `enhancer/models/blackfyre.py` - Model architecture
+- `enhancer/dataset_blackfyre.py` - Dataset loader
+- `visualize_blackfyre.py` - Test & visualization
+- `checkpoints/blackfyre_epoch_*.pt` - Trained checkpoints
+
+## Next: Targaryen
+
+Targaryen (three-stream with motion compensation) is in separate worktree:
+```bash
 cd ../vvc-cnn-three-stream
 python train_targaryen.py
 ```
-
-## Dataset
-
-- Precomputed features in `data/precomputed/`
-- 19 metadata channels from VVC decoder
-- Frame triplets: F-1, F0, F+1
-
-## Documentation
-
-- [Blackfyre Model](BLACKFYRE.md)
-- [Targaryen Plan](MULTI_STREAM_PLAN.md)
-
-## Results
-
-Best result: **Blackfyre +0.423 dB** PSNR gain over VVC-compressed input.
