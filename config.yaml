@@ -10,24 +10,24 @@ dataloader:
   num_workers: 4
 
 enhancer:
-  implementation: "res"
-  input_shape: [3, 128, 128]
+  implementation: "dense"  # Changed from "res" to "dense" - Piotr's best
+  input_shape: [3, 132, 132]
   activation: "prelu"
   reflect_padding: true
   with_mask: true
   metadata_size: 8
   use_sota_metadata: true
   metadata_features: 16
-  save_to: "experiments/enhancer/vtm_resnet_v6.pth"
+  save_to: "experiments/enhancer/vtm_densenet_v1.pth"
   load_from: null
   features:
     features: 64
-    kernel_size: 7
+    kernel_size: 9  # Larger kernel for dense net
     stride: 1
-    padding: 3
+    padding: 4
     pool: false
-    dense: false
-    res: true
+    dense: true
+    res: false
   structure:
     blocks:
       - { num_layers: 4, features: 64, kernel_size: 7, padding: 3, stride: 1 }
@@ -40,14 +40,14 @@ enhancer:
     kernel_size: 3
     padding: 1
     stride: 1
-    tanh: false
+    tanh: true
 
 trainer:
   mode: "enhancer"
   enhancer:
-    epochs: 500
+    epochs: 1000
     enhancer_lr: 0.0001
     num_samples: 4
     enhancer_scheduler: True
     enhancer_scheduler_gamma: 0.1
-    enhancer_scheduler_milestones: [50, 100, 150, 200, 250, 300, 350, 400, 450]
+    enhancer_scheduler_milestones: [100, 300, 500, 700, 900]
