@@ -1,0 +1,70 @@
+wandb: Loading settings from /home/filip/vvc-cnn-inter-enhancement/wandb/settings
+wandb: [wandb.login()] Loaded credentials for https://api.wandb.ai from /home/filip/.netrc.
+wandb: W&B API key is configured. Use `wandb login --relogin` to force relogin
+wandb: setting up run is7cbpgr
+wandb: Tracking run with wandb version 0.25.0
+wandb: Run data is saved locally in /home/filip/vvc-cnn-inter-enhancement/wandb/run-20260329_144029-is7cbpgr
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run blackfyre-v1
+wandb: ⭐️ View project at https://wandb.ai/fbudzynski56-wut/vvc-cnn-inter
+wandb: 🚀 View run at https://wandb.ai/fbudzynski56-wut/vvc-cnn-inter/runs/is7cbpgr
+Loaded 2628 frame triplets for train
+Loaded 329 frame triplets for val
+Train samples: 2628
+Val samples: 329
+Starting Blackfyre training...
+Features: 16 channels (enhanced metadata)
+Model: Temporal Attention + Metadata-Guided Attention
+Epoch 0, Batch 0, Loss: 0.2893
+Epoch 0, Batch 50, Loss: 0.0295
+Epoch 0, Batch 100, Loss: 0.0220
+Epoch 0, Batch 150, Loss: 0.0225
+Epoch 0, Batch 200, Loss: 0.0220
+Epoch 0, Batch 250, Loss: 0.0185
+Epoch 0, Batch 300, Loss: 0.0168
+Epoch 0: Train Loss: 0.0311, Val PSNR Gain: -0.8514, Input: 35.7963, Enhanced: 34.9450, SSIM: 0.9322
+Epoch 1, Batch 0, Loss: 0.0171
+Epoch 1, Batch 50, Loss: 0.0173
+Epoch 1, Batch 100, Loss: 0.0237
+Epoch 1, Batch 150, Loss: 0.0202
+Epoch 1, Batch 200, Loss: 0.0201
+Epoch 1, Batch 250, Loss: 0.0131
+Epoch 1, Batch 300, Loss: 0.0216
+Epoch 1: Train Loss: 0.0174, Val PSNR Gain: -0.3833, Input: 35.8500, Enhanced: 35.4667, SSIM: 0.9397
+Epoch 2, Batch 0, Loss: 0.0161
+Epoch 2, Batch 50, Loss: 0.0189
+Epoch 2, Batch 100, Loss: 0.0131
+Epoch 2, Batch 150, Loss: 0.0199
+Epoch 2, Batch 200, Loss: 0.0159
+Epoch 2, Batch 250, Loss: 0.0186
+Epoch 2, Batch 300, Loss: 0.0168
+Epoch 2: Train Loss: 0.0169, Val PSNR Gain: -0.2111, Input: 35.7723, Enhanced: 35.5611, SSIM: 0.9422
+Epoch 3, Batch 0, Loss: 0.0150
+Epoch 3, Batch 50, Loss: 0.0147
+Epoch 3, Batch 100, Loss: 0.0180
+Epoch 3, Batch 150, Loss: 0.0151
+Epoch 3, Batch 200, Loss: 0.0178
+Epoch 3, Batch 250, Loss: 0.0201
+Epoch 3, Batch 300, Loss: 0.0149
+Epoch 3: Train Loss: 0.0166, Val PSNR Gain: -0.1423, Input: 35.9429, Enhanced: 35.8006, SSIM: 0.9446
+Epoch 4, Batch 0, Loss: 0.0173
+Epoch 4, Batch 50, Loss: 0.0198
+Epoch 4, Batch 100, Loss: 0.0192
+Epoch 4, Batch 150, Loss: 0.0167
+Epoch 4, Batch 200, Loss: 0.0236
+Epoch 4, Batch 250, Loss: 0.0106
+Epoch 4, Batch 300, Loss: 0.0163
+Epoch 4: Train Loss: 0.0165, Val PSNR Gain: -0.1218, Input: 35.8825, Enhanced: 35.7607, SSIM: 0.9450
+Epoch 5, Batch 0, Loss: 0.0217
+Epoch 5, Batch 50, Loss: 0.0158
+Epoch 5, Batch 100, Loss: 0.0172
+Epoch 5, Batch 150, Loss: 0.0211
+Epoch 5, Batch 200, Loss: 0.0143
+Epoch 5, Batch 250, Loss: 0.0193
+Epoch 5, Batch 300, Loss: 0.0183
+Epoch 5: Train Loss: 0.0165, Val PSNR Gain: -0.1039, Input: 35.8477, Enhanced: 35.7439, SSIM: 0.9445
+Epoch 6, Batch 0, Loss: 0.0188
+Epoch 6, Batch 50, Loss: 0.0140
+Epoch 6, Batch 100, Loss: 0.0117
+/usr/lib/python3.14/multiprocessing/resource_tracker.py:396: UserWarning: resource_tracker: There appear to be 20 leaked semaphore objects to clean up at shutdown: {'/mp-v_nqkyyv', '/mp-q8hbjqsp', '/mp-lge98420', '/mp-1j8ugox6', '/mp-8u2a5itl', '/mp-aly86550', '/mp-1sgv4x53', '/mp-1r4zdsup', '/mp-ej7bjcur', '/mp-zr3bffk4', '/mp-t70isbzw', '/mp-znkz_kgo', '/mp-8xcriau_', '/mp-rb524pvr', '/mp-q2uj63b3', '/mp-vzt5mxp1', '/mp-v8y58yb2', '/mp-n0a2_kxa', '/mp-2atcvxw9', '/mp-gpgk8bg8'}
+  warnings.warn(
