@@ -1,4 +1,4 @@
-# Blackfyre - VVC Video Enhancement with Temporal Attention
+# Snow - VVC Video Enhancement CNN
 
 Master's thesis: Improving quality of VVC-encoded video using CNNs.
 
@@ -6,42 +6,35 @@ Master's thesis: Improving quality of VVC-encoded video using CNNs.
 
 | Metric | Value |
 |--------|-------|
-| **PSNR Gain** | **+0.42 dB** |
-| SSIM | 0.955 |
-| Input PSNR | ~36 dB |
-| Enhanced PSNR | ~36.4 dB |
+| **PSNR Gain** | **+0.502 dB** |
+| SSIM | 0.9553 |
+| Input PSNR | ~37.18 dB |
+| Enhanced PSNR | ~37.68 dB |
 
 ## Architecture
 
-Blackfyre uses **Temporal Attention** to learn pixel-wise which neighboring frame (F-1, F0, F+1) to focus on for enhancement.
-
-Key features:
-- 3-frame temporal context (F-1, F0, F+1)
-- 19-channel decoder metadata (QP, Depth, SkipFlag, etc.)
-- Pixel-wise attention weights learned during training
-- Metadata-guided attention for compression-aware enhancement
-
-See [BLACKFYRE.md](BLACKFYRE.md) for full details.
+Snow uses:
+- **Feature Extraction Module** - separate encoder for each frame (F-1, F0, F+1)
+- **Alignment Module (DCN v2)** - align neighboring frames to current
+- **Attention Fusion** - learned pixel-wise weighting of frames
+- **Deep Reconstruction** - 8 residual blocks
+- **Metadata Attention** - use VVC decoder metadata (QP, Depth, etc.)
 
 ## Quick Start
 
 ```bash
-source .venv/bin/activate
-python train_blackfyre.py
+uv run python train_snow.py
 ```
 
 ## Files
 
-- `train_blackfyre.py` - Training script
-- `enhancer/models/blackfyre.py` - Model architecture
-- `enhancer/dataset_blackfyre.py` - Dataset loader
-- `visualize_blackfyre.py` - Test & visualization
-- `checkpoints/blackfyre_epoch_*.pt` - Trained checkpoints
+- `train_snow.py` - Training script
+- `visualize_snow.py` - Test & visualization
+- `enhancer/models/snow.py` - Model architecture
+- `checkpoints/snow_epoch_*.pt` - Trained checkpoints
 
-## Next: Targaryen
+## Test
 
-Targaryen (three-stream with motion compensation) is in separate worktree:
 ```bash
-cd ../vvc-cnn-three-stream
-python train_targaryen.py
+uv run python visualize_snow.py
 ```
