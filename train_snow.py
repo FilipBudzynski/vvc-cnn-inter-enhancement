@@ -24,6 +24,20 @@ PATCH_SIZE = 132
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 
+def yuv_to_rgb(yuv):
+    """Convert YUV to RGB (0-1 range)"""
+    y = yuv[:, :, 0]
+    u = yuv[:, :, 1]
+    v = yuv[:, :, 2]
+    
+    r = y + 1.402 * (v - 0.5)
+    g = y - 0.344136 * (u - 0.5) - 0.714136 * (v - 0.5)
+    b = y + 1.772 * (u - 0.5)
+    
+    rgb = np.stack([r, g, b], axis=-1)
+    return np.clip(rgb, 0, 1)
+
+
 def compute_loss(enhanced, original):
     """Loss: L1 only"""
     l1_loss = F.l1_loss(enhanced, original)
@@ -43,13 +57,10 @@ def log_images(epoch, original, enhanced, curr_frames, psnr_metric_enh, psnr_met
         psnr_input = psnr_metric_in(inp, orig).item()
         psnr_enh = psnr_metric_enh(enh, orig).item()
         
-        orig_np = orig[0].permute(1, 2, 0).numpy()
-        enh_np = enh[0].permute(1, 2, 0).numpy()
-        inp_np = inp[0].permute(1, 2, 0).numpy()
-        
-        orig_np = np.clip(orig_np, 0, 1)
-        enh_np = np.clip(enh_np, 0, 1)
-        inp_np = np.clip(inp_np, 0, 1)
+        # Proper YUV to RGB conversion
+        orig_np = yuv_to_rgb(orig[0].permute(1, 2, 0).numpy())
+        enh_np = yuv_to_rgb(enh[0].permute(1, 2, 0).numpy())
+        inp_np = yuv_to_rgb(inp[0].permute(1, 2, 0).numpy())
         
         fig, axes = plt.subplots(1, 3, figsize=(15, 5))
         
