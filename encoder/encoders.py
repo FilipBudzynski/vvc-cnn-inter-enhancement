@@ -31,13 +31,13 @@ class VVencEncoder(Encoder):
             "-b", task.bitstream_out,
             "-o", task.recon_out,
             "--preset", task.preset,
-            #"--qpa", "0",                    # Enable QP adaptation
             "--alf", str(task.alf),
             "--sao", str(task.sao),
-            "--InputChromaFormat", "420",    # Explicit YUV420 input
-            "--ChromaFormatIDC", "420",      # Explicit YUV420 output
-            "--InternalBitDepth", "8",       # Ensure 8-bit internal processing
-            "--OutputBitDepth", "8",         # Ensure 8-bit output
+            "--LoopFilterDisable", "1",         # Disable deblocking filter
+            "--InputChromaFormat", "420",       # Explicit YUV420 input
+            "--ChromaFormatIDC", "420",          # Explicit YUV420 output
+            "--InternalBitDepth", "8",           # Ensure 8-bit internal processing
+            "--OutputBitDepth", "8",            # Ensure 8-bit output
         ]
 
         log_path = Path(task.bitstream_out).with_suffix(".log")
