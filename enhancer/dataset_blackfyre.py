@@ -27,20 +27,27 @@ class BlackfyreDataset(Dataset):
         self.patch_size = patch_size
         self.split = split
         
-        # Group frames by video
+        # Group frames by video and check sizes efficiently
         self.video_frames = {}
+        self.video_sizes = {}
         for video_dir in self.data_dir.iterdir():
             if video_dir.is_dir():
                 frames = sorted(video_dir.glob("poc_*.pt"), 
                              key=lambda x: int(x.stem.split("_")[1]))
                 if len(frames) >= 3:
+                    # Load one frame to get size (cached per video)
+                    test_data = torch.load(frames[0], weights_only=True)
+                    _, h, w = test_data["decoded"].shape
                     self.video_frames[video_dir.name] = frames
+                    self.video_sizes[video_dir.name] = (h, w)
         
-        # Create valid indices (frame index 1 to n-2 for F-1, F0, F+1)
+        # Create valid indices - filter videos too small for patch_size
         self.samples = []
         for video_name, frames in self.video_frames.items():
-            for i in range(1, len(frames) - 1):
-                self.samples.append((video_name, frames[i-1], frames[i], frames[i+1]))
+            h, w = self.video_sizes[video_name]
+            if h >= self.patch_size and w >= self.patch_size:
+                for i in range(1, len(frames) - 1):
+                    self.samples.append((video_name, frames[i-1], frames[i], frames[i+1]))
         
         # Shuffle and split
         random.seed(42)
@@ -63,9 +70,9 @@ class BlackfyreDataset(Dataset):
         video_name, prev_pt, curr_pt, next_pt = self.samples[idx]
         
         # Load frames
-        prev_data = torch.load(prev_pt)
-        curr_data = torch.load(curr_pt)
-        next_data = torch.load(next_pt)
+        prev_data = torch.load(prev_pt, weights_only=True)
+        curr_data = torch.load(curr_pt, weights_only=True)
+        next_data = torch.load(next_pt, weights_only=True)
         
         # Extract YUV frames
         prev_frame = prev_data["decoded"]

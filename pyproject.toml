@@ -16,4 +16,5 @@ dependencies = [
     "matplotlib>=3.10.8",
     "pytest>=9.0.2",
     "wandb>=0.25.0",
+    "pytorch-msssim>=1.0.0",
 ]

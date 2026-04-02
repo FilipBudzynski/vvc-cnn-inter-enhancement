@@ -25,14 +25,20 @@ class ResBlock(nn.Module):
 
 
 class WideContextModule(nn.Module):
-    """7x7 depthwise convolution for wide context"""
+    """7x7 depthwise convolution with dilation for wide context"""
     def __init__(self, channels: int):
         super().__init__()
-        # Depthwise 7x7 - captures larger structures (VVC blocks)
-        self.dw_conv = nn.Conv2d(channels, channels, 7, padding=3, groups=channels)
+        # Depthwise 7x7 with dilation=2 - captures larger structures (VVC blocks)
+        # Effective receptive field: 7 + (7-1)*(2-1) = 13 pixels
+        self.dw_conv = nn.Conv2d(channels, channels, 7, padding=6, groups=channels, dilation=2)
         self.bn = nn.BatchNorm2d(channels)
         self.conv_1x1 = nn.Conv2d(channels, channels, 1)
         self.relu = nn.PReLU()
+        
+        # Zero-init residual branch so it starts near identity
+        # Prevents amplification of random features at initialization
+        nn.init.zeros_(self.conv_1x1.weight)
+        nn.init.zeros_(self.conv_1x1.bias)
         
     def forward(self, x: Tensor) -> Tensor:
         out = self.dw_conv(x)
