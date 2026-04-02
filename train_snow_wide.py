@@ -37,7 +37,7 @@ def yuv_to_rgb(yuv):
 
 
 def compute_loss(enhanced, original):
-    """Enhanced loss: L1 + Gradient Loss (Sobel) + MS-SSIM + FFT Loss"""
+    """Enhanced loss: L1 + Gradient Loss (Sobel) + Laplacian + MS-SSIM"""
     l1 = F.l1_loss(enhanced, original)
     
     # Gradient Loss (Sobel) - preserves edges and details
@@ -52,29 +52,19 @@ def compute_loss(enhanced, original):
     g_org_x, g_org_y = get_gradient(original)
     grad_loss = F.l1_loss(g_enh_x, g_org_x) + F.l1_loss(g_enh_y, g_org_y)
     
-    # FFT Loss - matches frequency components
-    def fft_loss(img1, img2):
-        # Compute FFT magnitude for each channel
-        loss = 0
-        for c in range(img1.shape[1]):
-            # 2D FFT
-            fft1 = torch.fft.fft2(img1[:, c, :, :])
-            fft2 = torch.fft.fft2(img2[:, c, :, :])
-            # Magnitude spectrum
-            mag1 = torch.abs(fft1)
-            mag2 = torch.abs(fft2)
-            # L1 on magnitude (normalized)
-            loss += F.l1_loss(mag1, mag2)
-        return loss / img1.shape[1]
-    
-    fft_loss_val = fft_loss(enhanced, original)
+    # Laplacian Loss - captures edge sharpness and fine details
+    # Laplacian kernel: [[0, 1, 0], [1, -4, 1], [0, 1, 0]]
+    lap_kernel = torch.tensor([[0., 1., 0.], [1., -4., 1.], [0., 1., 0.]]).view(1, 1, 3, 3).to(enhanced.device)
+    lap_enh = F.conv2d(enhanced.view(-1, 1, enhanced.shape[2], enhanced.shape[3]), lap_kernel, padding=1).view_as(enhanced)
+    lap_org = F.conv2d(original.view(-1, 1, original.shape[2], original.shape[3]), lap_kernel, padding=1).view_as(original)
+    lap_loss = F.l1_loss(lap_enh, lap_org)
     
     # MS-SSIM only (more comprehensive than SSIM)
     ms_ssim_val = ms_ssim(enhanced, original, data_range=1.0, size_average=True, win_size=7)
     ms_ssim_loss = 1 - ms_ssim_val
     
-    # Weights: 0.5*L1 + 0.15*MS-SSIM + 0.2*GradLoss + 0.15*FFT
-    total_loss = 0.5 * l1 + 0.15 * ms_ssim_loss + 0.2 * grad_loss + 0.15 * fft_loss_val
+    # Weights: 0.5*L1 + 0.15*MS-SSIM + 0.2*GradLoss + 0.15*Laplacian
+    total_loss = 0.5 * l1 + 0.15 * ms_ssim_loss + 0.2 * grad_loss + 0.15 * lap_loss
     return total_loss, total_loss.item()
 
 
@@ -159,7 +149,7 @@ def main():
     
     print("Starting Snow-Wide training...")
     print("Architecture: Feature Extraction + Wide Context (7x7 stride=2) + DCN Alignment + Attention Fusion + Deep Reconstruction")
-    print("Loss: 0.5*L1 + 0.15*MS-SSIM + 0.2*GradLoss + 0.15*FFT (frequency match)")
+    print("Loss: 0.5*L1 + 0.15*MS-SSIM + 0.2*GradLoss + 0.15*Laplacian (edge sharpness)")
     
     for epoch in range(args.epochs):
         model.train()
