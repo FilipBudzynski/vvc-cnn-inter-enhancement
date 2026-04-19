@@ -32,7 +32,7 @@ Architektura: Conv(3→64) → ResBlocks(×4) → Conv(64→3) + skip connection
 ### 2.2 Snow
 ```
 Parametry: 981,594
-Input: F-1, F0, F+1 + Metadata (19 kanałów)
+Input: F-1, F0, F+1 + Metadata (8 kanałów)
 Checkpoint: checkpoints/snow_epoch_490.pt
 ```
 Architektura: FeatureExtraction → Alignment → AttentionFusion → MetadataAttention → Reconstruction(×8) → Output
@@ -40,7 +40,7 @@ Architektura: FeatureExtraction → Alignment → AttentionFusion → MetadataAt
 ### 2.3 Snow-Wide [NAJLEPSZY]
 ```
 Parametry: 1,293,024
-Input: F-1, F0, F+1 + Metadata (19 kanałów)
+Input: F-1, F0, F+1 + Metadata (8 kanałów)
 Checkpoint: checkpoints/snow_wide_epoch_460.pt
 ```
 Architektura: FeatureExtraction → **WideContext(7×7 dilation=2)** → Alignment → AttentionFusion → Reconstruction(×13) → Output
@@ -50,7 +50,7 @@ Architektura: FeatureExtraction → **WideContext(7×7 dilation=2)** → Alignme
 ### 2.4 Blackfyre
 ```
 Parametry: ~1,100,000 (est.)
-Input: F-1, F0, F+1 + Metadata (19 kanałów)
+Input: F-1, F0, F+1 + Metadata (8 kanałów)
 Checkpoint: checkpoints/blackfyre_*.pt
 ```
 Architektura: FeatureExtraction → Self-Attention → Temporal Alignment → Output
