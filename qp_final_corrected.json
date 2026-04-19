@@ -1,0 +1,42 @@
+{
+  "22": {
+    "baseline": 41.2,
+    "gains": {
+      "ResNet": 0.0,
+      "Snow": 0.25,
+      "Snow_Wide": 0.46
+    }
+  },
+  "27": {
+    "baseline": 38.5,
+    "gains": {
+      "ResNet": -0.05,
+      "Snow": 0.24,
+      "Snow_Wide": 0.46
+    }
+  },
+  "32": {
+    "baseline": 36.0,
+    "gains": {
+      "ResNet": -0.03,
+      "Snow": 0.26,
+      "Snow_Wide": 0.47
+    }
+  },
+  "37": {
+    "baseline": 33.5,
+    "gains": {
+      "ResNet": -0.05,
+      "Snow": 0.24,
+      "Snow_Wide": 0.46
+    }
+  },
+  "42": {
+    "baseline": 31.0,
+    "gains": {
+      "ResNet": -0.05,
+      "Snow": 0.24,
+      "Snow_Wide": 0.46
+    }
+  }
+}

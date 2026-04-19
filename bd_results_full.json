@@ -1,0 +1,23 @@
+{
+  "ResNet (Intra-only, F0 only)": {
+    "bd_psnr": -0.04,
+    "bd_rate": 1.19
+  },
+  "Snow (F-1,F0,F+1)": {
+    "bd_psnr": 0.246,
+    "bd_rate": -6.95
+  },
+  "Snow-Wide (F-1,F0,F+1+Wide)": {
+    "bd_psnr": 0.462,
+    "bd_rate": -12.7
+  },
+  "Blackfyre (F-1,F0,F+1+Attn)": {
+    "bd_psnr": 0.4,
+    "bd_rate": -11.08
+  },
+  "DenseNet (Intra, no frames)": {
+    "bd_psnr": -3.9,
+    "bd_rate": "Failed",
+    "note": "Model training failed, -3.9 dB loss"
+  }
+}
