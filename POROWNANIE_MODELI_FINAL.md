@@ -1,14 +1,8 @@
-# Porównanie Eksperymentalnych Modeli CNN do Wzmocnienia Wideo VVC
+# Eksperymenty modeli CNN do wzmocnienia wideo VVC
 
-**Data:** 19.04.2026  
-**Autor:** Filip  
-**Temat:** Poprawa jakości wideo kodowanego VVC przy użyciu sieci CNN
+## 1. Najlepsze modele z eksperymentow
 
----
-
-## 1. Streszczenie
-
-Przedmiotem pracy jest porównanie architektur CNN do wzmocnienia (enhancement) wideo skompresowanego przy użyciu standardu VVC (H.266). Przetestowano następujące podejścia:
+Przedstawiono najlepsze modele / podejscia z przeprowadzonych eksperymentów:
 
 - **ResNet (F0 only)** - model bazowy używający tylko bieżącej klatki (bez ramek F-1, F+1)
 - **Snow** - model z fuzją temporalną wykorzystujący sąsiednie klatki (F-1, F0, F+1)
@@ -36,7 +30,7 @@ Architektura: FeatureExtraction → Alignment → AttentionFusion → MetadataAt
 
 **BD-PSNR: +0.25 dB | BD-Rate: -7.0%**
 
-### 2.3 Snow-Wide [NAJLEPSZY]
+### 2.3 Snow-Wide 
 ```
 Parametry: 1,293,024
 Input: F-1, F0, F+1 + Metadata (19 kanałów)
@@ -109,14 +103,12 @@ Architektura: FeatureExtraction → **WideContext(7×7 dilation=2)** → Alignme
 
 ## 6. Porównanie z filtrami VVC
 
-### Dane z pracy P. Domanskiego:
 
 | Metoda | BD-Rate |
 |-------|--------|
 | Filtry VVC (SAO+ALF+DB włączone) | -2.78% |
 | **Snow-Wide** | **-12.7%** |
 
-**Wniosek:** Model CNN jest 4.6× SKUTECZNIEJSZY niż wbudowane filtry VVC.
 
 ---
 
@@ -132,6 +124,3 @@ Architektura: FeatureExtraction → **WideContext(7×7 dilation=2)** → Alignme
 
 5. **Przewyższa pracę Domanskiego** (+3.7%) i filtry VVC (4.6×)
 
----
-
-*Raport wygenerowano: 19.04.2026*
