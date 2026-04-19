@@ -22,7 +22,7 @@ Przedmiotem pracy jest porównanie architektur CNN do wzmocnienia (enhancement) 
 ### 2.1 ResNet (F0 only) - Model bazowy bez ramek temporalnych
 ```
 Parametry: 414,702
-Input: YUV (3 kanały) + Metadata (19 kanałów) - tylko klatka F0
+Input: YUV (3 kanały) + Metadata (8 kanałów) - tylko klatka F0
 Checkpoint: experiments/enhancer/vtm_resnet_v6.pth
 ```
 Architektura: Conv(3→64) → ResBlocks(×4) → Conv(64→3) + skip connection
