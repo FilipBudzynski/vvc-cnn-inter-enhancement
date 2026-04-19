@@ -13,48 +13,39 @@ Przedmiotem pracy jest porównanie architektur CNN do wzmocnienia (enhancement) 
 - **ResNet (F0 only)** - model bazowy używający tylko bieżącej klatki (bez ramek F-1, F+1)
 - **Snow** - model z fuzją temporalną wykorzystujący sąsiednie klatki (F-1, F0, F+1)
 - **Snow-Wide** - rozszerzona wersja Snow z modułem Wide Context o zwiększonym polu recepcyjnym
-- **Blackfyre** - model z dodatkową modulacją uwagi (dalsze testy)
 
 ---
 
 ## 2. Architektury
 
-### 2.1 ResNet (F0 only) - Model bazowy bez ramek temporalnych
+### 2.1 ResNet (F0 only)
 ```
 Parametry: 414,702
 Input: YUV (3 kanały) + Metadata (8 kanałów) - tylko klatka F0
-Architektura: Conv(3+8→64) → ResBlocks(×4) → Conv(64→3)
-Checkpoint: experiments/enhancer/vtm_resnet_v6.pth
 ```
-Architektura: Conv(3→64) → ResBlocks(×4) → Conv(64→3) + skip connection
+Architektura: Conv(3+8→64) → ResBlocks(×4) → Conv(64→3)
 
-**Wynik: NIE ZALECANY** - bez ramek temporalnych model pogarsza jakość (+1.2% BD-Rate oznacza większy bitrate przy tej samej jakości)
+**BD-PSNR: -0.04 dB | BD-Rate: +1.2%**
 
 ### 2.2 Snow
 ```
 Parametry: 981,594
 Input: F-1, F0, F+1 + Metadata (19 kanałów)
-Checkpoint: checkpoints/snow_epoch_490.pt
 ```
 Architektura: FeatureExtraction → Alignment → AttentionFusion → MetadataAttention → Reconstruction(×8) → Output
+
+**BD-PSNR: +0.25 dB | BD-Rate: -7.0%**
 
 ### 2.3 Snow-Wide [NAJLEPSZY]
 ```
 Parametry: 1,293,024
 Input: F-1, F0, F+1 + Metadata (19 kanałów)
-Checkpoint: checkpoints/snow_wide_epoch_460.pt
 ```
 Architektura: FeatureExtraction → **WideContext(7×7 dilation=2)** → Alignment → AttentionFusion → Reconstruction(×13) → Output
 
 **Kluczowa różnica:** WideContextModule używa depthwise convolution 7×7 z dilation=2, co daje efektywne pole recepcyjne 13×13 pikseli bez zwiększania liczby parametrów.
 
-### 2.4 Blackfyre
-```
-Parametry: ~1,100,000 (est.)
-Input: F-1, F0, F+1 + Metadata (19 kanałów)
-Checkpoint: checkpoints/blackfyre_*.pt
-```
-Architektura: FeatureExtraction → Self-Attention → Temporal Alignment → Output
+**BD-PSNR: +0.46 dB | BD-Rate: -12.7%**
 
 ---
 
@@ -87,41 +78,24 @@ Architektura: FeatureExtraction → Self-Attention → Temporal Alignment → Ou
 
 ### 4.2 Metryki Bjontegaard (BD-Rate/BD-PSNR)
 
-| Model | BD-PSNR | BD-Rate | Opis |
-|-------|--------|---------|------|
-| **Snow-Wide** | **+0.46 dB** | **-12.7%** | Najlepszy wynik |
-| Snow | +0.25 dB | -7.0% | Dobry wynik |
-| Blackfyre | +0.40 dB | -11.1% | Częściowa ewaluacja |
-| ResNet (F0 only) | -0.04 dB | +1.2% | Pogarsza jakość |
-
-**Wyjaśnienie:**
-- **BD-PSNR** = ile dB zyskuje jakość przy tym samym bitrate
-- **BD-Rate** = ile % bitrate można oszczędzić przy tej samej jakości (wartość ujemna = oszczędność, dodatnia = straty)
+| Model | BD-PSNR | BD-Rate |
+|-------|--------|--------|
+| **Snow-Wide** | **+0.46 dB** | **-12.7%** |
+| Snow | +0.25 dB | -7.0% |
+| ResNet (F0 only) | -0.04 dB | +1.2% |
 
 ---
 
-## 5. Wymagania od promotora - status
+## 5. Szczegóły Techniczne
 
-| Wymaganie | Status |
-|----------|--------|
-| BD-PSNR | ✅ Zaimplementowane |
-| BD-Rate | ✅ Zaimplementowane |
-| Funkcja celu (MS-SSIM) | ✅ Zaimplementowane |
-| Mapa granic bloków (Boundary) | ✅ W metadanych (19 kanałów) |
-| Typ ramki (I/P/B) | ❌ Brak - wymaga dodania |
-
----
-
-## 6. Szczegóły Techniczne
-
-### 6.1 Konfiguracja VVC
+### 5.1 Konfiguracja VVC
 - ALF: 0 (wyłączony)
 - SAO: 0 (wyłączony)
 - LoopFilterDisable: 1 (deblocking wyłączony)
 - Preset: fast
 - QP: [22, 27, 32, 37, 42]
 
-### 6.2 Struktura metadanych (19 kanałów)
+### 5.2 Struktura metadanych (19 kanałów)
 | Indeks | Nazwa | Opis |
 |--------|------|------|
 | 0 | QP | Quantization Parameter |
@@ -133,32 +107,7 @@ Architektura: FeatureExtraction → Self-Attention → Temporal Alignment → Ou
 
 ---
 
-## 7. Porównanie z pracą Piotra Domanskiego
-
-### Profil kodowania
-Wszystkie wyniki są dla profilu **RA** (Random Access) - domyślny profil vvenc, który używa ramek I, P i B.
-
-### Wyniki z pracy P. Domanskiego (profil RA):
-
-| Model | BD-Rate |
-|-------|---------|
-| DenseNet + GAN | -9.04% |
-| ResNet | -5.83% |
-| Konwolucyjna | -1.99% |
-
-### Porównanie z moimi wynikami (profil RA):
-
-| Model | BD-Rate | Różnica |
-|-------|---------|---------|
-| **Snow-Wide** | **-12.7%** | **+3.7% lepszy!** |
-| Snow | -7.0% | +2.0% lepszy |
-| Domanski DenseNet+GAN | -9.04% | baseline |
-
-**Wniosek:** Snow-Wide jest o 3.7% LEPSZY od najlepszego modelu Domanskiego dla profilu RA.
-
----
-
-## 8. Porównanie z filtrami VVC
+## 6. Porównanie z filtrami VVC
 
 ### Dane z pracy P. Domanskiego:
 
@@ -171,9 +120,9 @@ Wszystkie wyniki są dla profilu **RA** (Random Access) - domyślny profil vvenc
 
 ---
 
-## 9. Kluczowe wnioski
+## 7. Kluczowe wnioski
 
-1. **Ramki temporalne (F-1, F0, F+1) są NIEZBĘDNE** - model bez nich (ResNet F0 only) pogarsza jakość o +1.2% BD-Rate
+1. **Ramki temporalne (F-1, F0, F+1) są NIEZBĘDNE** - model bez nich pogarsza jakość
 
 2. **Wide Context Module poprawia wyniki** - +0.20 dB vs podstawowy Snow
 
