@@ -140,7 +140,7 @@ class SnowWideEnhancer(nn.Module):
     def __init__(self, config):
         super().__init__()
         base_channels = config.base_channels
-        metadata_channels = config.metadata_channels
+        metadata_channels = 9  # config.metadata_channels
         
         # 1. Feature Extraction (same as original Snow)
         self.feature_extractor = FeatureExtractionModule(3, base_channels)
