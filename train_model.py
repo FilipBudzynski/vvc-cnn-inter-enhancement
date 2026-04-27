@@ -57,7 +57,7 @@ def main():
     np.random.seed(42)
     
     # Initialize wandb - offline by default, online if --wandb flag
-    wandb.init(project="vvc-cnn-inter", name=f"{args.model}-v1", mode="online" if args.wandb else "offline")
+    wandb.init(project="vvc-cnn-inter", name="martell", mode="online" if args.wandb else "offline")
     
     if args.model == "vvc_ppff":
         from enhancer.models.vvc_ppff import VVCPPFF
