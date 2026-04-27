@@ -14,7 +14,7 @@ import torch.nn.functional as F
 from features_parser.parser import VTMParser
 from features_generator.generator import FeatureMapGenerator
 
-FEATURE_ORDER = ["QP", "PredMode", "Depth", "Boundary", "MVL0_X", "MVL0_Y", "MVL1_X", "MVL1_Y"]
+FEATURE_ORDER = ["QP", "PredMode", "Depth", "Boundary", "MVL0_X", "MVL0_Y", "MVL1_X", "MVL1_Y", "FrameType"]
 
 def parse_video_info(csv_path):
     width, height = 0, 0
@@ -61,6 +61,7 @@ def normalize(name, data):
     elif name == "Depth": return (t / 7.0).clamp(0, 1)
     elif name == "PredMode": return (t / 3.0).clamp(0, 1)
     elif name == "Boundary": return (t / 1.0).clamp(0, 1)
+    elif name == "FrameType": return t  # 0=I, 0.5=PB, 1=B
     elif "MV" in name: return (t / 128.0).clamp(-1, 1)
     return t
 
