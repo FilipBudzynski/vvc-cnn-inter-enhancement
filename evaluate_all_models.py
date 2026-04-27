@@ -145,6 +145,14 @@ def load_models():
     except Exception as e:
         print(f"Warning: Could not load Snow_Wide: {e}")
     
+    # 4. VVC-PPFF (per paper Appl Sci 2024)
+    try:
+        from enhancer.models.vvc_ppff import VVCPPFF
+        models["VVC_PPFF"] = VVCPPFF().to(DEVICE)
+        models["VVC_PPFF"].load_state_dict(torch.load("checkpoints/vvc_ppff_epoch_190.pt", map_location=DEVICE))
+        print("Loaded VVC_PPFF from vvc_ppff_epoch_190.pt")
+    except Exception as e:
+        print(f"Warning: Could not load VVC_PPFF: {e}")
     for name, model in models.items():
         model.eval()
         model.to(DEVICE)
@@ -186,6 +194,8 @@ def evaluate_models(models, dataset):
                 # Evaluate each model
                 for name, model in models.items():
                     if name == "ResNet_Intra":
+                        enhanced = model(curr, features).clamp(0, 1)
+                    elif name == "VVC_PPFF":
                         enhanced = model(curr, features).clamp(0, 1)
                     else:
                         enhanced = model(curr, prev, next_f, features).clamp(0, 1)
