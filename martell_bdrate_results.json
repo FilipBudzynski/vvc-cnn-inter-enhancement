@@ -1,0 +1,114 @@
+{
+  "model": "Martell_SnowWide",
+  "checkpoint": "martell_epoch_190.pt",
+  "channels": {
+    "Y": {
+      "qp_results": {
+        "22": {
+          "bitrate": 2200,
+          "psnr_before": 40.0,
+          "psnr_after": 33.26290602411151,
+          "gain": -6.737093975888492
+        },
+        "27": {
+          "bitrate": 2700,
+          "psnr_before": 40.0,
+          "psnr_after": 31.45008193386196,
+          "gain": -8.54991806613804
+        },
+        "32": {
+          "bitrate": 3200,
+          "psnr_before": 40.0,
+          "psnr_after": 30.468086402950583,
+          "gain": -9.531913597049417
+        },
+        "37": {
+          "bitrate": 3700,
+          "psnr_before": 40.0,
+          "psnr_after": 27.34013779916954,
+          "gain": -12.65986220083046
+        },
+        "42": {
+          "bitrate": 4200,
+          "psnr_before": 40.0,
+          "psnr_after": 28.55840399938149,
+          "gain": -11.44159600061851
+        }
+      },
+      "bd_rate_vs_anchor": -25.187087406217923,
+      "avg_gain": -9.784076768104985
+    },
+    "U": {
+      "qp_results": {
+        "22": {
+          "bitrate": 2200,
+          "psnr_before": 40.0,
+          "psnr_after": 29.98259361942285,
+          "gain": -10.01740638057715
+        },
+        "27": {
+          "bitrate": 2700,
+          "psnr_before": 40.0,
+          "psnr_after": 29.632670236936654,
+          "gain": -10.367329763063346
+        },
+        "32": {
+          "bitrate": 3200,
+          "psnr_before": 40.0,
+          "psnr_after": 30.75610831348634,
+          "gain": -9.24389168651366
+        },
+        "37": {
+          "bitrate": 3700,
+          "psnr_before": 40.0,
+          "psnr_after": 28.35186286954837,
+          "gain": -11.64813713045163
+        },
+        "42": {
+          "bitrate": 4200,
+          "psnr_before": 40.0,
+          "psnr_after": 27.688644453513046,
+          "gain": -12.311355546486954
+        }
+      },
+      "bd_rate_vs_anchor": -26.569512743238892,
+      "avg_gain": -10.717624101418547
+    },
+    "V": {
+      "qp_results": {
+        "22": {
+          "bitrate": 2200,
+          "psnr_before": 40.0,
+          "psnr_after": 28.330267930495808,
+          "gain": -11.669732069504192
+        },
+        "27": {
+          "bitrate": 2700,
+          "psnr_before": 40.0,
+          "psnr_after": 29.884993625103895,
+          "gain": -10.115006374896105
+        },
+        "32": {
+          "bitrate": 3200,
+          "psnr_before": 40.0,
+          "psnr_after": 27.28015339587943,
+          "gain": -12.719846604120569
+        },
+        "37": {
+          "bitrate": 3700,
+          "psnr_before": 40.0,
+          "psnr_after": 24.050406981776383,
+          "gain": -15.949593018223617
+        },
+        "42": {
+          "bitrate": 4200,
+          "psnr_before": 40.0,
+          "psnr_after": 25.164075660182235,
+          "gain": -14.835924339817765
+        }
+      },
+      "bd_rate_vs_anchor": -32.50511239536204,
+      "avg_gain": -13.05802048131245
+    }
+  }
+}
