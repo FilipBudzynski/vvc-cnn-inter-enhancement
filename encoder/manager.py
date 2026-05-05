@@ -27,8 +27,8 @@ class EncoderManager:
     def _parse_info(self, info_path: Path) -> Metadata:
         content = info_path.read_text()
 
-        width = int(re.search(r"^Width\s+:\s+(\d+)", content, re.M).group(1))
-        height = int(re.search(r"^Height\s+:\s+(\d+)", content, re.M).group(1))
+        width = int(re.search(r"^Width\s*:\s+(\d+)", content, re.M).group(1))
+        height = int(re.search(r"^Height\s*:\s+(\d+)", content, re.M).group(1))
         fps_match = re.search(r"FrameRate_Num\s+:\s+(\d+)", content)
 
         fps_match = re.search(r"^Frame rate\s+:\s+([\d.]+)", content, re.M)
