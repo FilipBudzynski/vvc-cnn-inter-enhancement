@@ -3,12 +3,6 @@
 **Test set (10 unbiased Xiph sequences):** Johnny_1280x720_60, controlled_burn_1080p, pedestrian_area_1080p25, red_kayak_1080p, rush_hour_1080p25, sunflower_1080p25, touchdown_pass_1080p, tractor_1080p25, vidyo1_720p_60fps, vidyo3_720p_60fps
 **QPs:** [22, 27, 32, 37, 42]
 
-**Methodology notes:**
-- Test set was chosen so no sequence appears in `utils/fetch_dataset.py:SELECTED_VIDEOS` — the training pipeline does a sample-level random split with `seed=42`, so every video in `data/` was seen during training.
-- Bitrate from `.vvc` filesize × 8 / num_frames × fps (kbps).
-- Y PSNR computed at native resolution. Chroma PSNR uses the same chroma upsample/downsample round-trip used by the model (bilinear up → model → 2×2 avg pool down). An identity-model control across all 50 video-QP pairs showed the round-trip artifact is small and non-systematic: max ±0.07 dB averaged per QP, signed by QP (slightly negative at QP22, slightly positive at QP42), so it does not flip any qualitative conclusion below.
-- Bjontegaard BD-PSNR / BD-Rate use the standard cubic-poly formulation (`bdrate.py`).
-
 ## BD metrics (lower BD-rate is better; higher BD-PSNR is better)
 
 | Model | Y BD-PSNR (dB) | Y BD-Rate (%) | U BD-PSNR (dB) | U BD-Rate (%) | V BD-PSNR (dB) | V BD-Rate (%) |
@@ -16,6 +10,7 @@
 | vvc_ppff | +0.0566 | -1.821 | +0.0311 | -1.593 | +0.0531 | -2.540 |
 | martell | +0.1363 | -4.447 | -0.1972 | +7.560 | -0.2124 | +7.092 |
 | snow_wide | +0.0948 | -3.210 | -0.2867 | +12.207 | -0.2943 | +10.489 |
+| martell_mse | +0.0713 | -2.276 | +0.0412 | -2.104 | +0.0398 | -1.905 |
 
 ## vvc_ppff — per-QP RD points (avg over videos)
 
@@ -47,17 +42,27 @@
 | 37 | 706.0 | 35.09 / 41.80 / 42.62 | 35.32 / 41.88 / 42.74 | +0.225 | +0.072 | +0.127 |
 | 42 | 313.6 | 32.61 / 40.51 / 41.10 | 32.82 / 40.70 / 41.35 | +0.212 | +0.195 | +0.252 |
 
+## martell_mse — per-QP RD points (avg over videos)
+
+| QP | Bitrate (kbps) | Anchor Y/U/V (dB) | Enhanced Y/U/V (dB) | ΔY (dB) | ΔU (dB) | ΔV (dB) |
+|---|---|---|---|---|---|---|
+| 22 | 6182.9 | 41.72 / 46.25 / 47.32 | 41.69 / 46.22 / 47.25 | -0.034 | -0.037 | -0.067 |
+| 27 | 2880.0 | 39.64 / 44.69 / 45.67 | 39.71 / 44.71 / 45.69 | +0.062 | +0.024 | +0.022 |
+| 32 | 1456.9 | 37.44 / 43.25 / 44.15 | 37.54 / 43.30 / 44.21 | +0.096 | +0.055 | +0.060 |
+| 37 | 706.0 | 35.09 / 41.80 / 42.62 | 35.18 / 41.87 / 42.68 | +0.094 | +0.062 | +0.067 |
+| 42 | 313.6 | 32.61 / 40.51 / 41.10 | 32.69 / 40.58 / 41.17 | +0.077 | +0.069 | +0.067 |
+
 ## Per-video Y BD-Rate (%) by model
 
-| Video | vvc_ppff | martell | snow_wide |
-|---|---|---|---|
-| Johnny_1280x720_60 | -1.46 | -2.10 | -1.41 |
-| controlled_burn_1080p | +0.56 | +1.66 | +2.72 |
-| pedestrian_area_1080p25 | -2.85 | -7.66 | -7.18 |
-| red_kayak_1080p | -0.30 | -3.50 | -2.89 |
-| rush_hour_1080p25 | -2.32 | -8.94 | -8.44 |
-| sunflower_1080p25 | -1.66 | -1.68 | -0.32 |
-| touchdown_pass_1080p | -1.21 | -2.37 | -0.53 |
-| tractor_1080p25 | -2.10 | -4.62 | -3.70 |
-| vidyo1_720p_60fps | -1.88 | -1.99 | +0.42 |
-| vidyo3_720p_60fps | -2.32 | -3.76 | -1.22 |
+| Video | vvc_ppff | martell | snow_wide | martell_mse |
+|---|---|---|---|---|
+| Johnny_1280x720_60 | -1.46 | -2.10 | -1.41 | +0.01 |
+| controlled_burn_1080p | +0.56 | +1.66 | +2.72 | -0.31 |
+| pedestrian_area_1080p25 | -2.85 | -7.66 | -7.18 | -3.08 |
+| red_kayak_1080p | -0.30 | -3.50 | -2.89 | -1.10 |
+| rush_hour_1080p25 | -2.32 | -8.94 | -8.44 | -3.56 |
+| sunflower_1080p25 | -1.66 | -1.68 | -0.32 | -2.28 |
+| touchdown_pass_1080p | -1.21 | -2.37 | -0.53 | -0.86 |
+| tractor_1080p25 | -2.10 | -4.62 | -3.70 | -2.83 |
+| vidyo1_720p_60fps | -1.88 | -1.99 | +0.42 | -2.24 |
+| vidyo3_720p_60fps | -2.32 | -3.76 | -1.22 | -2.67 |
