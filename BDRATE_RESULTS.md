@@ -8,6 +8,7 @@
 | Model | Y BD-PSNR (dB) | Y BD-Rate (%) | U BD-PSNR (dB) | U BD-Rate (%) | V BD-PSNR (dB) | V BD-Rate (%) |
 |---|---|---|---|---|---|---|
 | vvc_ppff | +0.0566 | -1.821 | +0.0311 | -1.593 | +0.0531 | -2.540 |
+| stenet_2024 | +0.0000 | +0.000 | +0.0373 | -1.908 | +0.0408 | -1.949 |
 | martell | +0.1363 | -4.447 | -0.1972 | +7.560 | -0.2124 | +7.092 |
 | snow_wide | +0.0948 | -3.210 | -0.2867 | +12.207 | -0.2943 | +10.489 |
 | martell_mse | +0.0713 | -2.276 | +0.0412 | -2.104 | +0.0398 | -1.905 |
@@ -21,6 +22,16 @@
 | 32 | 1456.9 | 37.44 / 43.25 / 44.15 | 37.51 / 43.29 / 44.23 | +0.072 | +0.041 | +0.082 |
 | 37 | 706.0 | 35.09 / 41.80 / 42.62 | 35.18 / 41.88 / 42.73 | +0.088 | +0.073 | +0.110 |
 | 42 | 313.6 | 32.61 / 40.51 / 41.10 | 32.70 / 40.61 / 41.17 | +0.088 | +0.099 | +0.072 |
+
+## stenet_2024 — per-QP RD points (avg over videos)
+
+| QP | Bitrate (kbps) | Anchor Y/U/V (dB) | Enhanced Y/U/V (dB) | ΔY (dB) | ΔU (dB) | ΔV (dB) |
+|---|---|---|---|---|---|---|
+| 22 | 6182.9 | 41.72 / 46.25 / 47.32 | 41.72 / 46.21 / 47.26 | +0.000 | -0.039 | -0.062 |
+| 27 | 2880.0 | 39.64 / 44.69 / 45.67 | 39.64 / 44.70 / 45.69 | +0.000 | +0.019 | +0.024 |
+| 32 | 1456.9 | 37.44 / 43.25 / 44.15 | 37.44 / 43.30 / 44.21 | +0.000 | +0.050 | +0.061 |
+| 37 | 706.0 | 35.09 / 41.80 / 42.62 | 35.09 / 41.86 / 42.68 | +0.000 | +0.058 | +0.066 |
+| 42 | 313.6 | 32.61 / 40.51 / 41.10 | 32.61 / 40.58 / 41.17 | +0.000 | +0.069 | +0.067 |
 
 ## martell — per-QP RD points (avg over videos)
 
@@ -54,38 +65,15 @@
 
 ## Per-video Y BD-Rate (%) by model
 
-| Video | vvc_ppff | martell | snow_wide | martell_mse |
-|---|---|---|---|---|
-| Johnny_1280x720_60 | -1.46 | -2.10 | -1.41 | +0.01 |
-| controlled_burn_1080p | +0.56 | +1.66 | +2.72 | -0.31 |
-| pedestrian_area_1080p25 | -2.85 | -7.66 | -7.18 | -3.08 |
-| red_kayak_1080p | -0.30 | -3.50 | -2.89 | -1.10 |
-| rush_hour_1080p25 | -2.32 | -8.94 | -8.44 | -3.56 |
-| sunflower_1080p25 | -1.66 | -1.68 | -0.32 | -2.28 |
-| touchdown_pass_1080p | -1.21 | -2.37 | -0.53 | -0.86 |
-| tractor_1080p25 | -2.10 | -4.62 | -3.70 | -2.83 |
-| vidyo1_720p_60fps | -1.88 | -1.99 | +0.42 | -2.24 |
-| vidyo3_720p_60fps | -2.32 | -3.76 | -1.22 | -2.67 |
-
-## Analysis
-
-**Recommended model: `martell_mse`.** Same architecture as the original Martell, only the training loss differs (pure MSE vs the original `0.5*L1 + 0.15*MS-SSIM + 0.2*GradLoss + 0.15*Laplacian`). Beats the VVC-PPFF paper baseline on Y (-2.28 % vs -1.82 %) and U (-2.10 % vs -1.59 %), close on V (-1.90 % vs -2.54 %), and avoids the chroma regression that plagued the multi-term loss.
-
-**Why the original Martell loss destroyed chroma.** Three of its four loss terms are luminance-biased:
-
-- **MS-SSIM:** computes structural similarity using local mean/variance/covariance. Y has much stronger structure (edges, textures) than U/V, so the loss is dominated by Y improvements.
-- **Sobel gradient loss:** Y carries most of the high-frequency content; gradient magnitude on U/V is small in absolute terms, so the L1-on-gradients loss is again Y-dominated.
-- **Laplacian loss:** same story — second-order edges live mostly in Y.
-
-Only the L1 term (weight 0.5) treats channels equally. With the other 0.5 of the loss budget biasing toward Y, the optimiser learns to over-correct Y at the cost of chroma — most visibly at low QP (high-quality input), where there is no chroma noise to "denoise" but the model still pushes residual.
-
-**Why pure MSE fixes it.** `F.mse_loss(enhanced, original)` averages squared error across all channels with equal weight. Y still gets more gradient than chroma in absolute terms (because Y has higher per-pixel variance), but no loss term ignores chroma entirely. The model converges to a smaller, balanced residual that helps every channel.
-
-**The cost of fixing chroma.** Martell-MSE's Y improvement (-2.28 %) is only about half of the original Martell's Y (-4.45 %). The aggressive Y-only loss did genuinely buy more Y at low QP. Whether the trade is worth it depends on whether chroma is "free" — for a real codec evaluation it is not, since all three channels count in the bitstream. On the unbiased test set, Martell-MSE's *combined* RD performance is unambiguously better.
-
-**Snow-Wide retrained.** Same architecture as Martell, retrained from scratch with the same multi-term Y-biased loss, and shows the same chroma issue (worse, in fact: +12 % U BD-rate). Applying pure MSE to Snow-Wide would almost certainly produce results indistinguishable from Martell-MSE — they are the same architecture and same data.
-
-**QP22 behaviour.** All four models lose a little PSNR at QP22 (the highest-quality input). This is the model trying to "denoise" content that is already nearly noise-free; the only way it improves quality at QP22 is by approximating identity, which it cannot do exactly. This is a property of single-QP training (the dataset is QP=32 only); multi-QP training would likely fix it but is out of scope for this round.
-
-**Per-video pattern.** All models perform best on naturalistic moving content with smooth chroma (`rush_hour`, `pedestrian_area`, `tractor`) and worst on `controlled_burn_1080p` (high-frequency texture, fire) where they all regress. This is consistent with the literature: post-filters help most when there is structured signal under the noise.
-
+| Video | vvc_ppff | stenet_2024 | martell | snow_wide | martell_mse |
+|---|---|---|---|---|---|
+| Johnny_1280x720_60 | -1.46 | +0.00 | -2.10 | -1.41 | +0.01 |
+| controlled_burn_1080p | +0.56 | +0.00 | +1.66 | +2.72 | -0.31 |
+| pedestrian_area_1080p25 | -2.85 | +0.00 | -7.66 | -7.18 | -3.08 |
+| red_kayak_1080p | -0.30 | +0.00 | -3.50 | -2.89 | -1.10 |
+| rush_hour_1080p25 | -2.32 | +0.00 | -8.94 | -8.44 | -3.56 |
+| sunflower_1080p25 | -1.66 | +0.00 | -1.68 | -0.32 | -2.28 |
+| touchdown_pass_1080p | -1.21 | +0.00 | -2.37 | -0.53 | -0.86 |
+| tractor_1080p25 | -2.10 | +0.00 | -4.62 | -3.70 | -2.83 |
+| vidyo1_720p_60fps | -1.88 | +0.00 | -1.99 | +0.42 | -2.24 |
+| vidyo3_720p_60fps | -2.32 | +0.00 | -3.76 | -1.22 | -2.67 |
