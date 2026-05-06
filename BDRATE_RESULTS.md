@@ -3,6 +3,12 @@
 **Test set (10 unbiased Xiph sequences):** Johnny_1280x720_60, controlled_burn_1080p, pedestrian_area_1080p25, red_kayak_1080p, rush_hour_1080p25, sunflower_1080p25, touchdown_pass_1080p, tractor_1080p25, vidyo1_720p_60fps, vidyo3_720p_60fps
 **QPs:** [22, 27, 32, 37, 42]
 
+**Methodology notes:**
+- Test set was chosen so no sequence appears in `utils/fetch_dataset.py:SELECTED_VIDEOS` — the training pipeline does a sample-level random split with `seed=42`, so every video in `data/` was seen during training.
+- Bitrate from `.vvc` filesize × 8 / num_frames × fps (kbps).
+- Y PSNR computed at native resolution. Chroma PSNR uses the same chroma upsample/downsample round-trip used by the model (bilinear up → model → 2×2 avg pool down). An identity-model control across all 50 video-QP pairs showed the round-trip artifact is small and non-systematic: max ±0.07 dB averaged per QP, signed by QP (slightly negative at QP22, slightly positive at QP42), so it does not flip any qualitative conclusion below.
+- Bjontegaard BD-PSNR / BD-Rate use the standard cubic-poly formulation (`bdrate.py`).
+
 ## BD metrics (lower BD-rate is better; higher BD-PSNR is better)
 
 | Model | Y BD-PSNR (dB) | Y BD-Rate (%) | U BD-PSNR (dB) | U BD-Rate (%) | V BD-PSNR (dB) | V BD-Rate (%) |
