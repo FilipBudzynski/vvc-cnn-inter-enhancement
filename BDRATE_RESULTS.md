@@ -66,3 +66,26 @@
 | tractor_1080p25 | -2.10 | -4.62 | -3.70 | -2.83 |
 | vidyo1_720p_60fps | -1.88 | -1.99 | +0.42 | -2.24 |
 | vidyo3_720p_60fps | -2.32 | -3.76 | -1.22 | -2.67 |
+
+## Analysis
+
+**Recommended model: `martell_mse`.** Same architecture as the original Martell, only the training loss differs (pure MSE vs the original `0.5*L1 + 0.15*MS-SSIM + 0.2*GradLoss + 0.15*Laplacian`). Beats the VVC-PPFF paper baseline on Y (-2.28 % vs -1.82 %) and U (-2.10 % vs -1.59 %), close on V (-1.90 % vs -2.54 %), and avoids the chroma regression that plagued the multi-term loss.
+
+**Why the original Martell loss destroyed chroma.** Three of its four loss terms are luminance-biased:
+
+- **MS-SSIM:** computes structural similarity using local mean/variance/covariance. Y has much stronger structure (edges, textures) than U/V, so the loss is dominated by Y improvements.
+- **Sobel gradient loss:** Y carries most of the high-frequency content; gradient magnitude on U/V is small in absolute terms, so the L1-on-gradients loss is again Y-dominated.
+- **Laplacian loss:** same story — second-order edges live mostly in Y.
+
+Only the L1 term (weight 0.5) treats channels equally. With the other 0.5 of the loss budget biasing toward Y, the optimiser learns to over-correct Y at the cost of chroma — most visibly at low QP (high-quality input), where there is no chroma noise to "denoise" but the model still pushes residual.
+
+**Why pure MSE fixes it.** `F.mse_loss(enhanced, original)` averages squared error across all channels with equal weight. Y still gets more gradient than chroma in absolute terms (because Y has higher per-pixel variance), but no loss term ignores chroma entirely. The model converges to a smaller, balanced residual that helps every channel.
+
+**The cost of fixing chroma.** Martell-MSE's Y improvement (-2.28 %) is only about half of the original Martell's Y (-4.45 %). The aggressive Y-only loss did genuinely buy more Y at low QP. Whether the trade is worth it depends on whether chroma is "free" — for a real codec evaluation it is not, since all three channels count in the bitstream. On the unbiased test set, Martell-MSE's *combined* RD performance is unambiguously better.
+
+**Snow-Wide retrained.** Same architecture as Martell, retrained from scratch with the same multi-term Y-biased loss, and shows the same chroma issue (worse, in fact: +12 % U BD-rate). Applying pure MSE to Snow-Wide would almost certainly produce results indistinguishable from Martell-MSE — they are the same architecture and same data.
+
+**QP22 behaviour.** All four models lose a little PSNR at QP22 (the highest-quality input). This is the model trying to "denoise" content that is already nearly noise-free; the only way it improves quality at QP22 is by approximating identity, which it cannot do exactly. This is a property of single-QP training (the dataset is QP=32 only); multi-QP training would likely fix it but is out of scope for this round.
+
+**Per-video pattern.** All models perform best on naturalistic moving content with smooth chroma (`rush_hour`, `pedestrian_area`, `tractor`) and worst on `controlled_burn_1080p` (high-frequency texture, fire) where they all regress. This is consistent with the literature: post-filters help most when there is structured signal under the noise.
+
