@@ -194,6 +194,19 @@ def load_stenet(ckpt_path: str) -> torch.nn.Module:
     return model
 
 
+def load_bi_conv_lstm(ckpt_path: str) -> torch.nn.Module:
+    from enhancer.models.bi_conv_lstm import BiConvLSTMEnhancer
+    class Cfg:
+        base_channels = 24
+        kernel_size = 5
+        cnn_layers = 5
+    model = BiConvLSTMEnhancer(Cfg()).to(DEVICE)
+    state = torch.load(ckpt_path, map_location=DEVICE, weights_only=True)
+    model.load_state_dict(state)
+    model.eval()
+    return model
+
+
 def run_model(model: torch.nn.Module, kind: str, prev: torch.Tensor,
               curr: torch.Tensor, nxt: torch.Tensor, meta: torch.Tensor) -> torch.Tensor:
     """Returns enhanced [3,H,W] float tensor in [0,1]."""
@@ -208,6 +221,9 @@ def run_model(model: torch.nn.Module, kind: str, prev: torch.Tensor,
             # STENet returns (enhanced, synth); we use enhanced.
             enhanced, _ = model(c, p, n, m)
             out = enhanced.clamp(0, 1)
+        elif kind == "bi_conv_lstm":
+            # Bi-ConvLSTM ignores metadata (paper's vanilla ConvLSTM baseline)
+            out = model(c, p, n, None).clamp(0, 1)
         else:
             out = model(c, p, n, m).clamp(0, 1)
     return out[0]
@@ -329,7 +345,7 @@ def aggregate_and_bd(per_video: dict, qps: list[int]) -> dict:
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--model", choices=["martell", "snow_wide", "vvc_ppff", "stenet"], required=True)
+    parser.add_argument("--model", choices=["martell", "snow_wide", "vvc_ppff", "stenet", "bi_conv_lstm"], required=True)
     parser.add_argument("--checkpoint", required=True)
     parser.add_argument("--qps", default="22,27,32,37,42")
     parser.add_argument("--orig-dir", type=Path, default=Path("data_eval"))
@@ -351,7 +367,8 @@ def main():
     print(f"Device: {DEVICE}, Model: {args.model}, Checkpoint: {args.checkpoint}")
 
     loaders = {"martell": load_martell, "snow_wide": load_snow_wide,
-               "vvc_ppff": load_vvc_ppff, "stenet": load_stenet}
+               "vvc_ppff": load_vvc_ppff, "stenet": load_stenet,
+               "bi_conv_lstm": load_bi_conv_lstm}
     model = loaders[args.model](args.checkpoint)
 
     per_video = {}
