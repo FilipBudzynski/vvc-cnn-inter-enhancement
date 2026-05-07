@@ -76,6 +76,8 @@ def main():
     p.add_argument("--save-every", type=int, default=20)
     p.add_argument("--chroma-weight", type=float, default=1.0,
                    help="multiplier on the explicit chroma MSE term")
+    p.add_argument("--resume", type=str, default=None,
+                   help="path to checkpoint to fine-tune from")
     args = p.parse_args()
 
     torch.manual_seed(42); torch.cuda.manual_seed_all(42)
@@ -95,6 +97,10 @@ def main():
                             num_workers=args.num_workers, pin_memory=True)
 
     model = SnowWideEnhancer(Cfg()).to(DEVICE)
+    if args.resume:
+        state = torch.load(args.resume, map_location=DEVICE, weights_only=True)
+        model.load_state_dict(state)
+        print(f"Resumed from {args.resume}")
     print(f"Params: {sum(x.numel() for x in model.parameters()):,}")
     print(f"Loss = Y_multi_term + {args.chroma_weight} * MSE(chroma)")
 
