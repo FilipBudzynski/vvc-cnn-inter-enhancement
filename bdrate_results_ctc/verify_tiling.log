@@ -1,0 +1,7 @@
+[ra] videos=['FourPeople_1280x720_60', 'Johnny_1280x720_60', 'KristenAndSara_1280x720_60', 'controlled_burn_1080p', 'pedestrian_area_1080p25', 'red_kayak_1080p', 'rush_hour_1080p25', 'sunflower_1080p25', 'touchdown_pass_1080p', 'tractor_1080p25', 'vidyo1_720p_60fps', 'vidyo3_720p_60fps'] qps=[22, 27, 32, 37, 42] models=['martell_hybrid', 'martell_hybrid_nometa', 'martell_unet', 'vvc_ppff', 'stenet_2024', 'bi_conv_lstm'] device=cuda
+[verify-tiling] martell_hybrid         max|full-tiled| = 2.92e-05 (float, [0,1]); differing 8-bit samples over 6 frames: 394
+[verify-tiling] martell_hybrid_nometa  max|full-tiled| = 1.33e-05 (float, [0,1]); differing 8-bit samples over 6 frames: 126
+[verify-tiling] martell_unet           max|full-tiled| = 1.86e-05 (float, [0,1]); differing 8-bit samples over 6 frames: 161
+[verify-tiling] vvc_ppff               max|full-tiled| = 0.00e+00 (float, [0,1]); differing 8-bit samples over 6 frames: 0
+[verify-tiling] stenet_2024            max|full-tiled| = 0.00e+00 (float, [0,1]); differing 8-bit samples over 6 frames: 0
+[verify-tiling] bi_conv_lstm           max|full-tiled| = 0.00e+00 (float, [0,1]); differing 8-bit samples over 6 frames: 0
