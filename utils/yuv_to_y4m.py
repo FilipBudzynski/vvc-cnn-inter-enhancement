@@ -1,9 +1,5 @@
 #!/usr/bin/env python3
-"""
-YUV to Y4M Conversion Utility
-
-Converts YUV420 files to Y4M format for playback compatibility.
-"""
+"""YUV to Y4M Conversion Utility"""
 
 import subprocess
 import argparse
@@ -11,16 +7,7 @@ from pathlib import Path
 
 
 def yuv_to_y4m(input_file: str, output_file: str, width: int, height: int, fps: int = 30):
-    """
-    Convert YUV420 file to Y4M format using ffmpeg.
-    
-    Args:
-        input_file: Input YUV file path
-        output_file: Output Y4M file path  
-        width: Video width
-        height: Video height
-        fps: Frame rate (default: 30)
-    """
+    """Convert YUV420 file to Y4M format using ffmpeg."""
     cmd = [
         "ffmpeg",
         "-f", "rawvideo",

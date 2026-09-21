@@ -38,13 +38,6 @@ class VTMDecoder(Decoder):
             "--OutputBitDepth=8",  # Ensure 8-bit output to match input
         ]
 
-        # subprocess.run(
-        #     cmd,
-        #     stdout=subprocess.DEVNULL,
-        #     stderr=subprocess.PIPE,
-        #     text=True,
-        #     check=True,
-        # )
         try:
             subprocess.run(cmd, capture_output=True, text=True, check=True)
         except subprocess.CalledProcessError as e:

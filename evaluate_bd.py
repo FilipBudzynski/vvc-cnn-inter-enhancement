@@ -39,8 +39,6 @@ FEATURE_ORDER = ["QP", "PredMode", "Depth", "Boundary",
                  "MVL0_X", "MVL0_Y", "MVL1_X", "MVL1_Y", "FrameType"]
 
 
-# ---------- I/O helpers ----------
-
 def parse_info(info_path: Path) -> dict:
     text = info_path.read_text()
     width = int(re.search(r"^Width\s*:\s+(\d+)", text, re.M).group(1))
@@ -81,16 +79,12 @@ def read_yuv_planes(path: Path, width: int, height: int) -> tuple[np.ndarray, ..
     return np.stack(Y), np.stack(U), np.stack(V)
 
 
-# ---------- PSNR ----------
-
 def psnr_uint8(a: np.ndarray, b: np.ndarray) -> float:
     """PSNR for two uint8 arrays. Returns 100 if MSE=0."""
     a = a.astype(np.float64); b = b.astype(np.float64)
     mse = np.mean((a - b) ** 2)
     return 100.0 if mse == 0 else 10.0 * np.log10(255.0 ** 2 / mse)
 
-
-# ---------- Feature generation ----------
 
 def normalize_feature(name: str, arr: np.ndarray) -> torch.Tensor:
     t = torch.from_numpy(arr).float()
@@ -123,10 +117,8 @@ def parse_csv_cached(csv_path: Path) -> dict:
     return tokens
 
 
-# ---------- Frame conversion ----------
-
 def to_full_res_chw(y: np.ndarray, u: np.ndarray, v: np.ndarray, height: int, width: int) -> torch.Tensor:
-    """uint8 native YUV420 → float [3,H,W] in [0,1] with chroma bilinearly upsampled."""
+    """uint8 native YUV420 -> float [3,H,W] in [0,1] with chroma bilinearly upsampled."""
     yt = torch.from_numpy(y).float() / 255.0
     ut = torch.from_numpy(u).float() / 255.0
     vt = torch.from_numpy(v).float() / 255.0
@@ -136,7 +128,7 @@ def to_full_res_chw(y: np.ndarray, u: np.ndarray, v: np.ndarray, height: int, wi
 
 
 def from_full_res_chw_to_planes(t: torch.Tensor) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
-    """[3,H,W] in [0,1] → (Y[H,W], U[H/2,W/2], V[H/2,W/2]) uint8 (chroma area-downsampled)."""
+    """[3,H,W] in [0,1] -> (Y[H,W], U[H/2,W/2], V[H/2,W/2]) uint8 (chroma area-downsampled)."""
     y = (t[0].clamp(0, 1) * 255).round().to(torch.uint8).cpu().numpy()
     u_full = t[1].clamp(0, 1)
     v_full = t[2].clamp(0, 1)
@@ -147,8 +139,6 @@ def from_full_res_chw_to_planes(t: torch.Tensor) -> tuple[np.ndarray, np.ndarray
     v = (v_half * 255).round().to(torch.uint8).cpu().numpy()
     return y, u, v
 
-
-# ---------- Model loading ----------
 
 def load_martell(ckpt_path: str) -> torch.nn.Module:
     from enhancer.models.snow_wide import SnowWideEnhancer
@@ -288,8 +278,6 @@ def run_model(model: torch.nn.Module, kind: str, prev: torch.Tensor,
     return out[0]
 
 
-# ---------- Eval per video ----------
-
 def evaluate_video_qp(video: str, qp: int, args, model, kind: str) -> dict:
     width = height = None
     info = parse_info(args.orig_dir / f"{video}.y4m.info")
@@ -333,9 +321,7 @@ def evaluate_video_qp(video: str, qp: int, args, model, kind: str) -> dict:
         enh_psnr_u.append(psnr_uint8(U_o[i], u_e))
         enh_psnr_v.append(psnr_uint8(V_o[i], v_e))
 
-    # NOTE: enhanced PSNR averages over interior frames only (POCs 1..N-2),
-    # while anchor PSNR averages all frames. This is consistent with how the
-    # model is actually used — it can't enhance the boundary frames.
+    # enhanced PSNR is averaged over interior frames only (POCs 1..N-2)
     return {
         "qp": qp,
         "n_frames": n_frames,
@@ -362,8 +348,6 @@ def evaluate_video_qp(video: str, qp: int, args, model, kind: str) -> dict:
         },
     }
 
-
-# ---------- Aggregation + BD math ----------
 
 def aggregate_and_bd(per_video: dict, qps: list[int]) -> dict:
     """Build the model-level RD curve by averaging (rate, psnr) across videos per QP, then BD-vs-anchor."""
@@ -398,8 +382,6 @@ def aggregate_and_bd(per_video: dict, qps: list[int]) -> dict:
         }
     return {"per_qp": rd_mean, "bd": bd}
 
-
-# ---------- CLI ----------
 
 def main():
     from gpu_lock import acquire_gpu

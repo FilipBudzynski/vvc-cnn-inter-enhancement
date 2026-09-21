@@ -1,14 +1,4 @@
-"""
-Train BiConvLSTM (paper-architecture LSTM baseline for VVC enhancement).
-
-Topology and hyperparameters mirror the QG-ConvLSTM ConvLSTM-baseline
-(Yang et al., ICME 2019, arXiv:1903.04596) — see enhancer/models/bi_conv_lstm.py.
-Training recipe matches what we used for the other Martell variants
-(VVC-PPFF / Martell-MSE / Martell-Hybrid) so leaderboard numbers are
-directly comparable: pure MSE loss, Adam(lr=1e-4, wd=1e-4),
-MultiStepLR [50, 100, 150, 200, 300], batch 8, patch 132, 200 epochs,
-data/precomputed_martell.
-"""
+"""Train BiConvLSTM (paper-architecture LSTM baseline for VVC enhancement)."""
 
 import argparse
 import os

@@ -1,5 +1,4 @@
-"""
-VVC-PPFF: Versatile Video Coding-Post Processing Feature Fusion
+"""VVC-PPFF: Versatile Video Coding-Post Processing Feature Fusion
 Implemented per paper: "Versatile Video Coding-Post Processing Feature Fusion"
 - 4-channel input (YUV 3ch + QP map 1ch)
 - 16 Feature Extraction blocks with 128 channels each
@@ -60,8 +59,7 @@ class VVCPPFF(nn.Module):
         # Final feature aggregation: 3x3 conv
         self.final_conv = nn.Conv2d(base_channels, base_channels, 3, padding=1)
         
-        # Output: 1x1 conv to get residual, Tanh activation
-        # Final 1x1 conv + Tanh (per paper line 519)
+        # 1x1 conv + Tanh residual head
         self.output_conv_pre = nn.Conv2d(base_channels, base_channels, 1)
         self.tanh = nn.Tanh()
         self.output_conv_post = nn.Conv2d(base_channels, 3, 1)

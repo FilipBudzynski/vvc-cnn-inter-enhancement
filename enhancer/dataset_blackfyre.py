@@ -1,8 +1,4 @@
-"""
-Blackfyre Dataset - loads neighboring frames with enhanced metadata
-
-Loads: F-1, F0, F+1 frames + enhanced metadata (16 channels)
-"""
+"""Blackfyre Dataset - loads neighboring frames with enhanced metadata"""
 
 import random
 import torch

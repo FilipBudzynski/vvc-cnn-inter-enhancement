@@ -1,11 +1,7 @@
-"""
-Post-hoc sync of training runs to W&B by parsing the text logs my
+"""Post-hoc sync of training runs to W&B by parsing the text logs my
 training drivers produced (martell_mse_train.log, martell_hybrid_train.log,
 etc.). I didn't bake wandb into those drivers, so this is the only
 way to reconstruct runs without re-training.
-
-Each log line looks like:
-  epoch  50  loss=0.04226 (Y=...)  in=37.080  enh=37.547  ΔY=+0.6896  ΔU=+0.0100  ΔV=+0.0232  lr=1.0e-05  (62s)
 
 Usage:
     python sync_to_wandb.py --log martell_hybrid_train.log --name martell-hybrid --project vvc-cnn-inter
@@ -19,9 +15,7 @@ from pathlib import Path
 import wandb
 
 
-# Tolerant regex — matches both train_martell_mse / train_snow_wide_9ch /
-# train_stenet (which has a different loss-decomposition format) and
-# train_martell_hybrid logs.
+# tolerant regex: matches the log formats of all training drivers
 LINE_RE = re.compile(
     r"epoch\s+(?P<epoch>\d+)\s+"
     r"loss=(?P<loss>[\d.e+-]+)"
@@ -69,7 +63,7 @@ RUNS = [
      "plane only, plus pure MSE on chroma (chroma_weight=1.0)."),
     ("martell_hybrid_ft_train.log", "martell-hybrid-ft",
      "Fine-tune of martell_hybrid_best.pt with chroma_weight=50, lr=1e-5, "
-     "60 epochs — try to push chroma improvement without losing Y."),
+     "60 epochs: try to push chroma improvement without losing Y."),
     ("snow_wide_9ch_train.log", "snow-wide-9ch",
      "Snow-Wide retrained with metadata_channels=9 (matching Martell). "
      "Original 19-channel feature recipe was unrecoverable."),
@@ -81,7 +75,7 @@ RUNS = [
 def sync_run(log_path: Path, name: str, notes: str, project: str, mode: str):
     rows = parse_log(log_path)
     if not rows:
-        print(f"  no parsable epoch lines in {log_path} — skipping")
+        print(f"  no parsable epoch lines in {log_path}: skipping")
         return
     run = wandb.init(project=project, name=name, notes=notes, mode=mode, reinit=True)
     for row in rows:

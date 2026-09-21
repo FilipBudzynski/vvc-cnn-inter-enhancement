@@ -1,14 +1,7 @@
-"""
-Train STENet (paper architecture, see enhancer/models/stenet_2024.py)
+"""Train STENet (paper architecture, see enhancer/models/stenet_2024.py)
 on the same 9-ch precomputed_martell dataset, using the same
 optimiser/schedule/loss as VVC-PPFF and Martell-MSE so the comparison
 on the unbiased test set is apples-to-apples.
-
-Total loss = MSE(enhanced, original) + 0.1 * MSE(synth, original).
-The synthesis branch is auxiliary — the small 0.1 weight prevents it
-from dominating training while still encouraging the RFS stage to
-produce a useful intermediate. Without it the synthesis sub-network
-gets no direct gradient and degenerates.
 """
 
 import argparse

@@ -1,24 +1,4 @@
-"""
-STENet (2024): Space-Time Enhancement Network — clean implementation.
-
-Based on:
-  "Joint Reference Frame Synthesis and Post Filter Enhancement for VVC"
-  (arXiv:2404.18058)
-
-Two-stage design:
-  1. RFS (Reference Frame Synthesis) — given a temporal triplet
-     (prev, curr, next) plus VVC decoder metadata, synthesise a
-     "virtual reference" — i.e. a clean estimate of curr drawn from
-     temporal neighbours.
-  2. PFE (Post-Filter Enhancement) — concatenate the original
-     reconstructed curr with the synthesised reference and metadata,
-     and learn a residual that improves quality.
-
-Forward signature follows the rest of the codebase:
-    model(curr, prev, next, metadata) -> enhanced
-where prev/curr/next are [B,3,H,W] in [0,1] and metadata is
-[B,9,H,W] (the same 9-channel stack used by Martell / Snow-Wide).
-"""
+"""STENet (2024): Space-Time Enhancement Network: clean implementation."""
 
 import torch
 import torch.nn as nn
@@ -36,7 +16,7 @@ class ResBlock(nn.Module):
 
 
 class RFS(nn.Module):
-    """Reference Frame Synthesis — produce a clean estimate of the current
+    """Reference Frame Synthesis: produce a clean estimate of the current
     frame from its temporal neighbours."""
 
     def __init__(self, base_channels: int = 64, metadata_channels: int = 9, num_blocks: int = 4):
@@ -50,13 +30,12 @@ class RFS(nn.Module):
         x = torch.cat([prev, curr, nxt, meta], dim=1)
         f = F.relu(self.head(x), inplace=False)
         f = self.body(f)
-        # Residual on the current reconstruction so the network only has
-        # to learn the correction toward "clean curr".
+        # residual on the current reconstruction
         return (curr + self.out(f)).clamp(0, 1)
 
 
 class PFE(nn.Module):
-    """Post-Filter Enhancement — fuse the reconstructed current frame
+    """Post-Filter Enhancement: fuse the reconstructed current frame
     with the RFS-synthesised reference to produce the final output."""
 
     def __init__(self, base_channels: int = 64, metadata_channels: int = 9, num_blocks: int = 6):
@@ -84,9 +63,7 @@ class STENet2024(nn.Module):
     def forward(self, curr, prev, nxt, meta):
         synth = self.rfs(curr, prev, nxt, meta)
         enhanced = self.pfe(curr, synth, meta)
-        # Returning (enhanced, synth) lets the trainer apply a second loss
-        # on the synthesis stage. evaluate_bd.py only needs `enhanced`, so
-        # we pack it as a tuple — caller picks the first element.
+        # (enhanced, synth): the trainer applies a second loss on the synthesis stage
         return enhanced, synth
 
 

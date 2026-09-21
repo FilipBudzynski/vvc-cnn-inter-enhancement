@@ -1,5 +1,4 @@
-"""
-Snow-Wide - Snow with Wide Context Path
+"""Snow-Wide - Snow with Wide Context Path
 - Adds 7x7 depthwise conv for larger VVC block context
 - Additional pathway for global context
 - Designed for larger patches (256x256)
@@ -28,15 +27,13 @@ class WideContextModule(nn.Module):
     """7x7 depthwise convolution with dilation for wide context"""
     def __init__(self, channels: int):
         super().__init__()
-        # Depthwise 7x7 with dilation=2 - captures larger structures (VVC blocks)
-        # Effective receptive field: 7 + (7-1)*(2-1) = 13 pixels
+        # depthwise 7x7, dilation 2: receptive field of 13 px
         self.dw_conv = nn.Conv2d(channels, channels, 7, padding=6, groups=channels, dilation=2)
         self.bn = nn.BatchNorm2d(channels)
         self.conv_1x1 = nn.Conv2d(channels, channels, 1)
         self.relu = nn.PReLU()
         
-        # Zero-init residual branch so it starts near identity
-        # Prevents amplification of random features at initialization
+        # zero-init residual branch so it starts near identity
         nn.init.zeros_(self.conv_1x1.weight)
         nn.init.zeros_(self.conv_1x1.bias)
         

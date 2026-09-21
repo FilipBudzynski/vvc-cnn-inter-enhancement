@@ -1,12 +1,4 @@
-"""
-Bjontegaard BD-PSNR and BD-Rate (G. Bjontegaard, VCEG-M33, 2001).
-
-Standard form: cubic polynomial fit in log10(rate) ↔ PSNR space, integrated
-analytically over the overlapping interval.
-
-Reference: https://www.itu.int/wftp3/av-arch/video-site/0104_Aus/VCEG-M33.doc
-Implementation independently verified against the JVET reference implementation.
-"""
+"""Bjontegaard BD-PSNR and BD-Rate (G. Bjontegaard, VCEG-M33, 2001)."""
 
 import numpy as np
 
@@ -73,13 +65,13 @@ def bd_rate(rates_a, psnrs_a, rates_b, psnrs_b) -> float:
 
 
 if __name__ == "__main__":
-    # Sanity check: same curve → 0 dB BD-PSNR, 0% BD-rate.
+    # Sanity check: same curve -> 0 dB BD-PSNR, 0% BD-rate.
     r = [100, 200, 400, 800, 1600]
     p = [30.0, 33.0, 36.0, 39.0, 42.0]
     assert abs(bd_psnr(r, p, r, p)) < 1e-9
     assert abs(bd_rate(r, p, r, p)) < 1e-9
 
-    # Test curve uniformly +1 dB → BD-PSNR ≈ +1 dB
+    # Test curve uniformly +1 dB -> BD-PSNR ~ +1 dB
     p2 = [v + 1.0 for v in p]
     assert abs(bd_psnr(r, p, r, p2) - 1.0) < 1e-6, bd_psnr(r, p, r, p2)
     print(f"smoke ok: BD-PSNR(+1dB)={bd_psnr(r,p,r,p2):.4f}, "

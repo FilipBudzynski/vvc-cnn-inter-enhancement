@@ -1,12 +1,4 @@
-"""
-Fetch unbiased test videos for BD-rate evaluation.
-
-These sequences are NOT in fetch_dataset.SELECTED_VIDEOS, so they were not
-seen during training/validation (training used a sample-level random split
-across all videos in data/, so any video in there is contaminated).
-
-Source: media.xiph.org/video/derf/y4m
-"""
+"""Fetch unbiased test videos for BD-rate evaluation."""
 
 import argparse
 import os
@@ -21,8 +13,7 @@ BASE_URL = "https://media.xiph.org/video/derf/y4m/"
 DEFAULT_FOLDER = "data_eval"
 DEFAULT_FRAMES = 64
 
-# Diverse content NOT in training set:
-# Class E (talking heads, professional) and Class B-style 1080p (motion, texture).
+# content not in the training set: class E and 1080p class-B style
 EVAL_VIDEOS = [
     "Johnny_1280x720_60.y4m",          # Class E talking head
     "vidyo1_720p_60fps.y4m",            # Class E news

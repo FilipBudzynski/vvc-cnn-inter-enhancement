@@ -95,8 +95,7 @@ class TrainerModule(pl.LightningModule):
         return total_loss, (mse_loss, l1_loss, ssim_loss, ms_ssim_loss)
 
     def training_step(self, batch: Any, _batch_idx: int) -> torch.Tensor:
-        # New format: (yuv, original, metadata, info)
-        # Legacy format: (x_concat, original, _)
+        # new format: (yuv, original, metadata, info); legacy: (x_concat, original, _)
         if len(batch) >= 4:
             yuv, original, metadata, info = batch
             # SOTA mode: YUV + metadata separately

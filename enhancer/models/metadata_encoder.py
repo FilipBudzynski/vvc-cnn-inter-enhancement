@@ -1,5 +1,4 @@
-"""
-SOTA Metadata Encoder - treats metadata as guidance, not input channels
+"""SOTA Metadata Encoder - treats metadata as guidance, not input channels
 Based on MetaBit (WACV 2024) and CPGA (CVPR 2024)
 """
 import torch

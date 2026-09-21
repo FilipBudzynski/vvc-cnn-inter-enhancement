@@ -1,16 +1,4 @@
-"""
-Snow-Wide retraining on the existing 9-channel precomputed martell dataset.
-
-The original snow-wide-gradient checkpoint expected 19-channel metadata, but
-no precompute script in any branch produces 19 channels — that recipe is
-unrecoverable. This script retrains Snow-Wide with metadata_channels=9 (same
-as Martell) so it can be fairly evaluated against Martell and VVC-PPFF.
-
-Loss matches the original snow-wide-gradient training:
-    0.5*L1 + 0.15*MS-SSIM + 0.2*GradLoss + 0.15*Laplacian
-Schedule: Adam(lr=1e-4, wd=1e-4), MultiStepLR milestones=[50, 100, 150]
-Data: data/precomputed_martell (the only 9-ch precomputed set we have).
-"""
+"""Snow-Wide retraining on the existing 9-channel precomputed martell dataset."""
 
 import argparse
 import os

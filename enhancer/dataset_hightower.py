@@ -1,8 +1,4 @@
-"""
-Hightower Dataset - loads neighboring frames for inter-frame enhancement
-
-Loads: F-1, F0, F+1 frames + motion vectors + metadata
-"""
+"""Hightower Dataset - loads neighboring frames for inter-frame enhancement"""
 
 import random
 import torch

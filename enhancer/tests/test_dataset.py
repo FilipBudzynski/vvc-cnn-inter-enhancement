@@ -36,8 +36,7 @@ def test_vtm_dataset():
     print(f"Input Shape: {x.shape}")  # Should be [10, 128, 128]
     print(f"Target Shape: {y.shape}")  # Should be [3, 128, 128]
 
-    # 2. Extract channels for plotting
-    # Channels 0,1,2 are Y, U, V
+    # channels 0,1,2 are Y, U, V
     dec_y = x[0].numpy()
     dec_u = x[1].numpy()
     dec_v = x[2].numpy()

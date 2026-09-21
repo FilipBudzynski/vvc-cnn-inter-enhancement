@@ -1,13 +1,4 @@
-"""
-Encode + decode the unbiased eval set (data_eval/) at 5 QPs.
-
-Reuses encoder.manager.EncoderManager (vvenc) and decoder.manager.DecoderManager
-(VTM analyser). Writes:
-  output_eval/encoded/{video}_QP{qp}.vvc        (bitstream)
-  output_eval/encoded/{video}_QP{qp}_rec.yuv    (vvenc reconstruction)
-  output_eval/decoded/{video}_QP{qp}.csv        (VTM trace)
-  output_eval/decoded/{video}_QP{qp}_vtm_rec.yuv (VTM reconstruction)
-"""
+"""Encode + decode the unbiased eval set (data_eval/) at 5 QPs."""
 
 from pathlib import Path
 
@@ -58,8 +49,7 @@ if __name__ == "__main__":
     bitstreams = encode()
     print(f"\nGot {len(bitstreams)} bitstreams")
 
-    # The original prepare_dataset.py looped one bitstream at a time, which
-    # serialises decoding pointlessly. Decode all in one batch instead.
+    # decode all bitstreams in one batch
     print(f"\nDecoding all bitstreams with VTM...")
     decode(bitstreams)
     print("\nDone.")

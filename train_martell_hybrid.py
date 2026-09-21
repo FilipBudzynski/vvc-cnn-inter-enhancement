@@ -1,17 +1,7 @@
-"""
-Martell hybrid-loss retraining: combine the strong Y-focused loss from
+"""Martell hybrid-loss retraining: combine the strong Y-focused loss from
 the original Martell training (which got Y BD-rate -4.45 %) with an
 explicit chroma MSE term, so chroma gets direct gradient instead of
 being a side-effect of the L1 component.
-
-Total loss:
-    L_y     = 0.5*L1 + 0.15*MS-SSIM + 0.2*GradLoss + 0.15*Laplacian   (on Y plane)
-    L_uv    = MSE(U_pred, U_orig) + MSE(V_pred, V_orig)                (chroma only)
-    total   = L_y + chroma_weight * L_uv
-
-`chroma_weight` is the only knob; default 1.0 (chroma roughly as much
-gradient as Y per pixel, since L_uv is averaged over twice as many
-pixels as a single Y plane).
 """
 
 import argparse
@@ -57,9 +47,7 @@ def y_loss(enhanced_y: torch.Tensor, original_y: torch.Tensor) -> torch.Tensor:
     lap_o = F.conv2d(original_y, lap_kernel, padding=1)
     lap_loss = F.l1_loss(lap_e, lap_o)
 
-    # MS-SSIM expects 3-channel for default win_size; replicate Y to 3 channels
-    # so we can reuse pytorch_msssim. Result is the same as 1-channel MS-SSIM
-    # because each channel is identical.
+    # pytorch_msssim expects 3 channels: replicate Y
     ey3 = enhanced_y.expand(-1, 3, -1, -1)
     oy3 = original_y.expand(-1, 3, -1, -1)
     ms = ms_ssim(ey3, oy3, data_range=1.0, size_average=True, win_size=7)

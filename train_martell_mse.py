@@ -1,24 +1,4 @@
-"""
-Retrain Martell with pure MSE loss to recover chroma performance.
-
-The original Martell training used a luminance-biased loss
-(L1 + MS-SSIM + GradLoss + Laplacian). The MS-SSIM, Gradient, and
-Laplacian terms are dominated by the Y plane (Y has stronger edges
-and higher dynamic range than U/V), so the model under-weights chroma
-during training. Result: ~+0.21 dB Y at high QP but -1.1 dB U / -1.2 dB V
-at QP22 on the unbiased test set.
-
-VVC-PPFF — same data, same optimizer, same schedule — uses pure
-F.mse_loss(enhanced, original), which weights every pixel of Y/U/V
-equally. Result: smaller Y gain (-1.82 % BD-rate) but consistent
-chroma gains (-1.6 % U / -2.5 % V).
-
-This script trains Martell (the SnowWideEnhancer architecture with
-9-ch metadata) with pure MSE for 200 epochs. Everything else matches
-the original Martell / VVC-PPFF training driver:
-  Adam(lr=1e-4, wd=1e-4), MultiStepLR([50, 100, 150, 200, 300]),
-  batch=8, patch=132, data/precomputed_martell.
-"""
+"""Retrain Martell with pure MSE loss to recover chroma performance."""
 
 import argparse
 import os

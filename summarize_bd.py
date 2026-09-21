@@ -13,7 +13,7 @@ from pathlib import Path
 
 def fmt(x: float, unit: str = "") -> str:
     if x is None or (isinstance(x, float) and (x != x)):  # NaN check
-        return "—"
+        return "-"
     sign = "+" if x > 0 and unit == "dB" else ""
     return f"{sign}{x:.3f}{unit}" if unit == "dB" else f"{x:+.2f}{unit}"
 
@@ -50,7 +50,7 @@ def main():
 
     # Per-QP RD points
     for r in runs:
-        md.append(f"## {r['model']} — per-QP RD points (avg over videos)")
+        md.append(f"## {r['model']}: per-QP RD points (avg over videos)")
         md.append("")
         md.append("| QP | Bitrate (kbps) | Anchor Y/U/V (dB) | Enhanced Y/U/V (dB) | ΔY (dB) | ΔU (dB) | ΔV (dB) |")
         md.append("|---|---|---|---|---|---|---|")
@@ -93,7 +93,7 @@ def main():
                     val = bd_rate(rates, pa, rates, pe)
                     row.append(f"{val:+.2f}")
                 else:
-                    row.append("—")
+                    row.append("-")
             except Exception as e:
                 row.append(f"err: {e}")
         md.append("| " + " | ".join(row) + " |")

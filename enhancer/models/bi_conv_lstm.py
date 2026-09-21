@@ -1,27 +1,5 @@
-"""
-Bi-directional ConvLSTM enhancer — published-LSTM baseline for VVC
+"""Bi-directional ConvLSTM enhancer: published-LSTM baseline for VVC
 post-filter comparison against Martell.
-
-Architecture follows the structure of QG-ConvLSTM (Yang et al.,
-ICME 2019, https://arxiv.org/abs/1903.04596) with the
-ConvLSTMCell_orig (un-gated) variant — i.e. plain Bi-ConvLSTM, no
-quality-gated cell. The full quality gate would require:
-  - 22-frame input sequences (we only precomputed 3-frame triplets)
-  - 38-dim BRISQUE quality features (we have VVC metadata instead)
-  - PQF detection via a separate BiLSTM
-None of which fit our triplet dataset, so we use the paper's
-documented ConvLSTM baseline path.
-
-Topology (paper):
-  CNN encoder (5×5, 24 filters, 5 layers, ReLU)
-  ↓ time-distributed
-  Bi-ConvLSTM (5×5, 24 filters, peephole=False)
-  ↓ concat fwd/bwd → 48 channels
-  CNN decoder (5×5, 24 filters, 5 layers, last-layer→3 channels)
-  ↓ + residual on current frame
-
-Adaptations: 3 input channels (YUV) instead of 1 (Y); residual added
-on current frame so the model only learns the correction.
 """
 
 import torch
@@ -30,7 +8,7 @@ import torch.nn.functional as F
 
 
 class ConvLSTMCell(nn.Module):
-    """Standard ConvLSTM (Shi et al., NeurIPS 2015) — i, f, o, g gates."""
+    """Standard ConvLSTM (Shi et al., NeurIPS 2015): i, f, o, g gates."""
 
     def __init__(self, in_channels: int, hidden_channels: int, kernel_size: int = 5):
         super().__init__()
@@ -73,7 +51,7 @@ class TimeDistributedCNN(nn.Module):
         self.net = nn.Sequential(*layers)
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
-        # x: [B, T, C, H, W] → [B*T, C, H, W] → conv → reshape back
+        # x: [B, T, C, H, W] -> [B*T, C, H, W] -> conv -> reshape back
         b, t, c, h, w = x.shape
         x = self.net(x.reshape(b * t, c, h, w))
         return x.view(b, t, x.shape[1], h, w)
@@ -99,10 +77,6 @@ class BiConvLSTMEnhancer(nn.Module):
       base_channels: hidden width (paper = 24)
       kernel_size: conv kernel (paper = 5)
       cnn_layers: depth of encoder/decoder CNN stacks (paper = 5)
-
-    forward(curr, prev, next, metadata) -> enhanced [B, 3, H, W]
-    Metadata is accepted for API compatibility but ignored — the paper's
-    quality-gated variant requires 22-frame sequences which we don't have.
     """
 
     def __init__(self, config):

@@ -1,9 +1,5 @@
 #!/usr/bin/env python3
-"""
-YUV to macOS Video Format Conversion Utility
-
-Converts YUV420 files to macOS-compatible video formats (MP4/MOV).
-"""
+"""YUV to macOS Video Format Conversion Utility"""
 
 import subprocess
 import argparse
@@ -11,17 +7,7 @@ from pathlib import Path
 
 
 def yuv_to_macos_video(input_file: str, output_file: str, width: int, height: int, fps: int = 30, format: str = "mp4"):
-    """
-    Convert YUV420 file to macOS-compatible video format using ffmpeg.
-    
-    Args:
-        input_file: Input YUV file path
-        output_file: Output video file path
-        width: Video width
-        height: Video height
-        fps: Frame rate (default: 30)
-        format: Output format (mp4 or mov)
-    """
+    """Convert YUV420 file to macOS-compatible video format using ffmpeg."""
     cmd = [
         "ffmpeg",
         "-f", "rawvideo",
