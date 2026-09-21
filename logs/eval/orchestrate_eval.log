@@ -1,0 +1,157 @@
+=== Waiting for training (martell_hybrid_nometa) ===
+  Training done.
+=== Waiting for 5-model perceptual eval ===
+  Perceptual eval done.
+=== Running no-meta BD-rate + perceptual ===
+=== Full-frame BD-rate (720p subset) ===
+Videos (3): ['Johnny_1280x720_60', 'vidyo1_720p_60fps', 'vidyo3_720p_60fps']
+QPs: [22, 27, 32, 37, 42]
+Device: cuda, Model: martell_nometa, Checkpoint: checkpoints/martell_hybrid_nometa_best.pt
+martell_nometa:   0%|          | 0/15 [00:00<?, ?it/s]martell_nometa:   0%|          | 0/15 [00:23<?, ?it/s, v=Johnny_1280x72, qp=22, ΔY=-0.816]martell_nometa:   7%|▋         | 1/15 [00:23<05:32, 23.77s/it, v=Johnny_1280x72, qp=22, ΔY=-0.816]martell_nometa:   7%|▋         | 1/15 [00:45<05:32, 23.77s/it, v=Johnny_1280x72, qp=27, ΔY=-0.405]martell_nometa:  13%|█▎        | 2/15 [00:45<04:54, 22.62s/it, v=Johnny_1280x72, qp=27, ΔY=-0.405]martell_nometa:  13%|█▎        | 2/15 [01:07<04:54, 22.62s/it, v=Johnny_1280x72, qp=32, ΔY=-0.023]martell_nometa:  20%|██        | 3/15 [01:07<04:27, 22.28s/it, v=Johnny_1280x72, qp=32, ΔY=-0.023]martell_nometa:  20%|██        | 3/15 [01:29<04:27, 22.28s/it, v=Johnny_1280x72, qp=37, ΔY=+0.251]martell_nometa:  27%|██▋       | 4/15 [01:29<04:02, 22.02s/it, v=Johnny_1280x72, qp=37, ΔY=+0.251]martell_nometa:  27%|██▋       | 4/15 [01:50<04:02, 22.02s/it, v=Johnny_1280x72, qp=42, ΔY=+0.339]martell_nometa:  33%|███▎      | 5/15 [01:50<03:38, 21.89s/it, v=Johnny_1280x72, qp=42, ΔY=+0.339]martell_nometa:  33%|███▎      | 5/15 [02:12<03:38, 21.89s/it, v=vidyo1_720p_60, qp=22, ΔY=-1.165]martell_nometa:  40%|████      | 6/15 [02:12<03:17, 21.90s/it, v=vidyo1_720p_60, qp=22, ΔY=-1.165]martell_nometa:  40%|████      | 6/15 [02:34<03:17, 21.90s/it, v=vidyo1_720p_60, qp=27, ΔY=-0.525]martell_nometa:  47%|████▋     | 7/15 [02:34<02:55, 21.88s/it, v=vidyo1_720p_60, qp=27, ΔY=-0.525]martell_nometa:  47%|████▋     | 7/15 [02:56<02:55, 21.88s/it, v=vidyo1_720p_60, qp=32, ΔY=-0.000]martell_nometa:  53%|█████▎    | 8/15 [02:56<02:32, 21.80s/it, v=vidyo1_720p_60, qp=32, ΔY=-0.000]martell_nometa:  53%|█████▎    | 8/15 [03:17<02:32, 21.80s/it, v=vidyo1_720p_60, qp=37, ΔY=+0.288]martell_nometa:  60%|██████    | 9/15 [03:17<02:10, 21.71s/it, v=vidyo1_720p_60, qp=37, ΔY=+0.288]martell_nometa:  60%|██████    | 9/15 [03:39<02:10, 21.71s/it, v=vidyo1_720p_60, qp=42, ΔY=+0.382]martell_nometa:  67%|██████▋   | 10/15 [03:39<01:48, 21.70s/it, v=vidyo1_720p_60, qp=42, ΔY=+0.382]martell_nometa:  67%|██████▋   | 10/15 [04:01<01:48, 21.70s/it, v=vidyo3_720p_60, qp=22, ΔY=-0.761]martell_nometa:  73%|███████▎  | 11/15 [04:01<01:27, 21.85s/it, v=vidyo3_720p_60, qp=22, ΔY=-0.761]martell_nometa:  73%|███████▎  | 11/15 [04:23<01:27, 21.85s/it, v=vidyo3_720p_60, qp=27, ΔY=-0.237]martell_nometa:  80%|████████  | 12/15 [04:23<01:05, 21.79s/it, v=vidyo3_720p_60, qp=27, ΔY=-0.237]martell_nometa:  80%|████████  | 12/15 [04:44<01:05, 21.79s/it, v=vidyo3_720p_60, qp=32, ΔY=+0.209]martell_nometa:  87%|████████▋ | 13/15 [04:44<00:43, 21.71s/it, v=vidyo3_720p_60, qp=32, ΔY=+0.209]martell_nometa:  87%|████████▋ | 13/15 [05:06<00:43, 21.71s/it, v=vidyo3_720p_60, qp=37, ΔY=+0.391]martell_nometa:  93%|█████████▎| 14/15 [05:06<00:21, 21.71s/it, v=vidyo3_720p_60, qp=37, ΔY=+0.391]martell_nometa:  93%|█████████▎| 14/15 [05:28<00:21, 21.71s/it, v=vidyo3_720p_60, qp=42, ΔY=+0.362]martell_nometa: 100%|██████████| 15/15 [05:28<00:00, 21.68s/it, v=vidyo3_720p_60, qp=42, ΔY=+0.362]martell_nometa: 100%|██████████| 15/15 [05:28<00:00, 21.87s/it, v=vidyo3_720p_60, qp=42, ΔY=+0.362]
+
+Wrote bdrate_results/martell_hybrid_nometa_720p.json
+{
+  "Y": {
+    "bd_psnr_db": -0.1320073028343458,
+    "bd_rate_pct": 2.1942544039328604
+  },
+  "U": {
+    "bd_psnr_db": 0.018074166629432398,
+    "bd_rate_pct": -0.8315587989900508
+  },
+  "V": {
+    "bd_psnr_db": 0.06322586375700467,
+    "bd_rate_pct": -2.416875853997469
+  }
+}
+=== Patch BD-rate ===
+Patch eval (132x132). Videos (3): ['Johnny_1280x720_60', 'vidyo1_720p_60fps', 'vidyo3_720p_60fps']  QPs: [22, 27, 32, 37, 42]
+martell_nometa:   0%|          | 0/15 [00:00<?, ?it/s]martell_nometa:   0%|          | 0/15 [00:21<?, ?it/s, v=Johnny_1280x, qp=22, ΔY=-0.665]martell_nometa:   7%|▋         | 1/15 [00:21<04:56, 21.18s/it, v=Johnny_1280x, qp=22, ΔY=-0.665]martell_nometa:   7%|▋         | 1/15 [00:39<04:56, 21.18s/it, v=Johnny_1280x, qp=27, ΔY=-0.317]martell_nometa:  13%|█▎        | 2/15 [00:39<04:16, 19.74s/it, v=Johnny_1280x, qp=27, ΔY=-0.317]martell_nometa:  13%|█▎        | 2/15 [00:58<04:16, 19.74s/it, v=Johnny_1280x, qp=32, ΔY=+0.008]martell_nometa:  20%|██        | 3/15 [00:58<03:49, 19.16s/it, v=Johnny_1280x, qp=32, ΔY=+0.008]martell_nometa:  20%|██        | 3/15 [01:16<03:49, 19.16s/it, v=Johnny_1280x, qp=37, ΔY=+0.239]martell_nometa:  27%|██▋       | 4/15 [01:16<03:26, 18.79s/it, v=Johnny_1280x, qp=37, ΔY=+0.239]martell_nometa:  27%|██▋       | 4/15 [01:34<03:26, 18.79s/it, v=Johnny_1280x, qp=42, ΔY=+0.300]martell_nometa:  33%|███▎      | 5/15 [01:34<03:05, 18.51s/it, v=Johnny_1280x, qp=42, ΔY=+0.300]martell_nometa:  33%|███▎      | 5/15 [01:53<03:05, 18.51s/it, v=vidyo1_720p_, qp=22, ΔY=-1.030]martell_nometa:  40%|████      | 6/15 [01:53<02:47, 18.60s/it, v=vidyo1_720p_, qp=22, ΔY=-1.030]martell_nometa:  40%|████      | 6/15 [02:13<02:47, 18.60s/it, v=vidyo1_720p_, qp=27, ΔY=-0.463]martell_nometa:  47%|████▋     | 7/15 [02:13<02:32, 19.01s/it, v=vidyo1_720p_, qp=27, ΔY=-0.463]martell_nometa:  47%|████▋     | 7/15 [02:31<02:32, 19.01s/it, v=vidyo1_720p_, qp=32, ΔY=-0.003]martell_nometa:  53%|█████▎    | 8/15 [02:31<02:11, 18.75s/it, v=vidyo1_720p_, qp=32, ΔY=-0.003]martell_nometa:  53%|█████▎    | 8/15 [02:49<02:11, 18.75s/it, v=vidyo1_720p_, qp=37, ΔY=+0.269]martell_nometa:  60%|██████    | 9/15 [02:49<01:51, 18.63s/it, v=vidyo1_720p_, qp=37, ΔY=+0.269]martell_nometa:  60%|██████    | 9/15 [03:08<01:51, 18.63s/it, v=vidyo1_720p_, qp=42, ΔY=+0.349]martell_nometa:  67%|██████▋   | 10/15 [03:08<01:32, 18.53s/it, v=vidyo1_720p_, qp=42, ΔY=+0.349]martell_nometa:  67%|██████▋   | 10/15 [03:26<01:32, 18.53s/it, v=vidyo3_720p_, qp=22, ΔY=-0.734]martell_nometa:  73%|███████▎  | 11/15 [03:26<01:14, 18.63s/it, v=vidyo3_720p_, qp=22, ΔY=-0.734]martell_nometa:  73%|███████▎  | 11/15 [03:45<01:14, 18.63s/it, v=vidyo3_720p_, qp=27, ΔY=-0.290]martell_nometa:  80%|████████  | 12/15 [03:45<00:55, 18.56s/it, v=vidyo3_720p_, qp=27, ΔY=-0.290]martell_nometa:  80%|████████  | 12/15 [04:03<00:55, 18.56s/it, v=vidyo3_720p_, qp=32, ΔY=+0.148]martell_nometa:  87%|████████▋ | 13/15 [04:03<00:36, 18.45s/it, v=vidyo3_720p_, qp=32, ΔY=+0.148]martell_nometa:  87%|████████▋ | 13/15 [04:21<00:36, 18.45s/it, v=vidyo3_720p_, qp=37, ΔY=+0.403]martell_nometa:  93%|█████████▎| 14/15 [04:21<00:18, 18.36s/it, v=vidyo3_720p_, qp=37, ΔY=+0.403]martell_nometa:  93%|█████████▎| 14/15 [04:40<00:18, 18.36s/it, v=vidyo3_720p_, qp=42, ΔY=+0.408]martell_nometa: 100%|██████████| 15/15 [04:40<00:00, 18.34s/it, v=vidyo3_720p_, qp=42, ΔY=+0.408]martell_nometa: 100%|██████████| 15/15 [04:40<00:00, 18.67s/it, v=vidyo3_720p_, qp=42, ΔY=+0.408]
+
+Wrote bdrate_results/martell_hybrid_nometa_patch.json
+{
+  "Y": {
+    "bd_psnr_db": -0.11323740350099598,
+    "bd_rate_pct": 2.050561090374514
+  },
+  "U": {
+    "bd_psnr_db": 0.013079610651267615,
+    "bd_rate_pct": -0.6843531889423327
+  },
+  "V": {
+    "bd_psnr_db": 0.006575133980440739,
+    "bd_rate_pct": -0.26989878456086247
+  }
+}
+=== Perceptual (SSIM/MS-SSIM/LPIPS) ===
+Perceptual eval: martell_nometa on ['Johnny_1280x720_60', 'vidyo1_720p_60fps', 'vidyo3_720p_60fps']  QPs: [22, 27, 32, 37, 42]
+martell_nometa:   0%|          | 0/15 [00:00<?, ?it/s]martell_nometa:   0%|          | 0/15 [00:33<?, ?it/s, v=Johnny_1280x72, qp=22, Δssim=-0.0029, Δlpips=+0.0199]martell_nometa:   7%|▋         | 1/15 [00:33<07:46, 33.34s/it, v=Johnny_1280x72, qp=22, Δssim=-0.0029, Δlpips=+0.0199]martell_nometa:   7%|▋         | 1/15 [01:05<07:46, 33.34s/it, v=Johnny_1280x72, qp=27, Δssim=-0.0014, Δlpips=+0.0154]martell_nometa:  13%|█▎        | 2/15 [01:05<07:04, 32.68s/it, v=Johnny_1280x72, qp=27, Δssim=-0.0014, Δlpips=+0.0154]martell_nometa:  13%|█▎        | 2/15 [01:37<07:04, 32.68s/it, v=Johnny_1280x72, qp=32, Δssim=+0.0004, Δlpips=+0.0133]martell_nometa:  20%|██        | 3/15 [01:37<06:29, 32.45s/it, v=Johnny_1280x72, qp=32, Δssim=+0.0004, Δlpips=+0.0133]martell_nometa:  20%|██        | 3/15 [02:09<06:29, 32.45s/it, v=Johnny_1280x72, qp=37, Δssim=+0.0026, Δlpips=+0.0099]martell_nometa:  27%|██▋       | 4/15 [02:09<05:54, 32.21s/it, v=Johnny_1280x72, qp=37, Δssim=+0.0026, Δlpips=+0.0099]martell_nometa:  27%|██▋       | 4/15 [02:41<05:54, 32.21s/it, v=Johnny_1280x72, qp=42, Δssim=+0.0047, Δlpips=+0.0050]martell_nometa:  33%|███▎      | 5/15 [02:41<05:21, 32.17s/it, v=Johnny_1280x72, qp=42, Δssim=+0.0047, Δlpips=+0.0050]martell_nometa:  33%|███▎      | 5/15 [03:14<05:21, 32.17s/it, v=vidyo1_720p_60, qp=22, Δssim=-0.0030, Δlpips=+0.0295]martell_nometa:  40%|████      | 6/15 [03:14<04:51, 32.38s/it, v=vidyo1_720p_60, qp=22, Δssim=-0.0030, Δlpips=+0.0295]martell_nometa:  40%|████      | 6/15 [03:46<04:51, 32.38s/it, v=vidyo1_720p_60, qp=27, Δssim=-0.0010, Δlpips=+0.0216]martell_nometa:  47%|████▋     | 7/15 [03:46<04:18, 32.33s/it, v=vidyo1_720p_60, qp=27, Δssim=-0.0010, Δlpips=+0.0216]martell_nometa:  47%|████▋     | 7/15 [04:18<04:18, 32.33s/it, v=vidyo1_720p_60, qp=32, Δssim=+0.0015, Δlpips=+0.0176]martell_nometa:  53%|█████▎    | 8/15 [04:18<03:45, 32.23s/it, v=vidyo1_720p_60, qp=32, Δssim=+0.0015, Δlpips=+0.0176]martell_nometa:  53%|█████▎    | 8/15 [04:50<03:45, 32.23s/it, v=vidyo1_720p_60, qp=37, Δssim=+0.0039, Δlpips=+0.0136]martell_nometa:  60%|██████    | 9/15 [04:50<03:12, 32.15s/it, v=vidyo1_720p_60, qp=37, Δssim=+0.0039, Δlpips=+0.0136]martell_nometa:  60%|██████    | 9/15 [05:22<03:12, 32.15s/it, v=vidyo1_720p_60, qp=42, Δssim=+0.0065, Δlpips=+0.0085]martell_nometa:  67%|██████▋   | 10/15 [05:22<02:40, 32.13s/it, v=vidyo1_720p_60, qp=42, Δssim=+0.0065, Δlpips=+0.0085]martell_nometa:  67%|██████▋   | 10/15 [05:55<02:40, 32.13s/it, v=vidyo3_720p_60, qp=22, Δssim=-0.0013, Δlpips=+0.0169]martell_nometa:  73%|███████▎  | 11/15 [05:55<02:09, 32.31s/it, v=vidyo3_720p_60, qp=22, Δssim=-0.0013, Δlpips=+0.0169]martell_nometa:  73%|███████▎  | 11/15 [06:27<02:09, 32.31s/it, v=vidyo3_720p_60, qp=27, Δssim=-0.0000, Δlpips=+0.0119]martell_nometa:  80%|████████  | 12/15 [06:27<01:36, 32.28s/it, v=vidyo3_720p_60, qp=27, Δssim=-0.0000, Δlpips=+0.0119]martell_nometa:  80%|████████  | 12/15 [06:59<01:36, 32.28s/it, v=vidyo3_720p_60, qp=32, Δssim=+0.0022, Δlpips=+0.0091]martell_nometa:  87%|████████▋ | 13/15 [06:59<01:04, 32.21s/it, v=vidyo3_720p_60, qp=32, Δssim=+0.0022, Δlpips=+0.0091]martell_nometa:  87%|████████▋ | 13/15 [07:31<01:04, 32.21s/it, v=vidyo3_720p_60, qp=37, Δssim=+0.0045, Δlpips=+0.0064]martell_nometa:  93%|█████████▎| 14/15 [07:31<00:32, 32.14s/it, v=vidyo3_720p_60, qp=37, Δssim=+0.0045, Δlpips=+0.0064]martell_nometa:  93%|█████████▎| 14/15 [08:03<00:32, 32.14s/it, v=vidyo3_720p_60, qp=42, Δssim=+0.0070, Δlpips=+0.0041]martell_nometa: 100%|██████████| 15/15 [08:03<00:00, 32.08s/it, v=vidyo3_720p_60, qp=42, Δssim=+0.0070, Δlpips=+0.0041]martell_nometa: 100%|██████████| 15/15 [08:03<00:00, 32.24s/it, v=vidyo3_720p_60, qp=42, Δssim=+0.0070, Δlpips=+0.0041]
+
+Wrote bdrate_results/martell_hybrid_nometa_perceptual.json
+{
+  "anchor": {
+    "ssim": 0.9590896125121782,
+    "msssim": 0.9876552900319459,
+    "lpips_alex": 0.11487383994283856,
+    "lpips_vgg": 0.24775451329606832
+  },
+  "enhanced": {
+    "ssim": 0.9606591825844141,
+    "msssim": 0.9881009381304505,
+    "lpips_alex": 0.12838472498841183,
+    "lpips_vgg": 0.2668061237501842
+  },
+  "delta": {
+    "ssim": 0.001569570072235904,
+    "msssim": 0.0004456480985046696,
+    "lpips_alex": 0.013510885045573268,
+    "lpips_vgg": 0.01905161045411588
+  }
+}
+=== Rebuilding tables ===
+% BD-rate / BD-PSNR comparison on the 3-video JVET Class-E subset
+% (Johnny_1280x720_60, vidyo1_720p_60fps, vidyo3_720p_60fps),
+% 5 QPs (22/27/32/37/42), 64 frames each, VVenC v1.15 fast preset, ALF=0 SAO=0.
+% Metric: Bjontegaard BD-rate (%) and BD-PSNR (dB) vs. unfiltered VTM output.
+
+\begin{table}[h]
+\centering
+\caption{BD-rate (\%) i BD-PSNR (dB) na podzbiorze JVET Class-E (Johnny, vidyo1, vidyo3 -- 720p60 talking-head), 5 QPs (22/27/32/37/42).}
+\begin{tabular}{l|cc|cc|cc}
+\hline
+ & \multicolumn{2}{c|}{\textbf{Y}} & \multicolumn{2}{c|}{\textbf{U}} & \multicolumn{2}{c}{\textbf{V}} \\
+\textbf{Model} & rate & PSNR & rate & PSNR & rate & PSNR \\
+\hline
+Bi-ConvLSTM~\cite{deng2019bi} & $+0.00$\% & $+0.000$ & $-0.66$\% & $+0.014$ & $-2.40$\% & $+0.063$ \\
+STENet~\cite{zhang2024stenet} & $+0.00$\% & $+0.000$ & $-1.38$\% & $+0.030$ & $-2.48$\% & $+0.065$ \\
+VVC-PPFF~\cite{borowski2024vvcppff} & $\mathbf{-1.93}$\% & $\mathbf{+0.063}$ & $-1.62$\% & $+0.033$ & $-1.85$\% & $+0.045$ \\
+QG-ConvLSTM~\cite{yang2019qgconvlstm} & $+0.11$\% & $-0.004$ & $\mathbf{-2.03}$\% & $\mathbf{+0.043}$ & $\mathbf{-2.55}$\% & $\mathbf{+0.066}$ \\
+Martell-Hybrid (no metadata) & $+2.19$\% & $-0.132$ & $-0.83$\% & $+0.018$ & $-2.42$\% & $+0.063$ \\
+\textbf{Martell-Hybrid (proposed)} & $+1.00$\% & $-0.077$ & $-0.77$\% & $+0.017$ & $-2.48$\% & $+0.065$ \\
+\hline
+\end{tabular}
+\label{tab:bdrate_720p}
+\end{table}
+
+Wrote table_bdrate_720p.tex
+
+=== BD-rate (% — lower is better) / BD-PSNR (dB — higher is better) ===
+Model                                        Y rate     Y PSNR     U rate     U PSNR     V rate     V PSNR
+------------------------------------------------------------------------------------------------------
+Bi-ConvLSTM                                   +0.00     +0.000      -0.66     +0.014      -2.40     +0.063
+STENet                                        +0.00     +0.000      -1.38     +0.030      -2.48     +0.065
+VVC-PPFF                                      -1.93     +0.063      -1.62     +0.033      -1.85     +0.045
+QG-ConvLSTM                                   +0.11     -0.004      -2.03     +0.043      -2.55     +0.066
+Martell-Hybrid (no metadata)                  +2.19     -0.132      -0.83     +0.018      -2.42     +0.063
+Martell-Hybrid (proposed)                     +1.00     -0.077      -0.77     +0.017      -2.48     +0.065
+Anchor (VTM decoded, no enhancement):
+  SSIM=0.9591  MS-SSIM=0.9877  LPIPS-Alex=0.1149  LPIPS-VGG=0.2478
+
+% Perceptual quality metrics on the 3-video JVET Class-E 720p subset
+% (Johnny, vidyo1, vidyo3), 5 QPs (22/27/32/37/42), 64 frames each.
+% Metrics computed on Y plane (replicated to 3 channels for LPIPS/MS-SSIM).
+% Anchor = unfiltered VTM output. Delta = enhanced - anchor.
+% SSIM/MS-SSIM: higher is better (positive delta = improvement).
+% LPIPS: lower is better (NEGATIVE delta = improvement).
+
+\begin{table}[h]
+\centering
+\caption{Metryki percepcyjne (SSIM, MS-SSIM, LPIPS) na podzbiorze JVET Class-E (Johnny, vidyo1, vidyo3 -- 720p60). Pokazane wartoÅ›ci po wzmocnieniu oraz delta wzgl\k{e}dem nieprzefiltrowanego VTM. Dla SSIM/MS-SSIM wy\.zsze = lepsze; dla LPIPS ni\.zsze = lepsze.}
+\begin{tabular}{l|cc|cc|cc|cc}
+\hline
+ & \multicolumn{2}{c|}{\textbf{SSIM} $\uparrow$} & \multicolumn{2}{c|}{\textbf{MS-SSIM} $\uparrow$} & \multicolumn{2}{c|}{\textbf{LPIPS-Alex} $\downarrow$} & \multicolumn{2}{c}{\textbf{LPIPS-VGG} $\downarrow$} \\
+\textbf{Model} & enh & $\Delta$ & enh & $\Delta$ & enh & $\Delta$ & enh & $\Delta$ \\
+\hline
+VTM (anchor)            & 0.9591 & -- & 0.9877 & -- & 0.1149 & -- & 0.2478 & -- \\
+\hline
+Bi-ConvLSTM~\cite{deng2019bi} & 0.9591 & $+0.0000$ & 0.9877 & $+0.0000$ & 0.1149 & $+0.0000$ & 0.2478 & $+0.0000$ \\
+STENet~\cite{zhang2024stenet} & 0.9591 & $+0.0000$ & 0.9877 & $+0.0000$ & 0.1149 & $+0.0000$ & 0.2478 & $+0.0000$ \\
+VVC-PPFF~\cite{borowski2024vvcppff} & 0.9598 & $+0.0007$ & 0.9878 & $+0.0001$ & 0.1195 & $+0.0046$ & 0.2482 & $+0.0005$ \\
+QG-ConvLSTM~\cite{yang2019qgconvlstm} & 0.9591 & $-0.0000$ & 0.9877 & $-0.0000$ & 0.1148 & $-0.0000$ & 0.2476 & $-0.0001$ \\
+Martell-Hybrid (no metadata) & 0.9607 & $+0.0016$ & 0.9881 & $+0.0004$ & 0.1284 & $+0.0135$ & 0.2668 & $+0.0191$ \\
+\textbf{Martell-Hybrid (proposed)} & 0.9607 & $+0.0016$ & 0.9881 & $+0.0005$ & 0.1297 & $+0.0149$ & 0.2677 & $+0.0199$ \\
+\hline
+\end{tabular}
+\label{tab:perceptual_720p}
+\end{table}
+
+Wrote table_perceptual_720p.tex
+
+=== Summary (Y-channel, mean over 3 videos x 5 QPs x 62 frames) ===
+Model                                          SSIM    MS-SSIM    LPIPS-A    LPIPS-V
+--------------------------------------------------------------------------------------
+VTM (anchor)                                 0.9591     0.9877     0.1149     0.2478
+Bi-ConvLSTM                                  0.9591     0.9877     0.1149     0.2478
+  Δ vs anchor                               +0.0000    +0.0000    +0.0000    +0.0000
+STENet                                       0.9591     0.9877     0.1149     0.2478
+  Δ vs anchor                               +0.0000    +0.0000    +0.0000    +0.0000
+VVC-PPFF                                     0.9598     0.9878     0.1195     0.2482
+  Δ vs anchor                               +0.0007    +0.0001    +0.0046    +0.0005
+QG-ConvLSTM                                  0.9591     0.9877     0.1148     0.2476
+  Δ vs anchor                               -0.0000    -0.0000    -0.0000    -0.0001
+Martell-Hybrid (no metadata)                 0.9607     0.9881     0.1284     0.2668
+  Δ vs anchor                               +0.0016    +0.0004    +0.0135    +0.0191
+Martell-Hybrid (proposed)                    0.9607     0.9881     0.1297     0.2677
+  Δ vs anchor                               +0.0016    +0.0005    +0.0149    +0.0199
+=== DONE ===
+=== ALL DONE ===

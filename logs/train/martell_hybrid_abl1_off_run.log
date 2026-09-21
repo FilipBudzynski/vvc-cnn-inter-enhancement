@@ -1,0 +1,62 @@
+[gpu_lock] train martell_hybrid_abl1_off: acquired after 0.0 min
+[VTMOnlineDataset] train: 11829 triplets from 212 (video,QP) pairs
+[VTMOnlineDataset] val: 1315 triplets from 212 (video,QP) pairs
+[martell_hybrid_abl1_off] params=1,292,384 loss=hybrid wd=0.0 train=11829 val=1315
+epoch   0  loss=0.05766  dY=-0.2723 dU=-1.2169 dV=-1.1874  lr=1.0e-04  (217s)
+epoch   1  loss=0.04590  dY=-0.1322 dU=-0.5510 dV=-0.7043  lr=1.0e-04  (211s)
+epoch   2  loss=0.04541  dY=+0.0084 dU=-0.5396 dV=-0.4707  lr=1.0e-04  (211s)
+epoch   3  loss=0.04463  dY=+0.1731 dU=-0.4504 dV=-0.5736  lr=1.0e-04  (211s)
+epoch   4  loss=0.04389  dY=+0.2202 dU=-0.5751 dV=-2.2053  lr=1.0e-04  (211s)
+epoch   5  loss=0.04331  dY=+0.3521 dU=-0.2223 dV=-0.2441  lr=1.0e-04  (211s)
+epoch   6  loss=0.04289  dY=+0.3824 dU=-0.2922 dV=-0.3351  lr=1.0e-04  (211s)
+epoch   7  loss=0.04251  dY=+0.4703 dU=-0.1136 dV=-0.2184  lr=1.0e-04  (211s)
+epoch   8  loss=0.04224  dY=+0.5115 dU=-0.0966 dV=-0.0802  lr=1.0e-04  (211s)
+epoch   9  loss=0.04198  dY=+0.5716 dU=-0.0638 dV=-0.2054  lr=1.0e-04  (211s)
+epoch  10  loss=0.04173  dY=+0.5951 dU=-0.0424 dV=-0.1058  lr=1.0e-04  (211s)
+epoch  11  loss=0.04166  dY=+0.6245 dU=-0.0296 dV=-0.0479  lr=1.0e-04  (211s)
+epoch  12  loss=0.04150  dY=+0.6520 dU=-0.0277 dV=-0.0354  lr=1.0e-05  (211s)
+epoch  13  loss=0.04107  dY=+0.6924 dU=-0.0225 dV=-0.0353  lr=1.0e-05  (211s)
+epoch  14  loss=0.04100  dY=+0.6962 dU=-0.0207 dV=-0.0306  lr=1.0e-05  (211s)
+epoch  15  loss=0.04096  dY=+0.6992 dU=-0.0196 dV=-0.0264  lr=1.0e-05  (211s)
+epoch  16  loss=0.04099  dY=+0.7055 dU=-0.0176 dV=-0.0251  lr=1.0e-05  (211s)
+epoch  17  loss=0.04091  dY=+0.7084 dU=-0.0188 dV=-0.0264  lr=1.0e-05  (211s)
+epoch  18  loss=0.04094  dY=+0.7041 dU=-0.0214 dV=-0.0304  lr=1.0e-05  (211s)
+epoch  19  loss=0.04088  dY=+0.7246 dU=-0.0154 dV=-0.0224  lr=1.0e-05  (211s)
+epoch  20  loss=0.04091  dY=+0.7170 dU=-0.0175 dV=-0.0260  lr=1.0e-05  (211s)
+epoch  21  loss=0.04083  dY=+0.7183 dU=-0.0121 dV=-0.0202  lr=1.0e-05  (211s)
+epoch  22  loss=0.04087  dY=+0.7313 dU=-0.0134 dV=-0.0218  lr=1.0e-05  (211s)
+epoch  23  loss=0.04087  dY=+0.7351 dU=-0.0145 dV=-0.0229  lr=1.0e-05  (211s)
+epoch  24  loss=0.04078  dY=+0.7359 dU=-0.0158 dV=-0.0227  lr=1.0e-06  (211s)
+epoch  25  loss=0.04075  dY=+0.7412 dU=-0.0138 dV=-0.0227  lr=1.0e-06  (211s)
+epoch  26  loss=0.04066  dY=+0.7375 dU=-0.0144 dV=-0.0210  lr=1.0e-06  (211s)
+epoch  27  loss=0.04068  dY=+0.7358 dU=-0.0133 dV=-0.0235  lr=1.0e-06  (211s)
+epoch  28  loss=0.04076  dY=+0.7404 dU=-0.0152 dV=-0.0227  lr=1.0e-06  (211s)
+epoch  29  loss=0.04076  dY=+0.7425 dU=-0.0134 dV=-0.0214  lr=1.0e-06  (211s)
+epoch  30  loss=0.04080  dY=+0.7420 dU=-0.0122 dV=-0.0192  lr=1.0e-06  (211s)
+epoch  31  loss=0.04069  dY=+0.7438 dU=-0.0151 dV=-0.0236  lr=1.0e-06  (211s)
+epoch  32  loss=0.04069  dY=+0.7482 dU=-0.0143 dV=-0.0233  lr=1.0e-06  (211s)
+epoch  33  loss=0.04075  dY=+0.7496 dU=-0.0147 dV=-0.0224  lr=1.0e-06  (211s)
+epoch  34  loss=0.04076  dY=+0.7479 dU=-0.0121 dV=-0.0215  lr=1.0e-06  (211s)
+epoch  35  loss=0.04080  dY=+0.7353 dU=-0.0137 dV=-0.0214  lr=1.0e-06  (211s)
+epoch  36  loss=0.04066  dY=+0.7439 dU=-0.0125 dV=-0.0197  lr=1.0e-06  (211s)
+epoch  37  loss=0.04074  dY=+0.7385 dU=-0.0131 dV=-0.0200  lr=1.0e-07  (211s)
+epoch  38  loss=0.04076  dY=+0.7438 dU=-0.0141 dV=-0.0222  lr=1.0e-07  (211s)
+epoch  39  loss=0.04073  dY=+0.7396 dU=-0.0160 dV=-0.0227  lr=1.0e-07  (211s)
+epoch  40  loss=0.04075  dY=+0.7328 dU=-0.0109 dV=-0.0188  lr=1.0e-07  (211s)
+epoch  41  loss=0.04072  dY=+0.7443 dU=-0.0157 dV=-0.0240  lr=1.0e-07  (211s)
+epoch  42  loss=0.04076  dY=+0.7350 dU=-0.0118 dV=-0.0195  lr=1.0e-07  (211s)
+epoch  43  loss=0.04075  dY=+0.7482 dU=-0.0128 dV=-0.0213  lr=1.0e-07  (211s)
+epoch  44  loss=0.04078  dY=+0.7442 dU=-0.0145 dV=-0.0214  lr=1.0e-07  (211s)
+epoch  45  loss=0.04065  dY=+0.7362 dU=-0.0126 dV=-0.0200  lr=1.0e-07  (211s)
+/usr/lib/python3.14/multiprocessing/resource_tracker.py:475: UserWarning: resource_tracker: There appear to be 44 leaked semaphore objects to clean up at shutdown: {'/mp-7a5ma15y', '/mp-_o_bf1hq', '/mp-mux83oek', '/mp-f7rno1n2', '/mp-56whc_6d', '/mp-do63nwwu', '/mp-3v3zr_43', '/mp-qnemlz3k', '/mp-adxob_fk', '/mp-6errjpvi', '/mp-yk84ymd0', '/mp-w7vpigyh', '/mp-hd49tob5', '/mp-hezc2dsd', '/mp-x8cccviv', '/mp-ick5hp5d', '/mp-04u1g9rt', '/mp-w9c7ty9e', '/mp-8_ag3wsb', '/mp-i6bsapbb', '/mp-bx7hspy3', '/mp-slar2t59', '/mp-m2iut4ka', '/mp-ex3g0z29', '/mp-38fnfun3', '/mp-ccwulsew', '/mp-coivsutq', '/mp-zpk4adfl', '/mp-9ayhf1_d', '/mp-x4yvud4m', '/mp-8rhcnj1w', '/mp-oc5lp4yl', '/mp-13qh2q9q', '/mp-vasp8q_1', '/mp-mgrefv_y', '/mp-y48lorf_', '/mp-n99_6ukk', '/mp-t69o_xfl', '/mp-p20x8728', '/mp-c9olqrgn', '/mp-unifq8p4', '/mp-twh4teqn', '/mp-1isyqnd4', '/mp-d72q5ac_'}
+  warnings.warn(
+[gpu_lock] train martell_hybrid_abl1_off: acquired after 0.0 min
+[VTMOnlineDataset] train: 11829 triplets from 212 (video,QP) pairs
+[VTMOnlineDataset] val: 1315 triplets from 212 (video,QP) pairs
+[martell_hybrid_abl1_off] params=1,292,384 loss=hybrid wd=0.0 train=11829 val=1315
+[martell_hybrid_abl1_off] resumed from checkpoints/martell_hybrid_abl1_off_last.pt (epoch 45, best +0.7143)
+epoch  46  loss=0.04059  dY=+0.7378 dU=-0.0128 dV=-0.0178  lr=1.0e-07  (237s)
+epoch  47  loss=0.04075  dY=+0.7424 dU=-0.0144 dV=-0.0215  lr=1.0e-07  (235s)
+epoch  48  loss=0.04074  dY=+0.7485 dU=-0.0132 dV=-0.0215  lr=1.0e-07  (235s)
+epoch  49  loss=0.04073  dY=+0.7434 dU=-0.0120 dV=-0.0200  lr=1.0e-08  (235s)
+[martell_hybrid_abl1_off] done, best total gain +0.7143 dB

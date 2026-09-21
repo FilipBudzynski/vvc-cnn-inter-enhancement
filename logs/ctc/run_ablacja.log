@@ -1,0 +1,138 @@
++ for CH in 0 4 5 6 7 2 3 1 8
++ N=QP
+++ date
++ echo '=== Mon Sep 14 17:07:41 CEST 2026 [abl] train bez QP (ch 0) ==='
+=== Mon Sep 14 17:07:41 CEST 2026 [abl] train bez QP (ch 0) ===
++ uv run python train_mqp.py --model martell_hybrid --variant off --num-workers 12 --wd 0 --tag abl0 --zero-meta 0
+++ date
++ echo '=== Mon Sep 14 20:06:45 CEST 2026 [abl] eval bez QP B-E ==='
+=== Mon Sep 14 20:06:45 CEST 2026 [abl] eval bez QP B-E ===
++ timeout 7200 env VVC_ZERO_META=0 VVC_TILE_MAX_ROWS=256 uv run python ctc_vtm_evaluate.py --variant off --classes B,C,D,E --models martell_hybrid_abl0_off
++ grep clean-avg output_vtm/eval_abl0_off.log
+martell_hybrid_abl0_off clean-avg  Y  -2.91%  U +11.55%  V +14.20%  -> bdrate_results_ctc/martell_hybrid_abl0_off_vtm_off.json
++ for CH in 0 4 5 6 7 2 3 1 8
++ N=MVL0_X
+++ date
++ echo '=== Mon Sep 14 21:00:03 CEST 2026 [abl] train bez MVL0_X (ch 4) ==='
+=== Mon Sep 14 21:00:03 CEST 2026 [abl] train bez MVL0_X (ch 4) ===
++ uv run python train_mqp.py --model martell_hybrid --variant off --num-workers 12 --wd 0 --tag abl4 --zero-meta 4
+++ date
++ echo '=== Mon Sep 14 23:56:45 CEST 2026 [abl] eval bez MVL0_X B-E ==='
+=== Mon Sep 14 23:56:45 CEST 2026 [abl] eval bez MVL0_X B-E ===
++ timeout 7200 env VVC_ZERO_META=4 VVC_TILE_MAX_ROWS=256 uv run python ctc_vtm_evaluate.py --variant off --classes B,C,D,E --models martell_hybrid_abl4_off
++ grep clean-avg output_vtm/eval_abl4_off.log
+martell_hybrid_abl4_off clean-avg  Y  -5.14%  U +11.21%  V +13.59%  -> bdrate_results_ctc/martell_hybrid_abl4_off_vtm_off.json
++ for CH in 0 4 5 6 7 2 3 1 8
++ N=MVL0_Y
+++ date
++ echo '=== Tue Sep 15 00:46:24 CEST 2026 [abl] train bez MVL0_Y (ch 5) ==='
+=== Tue Sep 15 00:46:24 CEST 2026 [abl] train bez MVL0_Y (ch 5) ===
++ uv run python train_mqp.py --model martell_hybrid --variant off --num-workers 12 --wd 0 --tag abl5 --zero-meta 5
+++ date
++ echo '=== Tue Sep 15 03:42:05 CEST 2026 [abl] eval bez MVL0_Y B-E ==='
+=== Tue Sep 15 03:42:05 CEST 2026 [abl] eval bez MVL0_Y B-E ===
++ timeout 7200 env VVC_ZERO_META=5 VVC_TILE_MAX_ROWS=256 uv run python ctc_vtm_evaluate.py --variant off --classes B,C,D,E --models martell_hybrid_abl5_off
++ grep clean-avg output_vtm/eval_abl5_off.log
+martell_hybrid_abl5_off clean-avg  Y  -5.35%  U +11.29%  V +13.98%  -> bdrate_results_ctc/martell_hybrid_abl5_off_vtm_off.json
++ for CH in 0 4 5 6 7 2 3 1 8
++ N=MVL1_X
+++ date
++ echo '=== Tue Sep 15 04:31:53 CEST 2026 [abl] train bez MVL1_X (ch 6) ==='
+=== Tue Sep 15 04:31:53 CEST 2026 [abl] train bez MVL1_X (ch 6) ===
++ uv run python train_mqp.py --model martell_hybrid --variant off --num-workers 12 --wd 0 --tag abl6 --zero-meta 6
+++ date
++ echo '=== Tue Sep 15 07:27:31 CEST 2026 [abl] eval bez MVL1_X B-E ==='
+=== Tue Sep 15 07:27:31 CEST 2026 [abl] eval bez MVL1_X B-E ===
++ timeout 7200 env VVC_ZERO_META=6 VVC_TILE_MAX_ROWS=256 uv run python ctc_vtm_evaluate.py --variant off --classes B,C,D,E --models martell_hybrid_abl6_off
++ grep clean-avg output_vtm/eval_abl6_off.log
+martell_hybrid_abl6_off clean-avg  Y  -5.26%  U +11.18%  V +13.33%  -> bdrate_results_ctc/martell_hybrid_abl6_off_vtm_off.json
++ for CH in 0 4 5 6 7 2 3 1 8
++ N=MVL1_Y
+++ date
++ echo '=== Tue Sep 15 08:17:36 CEST 2026 [abl] train bez MVL1_Y (ch 7) ==='
+=== Tue Sep 15 08:17:36 CEST 2026 [abl] train bez MVL1_Y (ch 7) ===
++ uv run python train_mqp.py --model martell_hybrid --variant off --num-workers 12 --wd 0 --tag abl7 --zero-meta 7
+++ date
++ echo '=== Tue Sep 15 09:16:28 CEST 2026 [abl2] train bez WSZYSTKICH wektorow ruchu (ch 4,5,6,7) ==='
+=== Tue Sep 15 09:16:28 CEST 2026 [abl2] train bez WSZYSTKICH wektorow ruchu (ch 4,5,6,7) ===
++ uv run python train_mqp.py --model martell_hybrid --variant off --num-workers 12 --wd 0 --tag abl_allMV --zero-meta 4,5,6,7
+++ date
++ echo '=== Tue Sep 15 12:12:11 CEST 2026 [abl2] eval bez WSZYSTKICH wektorow ruchu B-E ==='
+=== Tue Sep 15 12:12:11 CEST 2026 [abl2] eval bez WSZYSTKICH wektorow ruchu B-E ===
++ timeout 7200 env VVC_ZERO_META=4,5,6,7 VVC_TILE_MAX_ROWS=256 uv run python ctc_vtm_evaluate.py --variant off --classes B,C,D,E --models martell_hybrid_abl_allMV_off
++ grep clean-avg output_vtm/eval_abl_allMV_off.log
+martell_hybrid_abl_allMV_off clean-avg  Y  -5.34%  U +11.31%  V +13.44%  -> bdrate_results_ctc/martell_hybrid_abl_allMV_off_vtm_off.json
++ for CH in 7 2 3 1 8
++ N=MVL1_Y
+++ date
++ echo '=== Tue Sep 15 13:01:45 CEST 2026 [abl2] train bez MVL1_Y (ch 7) ==='
+=== Tue Sep 15 13:01:45 CEST 2026 [abl2] train bez MVL1_Y (ch 7) ===
++ uv run python train_mqp.py --model martell_hybrid --variant off --num-workers 12 --wd 0 --tag abl7 --zero-meta 7
+++ date
++ echo '=== Tue Sep 15 15:10:29 CEST 2026 [abl2] eval bez MVL1_Y B-E ==='
+=== Tue Sep 15 15:10:29 CEST 2026 [abl2] eval bez MVL1_Y B-E ===
++ timeout 7200 env VVC_ZERO_META=7 VVC_TILE_MAX_ROWS=256 uv run python ctc_vtm_evaluate.py --variant off --classes B,C,D,E --models martell_hybrid_abl7_off
++ grep clean-avg output_vtm/eval_abl7_off.log
+martell_hybrid_abl7_off clean-avg  Y  -5.16%  U +11.30%  V +13.70%  -> bdrate_results_ctc/martell_hybrid_abl7_off_vtm_off.json
++ for CH in 7 2 3 1 8
++ N=Depth
+++ date
++ echo '=== Tue Sep 15 16:00:05 CEST 2026 [abl2] train bez Depth (ch 2) ==='
+=== Tue Sep 15 16:00:05 CEST 2026 [abl2] train bez Depth (ch 2) ===
++ uv run python train_mqp.py --model martell_hybrid --variant off --num-workers 12 --wd 0 --tag abl2 --zero-meta 2
+++ date
++ echo '=== Tue Sep 15 18:56:19 CEST 2026 [abl2] eval bez Depth B-E ==='
+=== Tue Sep 15 18:56:19 CEST 2026 [abl2] eval bez Depth B-E ===
++ timeout 7200 env VVC_ZERO_META=2 VVC_TILE_MAX_ROWS=256 uv run python ctc_vtm_evaluate.py --variant off --classes B,C,D,E --models martell_hybrid_abl2_off
++ grep clean-avg output_vtm/eval_abl2_off.log
++ for CH in 7 2 3 1 8
++ N=Boundary
+++ date
++ echo '=== Tue Sep 15 19:15:09 CEST 2026 [abl2] train bez Boundary (ch 3) ==='
+=== Tue Sep 15 19:15:09 CEST 2026 [abl2] train bez Boundary (ch 3) ===
++ uv run python train_mqp.py --model martell_hybrid --variant off --num-workers 12 --wd 0 --tag abl3 --zero-meta 3
+=== Tue Sep 15 19:16:27 CEST 2026 [abl2-retry] eval bez Depth B-E (ponowienie) ===
+=== Tue Sep 15 21:16:27 CEST 2026 [abl2-retry] DONE ===
+=== Tue Sep 15 21:17:40 CEST 2026 [abl2-retry2] eval bez Depth B-E (drugie ponowienie, dluzszy timeout) ===
+++ date
++ echo '=== Tue Sep 15 22:57:28 CEST 2026 [abl2] eval bez Boundary B-E ==='
+=== Tue Sep 15 22:57:28 CEST 2026 [abl2] eval bez Boundary B-E ===
++ timeout 7200 env VVC_ZERO_META=3 VVC_TILE_MAX_ROWS=256 uv run python ctc_vtm_evaluate.py --variant off --classes B,C,D,E --models martell_hybrid_abl3_off
++ grep clean-avg output_vtm/eval_abl3_off.log
+martell_hybrid_abl3_off clean-avg  Y  -5.28%  U +11.39%  V +13.63%  -> bdrate_results_ctc/martell_hybrid_abl3_off_vtm_off.json
++ for CH in 7 2 3 1 8
++ N=PredMode
+++ date
++ echo '=== Tue Sep 15 23:47:14 CEST 2026 [abl2] train bez PredMode (ch 1) ==='
+=== Tue Sep 15 23:47:14 CEST 2026 [abl2] train bez PredMode (ch 1) ===
++ uv run python train_mqp.py --model martell_hybrid --variant off --num-workers 12 --wd 0 --tag abl1 --zero-meta 1
+=== Tue Sep 15 23:48:23 CEST 2026 [abl2-retry3] eval bez Depth B-E (trzecia proba, bardzo dlugi timeout) ===
+++ date
++ echo '=== Wed Sep 16 08:54:45 CEST 2026 [resume] eval bez Depth B-E (checkpoint already trained) ==='
+=== Wed Sep 16 08:54:45 CEST 2026 [resume] eval bez Depth B-E (checkpoint already trained) ===
++ timeout 7200 env VVC_ZERO_META=2 VVC_TILE_MAX_ROWS=256 uv run python ctc_vtm_evaluate.py --variant off --classes B,C,D,E --models martell_hybrid_abl2_off
++ grep clean-avg output_vtm/eval_abl2_off.log
+martell_hybrid_abl2_off clean-avg  Y  -5.33%  U +11.10%  V +13.62%  -> bdrate_results_ctc/martell_hybrid_abl2_off_vtm_off.json
+++ date
++ echo '=== Wed Sep 16 09:27:23 CEST 2026 [resume] resume train bez PredMode (ch 1) from epoch 45 ==='
+=== Wed Sep 16 09:27:23 CEST 2026 [resume] resume train bez PredMode (ch 1) from epoch 45 ===
++ uv run python train_mqp.py --model martell_hybrid --variant off --num-workers 12 --wd 0 --tag abl1 --zero-meta 1
+++ date
++ echo '=== Wed Sep 16 09:43:09 CEST 2026 [resume] eval bez PredMode B-E ==='
+=== Wed Sep 16 09:43:09 CEST 2026 [resume] eval bez PredMode B-E ===
++ timeout 7200 env VVC_ZERO_META=1 VVC_TILE_MAX_ROWS=256 uv run python ctc_vtm_evaluate.py --variant off --classes B,C,D,E --models martell_hybrid_abl1_off
++ grep clean-avg output_vtm/eval_abl1_off.log
+martell_hybrid_abl1_off clean-avg  Y  -5.33%  U +11.30%  V +13.52%  -> bdrate_results_ctc/martell_hybrid_abl1_off_vtm_off.json
+++ date
++ echo '=== Wed Sep 16 10:34:18 CEST 2026 [resume] train bez FrameType (ch 8) ==='
+=== Wed Sep 16 10:34:18 CEST 2026 [resume] train bez FrameType (ch 8) ===
++ uv run python train_mqp.py --model martell_hybrid --variant off --num-workers 12 --wd 0 --tag abl8 --zero-meta 8
+++ date
++ echo '=== Wed Sep 16 13:34:30 CEST 2026 [resume] eval bez FrameType B-E ==='
+=== Wed Sep 16 13:34:30 CEST 2026 [resume] eval bez FrameType B-E ===
++ timeout 7200 env VVC_ZERO_META=8 VVC_TILE_MAX_ROWS=256 uv run python ctc_vtm_evaluate.py --variant off --classes B,C,D,E --models martell_hybrid_abl8_off
++ grep clean-avg output_vtm/eval_abl8_off.log
+martell_hybrid_abl8_off clean-avg  Y  -5.39%  U +11.18%  V +13.81%  -> bdrate_results_ctc/martell_hybrid_abl8_off_vtm_off.json
+++ date
++ echo '=== Wed Sep 16 14:25:01 CEST 2026 [resume] ABLACJA ALL DONE ==='
+=== Wed Sep 16 14:25:01 CEST 2026 [resume] ABLACJA ALL DONE ===

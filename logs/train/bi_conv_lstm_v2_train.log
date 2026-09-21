@@ -1,0 +1,12 @@
+Loaded 2628 frame triplets for train
+Loaded 329 frame triplets for val
+Train: 2628  Val: 329
+Params: 2,570,691
+Logging to bi_conv_lstm_v2_train.log
+epoch   0  loss=0.00030  in=37.259  enh=37.240  ΔY=-0.0009  ΔU=-0.1492  ΔV=+0.0093  lr=1.0e-04  (147s)
+epoch   1  loss=0.00030  in=37.017  enh=37.002  ΔY=-0.0075  ΔU=-0.0709  ΔV=-0.0090  lr=1.0e-04  (129s)
+epoch   2  loss=0.00030  in=37.173  enh=37.167  ΔY=-0.0007  ΔU=-0.0461  ΔV=-0.0000  lr=1.0e-04  (128s)
+epoch   3  loss=0.00030  in=37.118  enh=37.117  ΔY=+0.0001  ΔU=-0.0204  ΔV=+0.0188  lr=1.0e-04  (131s)
+epoch   4  loss=0.00030  in=37.067  enh=37.066  ΔY=-0.0017  ΔU=-0.0112  ΔV=+0.0128  lr=1.0e-04  (129s)
+/usr/lib/python3.14/multiprocessing/resource_tracker.py:396: UserWarning: resource_tracker: There appear to be 20 leaked semaphore objects to clean up at shutdown: {'/mp-6kxd1yhu', '/mp-u_w7e272', '/mp-w5_1hhmk', '/mp-98d1c_v5', '/mp-vi2vgg3i', '/mp-9xiirdi0', '/mp-vcfwe16r', '/mp-b4pw1esm', '/mp-nfa_g4zl', '/mp-z1aoer2p', '/mp-9hmc0elu', '/mp-rz9_ix_x', '/mp-6ccq08fh', '/mp-_pweb52e', '/mp-bzvxd6da', '/mp-lfu1x7_q', '/mp-2oprdw8b', '/mp-k1mf3v72', '/mp-y77hzz4_', '/mp-67i1gayr'}
+  warnings.warn(

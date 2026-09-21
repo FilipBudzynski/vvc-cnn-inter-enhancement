@@ -1,0 +1,194 @@
+++ date
++ echo '=== Sat Sep  5 11:58:56 CEST 2026 prepare OFF ==='
+=== Sat Sep  5 11:58:56 CEST 2026 prepare OFF ===
++ uv run python ctc_vtm_prepare.py --variant off --classes D,C,E,B --stage all
+[off] 76 tasks, encode-todo=76
+off:encode:   0%|          | 0/76 [00:00<?, ?it/s]  enc BQSquare_416x240_60 QP37: 2.4 min
+off:encode:   1%|▏         | 1/76 [02:24<3:00:26, 144.35s/it]  enc BasketballPass_416x240_50 QP37: 3.0 min
+off:encode:   3%|▎         | 2/76 [02:58<1:38:06, 79.55s/it]   enc BQSquare_416x240_60 QP32: 3.7 min
+off:encode:   4%|▍         | 3/76 [03:40<1:15:47, 62.30s/it]  enc BasketballPass_416x240_50 QP32: 4.7 min
+off:encode:   5%|▌         | 4/76 [04:42<1:14:42, 62.25s/it]  enc BlowingBubbles_416x240_50 QP37: 5.9 min
+off:encode:   7%|▋         | 5/76 [05:54<1:17:42, 65.67s/it]  enc BQSquare_416x240_60 QP27: 6.3 min
+off:encode:   8%|▊         | 6/76 [06:15<59:03, 50.62s/it]    enc BasketballPass_416x240_50 QP27: 6.9 min
+off:encode:   9%|▉         | 7/76 [06:53<53:17, 46.34s/it]  enc BlowingBubbles_416x240_50 QP32: 9.7 min
+off:encode:  11%|█         | 8/76 [09:39<1:35:39, 84.41s/it]  enc BasketballPass_416x240_50 QP22: 10.5 min
+off:encode:  12%|█▏        | 9/76 [10:31<1:23:03, 74.38s/it]  enc BQSquare_416x240_60 QP22: 11.6 min
+off:encode:  13%|█▎        | 10/76 [11:33<1:17:43, 70.66s/it]  enc RaceHorses_416x240_30 QP37: 7.9 min
+  enc BlowingBubbles_416x240_50 QP27: 14.5 min
+off:encode:  16%|█▌        | 12/76 [14:32<1:24:41, 79.40s/it]  enc RaceHorses_416x240_30 QP32: 12.8 min
+off:encode:  17%|█▋        | 13/76 [15:48<1:22:35, 78.65s/it]  enc RaceHorses_416x240_30 QP27: 18.3 min
+off:encode:  18%|█▊        | 14/76 [20:40<2:19:22, 134.88s/it]  enc BlowingBubbles_416x240_50 QP22: 22.0 min
+off:encode:  20%|█▉        | 15/76 [21:57<2:01:02, 119.06s/it]  enc BasketballDrill_832x480_50 QP37: 16.3 min
+off:encode:  21%|██        | 16/76 [23:12<1:46:41, 106.69s/it]  enc RaceHorses_416x240_30 QP22: 25.7 min
+off:encode:  22%|██▏       | 17/76 [25:40<1:56:32, 118.51s/it]  enc BQMall_832x480_60 QP37: 16.3 min
+off:encode:  24%|██▎       | 18/76 [27:51<1:58:09, 122.23s/it]  enc BasketballDrill_832x480_50 QP32: 28.2 min
+off:encode:  25%|██▌       | 19/76 [34:28<3:12:32, 202.67s/it]  enc BQMall_832x480_60 QP32: 26.1 min
+off:encode:  26%|██▋       | 20/76 [37:41<3:06:34, 199.91s/it]  enc PartyScene_832x480_50 QP37: 30.0 min
+off:encode:  28%|██▊       | 21/76 [51:57<6:01:27, 394.32s/it]++ date
++ echo '=== Sat Sep  5 12:52:52 CEST 2026 prepare OFF ==='
+=== Sat Sep  5 12:52:52 CEST 2026 prepare OFF ===
++ uv run python ctc_vtm_prepare.py --variant off --classes D,C,E,B --stage all --enc-workers 10
+[off] 76 tasks, encode-todo=55
+off:encode:   0%|          | 0/55 [00:00<?, ?it/s]  enc BQMall_832x480_60 QP27: 56.3 min
+off:encode:   2%|▏         | 1/55 [56:16<50:39:11, 3376.87s/it]  enc PartyScene_832x480_50 QP32: 58.1 min
+off:encode:   4%|▎         | 2/55 [58:04<21:24:11, 1453.81s/it]  enc BasketballDrill_832x480_50 QP27: 66.5 min
+off:encode:   5%|▌         | 3/55 [1:06:30<14:44:54, 1021.05s/it]  enc RaceHorses_832x480_30 QP32: 75.9 min
+off:encode:   7%|▋         | 4/55 [1:15:52<11:53:44, 839.69s/it]   enc PartyScene_832x480_50 QP27: 83.1 min
+off:encode:   9%|▉         | 5/55 [1:23:07<9:38:11, 693.83s/it]   enc BQMall_832x480_60 QP22: 85.3 min
+off:encode:  11%|█         | 6/55 [1:25:15<6:49:36, 501.57s/it]  enc BasketballDrill_832x480_50 QP22: 97.3 min
+off:encode:  13%|█▎        | 7/55 [1:37:20<7:39:35, 574.48s/it]  enc FourPeople_1280x720_60 QP37: 17.0 min
+off:encode:  15%|█▍        | 8/55 [1:40:08<5:48:41, 445.14s/it]  enc RaceHorses_832x480_30 QP37: 46.4 min
+off:encode:  16%|█▋        | 9/55 [1:42:38<4:30:33, 352.89s/it]  enc FourPeople_1280x720_60 QP32: 27.1 min
+off:encode:  18%|█▊        | 10/55 [1:42:56<3:07:11, 249.59s/it]  enc RaceHorses_832x480_30 QP27: 107.2 min
+off:encode:  20%|██        | 11/55 [1:47:14<3:04:40, 251.84s/it]  enc FourPeople_1280x720_60 QP27: 41.8 min
+off:encode:  22%|██▏       | 12/55 [1:48:17<2:19:19, 194.41s/it]  enc Johnny_1280x720_60 QP37: 12.2 min
+off:encode:  24%|██▎       | 13/55 [1:54:48<2:57:49, 254.04s/it]  enc Johnny_1280x720_60 QP32: 21.7 min
+off:encode:  25%|██▌       | 14/55 [2:01:50<3:28:20, 304.90s/it]  enc PartyScene_832x480_50 QP22: 121.9 min
+off:encode:  27%|██▋       | 15/55 [2:01:51<2:22:14, 213.37s/it]  enc FourPeople_1280x720_60 QP22: 67.2 min
+off:encode:  29%|██▉       | 16/55 [2:05:16<2:16:56, 210.69s/it]  enc KristenAndSara_1280x720_60 QP37: 13.9 min
+off:encode:  31%|███       | 17/55 [2:08:41<2:12:24, 209.07s/it]  enc KristenAndSara_1280x720_60 QP32: 23.4 min
+off:encode:  33%|███▎      | 18/55 [2:11:39<2:03:07, 199.67s/it]  enc Johnny_1280x720_60 QP27: 37.1 min
+off:encode:  35%|███▍      | 19/55 [2:14:27<1:54:09, 190.27s/it]  enc Vidyo1_60fps_f600 QP37: 14.6 min
+off:encode:  36%|███▋      | 20/55 [2:23:19<2:50:51, 292.89s/it]  enc KristenAndSara_1280x720_60 QP27: 40.1 min
+off:encode:  38%|███▊      | 21/55 [2:27:20<2:37:06, 277.24s/it]  enc Vidyo1_60fps_f600 QP32: 23.4 min
+off:encode:  40%|████      | 22/55 [2:28:41<2:00:05, 218.35s/it]  enc Johnny_1280x720_60 QP22: 67.3 min
+off:encode:  42%|████▏     | 23/55 [2:32:31<1:58:15, 221.75s/it]  enc RaceHorses_832x480_30 QP22: 152.7 min
+off:encode:  44%|████▎     | 24/55 [2:32:40<1:21:40, 158.10s/it]  enc Vidyo1_60fps_f600 QP27: 39.5 min
+off:encode:  45%|████▌     | 25/55 [2:41:20<2:13:18, 266.63s/it]  enc Vidyo3_60fps_f600 QP37: 21.1 min
+off:encode:  47%|████▋     | 26/55 [2:48:24<2:31:34, 313.60s/it]  enc KristenAndSara_1280x720_60 QP22: 70.1 min
+off:encode:  49%|████▉     | 27/55 [2:53:05<2:21:47, 303.85s/it]  enc Vidyo3_60fps_f600 QP32: 31.6 min
+off:encode:  51%|█████     | 28/55 [2:54:55<1:50:36, 245.80s/it]  enc Vidyo4_60fps_f600 QP37: 18.2 min
+off:encode:  53%|█████▎    | 29/55 [2:59:34<1:50:49, 255.76s/it]  enc Vidyo4_60fps_f600 QP32: 29.3 min
+off:encode:  55%|█████▍    | 30/55 [3:01:57<1:32:31, 222.07s/it]  enc Vidyo3_60fps_f600 QP27: 49.3 min
+off:encode:  56%|█████▋    | 31/55 [3:03:45<1:15:06, 187.76s/it]  enc Vidyo1_60fps_f600 QP22: 69.6 min
+off:encode:  58%|█████▊    | 32/55 [3:11:24<1:43:11, 269.19s/it]  enc Vidyo4_60fps_f600 QP27: 52.0 min
+off:encode:  60%|██████    | 33/55 [3:24:30<2:35:31, 424.16s/it]  enc Vidyo3_60fps_f600 QP22: 86.6 min
+off:encode:  62%|██████▏   | 34/55 [3:38:17<3:10:43, 544.91s/it]  enc Vidyo4_60fps_f600 QP22: 92.3 min
+off:encode:  64%|██████▎   | 35/55 [4:01:01<4:23:36, 790.82s/it]  enc BQTerrace_1920x1080_60 QP37: 71.8 min
+off:encode:  65%|██████▌   | 36/55 [4:36:16<6:16:10, 1187.92s/it]  enc BQTerrace_1920x1080_60 QP32: 109.6 min
+off:encode:  67%|██████▋   | 37/55 [5:01:02<6:23:15, 1277.53s/it]  enc BasketballDrive_1920x1080_50 QP37: 134.9 min
+off:encode:  69%|██████▉   | 38/55 [5:14:25<5:21:38, 1135.18s/it]  enc BQTerrace_1920x1080_60 QP27: 193.9 min
+off:encode:  71%|███████   | 39/55 [6:17:36<8:35:10, 1931.92s/it]  enc BasketballDrive_1920x1080_50 QP32: 223.8 min
+off:encode:  73%|███████▎  | 40/55 [6:38:41<7:12:57, 1731.84s/it]  enc Cactus_1920x1080_50 QP37: 110.0 min
+off:encode:  75%|███████▍  | 41/55 [6:51:04<5:34:50, 1435.01s/it]  enc Cactus_1920x1080_50 QP32: 156.7 min
+off:encode:  76%|███████▋  | 42/55 [7:12:57<5:03:00, 1398.50s/it]  enc Cactus_1920x1080_50 QP27: 221.0 min
+off:encode:  78%|███████▊  | 43/55 [7:42:03<5:00:31, 1502.61s/it]  enc Kimono1_1920x1080_24 QP37: 62.8 min
+off:encode:  80%|████████  | 44/55 [7:53:52<3:51:51, 1264.66s/it]  enc BasketballDrive_1920x1080_50 QP27: 312.7 min
+off:encode:  82%|████████▏ | 45/55 [8:05:47<3:03:18, 1099.82s/it]  enc Kimono1_1920x1080_24 QP32: 123.7 min
+off:encode:  84%|████████▎ | 46/55 [8:42:22<3:34:14, 1428.33s/it]  enc ParkScene_1920x1080_24 QP37: 55.4 min
+off:encode:  85%|████████▌ | 47/55 [9:01:14<2:58:35, 1339.46s/it]  enc Cactus_1920x1080_50 QP22: 336.8 min
+off:encode:  87%|████████▋ | 48/55 [9:15:03<2:18:23, 1186.22s/it]  enc ParkScene_1920x1080_24 QP32: 89.7 min
+off:encode:  89%|████████▉ | 49/55 [9:23:35<1:38:24, 984.04s/it]   enc BQTerrace_1920x1080_60 QP22: 397.6 min
+off:encode:  91%|█████████ | 50/55 [9:39:32<1:21:19, 975.85s/it]  enc Kimono1_1920x1080_24 QP27: 213.5 min
+off:encode:  93%|█████████▎| 51/55 [9:51:04<59:22, 890.64s/it]    enc ParkScene_1920x1080_24 QP27: 145.5 min
+off:encode:  95%|█████████▍| 52/55 [10:07:31<45:58, 919.53s/it]  enc BasketballDrive_1920x1080_50 QP22: 462.6 min
+off:encode:  96%|█████████▋| 53/55 [10:31:00<35:32, 1066.39s/it]  enc ParkScene_1920x1080_24 QP22: 223.1 min
+off:encode:  98%|█████████▊| 54/55 [10:56:05<19:57, 1197.99s/it]  enc Kimono1_1920x1080_24 QP22: 367.8 min
+off:encode: 100%|██████████| 55/55 [11:22:14<00:00, 1309.25s/it]off:encode: 100%|██████████| 55/55 [11:22:14<00:00, 744.26s/it] 
+[off] encode: 682.3 min wall
+off:decode:   0%|          | 0/76 [00:00<?, ?it/s]off:decode:   1%|▏         | 1/76 [00:02<03:41,  2.95s/it]off:decode:   3%|▎         | 2/76 [00:03<01:39,  1.35s/it]off:decode:   4%|▍         | 3/76 [00:03<01:08,  1.06it/s]off:decode:   5%|▌         | 4/76 [00:04<00:54,  1.32it/s]off:decode:   8%|▊         | 6/76 [00:05<00:46,  1.49it/s]off:decode:   9%|▉         | 7/76 [00:05<00:39,  1.77it/s]off:decode:  11%|█         | 8/76 [00:05<00:32,  2.12it/s]off:decode:  12%|█▏        | 9/76 [00:06<00:41,  1.63it/s]off:decode:  13%|█▎        | 10/76 [00:07<00:35,  1.86it/s]off:decode:  14%|█▍        | 11/76 [00:07<00:29,  2.20it/s]off:decode:  16%|█▌        | 12/76 [00:07<00:24,  2.56it/s]off:decode:  17%|█▋        | 13/76 [00:09<00:55,  1.14it/s]off:decode:  18%|█▊        | 14/76 [00:09<00:43,  1.41it/s]off:decode:  21%|██        | 16/76 [00:10<00:32,  1.83it/s]off:decode:  22%|██▏       | 17/76 [00:16<01:44,  1.78s/it]off:decode:  24%|██▎       | 18/76 [00:16<01:17,  1.34s/it]off:decode:  25%|██▌       | 19/76 [00:17<01:07,  1.19s/it]off:decode:  26%|██▋       | 20/76 [00:18<01:14,  1.33s/it]off:decode:  28%|██▊       | 21/76 [00:20<01:12,  1.33s/it]off:decode:  29%|██▉       | 22/76 [00:21<01:19,  1.46s/it]off:decode:  30%|███       | 23/76 [00:22<01:09,  1.31s/it]off:decode:  32%|███▏      | 24/76 [00:23<01:02,  1.21s/it]off:decode:  33%|███▎      | 25/76 [00:29<02:03,  2.43s/it]off:decode:  36%|███▌      | 27/76 [00:30<01:18,  1.61s/it]off:decode:  37%|███▋      | 28/76 [00:32<01:20,  1.68s/it]off:decode:  38%|███▊      | 29/76 [00:34<01:27,  1.85s/it]off:decode:  39%|███▉      | 30/76 [00:35<01:14,  1.61s/it]off:decode:  41%|████      | 31/76 [00:37<01:13,  1.62s/it]off:decode:  42%|████▏     | 32/76 [00:37<00:56,  1.28s/it]off:decode:  43%|████▎     | 33/76 [00:44<02:06,  2.94s/it]off:decode:  45%|████▍     | 34/76 [00:45<01:34,  2.26s/it]off:decode:  46%|████▌     | 35/76 [00:47<01:28,  2.15s/it]off:decode:  47%|████▋     | 36/76 [00:48<01:10,  1.77s/it]off:decode:  49%|████▊     | 37/76 [00:50<01:12,  1.86s/it]off:decode:  50%|█████     | 38/76 [00:51<01:02,  1.63s/it]off:decode:  51%|█████▏    | 39/76 [00:57<01:52,  3.04s/it]off:decode:  53%|█████▎    | 40/76 [00:58<01:23,  2.31s/it]off:decode:  54%|█████▍    | 41/76 [01:02<01:37,  2.77s/it]off:decode:  57%|█████▋    | 43/76 [01:04<01:05,  1.99s/it]off:decode:  58%|█████▊    | 44/76 [01:05<00:56,  1.76s/it]off:decode:  59%|█████▉    | 45/76 [01:13<01:48,  3.50s/it]off:decode:  61%|██████    | 46/76 [01:14<01:23,  2.77s/it]off:decode:  62%|██████▏   | 47/76 [01:16<01:14,  2.57s/it]off:decode:  63%|██████▎   | 48/76 [01:16<00:54,  1.94s/it]off:decode:  64%|██████▍   | 49/76 [01:20<01:03,  2.36s/it]off:decode:  66%|██████▌   | 50/76 [01:21<00:52,  2.04s/it]off:decode:  67%|██████▋   | 51/76 [01:26<01:12,  2.90s/it]off:decode:  68%|██████▊   | 52/76 [01:26<00:52,  2.17s/it]off:decode:  70%|██████▉   | 53/76 [01:30<00:55,  2.43s/it]off:decode:  71%|███████   | 54/76 [01:31<00:47,  2.16s/it]off:decode:  72%|███████▏  | 55/76 [01:32<00:39,  1.86s/it]off:decode:  74%|███████▎  | 56/76 [01:33<00:32,  1.64s/it]off:decode:  75%|███████▌  | 57/76 [01:57<02:37,  8.29s/it]off:decode:  78%|███████▊  | 59/76 [01:58<01:17,  4.59s/it]off:decode:  79%|███████▉  | 60/76 [02:04<01:20,  5.02s/it]off:decode:  80%|████████  | 61/76 [02:08<01:10,  4.72s/it]off:decode:  82%|████████▏ | 62/76 [02:24<01:50,  7.88s/it]off:decode:  83%|████████▎ | 63/76 [02:26<01:20,  6.22s/it]off:decode:  84%|████████▍ | 64/76 [02:27<00:57,  4.82s/it]off:decode:  86%|████████▌ | 65/76 [02:36<01:05,  5.95s/it]off:decode:  87%|████████▋ | 66/76 [02:36<00:42,  4.29s/it]off:decode:  88%|████████▊ | 67/76 [02:39<00:35,  3.90s/it]off:decode:  89%|████████▉ | 68/76 [02:50<00:46,  5.86s/it]off:decode:  91%|█████████ | 69/76 [02:59<00:46,  6.66s/it]off:decode:  92%|█████████▏| 70/76 [03:02<00:33,  5.66s/it]off:decode:  93%|█████████▎| 71/76 [03:03<00:21,  4.32s/it]off:decode:  95%|█████████▍| 72/76 [03:04<00:13,  3.34s/it]off:decode:  96%|█████████▌| 73/76 [03:26<00:26,  8.79s/it]off:decode:  97%|█████████▋| 74/76 [03:27<00:13,  6.51s/it]off:decode:  99%|█████████▊| 75/76 [03:28<00:04,  4.82s/it]off:decode: 100%|██████████| 76/76 [03:28<00:00,  2.74s/it]
+[off] decode: 3.5 min wall
+off:parse:   0%|          | 0/76 [00:00<?, ?it/s]off:parse:   1%|▏         | 1/76 [00:02<02:53,  2.32s/it]off:parse:   5%|▌         | 4/76 [00:02<00:34,  2.07it/s]off:parse:  11%|█         | 8/76 [00:02<00:14,  4.70it/s]off:parse:  17%|█▋        | 13/76 [00:02<00:07,  8.26it/s]off:parse:  21%|██        | 16/76 [00:03<00:07,  8.08it/s]off:parse:  25%|██▌       | 19/76 [00:03<00:06,  9.43it/s]off:parse:  28%|██▊       | 21/76 [00:03<00:07,  7.73it/s]off:parse:  30%|███       | 23/76 [00:03<00:06,  8.39it/s]off:parse:  33%|███▎      | 25/76 [00:04<00:08,  5.79it/s]off:parse:  36%|███▌      | 27/76 [00:05<00:09,  5.41it/s]off:parse:  37%|███▋      | 28/76 [00:05<00:12,  3.77it/s]off:parse:  41%|████      | 31/76 [00:06<00:08,  5.24it/s]off:parse:  43%|████▎     | 33/76 [00:06<00:06,  6.29it/s]off:parse:  47%|████▋     | 36/76 [00:06<00:05,  7.96it/s]off:parse:  51%|█████▏    | 39/76 [00:06<00:03,  9.50it/s]off:parse:  57%|█████▋    | 43/76 [00:06<00:02, 13.06it/s]off:parse:  61%|██████    | 46/76 [00:06<00:02, 14.70it/s]off:parse:  63%|██████▎   | 48/76 [00:07<00:02, 13.22it/s]off:parse:  66%|██████▌   | 50/76 [00:07<00:01, 13.67it/s]off:parse:  68%|██████▊   | 52/76 [00:07<00:01, 13.07it/s]off:parse:  74%|███████▎  | 56/76 [00:07<00:01, 10.38it/s]off:parse:  76%|███████▋  | 58/76 [00:18<00:23,  1.28s/it]off:parse:  78%|███████▊  | 59/76 [00:20<00:24,  1.46s/it]off:parse:  79%|███████▉  | 60/76 [00:26<00:34,  2.19s/it]off:parse:  80%|████████  | 61/76 [00:30<00:39,  2.61s/it]off:parse:  82%|████████▏ | 62/76 [00:32<00:34,  2.45s/it]off:parse:  83%|████████▎ | 63/76 [00:34<00:30,  2.32s/it]off:parse:  84%|████████▍ | 64/76 [00:44<00:51,  4.30s/it]off:parse:  86%|████████▌ | 65/76 [00:46<00:38,  3.53s/it]off:parse:  87%|████████▋ | 66/76 [00:48<00:30,  3.08s/it]off:parse:  88%|████████▊ | 67/76 [00:51<00:29,  3.24s/it]off:parse:  89%|████████▉ | 68/76 [00:53<00:21,  2.73s/it]off:parse:  91%|█████████ | 69/76 [01:00<00:28,  4.12s/it]off:parse:  92%|█████████▏| 70/76 [01:02<00:19,  3.33s/it]off:parse:  93%|█████████▎| 71/76 [01:02<00:12,  2.41s/it]off:parse:  95%|█████████▍| 72/76 [01:03<00:08,  2.02s/it]off:parse:  96%|█████████▌| 73/76 [01:12<00:12,  4.13s/it]off:parse:  97%|█████████▋| 74/76 [01:14<00:07,  3.52s/it]off:parse:  99%|█████████▊| 75/76 [01:19<00:03,  3.93s/it]off:parse: 100%|██████████| 76/76 [01:26<00:00,  4.89s/it]off:parse: 100%|██████████| 76/76 [01:26<00:00,  1.14s/it]
+[off] parse: 1.4 min wall
+VTM recon != encoder recon for: none
+++ date
++ echo '=== Sun Sep  6 00:20:14 CEST 2026 eval OFF (bg) + prepare ON ==='
+=== Sun Sep  6 00:20:14 CEST 2026 eval OFF (bg) + prepare ON ===
++ EVAL_OFF=29206
++ uv run python ctc_vtm_prepare.py --variant on --classes D,C,E,B --stage all --enc-workers 10
++ uv run python ctc_vtm_evaluate.py --variant off
+[on] 76 tasks, encode-todo=76
+on:encode:   0%|          | 0/76 [00:00<?, ?it/s]  enc BasketballPass_416x240_50 QP37: 3.4 min
+on:encode:   1%|▏         | 1/76 [03:23<4:13:52, 203.10s/it]  enc BasketballPass_416x240_50 QP32: 5.1 min
+on:encode:   3%|▎         | 2/76 [05:05<2:57:29, 143.91s/it]  enc BlowingBubbles_416x240_50 QP37: 5.9 min
+on:encode:   4%|▍         | 3/76 [05:56<2:03:37, 101.61s/it]  enc BasketballPass_416x240_50 QP27: 7.4 min
+on:encode:   5%|▌         | 4/76 [07:23<1:55:02, 95.87s/it]   enc BQSquare_416x240_60 QP27: 8.0 min
+on:encode:   7%|▋         | 5/76 [08:00<1:28:11, 74.52s/it]  enc BQSquare_416x240_60 QP37: 3.0 min
+on:encode:   8%|▊         | 6/76 [08:06<59:43, 51.19s/it]    enc BQSquare_416x240_60 QP32: 5.5 min
+on:encode:   9%|▉         | 7/76 [08:51<56:21, 49.01s/it]  enc BlowingBubbles_416x240_50 QP32: 9.6 min
+on:encode:  11%|█         | 8/76 [09:35<53:57, 47.62s/it]  enc BasketballPass_416x240_50 QP22: 11.1 min
+on:encode:  12%|█▏        | 9/76 [11:05<1:08:00, 60.91s/it]  enc BQSquare_416x240_60 QP22: 12.4 min
+on:encode:  13%|█▎        | 10/76 [12:26<1:13:41, 67.00s/it]  enc BlowingBubbles_416x240_50 QP27: 15.3 min
+on:encode:  14%|█▍        | 11/76 [15:15<1:46:22, 98.19s/it]  enc RaceHorses_416x240_30 QP37: 7.8 min
+on:encode:  16%|█▌        | 12/76 [15:55<1:25:57, 80.58s/it]  enc RaceHorses_416x240_30 QP32: 12.6 min
+on:encode:  17%|█▋        | 13/76 [20:36<2:28:14, 141.19s/it]  enc BlowingBubbles_416x240_50 QP22: 22.0 min
+on:encode:  18%|█▊        | 14/76 [21:57<2:07:13, 123.13s/it]  enc RaceHorses_416x240_30 QP27: 17.6 min
+on:encode:  20%|█▉        | 15/76 [25:02<2:23:56, 141.58s/it]  enc BasketballDrill_832x480_50 QP37: 15.7 min
+on:encode:  21%|██        | 16/76 [28:05<2:34:16, 154.28s/it]  enc RaceHorses_416x240_30 QP22: 25.2 min
+on:encode:  22%|██▏       | 17/76 [31:07<2:39:52, 162.59s/it]  enc BQMall_832x480_60 QP37: 15.1 min
+on:encode:  24%|██▎       | 18/76 [37:03<3:33:19, 220.69s/it]  enc BasketballDrill_832x480_50 QP32: 26.3 min
+on:encode:  25%|██▌       | 19/76 [37:22<2:31:59, 159.99s/it]  enc BQMall_832x480_60 QP32: 24.3 min
+on:encode:  26%|██▋       | 20/76 [44:55<3:51:33, 248.10s/it]  enc BasketballDrill_832x480_50 QP27: 40.3 min
+on:encode:  28%|██▊       | 21/76 [49:54<4:01:14, 263.18s/it]  enc BQMall_832x480_60 QP27: 35.4 min
+on:encode:  29%|██▉       | 22/76 [51:17<3:08:23, 209.33s/it]  enc PartyScene_832x480_50 QP37: 23.6 min
+on:encode:  30%|███       | 23/76 [1:00:36<4:37:39, 314.33s/it]  enc PartyScene_832x480_50 QP32: 36.8 min
+on:encode:  32%|███▏      | 24/76 [1:07:53<5:04:18, 351.12s/it]  enc BQMall_832x480_60 QP22: 53.1 min
+on:encode:  33%|███▎      | 25/76 [1:08:20<3:35:43, 253.80s/it]  enc BasketballDrill_832x480_50 QP22: 60.3 min
+on:encode:  34%|███▍      | 26/76 [1:09:10<2:40:29, 192.60s/it]  enc FourPeople_1280x720_60 QP37: 10.3 min
+on:encode:  36%|███▌      | 27/76 [1:19:25<4:20:52, 319.43s/it]  enc RaceHorses_832x480_30 QP37: 28.3 min
+on:encode:  37%|███▋      | 28/76 [1:19:38<3:01:52, 227.35s/it]  enc PartyScene_832x480_50 QP27: 52.2 min
+on:encode:  38%|███▊      | 29/76 [1:20:18<2:14:05, 171.18s/it]  enc FourPeople_1280x720_60 QP32: 15.7 min
+on:encode:  39%|███▉      | 30/76 [1:24:03<2:23:40, 187.41s/it]  enc Johnny_1280x720_60 QP37: 8.0 min
+on:encode:  41%|████      | 31/76 [1:32:00<3:25:44, 274.31s/it]  enc FourPeople_1280x720_60 QP27: 25.0 min
+on:encode:  42%|████▏     | 32/76 [1:32:51<2:32:00, 207.28s/it]  enc Johnny_1280x720_60 QP32: 13.4 min
+on:encode:  43%|████▎     | 33/76 [1:33:42<1:54:51, 160.27s/it]  enc RaceHorses_832x480_30 QP32: 46.3 min
+on:encode:  45%|████▍     | 34/76 [1:36:12<1:49:58, 157.11s/it]  enc FourPeople_1280x720_60 QP22: 39.4 min
+on:encode:  46%|████▌     | 35/76 [1:39:59<2:01:49, 178.28s/it]  enc PartyScene_832x480_50 QP22: 78.5 min
+on:encode:  47%|████▋     | 36/76 [1:43:33<2:05:53, 188.84s/it]  enc Johnny_1280x720_60 QP27: 24.0 min
+on:encode:  49%|████▊     | 37/76 [1:43:39<1:27:10, 134.10s/it]  enc KristenAndSara_1280x720_60 QP37: 8.7 min
+on:encode:  50%|█████     | 38/76 [1:44:53<1:13:24, 115.91s/it]  enc KristenAndSara_1280x720_60 QP32: 14.4 min
+on:encode:  51%|█████▏    | 39/76 [1:48:08<1:26:14, 139.84s/it]  enc RaceHorses_832x480_30 QP27: 67.2 min
+on:encode:  53%|█████▎    | 40/76 [1:52:05<1:41:16, 168.78s/it]  enc Vidyo1_60fps_f600 QP37: 9.0 min
+on:encode:  54%|█████▍    | 41/76 [1:53:55<1:28:16, 151.34s/it]  enc KristenAndSara_1280x720_60 QP27: 24.9 min
+on:encode:  55%|█████▌    | 42/76 [1:57:44<1:38:50, 174.44s/it]  enc Vidyo1_60fps_f600 QP32: 14.4 min
+on:encode:  57%|█████▋    | 43/76 [1:58:06<1:10:50, 128.80s/it]  enc Johnny_1280x720_60 QP22: 42.2 min
+on:encode:  58%|█████▊    | 44/76 [2:01:34<1:21:27, 152.73s/it]  enc Vidyo1_60fps_f600 QP27: 23.9 min
+on:encode:  59%|█████▉    | 45/76 [2:07:28<1:50:03, 213.01s/it]  enc Vidyo3_60fps_f600 QP37: 13.2 min
+on:encode:  61%|██████    | 46/76 [2:10:54<1:45:27, 210.93s/it]  enc Vidyo3_60fps_f600 QP32: 19.8 min
+on:encode:  62%|██████▏   | 47/76 [2:13:42<1:35:41, 197.98s/it]  enc KristenAndSara_1280x720_60 QP22: 43.2 min
+on:encode:  63%|██████▎   | 48/76 [2:15:14<1:17:30, 166.08s/it]  enc RaceHorses_832x480_30 QP22: 100.8 min
+on:encode:  64%|██████▍   | 49/76 [2:18:12<1:16:25, 169.84s/it]  enc Vidyo1_60fps_f600 QP22: 42.2 min
+on:encode:  66%|██████▌   | 50/76 [2:22:11<1:22:36, 190.64s/it]  enc Vidyo4_60fps_f600 QP37: 11.4 min
+on:encode:  67%|██████▋   | 51/76 [2:22:21<56:49, 136.37s/it]    enc Vidyo3_60fps_f600 QP27: 31.1 min
+on:encode:  68%|██████▊   | 52/76 [2:23:10<44:02, 110.09s/it]  enc Vidyo4_60fps_f600 QP32: 19.9 min
+on:encode:  70%|██████▉   | 53/76 [2:27:19<58:12, 151.83s/it]  enc Vidyo4_60fps_f600 QP27: 32.7 min
+on:encode:  71%|███████   | 54/76 [2:34:14<1:24:33, 230.64s/it]  enc Vidyo3_60fps_f600 QP22: 51.6 min
+on:encode:  72%|███████▏  | 55/76 [2:39:43<1:31:07, 260.36s/it]  enc Vidyo4_60fps_f600 QP22: 55.1 min
+on:encode:  74%|███████▎  | 56/76 [2:53:09<2:21:20, 424.01s/it]  enc BQTerrace_1920x1080_60 QP37: 32.6 min
+on:encode:  75%|███████▌  | 57/76 [3:06:51<2:52:04, 543.41s/it]  enc BQTerrace_1920x1080_60 QP32: 53.2 min
+on:encode:  76%|███████▋  | 58/76 [3:20:30<3:07:46, 625.92s/it]  enc BasketballDrive_1920x1080_50 QP37: 67.5 min
+on:encode:  78%|███████▊  | 59/76 [3:29:44<2:51:14, 604.38s/it]  enc BQTerrace_1920x1080_60 QP27: 101.2 min
+on:encode:  79%|███████▉  | 60/76 [4:04:19<4:38:50, 1045.66s/it]  enc Cactus_1920x1080_50 QP37: 51.4 min
+on:encode:  80%|████████  | 61/76 [4:11:55<3:37:09, 868.61s/it]   enc BasketballDrive_1920x1080_50 QP32: 116.8 min
+on:encode:  82%|████████▏ | 62/76 [4:15:00<2:34:52, 663.77s/it]  enc Cactus_1920x1080_50 QP32: 82.2 min
+on:encode:  83%|████████▎ | 63/76 [4:29:03<2:35:26, 717.46s/it]  enc Cactus_1920x1080_50 QP27: 131.5 min
+on:encode:  84%|████████▍ | 64/76 [5:04:36<3:48:26, 1142.23s/it]  enc Kimono1_1920x1080_24 QP37: 54.7 min
+on:encode:  86%|████████▌ | 65/76 [5:09:45<2:43:32, 892.06s/it]   enc BasketballDrive_1920x1080_50 QP27: 190.8 min
+on:encode:  87%|████████▋ | 66/76 [5:26:03<2:32:58, 917.88s/it]  enc Kimono1_1920x1080_24 QP32: 99.3 min
+on:encode:  88%|████████▊ | 67/76 [5:51:14<2:44:21, 1095.70s/it]  enc ParkScene_1920x1080_24 QP37: 44.2 min
+on:encode:  89%|████████▉ | 68/76 [6:10:13<2:27:50, 1108.80s/it]  enc ParkScene_1920x1080_24 QP32: 73.3 min
+on:encode:  91%|█████████ | 69/76 [6:23:02<1:57:27, 1006.82s/it]  enc Cactus_1920x1080_50 QP22: 223.7 min
+on:encode:  92%|█████████▏| 70/76 [6:23:27<1:11:13, 712.25s/it]   enc Kimono1_1920x1080_24 QP27: 163.1 min
+on:encode:  93%|█████████▎| 71/76 [6:47:22<1:17:26, 929.23s/it]  enc BQTerrace_1920x1080_60 QP22: 265.9 min
+on:encode:  95%|█████████▍| 72/76 [6:48:16<44:26, 666.51s/it]    enc ParkScene_1920x1080_24 QP27: 112.9 min
+on:encode:  96%|█████████▌| 73/76 [6:57:29<31:38, 632.67s/it]  enc BasketballDrive_1920x1080_50 QP22: 305.2 min
+on:encode:  97%|█████████▋| 74/76 [7:18:51<27:34, 827.39s/it]  enc ParkScene_1920x1080_24 QP22: 185.9 min
+on:encode:  99%|█████████▊| 75/76 [7:34:56<14:28, 868.73s/it]  enc Kimono1_1920x1080_24 QP22: 283.1 min
+on:encode: 100%|██████████| 76/76 [8:12:51<00:00, 1290.65s/it]on:encode: 100%|██████████| 76/76 [8:12:51<00:00, 389.11s/it] 
+[on] encode: 492.9 min wall
+on:decode:   0%|          | 0/76 [00:00<?, ?it/s]on:decode:   1%|▏         | 1/76 [00:02<02:57,  2.37s/it]on:decode:   3%|▎         | 2/76 [00:02<01:22,  1.12s/it]on:decode:   4%|▍         | 3/76 [00:02<00:52,  1.40it/s]on:decode:   5%|▌         | 4/76 [00:03<00:44,  1.62it/s]on:decode:   7%|▋         | 5/76 [00:03<00:33,  2.14it/s]on:decode:   8%|▊         | 6/76 [00:04<00:45,  1.53it/s]on:decode:   9%|▉         | 7/76 [00:04<00:39,  1.74it/s]on:decode:  11%|█         | 8/76 [00:05<00:29,  2.33it/s]on:decode:  12%|█▏        | 9/76 [00:06<00:40,  1.64it/s]on:decode:  14%|█▍        | 11/76 [00:06<00:24,  2.63it/s]on:decode:  16%|█▌        | 12/76 [00:06<00:26,  2.39it/s]on:decode:  17%|█▋        | 13/76 [00:08<00:46,  1.35it/s]on:decode:  18%|█▊        | 14/76 [00:09<00:43,  1.44it/s]on:decode:  21%|██        | 16/76 [00:09<00:34,  1.73it/s]on:decode:  22%|██▏       | 17/76 [00:14<01:31,  1.56s/it]on:decode:  24%|██▎       | 18/76 [00:14<01:12,  1.24s/it]on:decode:  26%|██▋       | 20/76 [00:16<01:02,  1.11s/it]on:decode:  28%|██▊       | 21/76 [00:18<01:09,  1.27s/it]on:decode:  29%|██▉       | 22/76 [00:19<01:07,  1.25s/it]on:decode:  30%|███       | 23/76 [00:21<01:06,  1.26s/it]on:decode:  32%|███▏      | 24/76 [00:21<00:55,  1.07s/it]on:decode:  33%|███▎      | 25/76 [00:26<01:52,  2.22s/it]on:decode:  34%|███▍      | 26/76 [00:27<01:28,  1.76s/it]on:decode:  36%|███▌      | 27/76 [00:27<01:05,  1.34s/it]on:decode:  37%|███▋      | 28/76 [00:29<01:06,  1.39s/it]on:decode:  38%|███▊      | 29/76 [00:32<01:26,  1.83s/it]on:decode:  39%|███▉      | 30/76 [00:33<01:20,  1.75s/it]on:decode:  41%|████      | 31/76 [00:34<01:08,  1.53s/it]on:decode:  42%|████▏     | 32/76 [00:35<00:54,  1.24s/it]on:decode:  43%|████▎     | 33/76 [00:41<01:57,  2.73s/it]on:decode:  45%|████▍     | 34/76 [00:41<01:24,  2.01s/it]on:decode:  46%|████▌     | 35/76 [00:44<01:29,  2.19s/it]on:decode:  47%|████▋     | 36/76 [00:46<01:23,  2.09s/it]on:decode:  49%|████▊     | 37/76 [00:47<01:16,  1.96s/it]on:decode:  50%|█████     | 38/76 [00:48<01:02,  1.64s/it]on:decode:  51%|█████▏    | 39/76 [00:53<01:32,  2.49s/it]on:decode:  53%|█████▎    | 40/76 [00:53<01:05,  1.82s/it]on:decode:  54%|█████▍    | 41/76 [00:57<01:25,  2.45s/it]on:decode:  55%|█████▌    | 42/76 [00:58<01:04,  1.89s/it]on:decode:  57%|█████▋    | 43/76 [00:59<00:56,  1.71s/it]on:decode:  58%|█████▊    | 44/76 [01:00<00:46,  1.46s/it]on:decode:  59%|█████▉    | 45/76 [01:05<01:25,  2.77s/it]on:decode:  61%|██████    | 46/76 [01:07<01:08,  2.28s/it]on:decode:  62%|██████▏   | 47/76 [01:09<01:06,  2.29s/it]on:decode:  63%|██████▎   | 48/76 [01:09<00:45,  1.64s/it]on:decode:  64%|██████▍   | 49/76 [01:13<00:59,  2.19s/it]on:decode:  66%|██████▌   | 50/76 [01:13<00:46,  1.79s/it]on:decode:  67%|██████▋   | 51/76 [01:18<01:02,  2.51s/it]on:decode:  68%|██████▊   | 52/76 [01:18<00:45,  1.91s/it]on:decode:  70%|██████▉   | 53/76 [01:21<00:53,  2.33s/it]on:decode:  71%|███████   | 54/76 [01:23<00:45,  2.07s/it]on:decode:  72%|███████▏  | 55/76 [01:24<00:40,  1.92s/it]on:decode:  74%|███████▎  | 56/76 [01:25<00:29,  1.46s/it]on:decode:  75%|███████▌  | 57/76 [01:49<02:35,  8.17s/it]on:decode:  76%|███████▋  | 58/76 [01:49<01:46,  5.93s/it]on:decode:  79%|███████▉  | 60/76 [01:55<01:12,  4.51s/it]on:decode:  80%|████████  | 61/76 [01:58<01:00,  4.04s/it]on:decode:  82%|████████▏ | 62/76 [02:15<01:45,  7.55s/it]on:decode:  83%|████████▎ | 63/76 [02:17<01:16,  5.89s/it]on:decode:  84%|████████▍ | 64/76 [02:17<00:51,  4.28s/it]on:decode:  86%|████████▌ | 65/76 [02:25<00:59,  5.45s/it]on:decode:  87%|████████▋ | 66/76 [02:26<00:42,  4.22s/it]on:decode:  88%|████████▊ | 67/76 [02:29<00:33,  3.73s/it]on:decode:  89%|████████▉ | 68/76 [02:40<00:47,  5.92s/it]on:decode:  91%|█████████ | 69/76 [02:48<00:46,  6.65s/it]on:decode:  92%|█████████▏| 70/76 [02:52<00:33,  5.66s/it]on:decode:  93%|█████████▎| 71/76 [02:53<00:21,  4.36s/it]on:decode:  95%|█████████▍| 72/76 [02:55<00:14,  3.50s/it]on:decode:  96%|█████████▌| 73/76 [03:15<00:25,  8.63s/it]on:decode:  97%|█████████▋| 74/76 [03:16<00:12,  6.19s/it]on:decode:  99%|█████████▊| 75/76 [03:17<00:04,  4.78s/it]on:decode: 100%|██████████| 76/76 [03:17<00:00,  3.40s/it]on:decode: 100%|██████████| 76/76 [03:17<00:00,  2.60s/it]
+[on] decode: 3.3 min wall
+on:parse:   0%|          | 0/76 [00:00<?, ?it/s]on:parse:   1%|▏         | 1/76 [00:00<01:13,  1.03it/s]on:parse:   3%|▎         | 2/76 [00:01<00:37,  1.96it/s]on:parse:   4%|▍         | 3/76 [00:01<00:29,  2.47it/s]on:parse:   5%|▌         | 4/76 [00:01<00:27,  2.59it/s]on:parse:   7%|▋         | 5/76 [00:02<00:29,  2.42it/s]on:parse:   9%|▉         | 7/76 [00:02<00:15,  4.36it/s]on:parse:  11%|█         | 8/76 [00:02<00:22,  3.01it/s]on:parse:  13%|█▎        | 10/76 [00:03<00:15,  4.23it/s]on:parse:  14%|█▍        | 11/76 [00:03<00:15,  4.08it/s]on:parse:  17%|█▋        | 13/76 [00:04<00:20,  3.14it/s]on:parse:  18%|█▊        | 14/76 [00:04<00:19,  3.15it/s]on:parse:  20%|█▉        | 15/76 [00:05<00:23,  2.64it/s]on:parse:  21%|██        | 16/76 [00:05<00:25,  2.39it/s]on:parse:  22%|██▏       | 17/76 [00:07<00:48,  1.23it/s]on:parse:  25%|██▌       | 19/76 [00:08<00:34,  1.67it/s]on:parse:  26%|██▋       | 20/76 [00:09<00:43,  1.30it/s]on:parse:  28%|██▊       | 21/76 [00:10<00:50,  1.08it/s]on:parse:  29%|██▉       | 22/76 [00:11<00:43,  1.23it/s]on:parse:  32%|███▏      | 24/76 [00:13<00:43,  1.19it/s]on:parse:  33%|███▎      | 25/76 [00:15<00:58,  1.14s/it]on:parse:  34%|███▍      | 26/76 [00:15<00:47,  1.04it/s]on:parse:  36%|███▌      | 27/76 [00:17<00:55,  1.13s/it]on:parse:  37%|███▋      | 28/76 [00:19<01:07,  1.40s/it]on:parse:  38%|███▊      | 29/76 [00:20<01:05,  1.40s/it]on:parse:  39%|███▉      | 30/76 [00:21<00:49,  1.08s/it]on:parse:  41%|████      | 31/76 [00:21<00:42,  1.07it/s]on:parse:  42%|████▏     | 32/76 [00:23<00:51,  1.17s/it]on:parse:  43%|████▎     | 33/76 [00:24<00:52,  1.23s/it]on:parse:  45%|████▍     | 34/76 [00:25<00:41,  1.02it/s]on:parse:  46%|████▌     | 35/76 [00:25<00:33,  1.23it/s]on:parse:  47%|████▋     | 36/76 [00:26<00:34,  1.14it/s]on:parse:  49%|████▊     | 37/76 [00:28<00:47,  1.22s/it]on:parse:  50%|█████     | 38/76 [00:28<00:33,  1.13it/s]on:parse:  51%|█████▏    | 39/76 [00:29<00:30,  1.21it/s]on:parse:  53%|█████▎    | 40/76 [00:29<00:22,  1.57it/s]on:parse:  54%|█████▍    | 41/76 [00:32<00:42,  1.22s/it]on:parse:  55%|█████▌    | 42/76 [00:32<00:34,  1.02s/it]on:parse:  58%|█████▊    | 44/76 [00:33<00:20,  1.54it/s]on:parse:  59%|█████▉    | 45/76 [00:36<00:39,  1.29s/it]on:parse:  62%|██████▏   | 47/76 [00:36<00:23,  1.22it/s]on:parse:  63%|██████▎   | 48/76 [00:37<00:22,  1.27it/s]on:parse:  64%|██████▍   | 49/76 [00:40<00:37,  1.39s/it]on:parse:  66%|██████▌   | 50/76 [00:41<00:29,  1.12s/it]on:parse:  68%|██████▊   | 52/76 [00:42<00:23,  1.03it/s]on:parse:  70%|██████▉   | 53/76 [00:44<00:28,  1.24s/it]on:parse:  71%|███████   | 54/76 [00:45<00:23,  1.07s/it]on:parse:  72%|███████▏  | 55/76 [00:46<00:21,  1.02s/it]on:parse:  74%|███████▎  | 56/76 [00:46<00:16,  1.19it/s]on:parse:  75%|███████▌  | 57/76 [00:55<00:57,  3.03s/it]on:parse:  76%|███████▋  | 58/76 [00:56<00:46,  2.60s/it]on:parse:  78%|███████▊  | 59/76 [00:59<00:42,  2.51s/it]on:parse:  79%|███████▉  | 60/76 [01:03<00:48,  3.04s/it]on:parse:  80%|████████  | 61/76 [01:08<00:55,  3.73s/it]on:parse:  82%|████████▏ | 62/76 [01:10<00:43,  3.08s/it]on:parse:  83%|████████▎ | 63/76 [01:11<00:32,  2.51s/it]on:parse:  84%|████████▍ | 64/76 [01:21<00:57,  4.81s/it]on:parse:  86%|████████▌ | 65/76 [01:23<00:44,  4.00s/it]on:parse:  87%|████████▋ | 66/76 [01:26<00:37,  3.72s/it]on:parse:  88%|████████▊ | 67/76 [01:29<00:30,  3.41s/it]on:parse:  89%|████████▉ | 68/76 [01:30<00:20,  2.55s/it]on:parse:  91%|█████████ | 69/76 [01:39<00:31,  4.51s/it]on:parse:  92%|█████████▏| 70/76 [01:40<00:21,  3.59s/it]on:parse:  95%|█████████▍| 72/76 [01:42<00:09,  2.37s/it]on:parse:  96%|█████████▌| 73/76 [01:51<00:11,  3.91s/it]on:parse:  97%|█████████▋| 74/76 [01:51<00:06,  3.13s/it]on:parse:  99%|█████████▊| 75/76 [01:57<00:03,  3.78s/it]on:parse: 100%|██████████| 76/76 [02:04<00:00,  4.57s/it]on:parse: 100%|██████████| 76/76 [02:04<00:00,  1.63s/it]
+[on] parse: 2.1 min wall
+VTM recon != encoder recon for: none
+++ date
++ echo '=== Sun Sep  6 08:38:35 CEST 2026 waiting for eval OFF (pid 29206) ==='
+=== Sun Sep  6 08:38:35 CEST 2026 waiting for eval OFF (pid 29206) ===
++ wait 29206
+++ date
++ echo '=== Sun Sep  6 08:38:35 CEST 2026 eval ON ==='
+=== Sun Sep  6 08:38:35 CEST 2026 eval ON ===
++ uv run python ctc_vtm_evaluate.py --variant on
+++ date
++ echo '=== Sun Sep  6 11:09:26 CEST 2026 ALL DONE ==='
+=== Sun Sep  6 11:09:26 CEST 2026 ALL DONE ===

@@ -1,0 +1,2909 @@
+++ date
++ echo '=== Tue Sep  8 10:30:51 CEST 2026 [extras] waiting for MQP ALL DONE ==='
+=== Tue Sep  8 10:30:51 CEST 2026 [extras] waiting for MQP ALL DONE ===
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
+++ date
++ echo '=== Tue Sep  8 18:52:16 CEST 2026 [extras2] waiting for MQP ALL DONE ==='
+=== Tue Sep  8 18:52:16 CEST 2026 [extras2] waiting for MQP ALL DONE ===
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
+++ date
++ echo '=== Wed Sep  9 10:05:40 CEST 2026 [extras2] waiting for MQP ALL DONE ==='
+=== Wed Sep  9 10:05:40 CEST 2026 [extras2] waiting for MQP ALL DONE ===
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300
++ grep -q 'MQP ALL DONE' output_vtm/run_mqp.log
++ sleep 300

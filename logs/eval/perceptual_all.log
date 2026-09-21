@@ -1,0 +1,126 @@
+=== martell ===
+Perceptual eval: martell on ['Johnny_1280x720_60', 'vidyo1_720p_60fps', 'vidyo3_720p_60fps']  QPs: [22, 27, 32, 37, 42]
+martell:   0%|          | 0/15 [00:00<?, ?it/s]martell:   0%|          | 0/15 [01:06<?, ?it/s, v=Johnny_1280x72, qp=22, Δssim=-0.0034, Δlpips=+0.0187]martell:   7%|▋         | 1/15 [01:06<15:24, 66.04s/it, v=Johnny_1280x72, qp=22, Δssim=-0.0034, Δlpips=+0.0187]martell:   7%|▋         | 1/15 [02:14<15:24, 66.04s/it, v=Johnny_1280x72, qp=27, Δssim=-0.0020, Δlpips=+0.0143]martell:  13%|█▎        | 2/15 [02:14<14:37, 67.47s/it, v=Johnny_1280x72, qp=27, Δssim=-0.0020, Δlpips=+0.0143]martell:  13%|█▎        | 2/15 [03:26<14:37, 67.47s/it, v=Johnny_1280x72, qp=32, Δssim=-0.0005, Δlpips=+0.0128]martell:  20%|██        | 3/15 [03:26<13:52, 69.35s/it, v=Johnny_1280x72, qp=32, Δssim=-0.0005, Δlpips=+0.0128]martell:  20%|██        | 3/15 [04:30<13:52, 69.35s/it, v=Johnny_1280x72, qp=37, Δssim=+0.0019, Δlpips=+0.0106]martell:  27%|██▋       | 4/15 [04:30<12:21, 67.37s/it, v=Johnny_1280x72, qp=37, Δssim=+0.0019, Δlpips=+0.0106]martell:  27%|██▋       | 4/15 [05:38<12:21, 67.37s/it, v=Johnny_1280x72, qp=42, Δssim=+0.0046, Δlpips=+0.0060]martell:  33%|███▎      | 5/15 [05:38<11:17, 67.75s/it, v=Johnny_1280x72, qp=42, Δssim=+0.0046, Δlpips=+0.0060]martell:  33%|███▎      | 5/15 [06:53<11:17, 67.75s/it, v=vidyo1_720p_60, qp=22, Δssim=-0.0028, Δlpips=+0.0326]martell:  40%|████      | 6/15 [06:53<10:31, 70.12s/it, v=vidyo1_720p_60, qp=22, Δssim=-0.0028, Δlpips=+0.0326]martell:  40%|████      | 6/15 [07:59<10:31, 70.12s/it, v=vidyo1_720p_60, qp=27, Δssim=-0.0006, Δlpips=+0.0239]martell:  47%|████▋     | 7/15 [07:59<09:09, 68.69s/it, v=vidyo1_720p_60, qp=27, Δssim=-0.0006, Δlpips=+0.0239]martell:  47%|████▋     | 7/15 [09:08<09:09, 68.69s/it, v=vidyo1_720p_60, qp=32, Δssim=+0.0018, Δlpips=+0.0199]martell:  53%|█████▎    | 8/15 [09:08<08:02, 68.98s/it, v=vidyo1_720p_60, qp=32, Δssim=+0.0018, Δlpips=+0.0199]martell:  53%|█████▎    | 8/15 [10:17<08:02, 68.98s/it, v=vidyo1_720p_60, qp=37, Δssim=+0.0042, Δlpips=+0.0165]martell:  60%|██████    | 9/15 [10:17<06:52, 68.76s/it, v=vidyo1_720p_60, qp=37, Δssim=+0.0042, Δlpips=+0.0165]martell:  60%|██████    | 9/15 [11:19<06:52, 68.76s/it, v=vidyo1_720p_60, qp=42, Δssim=+0.0067, Δlpips=+0.0139]martell:  67%|██████▋   | 10/15 [11:19<05:34, 66.91s/it, v=vidyo1_720p_60, qp=42, Δssim=+0.0067, Δlpips=+0.0139]martell:  67%|██████▋   | 10/15 [12:30<05:34, 66.91s/it, v=vidyo3_720p_60, qp=22, Δssim=-0.0009, Δlpips=+0.0173]martell:  73%|███████▎  | 11/15 [12:30<04:32, 68.03s/it, v=vidyo3_720p_60, qp=22, Δssim=-0.0009, Δlpips=+0.0173]martell:  73%|███████▎  | 11/15 [13:37<04:32, 68.03s/it, v=vidyo3_720p_60, qp=27, Δssim=+0.0004, Δlpips=+0.0121]martell:  80%|████████  | 12/15 [13:37<03:23, 67.78s/it, v=vidyo3_720p_60, qp=27, Δssim=+0.0004, Δlpips=+0.0121]martell:  80%|████████  | 12/15 [14:46<03:23, 67.78s/it, v=vidyo3_720p_60, qp=32, Δssim=+0.0024, Δlpips=+0.0099]martell:  87%|████████▋ | 13/15 [14:46<02:16, 68.01s/it, v=vidyo3_720p_60, qp=32, Δssim=+0.0024, Δlpips=+0.0099]martell:  87%|████████▋ | 13/15 [16:01<02:16, 68.01s/it, v=vidyo3_720p_60, qp=37, Δssim=+0.0047, Δlpips=+0.0074]martell:  93%|█████████▎| 14/15 [16:01<01:10, 70.16s/it, v=vidyo3_720p_60, qp=37, Δssim=+0.0047, Δlpips=+0.0074]martell:  93%|█████████▎| 14/15 [17:07<01:10, 70.16s/it, v=vidyo3_720p_60, qp=42, Δssim=+0.0075, Δlpips=+0.0070]martell: 100%|██████████| 15/15 [17:07<00:00, 68.99s/it, v=vidyo3_720p_60, qp=42, Δssim=+0.0075, Δlpips=+0.0070]martell: 100%|██████████| 15/15 [17:07<00:00, 68.51s/it, v=vidyo3_720p_60, qp=42, Δssim=+0.0075, Δlpips=+0.0070]
+
+Wrote bdrate_results/martell_hybrid_perceptual.json
+{
+  "anchor": {
+    "ssim": 0.9590896125121782,
+    "msssim": 0.9876552900319459,
+    "lpips_alex": 0.11487383994283856,
+    "lpips_vgg": 0.24775451329606832
+  },
+  "enhanced": {
+    "ssim": 0.9606951799443972,
+    "msssim": 0.988135543561751,
+    "lpips_alex": 0.12973393556732002,
+    "lpips_vgg": 0.2677028772811736
+  },
+  "delta": {
+    "ssim": 0.0016055674322190683,
+    "msssim": 0.00048025352980518576,
+    "lpips_alex": 0.014860095624481456,
+    "lpips_vgg": 0.019948363985105272
+  }
+}
+=== bi_conv_lstm ===
+Perceptual eval: bi_conv_lstm on ['Johnny_1280x720_60', 'vidyo1_720p_60fps', 'vidyo3_720p_60fps']  QPs: [22, 27, 32, 37, 42]
+bi_conv_lstm:   0%|          | 0/15 [00:00<?, ?it/s]bi_conv_lstm:   0%|          | 0/15 [00:48<?, ?it/s, v=Johnny_1280x72, qp=22, Δssim=+0.0000, Δlpips=+0.0000]bi_conv_lstm:   7%|▋         | 1/15 [00:48<11:13, 48.14s/it, v=Johnny_1280x72, qp=22, Δssim=+0.0000, Δlpips=+0.0000]bi_conv_lstm:   7%|▋         | 1/15 [01:43<11:13, 48.14s/it, v=Johnny_1280x72, qp=27, Δssim=+0.0000, Δlpips=+0.0000]bi_conv_lstm:  13%|█▎        | 2/15 [01:43<11:17, 52.14s/it, v=Johnny_1280x72, qp=27, Δssim=+0.0000, Δlpips=+0.0000]bi_conv_lstm:  13%|█▎        | 2/15 [02:33<11:17, 52.14s/it, v=Johnny_1280x72, qp=32, Δssim=+0.0000, Δlpips=+0.0000]bi_conv_lstm:  20%|██        | 3/15 [02:33<10:16, 51.39s/it, v=Johnny_1280x72, qp=32, Δssim=+0.0000, Δlpips=+0.0000]bi_conv_lstm:  20%|██        | 3/15 [03:20<10:16, 51.39s/it, v=Johnny_1280x72, qp=37, Δssim=+0.0000, Δlpips=+0.0000]bi_conv_lstm:  27%|██▋       | 4/15 [03:20<09:08, 49.82s/it, v=Johnny_1280x72, qp=37, Δssim=+0.0000, Δlpips=+0.0000]bi_conv_lstm:  27%|██▋       | 4/15 [04:16<09:08, 49.82s/it, v=Johnny_1280x72, qp=42, Δssim=+0.0000, Δlpips=+0.0000]bi_conv_lstm:  33%|███▎      | 5/15 [04:16<08:37, 51.71s/it, v=Johnny_1280x72, qp=42, Δssim=+0.0000, Δlpips=+0.0000]bi_conv_lstm:  33%|███▎      | 5/15 [05:07<08:37, 51.71s/it, v=vidyo1_720p_60, qp=22, Δssim=+0.0000, Δlpips=+0.0000]bi_conv_lstm:  40%|████      | 6/15 [05:07<07:45, 51.69s/it, v=vidyo1_720p_60, qp=22, Δssim=+0.0000, Δlpips=+0.0000]bi_conv_lstm:  40%|████      | 6/15 [06:01<07:45, 51.69s/it, v=vidyo1_720p_60, qp=27, Δssim=+0.0000, Δlpips=+0.0000]bi_conv_lstm:  47%|████▋     | 7/15 [06:01<06:59, 52.46s/it, v=vidyo1_720p_60, qp=27, Δssim=+0.0000, Δlpips=+0.0000]bi_conv_lstm:  47%|████▋     | 7/15 [06:47<06:59, 52.46s/it, v=vidyo1_720p_60, qp=32, Δssim=+0.0000, Δlpips=+0.0000]bi_conv_lstm:  53%|█████▎    | 8/15 [06:47<05:51, 50.18s/it, v=vidyo1_720p_60, qp=32, Δssim=+0.0000, Δlpips=+0.0000]bi_conv_lstm:  53%|█████▎    | 8/15 [07:39<05:51, 50.18s/it, v=vidyo1_720p_60, qp=37, Δssim=+0.0000, Δlpips=+0.0000]bi_conv_lstm:  60%|██████    | 9/15 [07:39<05:05, 50.88s/it, v=vidyo1_720p_60, qp=37, Δssim=+0.0000, Δlpips=+0.0000]bi_conv_lstm:  60%|██████    | 9/15 [08:23<05:05, 50.88s/it, v=vidyo1_720p_60, qp=42, Δssim=+0.0000, Δlpips=+0.0000]bi_conv_lstm:  67%|██████▋   | 10/15 [08:23<04:03, 48.69s/it, v=vidyo1_720p_60, qp=42, Δssim=+0.0000, Δlpips=+0.0000]bi_conv_lstm:  67%|██████▋   | 10/15 [09:17<04:03, 48.69s/it, v=vidyo3_720p_60, qp=22, Δssim=+0.0000, Δlpips=+0.0000]bi_conv_lstm:  73%|███████▎  | 11/15 [09:17<03:21, 50.31s/it, v=vidyo3_720p_60, qp=22, Δssim=+0.0000, Δlpips=+0.0000]bi_conv_lstm:  73%|███████▎  | 11/15 [10:02<03:21, 50.31s/it, v=vidyo3_720p_60, qp=27, Δssim=+0.0000, Δlpips=+0.0000]bi_conv_lstm:  80%|████████  | 12/15 [10:02<02:25, 48.66s/it, v=vidyo3_720p_60, qp=27, Δssim=+0.0000, Δlpips=+0.0000]bi_conv_lstm:  80%|████████  | 12/15 [10:57<02:25, 48.66s/it, v=vidyo3_720p_60, qp=32, Δssim=+0.0000, Δlpips=+0.0000]bi_conv_lstm:  87%|████████▋ | 13/15 [10:57<01:41, 50.64s/it, v=vidyo3_720p_60, qp=32, Δssim=+0.0000, Δlpips=+0.0000]bi_conv_lstm:  87%|████████▋ | 13/15 [11:46<01:41, 50.64s/it, v=vidyo3_720p_60, qp=37, Δssim=+0.0000, Δlpips=+0.0000]bi_conv_lstm:  93%|█████████▎| 14/15 [11:46<00:50, 50.21s/it, v=vidyo3_720p_60, qp=37, Δssim=+0.0000, Δlpips=+0.0000]bi_conv_lstm:  93%|█████████▎| 14/15 [12:37<00:50, 50.21s/it, v=vidyo3_720p_60, qp=42, Δssim=+0.0000, Δlpips=+0.0000]bi_conv_lstm: 100%|██████████| 15/15 [12:37<00:00, 50.49s/it, v=vidyo3_720p_60, qp=42, Δssim=+0.0000, Δlpips=+0.0000]bi_conv_lstm: 100%|██████████| 15/15 [12:37<00:00, 50.51s/it, v=vidyo3_720p_60, qp=42, Δssim=+0.0000, Δlpips=+0.0000]
+
+Wrote bdrate_results/bi_conv_lstm_perceptual.json
+{
+  "anchor": {
+    "ssim": 0.9590896125121782,
+    "msssim": 0.9876552900319459,
+    "lpips_alex": 0.11487383994283856,
+    "lpips_vgg": 0.24775451329606832
+  },
+  "enhanced": {
+    "ssim": 0.9590896125121782,
+    "msssim": 0.9876552900319459,
+    "lpips_alex": 0.11487383994283856,
+    "lpips_vgg": 0.24775451329606832
+  },
+  "delta": {
+    "ssim": 0.0,
+    "msssim": 0.0,
+    "lpips_alex": 0.0,
+    "lpips_vgg": 0.0
+  }
+}
+=== qg_conv_lstm ===
+Perceptual eval: qg_conv_lstm on ['Johnny_1280x720_60', 'vidyo1_720p_60fps', 'vidyo3_720p_60fps']  QPs: [22, 27, 32, 37, 42]
+qg_conv_lstm:   0%|          | 0/15 [00:00<?, ?it/s]qg_conv_lstm:   0%|          | 0/15 [04:50<?, ?it/s, v=Johnny_1280x72, qp=22, Δssim=-0.0000, Δlpips=-0.0001]qg_conv_lstm:   7%|▋         | 1/15 [04:50<1:07:40, 290.05s/it, v=Johnny_1280x72, qp=22, Δssim=-0.0000, Δlpips=-0.0001]qg_conv_lstm:   7%|▋         | 1/15 [08:24<1:07:40, 290.05s/it, v=Johnny_1280x72, qp=27, Δssim=-0.0000, Δlpips=-0.0001]qg_conv_lstm:  13%|█▎        | 2/15 [08:24<53:10, 245.39s/it, v=Johnny_1280x72, qp=27, Δssim=-0.0000, Δlpips=-0.0001]  qg_conv_lstm:  13%|█▎        | 2/15 [11:39<53:10, 245.39s/it, v=Johnny_1280x72, qp=32, Δssim=-0.0000, Δlpips=-0.0001]qg_conv_lstm:  20%|██        | 3/15 [11:39<44:32, 222.70s/it, v=Johnny_1280x72, qp=32, Δssim=-0.0000, Δlpips=-0.0001]qg_conv_lstm:  20%|██        | 3/15 [15:00<44:32, 222.70s/it, v=Johnny_1280x72, qp=37, Δssim=-0.0000, Δlpips=-0.0001]qg_conv_lstm:  27%|██▋       | 4/15 [15:00<39:15, 214.12s/it, v=Johnny_1280x72, qp=37, Δssim=-0.0000, Δlpips=-0.0001]qg_conv_lstm:  27%|██▋       | 4/15 [18:18<39:15, 214.12s/it, v=Johnny_1280x72, qp=42, Δssim=+0.0000, Δlpips=-0.0002]qg_conv_lstm:  33%|███▎      | 5/15 [18:18<34:42, 208.25s/it, v=Johnny_1280x72, qp=42, Δssim=+0.0000, Δlpips=-0.0002]qg_conv_lstm:  33%|███▎      | 5/15 [21:56<34:42, 208.25s/it, v=vidyo1_720p_60, qp=22, Δssim=-0.0000, Δlpips=-0.0000]qg_conv_lstm:  40%|████      | 6/15 [21:56<31:42, 211.40s/it, v=vidyo1_720p_60, qp=22, Δssim=-0.0000, Δlpips=-0.0000]qg_conv_lstm:  40%|████      | 6/15 [25:42<31:42, 211.40s/it, v=vidyo1_720p_60, qp=27, Δssim=-0.0000, Δlpips=-0.0000]qg_conv_lstm:  47%|████▋     | 7/15 [25:42<28:51, 216.41s/it, v=vidyo1_720p_60, qp=27, Δssim=-0.0000, Δlpips=-0.0000]qg_conv_lstm:  47%|████▋     | 7/15 [29:24<28:51, 216.41s/it, v=vidyo1_720p_60, qp=32, Δssim=-0.0000, Δlpips=+0.0000]qg_conv_lstm:  53%|█████▎    | 8/15 [29:24<25:27, 218.19s/it, v=vidyo1_720p_60, qp=32, Δssim=-0.0000, Δlpips=+0.0000]qg_conv_lstm:  53%|█████▎    | 8/15 [33:06<25:27, 218.19s/it, v=vidyo1_720p_60, qp=37, Δssim=+0.0000, Δlpips=+0.0000]qg_conv_lstm:  60%|██████    | 9/15 [33:06<21:55, 219.30s/it, v=vidyo1_720p_60, qp=37, Δssim=+0.0000, Δlpips=+0.0000]qg_conv_lstm:  60%|██████    | 9/15 [36:52<21:55, 219.30s/it, v=vidyo1_720p_60, qp=42, Δssim=+0.0000, Δlpips=+0.0000]qg_conv_lstm:  67%|██████▋   | 10/15 [36:52<18:26, 221.20s/it, v=vidyo1_720p_60, qp=42, Δssim=+0.0000, Δlpips=+0.0000]qg_conv_lstm:  67%|██████▋   | 10/15 [40:40<18:26, 221.20s/it, v=vidyo3_720p_60, qp=22, Δssim=-0.0000, Δlpips=-0.0001]qg_conv_lstm:  73%|███████▎  | 11/15 [40:40<14:53, 223.35s/it, v=vidyo3_720p_60, qp=22, Δssim=-0.0000, Δlpips=-0.0001]qg_conv_lstm:  73%|███████▎  | 11/15 [44:32<14:53, 223.35s/it, v=vidyo3_720p_60, qp=27, Δssim=-0.0000, Δlpips=-0.0000]qg_conv_lstm:  80%|████████  | 12/15 [44:32<11:18, 226.10s/it, v=vidyo3_720p_60, qp=27, Δssim=-0.0000, Δlpips=-0.0000]qg_conv_lstm:  80%|████████  | 12/15 [48:19<11:18, 226.10s/it, v=vidyo3_720p_60, qp=32, Δssim=-0.0000, Δlpips=+0.0000]qg_conv_lstm:  87%|████████▋ | 13/15 [48:19<07:32, 226.33s/it, v=vidyo3_720p_60, qp=32, Δssim=-0.0000, Δlpips=+0.0000]qg_conv_lstm:  87%|████████▋ | 13/15 [52:05<07:32, 226.33s/it, v=vidyo3_720p_60, qp=37, Δssim=-0.0000, Δlpips=+0.0001]qg_conv_lstm:  93%|█████████▎| 14/15 [52:05<03:46, 226.21s/it, v=vidyo3_720p_60, qp=37, Δssim=-0.0000, Δlpips=+0.0001]qg_conv_lstm:  93%|█████████▎| 14/15 [55:54<03:46, 226.21s/it, v=vidyo3_720p_60, qp=42, Δssim=+0.0000, Δlpips=+0.0000]qg_conv_lstm: 100%|██████████| 15/15 [55:54<00:00, 227.15s/it, v=vidyo3_720p_60, qp=42, Δssim=+0.0000, Δlpips=+0.0000]qg_conv_lstm: 100%|██████████| 15/15 [55:54<00:00, 223.66s/it, v=vidyo3_720p_60, qp=42, Δssim=+0.0000, Δlpips=+0.0000]
+
+Wrote bdrate_results/qg_conv_lstm_perceptual.json
+{
+  "anchor": {
+    "ssim": 0.9590896125121782,
+    "msssim": 0.9876552900319459,
+    "lpips_alex": 0.11487383994283856,
+    "lpips_vgg": 0.24775451329606832
+  },
+  "enhanced": {
+    "ssim": 0.9590756798944164,
+    "msssim": 0.9876523682507136,
+    "lpips_alex": 0.11484036480467168,
+    "lpips_vgg": 0.24763170233176607
+  },
+  "delta": {
+    "ssim": -1.3932617761724941e-05,
+    "msssim": -2.9217812322901437e-06,
+    "lpips_alex": -3.347513816688574e-05,
+    "lpips_vgg": -0.00012281096430225014
+  }
+}
+=== stenet ===
+Perceptual eval: stenet on ['Johnny_1280x720_60', 'vidyo1_720p_60fps', 'vidyo3_720p_60fps']  QPs: [22, 27, 32, 37, 42]
+stenet:   0%|          | 0/15 [00:00<?, ?it/s]stenet:   0%|          | 0/15 [00:39<?, ?it/s, v=Johnny_1280x72, qp=22, Δssim=+0.0000, Δlpips=+0.0000]stenet:   7%|▋         | 1/15 [00:39<09:17, 39.85s/it, v=Johnny_1280x72, qp=22, Δssim=+0.0000, Δlpips=+0.0000]stenet:   7%|▋         | 1/15 [01:18<09:17, 39.85s/it, v=Johnny_1280x72, qp=27, Δssim=+0.0000, Δlpips=+0.0000]stenet:  13%|█▎        | 2/15 [01:18<08:28, 39.12s/it, v=Johnny_1280x72, qp=27, Δssim=+0.0000, Δlpips=+0.0000]stenet:  13%|█▎        | 2/15 [01:50<08:28, 39.12s/it, v=Johnny_1280x72, qp=32, Δssim=+0.0000, Δlpips=+0.0000]stenet:  20%|██        | 3/15 [01:50<07:08, 35.75s/it, v=Johnny_1280x72, qp=32, Δssim=+0.0000, Δlpips=+0.0000]stenet:  20%|██        | 3/15 [02:28<07:08, 35.75s/it, v=Johnny_1280x72, qp=37, Δssim=+0.0000, Δlpips=+0.0000]stenet:  27%|██▋       | 4/15 [02:28<06:45, 36.83s/it, v=Johnny_1280x72, qp=37, Δssim=+0.0000, Δlpips=+0.0000]stenet:  27%|██▋       | 4/15 [03:07<06:45, 36.83s/it, v=Johnny_1280x72, qp=42, Δssim=+0.0000, Δlpips=+0.0000]stenet:  33%|███▎      | 5/15 [03:07<06:15, 37.53s/it, v=Johnny_1280x72, qp=42, Δssim=+0.0000, Δlpips=+0.0000]stenet:  33%|███▎      | 5/15 [03:43<06:15, 37.53s/it, v=vidyo1_720p_60, qp=22, Δssim=+0.0000, Δlpips=+0.0000]stenet:  40%|████      | 6/15 [03:43<05:31, 36.87s/it, v=vidyo1_720p_60, qp=22, Δssim=+0.0000, Δlpips=+0.0000]stenet:  40%|████      | 6/15 [04:22<05:31, 36.87s/it, v=vidyo1_720p_60, qp=27, Δssim=+0.0000, Δlpips=+0.0000]stenet:  47%|████▋     | 7/15 [04:22<05:02, 37.79s/it, v=vidyo1_720p_60, qp=27, Δssim=+0.0000, Δlpips=+0.0000]stenet:  47%|████▋     | 7/15 [04:59<05:02, 37.79s/it, v=vidyo1_720p_60, qp=32, Δssim=+0.0000, Δlpips=+0.0000]stenet:  53%|█████▎    | 8/15 [04:59<04:21, 37.34s/it, v=vidyo1_720p_60, qp=32, Δssim=+0.0000, Δlpips=+0.0000]stenet:  53%|█████▎    | 8/15 [05:38<04:21, 37.34s/it, v=vidyo1_720p_60, qp=37, Δssim=+0.0000, Δlpips=+0.0000]stenet:  60%|██████    | 9/15 [05:38<03:48, 38.13s/it, v=vidyo1_720p_60, qp=37, Δssim=+0.0000, Δlpips=+0.0000]stenet:  60%|██████    | 9/15 [06:18<03:48, 38.13s/it, v=vidyo1_720p_60, qp=42, Δssim=+0.0000, Δlpips=+0.0000]stenet:  67%|██████▋   | 10/15 [06:18<03:13, 38.71s/it, v=vidyo1_720p_60, qp=42, Δssim=+0.0000, Δlpips=+0.0000]stenet:  67%|██████▋   | 10/15 [06:57<03:13, 38.71s/it, v=vidyo3_720p_60, qp=22, Δssim=+0.0000, Δlpips=+0.0000]stenet:  73%|███████▎  | 11/15 [06:57<02:34, 38.60s/it, v=vidyo3_720p_60, qp=22, Δssim=+0.0000, Δlpips=+0.0000]stenet:  73%|███████▎  | 11/15 [07:40<02:34, 38.60s/it, v=vidyo3_720p_60, qp=27, Δssim=+0.0000, Δlpips=+0.0000]stenet:  80%|████████  | 12/15 [07:40<02:00, 40.10s/it, v=vidyo3_720p_60, qp=27, Δssim=+0.0000, Δlpips=+0.0000]stenet:  80%|████████  | 12/15 [08:18<02:00, 40.10s/it, v=vidyo3_720p_60, qp=32, Δssim=+0.0000, Δlpips=+0.0000]stenet:  87%|████████▋ | 13/15 [08:18<01:18, 39.33s/it, v=vidyo3_720p_60, qp=32, Δssim=+0.0000, Δlpips=+0.0000]stenet:  87%|████████▋ | 13/15 [09:00<01:18, 39.33s/it, v=vidyo3_720p_60, qp=37, Δssim=+0.0000, Δlpips=+0.0000]stenet:  93%|█████████▎| 14/15 [09:00<00:40, 40.27s/it, v=vidyo3_720p_60, qp=37, Δssim=+0.0000, Δlpips=+0.0000]stenet:  93%|█████████▎| 14/15 [09:41<00:40, 40.27s/it, v=vidyo3_720p_60, qp=42, Δssim=+0.0000, Δlpips=+0.0000]stenet: 100%|██████████| 15/15 [09:41<00:00, 40.33s/it, v=vidyo3_720p_60, qp=42, Δssim=+0.0000, Δlpips=+0.0000]stenet: 100%|██████████| 15/15 [09:41<00:00, 38.75s/it, v=vidyo3_720p_60, qp=42, Δssim=+0.0000, Δlpips=+0.0000]
+
+Wrote bdrate_results/stenet_perceptual.json
+{
+  "anchor": {
+    "ssim": 0.9590896125121782,
+    "msssim": 0.9876552900319459,
+    "lpips_alex": 0.11487383994283856,
+    "lpips_vgg": 0.24775451329606832
+  },
+  "enhanced": {
+    "ssim": 0.9590896125121782,
+    "msssim": 0.9876552900319459,
+    "lpips_alex": 0.11487383994283856,
+    "lpips_vgg": 0.24775451329606832
+  },
+  "delta": {
+    "ssim": 0.0,
+    "msssim": 0.0,
+    "lpips_alex": 0.0,
+    "lpips_vgg": 0.0
+  }
+}
+=== vvc_ppff ===
+Perceptual eval: vvc_ppff on ['Johnny_1280x720_60', 'vidyo1_720p_60fps', 'vidyo3_720p_60fps']  QPs: [22, 27, 32, 37, 42]
+vvc_ppff:   0%|          | 0/15 [00:00<?, ?it/s]vvc_ppff:   0%|          | 0/15 [01:10<?, ?it/s, v=Johnny_1280x72, qp=22, Δssim=-0.0002, Δlpips=+0.0022]vvc_ppff:   7%|▋         | 1/15 [01:10<16:21, 70.11s/it, v=Johnny_1280x72, qp=22, Δssim=-0.0002, Δlpips=+0.0022]vvc_ppff:   7%|▋         | 1/15 [02:20<16:21, 70.11s/it, v=Johnny_1280x72, qp=27, Δssim=-0.0004, Δlpips=+0.0048]vvc_ppff:  13%|█▎        | 2/15 [02:20<15:16, 70.49s/it, v=Johnny_1280x72, qp=27, Δssim=-0.0004, Δlpips=+0.0048]vvc_ppff:  13%|█▎        | 2/15 [03:30<15:16, 70.49s/it, v=Johnny_1280x72, qp=32, Δssim=-0.0003, Δlpips=+0.0069]vvc_ppff:  20%|██        | 3/15 [03:30<13:59, 69.92s/it, v=Johnny_1280x72, qp=32, Δssim=-0.0003, Δlpips=+0.0069]vvc_ppff:  20%|██        | 3/15 [04:41<13:59, 69.92s/it, v=Johnny_1280x72, qp=37, Δssim=-0.0002, Δlpips=+0.0090]vvc_ppff:  27%|██▋       | 4/15 [04:42<12:57, 70.70s/it, v=Johnny_1280x72, qp=37, Δssim=-0.0002, Δlpips=+0.0090]vvc_ppff:  27%|██▋       | 4/15 [05:47<12:57, 70.70s/it, v=Johnny_1280x72, qp=42, Δssim=+0.0010, Δlpips=+0.0071]vvc_ppff:  33%|███▎      | 5/15 [05:47<11:29, 68.96s/it, v=Johnny_1280x72, qp=42, Δssim=+0.0010, Δlpips=+0.0071]vvc_ppff:  33%|███▎      | 5/15 [07:01<11:29, 68.96s/it, v=vidyo1_720p_60, qp=22, Δssim=+0.0001, Δlpips=+0.0016]vvc_ppff:  40%|████      | 6/15 [07:01<10:34, 70.48s/it, v=vidyo1_720p_60, qp=22, Δssim=+0.0001, Δlpips=+0.0016]vvc_ppff:  40%|████      | 6/15 [08:11<10:34, 70.48s/it, v=vidyo1_720p_60, qp=27, Δssim=+0.0003, Δlpips=+0.0035]vvc_ppff:  47%|████▋     | 7/15 [08:11<09:22, 70.26s/it, v=vidyo1_720p_60, qp=27, Δssim=+0.0003, Δlpips=+0.0035]vvc_ppff:  47%|████▋     | 7/15 [09:17<09:22, 70.26s/it, v=vidyo1_720p_60, qp=32, Δssim=+0.0009, Δlpips=+0.0059]vvc_ppff:  53%|█████▎    | 8/15 [09:17<08:03, 69.14s/it, v=vidyo1_720p_60, qp=32, Δssim=+0.0009, Δlpips=+0.0059]vvc_ppff:  53%|█████▎    | 8/15 [10:29<08:03, 69.14s/it, v=vidyo1_720p_60, qp=37, Δssim=+0.0017, Δlpips=+0.0079]vvc_ppff:  60%|██████    | 9/15 [10:29<07:00, 70.05s/it, v=vidyo1_720p_60, qp=37, Δssim=+0.0017, Δlpips=+0.0079]vvc_ppff:  60%|██████    | 9/15 [11:35<07:00, 70.05s/it, v=vidyo1_720p_60, qp=42, Δssim=+0.0027, Δlpips=+0.0081]vvc_ppff:  67%|██████▋   | 10/15 [11:35<05:42, 68.56s/it, v=vidyo1_720p_60, qp=42, Δssim=+0.0027, Δlpips=+0.0081]vvc_ppff:  67%|██████▋   | 10/15 [12:39<05:42, 68.56s/it, v=vidyo3_720p_60, qp=22, Δssim=+0.0000, Δlpips=+0.0005]vvc_ppff:  73%|███████▎  | 11/15 [12:39<04:29, 67.33s/it, v=vidyo3_720p_60, qp=22, Δssim=+0.0000, Δlpips=+0.0005]vvc_ppff:  73%|███████▎  | 11/15 [13:52<04:29, 67.33s/it, v=vidyo3_720p_60, qp=27, Δssim=+0.0003, Δlpips=+0.0018]vvc_ppff:  80%|████████  | 12/15 [13:52<03:27, 69.07s/it, v=vidyo3_720p_60, qp=27, Δssim=+0.0003, Δlpips=+0.0018]vvc_ppff:  80%|████████  | 12/15 [15:00<03:27, 69.07s/it, v=vidyo3_720p_60, qp=32, Δssim=+0.0009, Δlpips=+0.0028]vvc_ppff:  87%|████████▋ | 13/15 [15:00<02:17, 68.59s/it, v=vidyo3_720p_60, qp=32, Δssim=+0.0009, Δlpips=+0.0028]vvc_ppff:  87%|████████▋ | 13/15 [16:06<02:17, 68.59s/it, v=vidyo3_720p_60, qp=37, Δssim=+0.0017, Δlpips=+0.0031]vvc_ppff:  93%|█████████▎| 14/15 [16:06<01:07, 67.93s/it, v=vidyo3_720p_60, qp=37, Δssim=+0.0017, Δlpips=+0.0031]vvc_ppff:  93%|█████████▎| 14/15 [17:19<01:07, 67.93s/it, v=vidyo3_720p_60, qp=42, Δssim=+0.0025, Δlpips=+0.0039]vvc_ppff: 100%|██████████| 15/15 [17:19<00:00, 69.47s/it, v=vidyo3_720p_60, qp=42, Δssim=+0.0025, Δlpips=+0.0039]vvc_ppff: 100%|██████████| 15/15 [17:19<00:00, 69.31s/it, v=vidyo3_720p_60, qp=42, Δssim=+0.0025, Δlpips=+0.0039]
+
+Wrote bdrate_results/vvc_ppff_perceptual.json
+{
+  "anchor": {
+    "ssim": 0.9590896125121782,
+    "msssim": 0.9876552900319459,
+    "lpips_alex": 0.11487383994283856,
+    "lpips_vgg": 0.24775451329606832
+  },
+  "enhanced": {
+    "ssim": 0.95981871665165,
+    "msssim": 0.9877662536918475,
+    "lpips_alex": 0.11949070853091057,
+    "lpips_vgg": 0.24822034746088012
+  },
+  "delta": {
+    "ssim": 0.0007291041394718034,
+    "msssim": 0.00011096365990159729,
+    "lpips_alex": 0.004616868588072004,
+    "lpips_vgg": 0.0004658341648118014
+  }
+}
+All done.

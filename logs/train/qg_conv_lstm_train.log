@@ -1,0 +1,33 @@
+Loaded 2628 frame triplets for train
+Loaded 329 frame triplets for val
+Train: 2628  Val: 329
+Params: 2,678,003
+Logging to qg_conv_lstm_train.log
+epoch   0  loss=0.00262  in=37.147  enh=35.504  ΔY=-0.9043  ΔU=-3.2387  ΔV=-3.5372  lr=1.0e-04  (143s)
+epoch   1  loss=0.00034  in=37.070  enh=36.518  ΔY=-0.2661  ΔU=-1.2289  ΔV=-1.5309  lr=1.0e-04  (141s)
+epoch   2  loss=0.00032  in=37.098  enh=36.708  ΔY=-0.1849  ΔU=-0.8415  ΔV=-1.1402  lr=1.0e-04  (141s)
+epoch   3  loss=0.00031  in=37.084  enh=36.877  ΔY=-0.1057  ΔU=-0.4604  ΔV=-0.6348  lr=1.0e-04  (141s)
+epoch   4  loss=0.00031  in=37.159  enh=37.029  ΔY=-0.0650  ΔU=-0.3380  ΔV=-0.3790  lr=1.0e-04  (142s)
+epoch   5  loss=0.00030  in=37.107  enh=37.008  ΔY=-0.0453  ΔU=-0.2795  ΔV=-0.2807  lr=1.0e-04  (141s)
+epoch   6  loss=0.00031  in=37.157  enh=37.067  ΔY=-0.0523  ΔU=-0.2015  ΔV=-0.2513  lr=1.0e-04  (142s)
+epoch   7  loss=0.00030  in=37.020  enh=36.970  ΔY=-0.0268  ΔU=-0.0813  ΔV=-0.1874  lr=1.0e-04  (142s)
+epoch   8  loss=0.00030  in=37.151  enh=37.074  ΔY=-0.0328  ΔU=-0.1677  ΔV=-0.2630  lr=1.0e-04  (143s)
+epoch   9  loss=0.00030  in=37.061  enh=37.027  ΔY=-0.0148  ΔU=-0.0932  ΔV=-0.1401  lr=1.0e-04  (142s)
+  saved checkpoints/qg_conv_lstm_epoch_10.pt
+epoch  10  loss=0.00030  in=37.106  enh=37.085  ΔY=-0.0112  ΔU=-0.0286  ΔV=-0.1009  lr=1.0e-04  (142s)
+epoch  11  loss=0.00030  in=36.969  enh=36.958  ΔY=-0.0094  ΔU=+0.0030  ΔV=-0.0492  lr=1.0e-04  (141s)
+epoch  12  loss=0.00030  in=37.149  enh=37.136  ΔY=-0.0123  ΔU=-0.0038  ΔV=-0.0478  lr=1.0e-04  (142s)
+epoch  13  loss=0.00030  in=37.177  enh=37.181  ΔY=-0.0022  ΔU=+0.0397  ΔV=-0.0008  lr=1.0e-04  (142s)
+epoch  14  loss=0.00030  in=37.177  enh=37.190  ΔY=-0.0007  ΔU=+0.0797  ΔV=+0.0230  lr=1.0e-04  (142s)
+epoch  15  loss=0.00030  in=36.962  enh=36.982  ΔY=+0.0042  ΔU=+0.1004  ΔV=+0.0379  lr=1.0e-04  (143s)
+epoch  16  loss=0.00030  in=37.202  enh=37.224  ΔY=+0.0150  ΔU=+0.0932  ΔV=-0.0081  lr=1.0e-04  (141s)
+epoch  17  loss=0.00030  in=37.074  enh=37.122  ΔY=+0.0515  ΔU=+0.0786  ΔV=-0.0020  lr=1.0e-04  (142s)
+epoch  18  loss=0.00037  in=36.889  enh=36.691  ΔY=-0.1115  ΔU=-0.4309  ΔV=-0.5620  lr=1.0e-04  (141s)
+epoch  19  loss=0.00030  in=37.171  enh=37.061  ΔY=-0.0223  ΔU=-0.5455  ΔV=-0.1051  lr=1.0e-04  (142s)
+  saved checkpoints/qg_conv_lstm_epoch_20.pt
+epoch  20  loss=0.00030  in=37.081  enh=37.008  ΔY=-0.0063  ΔU=-0.3362  ΔV=-0.2091  lr=1.0e-04  (142s)
+epoch  21  loss=0.00030  in=37.147  enh=36.737  ΔY=-0.0951  ΔU=-0.0120  ΔV=-2.2671  lr=1.0e-04  (143s)
+epoch  22  loss=0.00030  in=36.984  enh=36.936  ΔY=-0.0359  ΔU=-0.0112  ΔV=-0.1735  lr=1.0e-04  (142s)
+epoch  23  loss=0.00030  in=37.172  enh=37.138  ΔY=-0.0022  ΔU=-0.1760  ΔV=-0.0648  lr=1.0e-04  (142s)
+/usr/lib/python3.14/multiprocessing/resource_tracker.py:396: UserWarning: resource_tracker: There appear to be 20 leaked semaphore objects to clean up at shutdown: {'/mp-72lkt4jc', '/mp-mp6ch8im', '/mp-s_0tq_hu', '/mp-o5p5qvoc', '/mp-n1n4iay6', '/mp-gntwonxq', '/mp-e2qntnnk', '/mp-zo6w7w6f', '/mp-8md70mhb', '/mp-mfmyfp_x', '/mp-e_lp93m7', '/mp-2zl53pvw', '/mp-y7squqhj', '/mp-by00y3s9', '/mp-qwx3bsgj', '/mp-3euuhofz', '/mp-z3ii9p_r', '/mp-ga3epvyz', '/mp-_40x3mbw', '/mp-1xki0i58'}
+  warnings.warn(

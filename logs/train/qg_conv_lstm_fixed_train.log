@@ -1,0 +1,125 @@
+Loaded 2628 frame triplets for train
+Loaded 329 frame triplets for val
+Train: 2628  Val: 329
+Params: 2,678,003
+Logging to qg_conv_lstm_fixed_train.log
+epoch   0  loss=0.00261  in=37.147  enh=35.533  ΔY=-0.9100  ΔU=-3.1135  ΔV=-3.4757  lr=1.0e-04  (203s)
+epoch   1  loss=0.00034  in=37.070  enh=36.543  ΔY=-0.2449  ΔU=-1.1200  ΔV=-1.5628  lr=1.0e-04  (251s)
+epoch   2  loss=0.00032  in=37.098  enh=36.772  ΔY=-0.1515  ΔU=-0.7180  ΔV=-0.9741  lr=1.0e-04  (229s)
+epoch   3  loss=0.00031  in=37.084  enh=36.911  ΔY=-0.0918  ΔU=-0.3888  ΔV=-0.5108  lr=1.0e-04  (215s)
+epoch   4  loss=0.00030  in=37.159  enh=37.064  ΔY=-0.0460  ΔU=-0.2383  ΔV=-0.3104  lr=1.0e-04  (236s)
+epoch   5  loss=0.00030  in=37.107  enh=37.006  ΔY=-0.0332  ΔU=-0.3264  ΔV=-0.3139  lr=1.0e-04  (257s)
+epoch   6  loss=0.00031  in=37.157  enh=37.095  ΔY=-0.0315  ΔU=-0.1636  ΔV=-0.1790  lr=1.0e-04  (213s)
+epoch   7  loss=0.00030  in=37.020  enh=36.977  ΔY=-0.0210  ΔU=-0.0829  ΔV=-0.1690  lr=1.0e-04  (214s)
+epoch   8  loss=0.00030  in=37.151  enh=37.077  ΔY=-0.0228  ΔU=-0.0965  ΔV=-0.3749  lr=1.0e-04  (216s)
+epoch   9  loss=0.00030  in=37.061  enh=37.037  ΔY=-0.0129  ΔU=-0.0787  ΔV=-0.0809  lr=1.0e-04  (219s)
+epoch  10  loss=0.00030  in=37.106  enh=37.081  ΔY=-0.0110  ΔU=-0.0426  ΔV=-0.1260  lr=1.0e-04  (218s)
+epoch  11  loss=0.00030  in=36.969  enh=36.944  ΔY=-0.0170  ΔU=-0.0653  ΔV=-0.0496  lr=1.0e-04  (218s)
+epoch  12  loss=0.00030  in=37.149  enh=37.129  ΔY=-0.0141  ΔU=-0.0614  ΔV=-0.0321  lr=1.0e-04  (219s)
+epoch  13  loss=0.00030  in=37.177  enh=37.150  ΔY=-0.0145  ΔU=-0.0102  ΔV=-0.1494  lr=1.0e-04  (215s)
+epoch  14  loss=0.00030  in=37.177  enh=37.172  ΔY=-0.0062  ΔU=+0.0160  ΔV=-0.0464  lr=1.0e-04  (216s)
+epoch  15  loss=0.00030  in=36.962  enh=36.959  ΔY=-0.0044  ΔU=+0.0006  ΔV=+0.0026  lr=1.0e-04  (216s)
+epoch  16  loss=0.00030  in=37.202  enh=37.198  ΔY=-0.0087  ΔU=+0.0261  ΔV=-0.0028  lr=1.0e-04  (215s)
+epoch  17  loss=0.00030  in=37.074  enh=37.055  ΔY=-0.0083  ΔU=-0.0327  ΔV=-0.0658  lr=1.0e-04  (216s)
+epoch  18  loss=0.00030  in=36.889  enh=36.890  ΔY=-0.0123  ΔU=+0.0739  ΔV=+0.0071  lr=1.0e-04  (224s)
+epoch  19  loss=0.00030  in=37.171  enh=37.166  ΔY=-0.0032  ΔU=-0.0007  ΔV=-0.0209  lr=1.0e-04  (216s)
+  saved checkpoints/qg_conv_lstm_fixed_epoch_20.pt
+epoch  20  loss=0.00030  in=37.081  enh=37.082  ΔY=-0.0015  ΔU=+0.0618  ΔV=-0.0605  lr=1.0e-04  (213s)
+epoch  21  loss=0.00030  in=37.147  enh=37.155  ΔY=+0.0016  ΔU=+0.0653  ΔV=-0.0152  lr=1.0e-04  (217s)
+epoch  22  loss=0.00030  in=36.984  enh=36.973  ΔY=-0.0301  ΔU=+0.0897  ΔV=-0.0049  lr=1.0e-04  (217s)
+epoch  23  loss=0.00030  in=37.172  enh=37.191  ΔY=+0.0042  ΔU=+0.1232  ΔV=-0.0033  lr=1.0e-04  (217s)
+epoch  24  loss=0.00030  in=37.071  enh=37.077  ΔY=+0.0025  ΔU=+0.0428  ΔV=+0.0007  lr=1.0e-04  (219s)
+epoch  25  loss=0.00030  in=36.783  enh=36.801  ΔY=+0.0018  ΔU=+0.1254  ΔV=+0.0165  lr=1.0e-04  (216s)
+epoch  26  loss=0.00030  in=37.016  enh=37.042  ΔY=+0.0077  ΔU=+0.1438  ΔV=+0.0230  lr=1.0e-04  (220s)
+epoch  27  loss=0.00030  in=37.201  enh=37.232  ΔY=+0.0110  ΔU=+0.1416  ΔV=+0.0408  lr=1.0e-04  (219s)
+epoch  28  loss=0.00030  in=37.198  enh=37.238  ΔY=+0.0151  ΔU=+0.1921  ΔV=+0.0204  lr=1.0e-04  (217s)
+epoch  29  loss=0.00030  in=36.976  enh=37.032  ΔY=+0.0254  ΔU=+0.2228  ΔV=+0.0822  lr=1.0e-04  (218s)
+epoch  30  loss=0.00030  in=37.230  enh=37.287  ΔY=+0.0346  ΔU=+0.2105  ΔV=+0.0159  lr=1.0e-04  (257s)
+epoch  31  loss=0.00030  in=37.040  enh=37.116  ΔY=+0.0568  ΔU=+0.1690  ΔV=+0.0810  lr=1.0e-04  (237s)
+epoch  32  loss=0.00029  in=37.035  enh=37.088  ΔY=+0.0744  ΔU=-0.0554  ΔV=+0.0587  lr=1.0e-04  (221s)
+epoch  33  loss=0.00029  in=37.182  enh=37.300  ΔY=+0.1006  ΔU=+0.2504  ΔV=+0.0874  lr=1.0e-04  (218s)
+epoch  34  loss=0.00029  in=37.134  enh=37.265  ΔY=+0.1192  ΔU=+0.2089  ΔV=+0.1055  lr=1.0e-04  (219s)
+epoch  35  loss=0.00029  in=37.129  enh=37.304  ΔY=+0.1606  ΔU=+0.2982  ΔV=+0.1257  lr=1.0e-04  (219s)
+epoch  36  loss=0.00029  in=37.113  enh=37.305  ΔY=+0.1754  ΔU=+0.3186  ΔV=+0.1678  lr=1.0e-04  (221s)
+epoch  37  loss=0.00029  in=37.243  enh=37.425  ΔY=+0.1905  ΔU=+0.2502  ΔV=+0.0045  lr=1.0e-04  (218s)
+epoch  38  loss=0.00029  in=37.328  enh=5.816  ΔY=-28.3712  ΔU=-35.0970  ΔV=-36.7539  lr=1.0e-04  (218s)
+epoch  39  loss=0.00031  in=37.187  enh=37.181  ΔY=-0.0031  ΔU=-0.0141  ΔV=-0.0266  lr=1.0e-04  (220s)
+  saved checkpoints/qg_conv_lstm_fixed_epoch_40.pt
+epoch  40  loss=0.00030  in=37.139  enh=37.139  ΔY=-0.0007  ΔU=+0.0067  ΔV=-0.0025  lr=1.0e-04  (222s)
+epoch  41  loss=0.00029  in=36.947  enh=36.948  ΔY=-0.0002  ΔU=+0.0050  ΔV=+0.0096  lr=1.0e-04  (225s)
+epoch  42  loss=0.00030  in=37.037  enh=37.039  ΔY=+0.0002  ΔU=-0.0032  ΔV=+0.0135  lr=1.0e-04  (223s)
+epoch  43  loss=0.00030  in=37.033  enh=37.037  ΔY=+0.0000  ΔU=+0.0120  ΔV=+0.0176  lr=1.0e-04  (253s)
+epoch  44  loss=0.00030  in=37.126  enh=37.128  ΔY=+0.0002  ΔU=+0.0051  ΔV=+0.0111  lr=1.0e-04  (227s)
+epoch  45  loss=0.00030  in=37.196  enh=37.199  ΔY=+0.0000  ΔU=-0.0042  ΔV=+0.0287  lr=1.0e-04  (224s)
+epoch  46  loss=0.00030  in=36.975  enh=36.978  ΔY=-0.0001  ΔU=+0.0096  ΔV=+0.0175  lr=1.0e-04  (223s)
+epoch  47  loss=0.00030  in=37.108  enh=37.111  ΔY=+0.0003  ΔU=+0.0066  ΔV=+0.0139  lr=1.0e-04  (222s)
+epoch  48  loss=0.00030  in=37.175  enh=37.176  ΔY=-0.0001  ΔU=+0.0088  ΔV=+0.0021  lr=1.0e-04  (219s)
+epoch  49  loss=0.00030  in=37.240  enh=37.242  ΔY=-0.0006  ΔU=+0.0024  ΔV=+0.0181  lr=1.0e-05  (223s)
+epoch  50  loss=0.00030  in=37.060  enh=37.063  ΔY=+0.0003  ΔU=+0.0047  ΔV=+0.0112  lr=1.0e-05  (222s)
+epoch  51  loss=0.00030  in=37.122  enh=37.123  ΔY=+0.0002  ΔU=+0.0027  ΔV=+0.0063  lr=1.0e-05  (225s)
+epoch  52  loss=0.00030  in=37.165  enh=37.168  ΔY=+0.0001  ΔU=+0.0159  ΔV=+0.0113  lr=1.0e-05  (238s)
+epoch  53  loss=0.00030  in=37.154  enh=37.157  ΔY=+0.0001  ΔU=+0.0102  ΔV=+0.0041  lr=1.0e-05  (226s)
+epoch  54  loss=0.00030  in=37.017  enh=37.019  ΔY=+0.0001  ΔU=+0.0018  ΔV=+0.0147  lr=1.0e-05  (230s)
+epoch  55  loss=0.00030  in=37.262  enh=37.264  ΔY=+0.0002  ΔU=+0.0085  ΔV=+0.0061  lr=1.0e-05  (304s)
+epoch  56  loss=0.00030  in=37.145  enh=37.148  ΔY=+0.0003  ΔU=+0.0145  ΔV=+0.0084  lr=1.0e-05  (219s)
+epoch  57  loss=0.00030  in=37.149  enh=37.152  ΔY=+0.0001  ΔU=+0.0033  ΔV=+0.0181  lr=1.0e-05  (219s)
+epoch  58  loss=0.00030  in=37.133  enh=37.135  ΔY=+0.0002  ΔU=+0.0062  ΔV=+0.0134  lr=1.0e-05  (219s)
+epoch  59  loss=0.00030  in=37.274  enh=37.276  ΔY=+0.0001  ΔU=+0.0077  ΔV=+0.0094  lr=1.0e-05  (219s)
+  saved checkpoints/qg_conv_lstm_fixed_epoch_60.pt
+epoch  60  loss=0.00030  in=37.037  enh=37.039  ΔY=+0.0001  ΔU=+0.0096  ΔV=+0.0192  lr=1.0e-05  (218s)
+epoch  61  loss=0.00030  in=37.333  enh=37.337  ΔY=+0.0002  ΔU=+0.0163  ΔV=+0.0168  lr=1.0e-05  (218s)
+epoch  62  loss=0.00030  in=37.174  enh=37.177  ΔY=+0.0002  ΔU=+0.0063  ΔV=+0.0174  lr=1.0e-05  (221s)
+epoch  63  loss=0.00030  in=37.196  enh=37.200  ΔY=+0.0004  ΔU=+0.0077  ΔV=+0.0196  lr=1.0e-05  (217s)
+epoch  64  loss=0.00030  in=37.109  enh=37.111  ΔY=+0.0003  ΔU=+0.0096  ΔV=+0.0052  lr=1.0e-05  (217s)
+epoch  65  loss=0.00030  in=37.261  enh=37.265  ΔY=+0.0005  ΔU=+0.0001  ΔV=+0.0200  lr=1.0e-05  (221s)
+epoch  66  loss=0.00030  in=37.220  enh=37.223  ΔY=+0.0003  ΔU=+0.0016  ΔV=+0.0185  lr=1.0e-05  (254s)
+epoch  67  loss=0.00030  in=37.280  enh=37.283  ΔY=+0.0002  ΔU=+0.0039  ΔV=+0.0156  lr=1.0e-05  (229s)
+epoch  68  loss=0.00030  in=37.003  enh=37.005  ΔY=+0.0000  ΔU=+0.0005  ΔV=+0.0150  lr=1.0e-05  (227s)
+epoch  69  loss=0.00030  in=36.995  enh=36.997  ΔY=+0.0004  ΔU=+0.0079  ΔV=+0.0170  lr=1.0e-05  (223s)
+epoch  70  loss=0.00030  in=37.307  enh=37.310  ΔY=+0.0002  ΔU=+0.0056  ΔV=+0.0232  lr=1.0e-05  (225s)
+epoch  71  loss=0.00030  in=37.117  enh=37.120  ΔY=+0.0001  ΔU=+0.0082  ΔV=+0.0099  lr=1.0e-05  (221s)
+epoch  72  loss=0.00030  in=37.189  enh=37.191  ΔY=+0.0003  ΔU=+0.0066  ΔV=+0.0117  lr=1.0e-05  (222s)
+epoch  73  loss=0.00030  in=37.121  enh=37.125  ΔY=+0.0002  ΔU=+0.0084  ΔV=+0.0206  lr=1.0e-05  (229s)
+epoch  74  loss=0.00030  in=37.080  enh=37.082  ΔY=+0.0001  ΔU=+0.0084  ΔV=+0.0132  lr=1.0e-05  (225s)
+epoch  75  loss=0.00030  in=37.201  enh=37.204  ΔY=+0.0004  ΔU=+0.0113  ΔV=+0.0117  lr=1.0e-05  (221s)
+epoch  76  loss=0.00030  in=37.119  enh=37.121  ΔY=-0.0001  ΔU=+0.0089  ΔV=+0.0155  lr=1.0e-05  (224s)
+epoch  77  loss=0.00030  in=37.357  enh=37.361  ΔY=+0.0004  ΔU=+0.0131  ΔV=+0.0223  lr=1.0e-05  (224s)
+epoch  78  loss=0.00030  in=37.200  enh=37.202  ΔY=+0.0002  ΔU=+0.0052  ΔV=+0.0126  lr=1.0e-05  (225s)
+epoch  79  loss=0.00030  in=37.109  enh=37.112  ΔY=-0.0000  ΔU=+0.0117  ΔV=+0.0165  lr=1.0e-05  (230s)
+  saved checkpoints/qg_conv_lstm_fixed_epoch_80.pt
+epoch  80  loss=0.00029  in=36.954  enh=36.956  ΔY=+0.0002  ΔU=+0.0039  ΔV=+0.0140  lr=1.0e-05  (223s)
+Traceback (most recent call last):
+  File "/home/filip/vvc-cnn-inter-enhancement/train_qg_conv_lstm.py", line 143, in <module>
+    main()
+    ~~~~^^
+  File "/home/filip/vvc-cnn-inter-enhancement/train_qg_conv_lstm.py", line 91, in main
+    train_loss += float(loss.detach())
+                  ~~~~~^^^^^^^^^^^^^^^
+torch.AcceleratorError: CUDA error: unknown error
+Search for `cudaErrorUnknown' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+terminate called after throwing an instance of 'c10::AcceleratorError'
+  what():  CUDA error: unknown error
+Search for `cudaErrorUnknown' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+Exception raised from c10_cuda_check_implementation at /pytorch/c10/cuda/CUDAException.cpp:44 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0x80 (0x776a6297cb80 in /home/filip/vvc-cnn-inter-enhancement/.venv/lib/python3.14/site-packages/torch/lib/libc10.so)
+frame #1: <unknown function> + 0x11fb7 (0x776a8ac66fb7 in /home/filip/vvc-cnn-inter-enhancement/.venv/lib/python3.14/site-packages/torch/lib/libc10_cuda.so)
+frame #2: <unknown function> + 0xc77b28 (0x776a04077b28 in /home/filip/vvc-cnn-inter-enhancement/.venv/lib/python3.14/site-packages/torch/lib/libtorch_cuda.so)
+frame #3: <unknown function> + 0xc72b53 (0x776a04072b53 in /home/filip/vvc-cnn-inter-enhancement/.venv/lib/python3.14/site-packages/torch/lib/libtorch_cuda.so)
+frame #4: <unknown function> + 0xc7a685 (0x776a0407a685 in /home/filip/vvc-cnn-inter-enhancement/.venv/lib/python3.14/site-packages/torch/lib/libtorch_cuda.so)
+frame #5: <unknown function> + 0x483d2f (0x776a54683d2f in /home/filip/vvc-cnn-inter-enhancement/.venv/lib/python3.14/site-packages/torch/lib/libtorch_python.so)
+frame #6: c10::TensorImpl::~TensorImpl() + 0x9 (0x776a62959d69 in /home/filip/vvc-cnn-inter-enhancement/.venv/lib/python3.14/site-packages/torch/lib/libc10.so)
+frame #7: <unknown function> + 0x7cd438 (0x776a549cd438 in /home/filip/vvc-cnn-inter-enhancement/.venv/lib/python3.14/site-packages/torch/lib/libtorch_python.so)
+frame #8: <unknown function> + 0x7cd75a (0x776a549cd75a in /home/filip/vvc-cnn-inter-enhancement/.venv/lib/python3.14/site-packages/torch/lib/libtorch_python.so)
+<omitting python frames>
+frame #24: <unknown function> + 0x27741 (0x776a8de27741 in /usr/lib/libc.so.6)
+frame #25: __libc_start_main + 0x89 (0x776a8de27879 in /usr/lib/libc.so.6)
+frame #26: _start + 0x25 (0x632850b4c045 in /home/filip/vvc-cnn-inter-enhancement/.venv/bin/python3)
+

@@ -1,0 +1,8263 @@
+++ date
++ echo '=== Sun Sep  6 19:54:05 CEST 2026 mqp prepare OFF (resume) ==='
+=== Sun Sep  6 19:54:05 CEST 2026 mqp prepare OFF (resume) ===
++ uv run python mqp_prepare.py --variant off --stage all --enc-workers 8
+[mqp-off] 212 tasks, encode-todo=188
+mqp-off:encode:   0%|          | 0/188 [00:00<?, ?it/s]mqp-off:encode:   1%|          | 1/188 [2:01:21<378:15:25, 7281.95s/it]mqp-off:encode:   1%|          | 2/188 [2:50:58<245:23:27, 4749.50s/it]mqp-off:encode:   2%|▏         | 3/188 [3:42:34<205:16:36, 3994.58s/it]mqp-off:encode:   2%|▏         | 4/188 [3:48:27<130:40:47, 2556.78s/it]mqp-off:encode:   3%|▎         | 5/188 [4:09:06<105:48:57, 2081.63s/it]++ date
++ echo '=== Mon Sep  7 00:08:49 CEST 2026 [mqp3] waiting for OFF prepare (pid 131095) ==='
+=== Mon Sep  7 00:08:49 CEST 2026 [mqp3] waiting for OFF prepare (pid 131095) ===
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
+mqp-off:encode:   3%|▎         | 6/188 [4:15:34<76:07:34, 1505.79s/it] + kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
+mqp-off:encode:   4%|▎         | 7/188 [4:21:37<56:55:06, 1132.08s/it]+ kill -0 131095
++ sleep 60
+mqp-off:encode:   4%|▍         | 8/188 [4:22:47<39:41:43, 793.91s/it] + kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
+mqp-off:encode:   5%|▍         | 9/188 [4:35:15<38:45:52, 779.62s/it]+ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
+mqp-off:encode:   5%|▌         | 10/188 [4:39:42<30:43:35, 621.43s/it]+ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
+mqp-off:encode:   6%|▌         | 11/188 [4:42:19<23:34:08, 479.37s/it]+ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
+mqp-off:encode:   6%|▋         | 12/188 [5:00:19<32:21:30, 661.88s/it]+ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
+mqp-off:encode:   7%|▋         | 13/188 [5:36:28<54:22:34, 1118.60s/it]+ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
+mqp-off:encode:   7%|▋         | 14/188 [5:58:32<57:03:54, 1180.66s/it]+ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
+mqp-off:encode:   8%|▊         | 15/188 [6:18:17<56:47:19, 1181.73s/it]+ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
+mqp-off:encode:   9%|▊         | 16/188 [6:23:22<43:51:36, 918.00s/it] + kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
+mqp-off:encode:   9%|▉         | 17/188 [6:25:00<31:53:41, 671.47s/it]+ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
+mqp-off:encode:  10%|▉         | 18/188 [7:09:57<60:27:04, 1280.14s/it]+ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
+mqp-off:encode:  10%|█         | 19/188 [8:03:37<87:26:51, 1862.79s/it]+ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
+mqp-off:encode:  11%|█         | 20/188 [8:13:22<69:01:02, 1478.94s/it]+ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
+mqp-off:encode:  11%|█         | 21/188 [8:29:33<61:32:40, 1326.71s/it]+ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
+mqp-off:encode:  12%|█▏        | 22/188 [8:55:28<64:20:00, 1395.18s/it]+ kill -0 131095
++ sleep 60
+mqp-off:encode:  12%|█▏        | 23/188 [8:56:06<45:16:31, 987.83s/it] + kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
+mqp-off:encode:  13%|█▎        | 24/188 [9:08:07<41:21:14, 907.77s/it]+ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
+mqp-off:encode:  13%|█▎        | 25/188 [9:11:43<31:42:06, 700.16s/it]+ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
+mqp-off:encode:  14%|█▍        | 26/188 [9:16:26<25:52:25, 574.97s/it]+ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
+mqp-off:encode:  14%|█▍        | 27/188 [9:27:42<27:04:38, 605.46s/it]+ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
+mqp-off:encode:  15%|█▍        | 28/188 [9:30:02<20:41:57, 465.74s/it]+ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
+mqp-off:encode:  15%|█▌        | 29/188 [9:34:11<17:41:39, 400.63s/it]+ kill -0 131095
++ sleep 60
+mqp-off:encode:  16%|█▌        | 30/188 [9:34:42<12:42:44, 289.65s/it]mqp-off:encode:  16%|█▋        | 31/188 [9:35:04<9:08:20, 209.56s/it] + kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
+mqp-off:encode:  17%|█▋        | 32/188 [9:40:26<10:32:10, 243.15s/it]+ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
+mqp-off:encode:  18%|█▊        | 33/188 [9:43:07<9:24:29, 218.51s/it] mqp-off:encode:  18%|█▊        | 34/188 [9:43:32<6:51:38, 160.38s/it]+ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
+mqp-off:encode:  19%|█▊        | 35/188 [9:48:22<8:28:47, 199.52s/it]+ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
+mqp-off:encode:  19%|█▉        | 36/188 [9:52:07<8:44:09, 206.90s/it]+ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
+mqp-off:encode:  20%|█▉        | 37/188 [9:53:59<7:29:20, 178.54s/it]+ kill -0 131095
++ sleep 60
+mqp-off:encode:  20%|██        | 38/188 [9:55:16<6:10:18, 148.13s/it]+ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
+mqp-off:encode:  21%|██        | 39/188 [9:57:04<5:37:44, 136.00s/it]mqp-off:encode:  21%|██▏       | 40/188 [9:57:29<4:13:47, 102.89s/it]+ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
+mqp-off:encode:  22%|██▏       | 41/188 [10:00:30<5:09:25, 126.30s/it]+ kill -0 131095
++ sleep 60
+mqp-off:encode:  22%|██▏       | 42/188 [10:00:58<3:55:08, 96.63s/it] mqp-off:encode:  23%|██▎       | 43/188 [10:01:18<2:58:03, 73.68s/it]mqp-off:encode:  23%|██▎       | 44/188 [10:01:30<2:12:22, 55.16s/it]mqp-off:encode:  24%|██▍       | 45/188 [10:01:32<1:33:44, 39.33s/it]+ kill -0 131095
++ sleep 60
+mqp-off:encode:  24%|██▍       | 46/188 [10:01:40<1:10:50, 29.93s/it]mqp-off:encode:  25%|██▌       | 47/188 [10:01:44<52:13, 22.22s/it]  mqp-off:encode:  26%|██▌       | 48/188 [10:01:56<44:13, 18.95s/it]+ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
+mqp-off:encode:  26%|██▌       | 49/188 [10:03:50<1:50:27, 47.68s/it]+ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
+mqp-off:encode:  27%|██▋       | 50/188 [10:05:37<2:29:56, 65.20s/it]+ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
+mqp-off:encode:  27%|██▋       | 51/188 [10:07:43<3:10:43, 83.53s/it]+ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
+mqp-off:encode:  28%|██▊       | 52/188 [10:11:07<4:31:38, 119.84s/it]+ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
+mqp-off:encode:  28%|██▊       | 53/188 [10:14:58<5:44:32, 153.13s/it]mqp-off:encode:  29%|██▊       | 54/188 [10:15:20<4:14:01, 113.74s/it]+ kill -0 131095
++ sleep 60
+mqp-off:encode:  29%|██▉       | 55/188 [10:16:03<3:24:44, 92.37s/it] + kill -0 131095
++ sleep 60
+mqp-off:encode:  30%|██▉       | 56/188 [10:16:51<2:54:26, 79.29s/it]mqp-off:encode:  30%|███       | 57/188 [10:16:55<2:03:43, 56.67s/it]mqp-off:encode:  31%|███       | 58/188 [10:16:56<1:26:36, 39.97s/it]mqp-off:encode:  31%|███▏      | 59/188 [10:17:24<1:18:20, 36.44s/it]+ kill -0 131095
++ sleep 60
+mqp-off:encode:  32%|███▏      | 60/188 [10:17:37<1:02:41, 29.39s/it]+ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
+mqp-off:encode:  32%|███▏      | 61/188 [10:21:42<3:19:06, 94.06s/it]+ kill -0 131095
++ sleep 60
+mqp-off:encode:  33%|███▎      | 62/188 [10:22:38<2:53:23, 82.56s/it]mqp-off:encode:  34%|███▎      | 63/188 [10:23:14<2:23:09, 68.72s/it]+ kill -0 131095
++ sleep 60
+mqp-off:encode:  34%|███▍      | 64/188 [10:23:36<1:52:46, 54.57s/it]mqp-off:encode:  35%|███▍      | 65/188 [10:23:37<1:18:56, 38.51s/it]mqp-off:encode:  35%|███▌      | 66/188 [10:23:51<1:03:17, 31.12s/it]+ kill -0 131095
++ sleep 60
+mqp-off:encode:  36%|███▌      | 67/188 [10:25:27<1:42:13, 50.69s/it]+ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
+mqp-off:encode:  36%|███▌      | 68/188 [10:28:32<3:01:43, 90.87s/it]+ kill -0 131095
++ sleep 60
+mqp-off:encode:  37%|███▋      | 69/188 [10:29:21<2:35:19, 78.32s/it]+ kill -0 131095
++ sleep 60
+mqp-off:encode:  37%|███▋      | 70/188 [10:29:49<2:04:24, 63.26s/it]+ kill -0 131095
++ sleep 60
+mqp-off:encode:  38%|███▊      | 71/188 [10:30:46<1:59:50, 61.45s/it]+ kill -0 131095
++ sleep 60
+mqp-off:encode:  38%|███▊      | 72/188 [10:32:24<2:19:38, 72.23s/it]+ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
+mqp-off:encode:  39%|███▉      | 73/188 [10:33:46<2:24:05, 75.17s/it]mqp-off:encode:  39%|███▉      | 74/188 [10:33:52<1:43:43, 54.59s/it]mqp-off:encode:  40%|███▉      | 75/188 [10:33:59<1:15:42, 40.20s/it]mqp-off:encode:  40%|████      | 76/188 [10:34:12<59:37, 31.94s/it]  mqp-off:encode:  41%|████      | 77/188 [10:34:15<43:08, 23.32s/it]+ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
+mqp-off:encode:  41%|████▏     | 78/188 [10:36:30<1:44:25, 56.96s/it]+ kill -0 131095
++ sleep 60
+mqp-off:encode:  42%|████▏     | 79/188 [10:37:01<1:29:11, 49.09s/it]+ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
+mqp-off:encode:  43%|████▎     | 80/188 [10:38:47<1:58:55, 66.06s/it]+ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
+mqp-off:encode:  43%|████▎     | 81/188 [10:40:37<2:21:20, 79.26s/it]+ kill -0 131095
++ sleep 60
+mqp-off:encode:  44%|████▎     | 82/188 [10:42:05<2:24:45, 81.93s/it]mqp-off:encode:  44%|████▍     | 83/188 [10:42:06<1:41:06, 57.78s/it]+ kill -0 131095
++ sleep 60
+mqp-off:encode:  45%|████▍     | 84/188 [10:43:24<1:50:26, 63.71s/it]+ kill -0 131095
++ sleep 60
+mqp-off:encode:  45%|████▌     | 85/188 [10:44:03<1:36:40, 56.31s/it]+ kill -0 131095
++ sleep 60
+mqp-off:encode:  46%|████▌     | 86/188 [10:44:48<1:30:07, 53.02s/it]+ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
+mqp-off:encode:  46%|████▋     | 87/188 [10:47:46<2:32:10, 90.40s/it]+ kill -0 131095
++ sleep 60
+mqp-off:encode:  47%|████▋     | 88/188 [10:49:06<2:25:20, 87.21s/it]+ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
+mqp-off:encode:  47%|████▋     | 89/188 [10:50:49<2:32:07, 92.20s/it]mqp-off:encode:  48%|████▊     | 90/188 [10:50:59<1:50:16, 67.51s/it]+ kill -0 131095
++ sleep 60
+mqp-off:encode:  48%|████▊     | 91/188 [10:51:44<1:38:02, 60.64s/it]mqp-off:encode:  49%|████▉     | 92/188 [10:51:52<1:11:53, 44.93s/it]mqp-off:encode:  49%|████▉     | 93/188 [10:51:53<50:13, 31.72s/it]  mqp-off:encode:  50%|█████     | 94/188 [10:52:02<39:09, 24.99s/it]mqp-off:encode:  51%|█████     | 95/188 [10:52:09<30:16, 19.54s/it]mqp-off:encode:  51%|█████     | 96/188 [10:52:09<21:05, 13.75s/it]mqp-off:encode:  52%|█████▏    | 97/188 [10:52:11<15:25, 10.17s/it]+ kill -0 131095
++ sleep 60
+mqp-off:encode:  52%|█████▏    | 98/188 [10:53:19<41:05, 27.40s/it]+ kill -0 131095
++ sleep 60
+mqp-off:encode:  53%|█████▎    | 99/188 [10:54:31<1:00:40, 40.90s/it]+ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
+mqp-off:encode:  53%|█████▎    | 100/188 [10:55:48<1:15:41, 51.61s/it]+ kill -0 131095
++ sleep 60
+mqp-off:encode:  54%|█████▎    | 101/188 [10:57:18<1:31:31, 63.13s/it]+ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
+mqp-off:encode:  54%|█████▍    | 102/188 [10:59:50<2:08:40, 89.78s/it]mqp-off:encode:  55%|█████▍    | 103/188 [11:00:16<1:40:09, 70.70s/it]mqp-off:encode:  55%|█████▌    | 104/188 [11:00:21<1:11:15, 50.90s/it]mqp-off:encode:  56%|█████▌    | 105/188 [11:00:34<54:38, 39.50s/it]  + kill -0 131095
++ sleep 60
+mqp-off:encode:  56%|█████▋    | 106/188 [11:00:40<40:21, 29.53s/it]mqp-off:encode:  57%|█████▋    | 107/188 [11:00:50<32:07, 23.79s/it]mqp-off:encode:  57%|█████▋    | 108/188 [11:00:57<24:59, 18.75s/it]mqp-off:encode:  58%|█████▊    | 109/188 [11:01:07<21:16, 16.15s/it]+ kill -0 131095
++ sleep 60
+mqp-off:encode:  59%|█████▊    | 110/188 [11:01:36<25:55, 19.94s/it]mqp-off:encode:  59%|█████▉    | 111/188 [11:01:50<23:10, 18.06s/it]+ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
+mqp-off:encode:  60%|█████▉    | 112/188 [11:07:08<2:16:55, 108.10s/it]+ kill -0 131095
++ sleep 60
+mqp-off:encode:  60%|██████    | 113/188 [11:07:44<1:48:10, 86.54s/it] + kill -0 131095
++ sleep 60
+mqp-off:encode:  61%|██████    | 114/188 [11:08:37<1:34:16, 76.44s/it]+ kill -0 131095
++ sleep 60
+mqp-off:encode:  61%|██████    | 115/188 [11:10:14<1:40:30, 82.61s/it]+ kill -0 131095
++ sleep 60
+mqp-off:encode:  62%|██████▏   | 116/188 [11:10:59<1:25:33, 71.30s/it]mqp-off:encode:  62%|██████▏   | 117/188 [11:11:02<1:00:16, 50.93s/it]+ kill -0 131095
++ sleep 60
+mqp-off:encode:  63%|██████▎   | 118/188 [11:11:51<58:29, 50.14s/it]  mqp-off:encode:  63%|██████▎   | 119/188 [11:12:18<49:47, 43.30s/it]mqp-off:encode:  64%|██████▍   | 120/188 [11:12:35<40:14, 35.50s/it]+ kill -0 131095
++ sleep 60
+mqp-off:encode:  64%|██████▍   | 121/188 [11:12:49<32:16, 28.90s/it]mqp-off:encode:  65%|██████▍   | 122/188 [11:12:53<23:35, 21.44s/it]+ kill -0 131095
++ sleep 60
+mqp-off:encode:  65%|██████▌   | 123/188 [11:13:37<30:38, 28.29s/it]mqp-off:encode:  66%|██████▌   | 124/188 [11:14:17<33:48, 31.69s/it]mqp-off:encode:  66%|██████▋   | 125/188 [11:14:22<24:54, 23.73s/it]+ kill -0 131095
++ sleep 60
+mqp-off:encode:  67%|██████▋   | 126/188 [11:14:36<21:37, 20.93s/it]+ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
+mqp-off:encode:  68%|██████▊   | 127/188 [11:16:48<55:10, 54.27s/it]mqp-off:encode:  68%|██████▊   | 128/188 [11:16:56<40:20, 40.34s/it]+ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
+mqp-off:encode:  69%|██████▊   | 129/188 [11:19:05<1:05:46, 66.90s/it]mqp-off:encode:  69%|██████▉   | 130/188 [11:19:14<47:47, 49.44s/it]  + kill -0 131095
++ sleep 60
+mqp-off:encode:  70%|██████▉   | 131/188 [11:20:20<51:46, 54.50s/it]+ kill -0 131095
++ sleep 60
+mqp-off:encode:  70%|███████   | 132/188 [11:20:37<40:15, 43.14s/it]mqp-off:encode:  71%|███████   | 133/188 [11:20:47<30:33, 33.34s/it]mqp-off:encode:  71%|███████▏  | 134/188 [11:21:07<26:13, 29.15s/it]mqp-off:encode:  72%|███████▏  | 135/188 [11:21:12<19:20, 21.89s/it]mqp-off:encode:  72%|███████▏  | 136/188 [11:21:21<15:51, 18.30s/it]mqp-off:encode:  73%|███████▎  | 137/188 [11:21:22<11:01, 12.98s/it]+ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
+mqp-off:encode:  73%|███████▎  | 138/188 [11:23:18<36:34, 43.88s/it]+ kill -0 131095
++ sleep 60
+mqp-off:encode:  74%|███████▍  | 139/188 [11:24:23<40:56, 50.14s/it]+ kill -0 131095
++ sleep 60
+mqp-off:encode:  74%|███████▍  | 140/188 [11:25:13<40:02, 50.04s/it]+ kill -0 131095
++ sleep 60
+mqp-off:encode:  75%|███████▌  | 141/188 [11:26:16<42:18, 54.02s/it]+ kill -0 131095
++ sleep 60
+mqp-off:encode:  76%|███████▌  | 142/188 [11:26:54<37:51, 49.37s/it]mqp-off:encode:  76%|███████▌  | 143/188 [11:26:59<26:52, 35.84s/it]mqp-off:encode:  77%|███████▋  | 144/188 [11:26:59<18:28, 25.19s/it]mqp-off:encode:  77%|███████▋  | 145/188 [11:27:03<13:34, 18.93s/it]+ kill -0 131095
++ sleep 60
+mqp-off:encode:  78%|███████▊  | 146/188 [11:27:54<19:59, 28.56s/it]mqp-off:encode:  78%|███████▊  | 147/188 [11:28:31<21:12, 31.04s/it]mqp-off:encode:  79%|███████▊  | 148/188 [11:28:35<15:13, 22.85s/it]+ kill -0 131095
++ sleep 60
+mqp-off:encode:  79%|███████▉  | 149/188 [11:28:55<14:23, 22.13s/it]mqp-off:encode:  80%|███████▉  | 150/188 [11:29:04<11:23, 17.98s/it]mqp-off:encode:  80%|████████  | 151/188 [11:29:14<09:41, 15.72s/it]+ kill -0 131095
++ sleep 60
+mqp-off:encode:  81%|████████  | 152/188 [11:30:30<20:18, 33.86s/it]+ kill -0 131095
++ sleep 60
+mqp-off:encode:  81%|████████▏ | 153/188 [11:31:07<20:14, 34.69s/it]+ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
+mqp-off:encode:  82%|████████▏ | 154/188 [11:33:26<37:19, 65.86s/it]+ kill -0 131095
++ sleep 60
+mqp-off:encode:  82%|████████▏ | 155/188 [11:33:41<27:54, 50.75s/it]mqp-off:encode:  83%|████████▎ | 156/188 [11:34:09<23:20, 43.77s/it]+ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
+mqp-off:encode:  84%|████████▎ | 157/188 [11:35:52<31:56, 61.82s/it]mqp-off:encode:  84%|████████▍ | 158/188 [11:36:14<24:53, 49.77s/it]mqp-off:encode:  85%|████████▍ | 159/188 [11:36:25<18:28, 38.21s/it]+ kill -0 131095
++ sleep 60
+mqp-off:encode:  85%|████████▌ | 160/188 [11:37:09<18:36, 39.88s/it]+ kill -0 131095
++ sleep 60
+mqp-off:encode:  86%|████████▌ | 161/188 [11:38:26<22:56, 50.99s/it]mqp-off:encode:  86%|████████▌ | 162/188 [11:38:26<15:29, 35.74s/it]+ kill -0 131095
++ sleep 60
+mqp-off:encode:  87%|████████▋ | 163/188 [11:38:39<12:03, 28.95s/it]+ kill -0 131095
++ sleep 60
+mqp-off:encode:  87%|████████▋ | 164/188 [11:39:39<15:14, 38.11s/it]+ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
+mqp-off:encode:  88%|████████▊ | 165/188 [11:42:00<26:24, 68.91s/it]+ kill -0 131095
++ sleep 60
+mqp-off:encode:  88%|████████▊ | 166/188 [11:42:45<22:43, 61.96s/it]+ kill -0 131095
++ sleep 60
+mqp-off:encode:  89%|████████▉ | 167/188 [11:43:36<20:29, 58.54s/it]mqp-off:encode:  89%|████████▉ | 168/188 [11:44:06<16:38, 49.90s/it]mqp-off:encode:  90%|████████▉ | 169/188 [11:44:22<12:36, 39.81s/it]+ kill -0 131095
++ sleep 60
+mqp-off:encode:  90%|█████████ | 170/188 [11:44:37<09:40, 32.27s/it]mqp-off:encode:  91%|█████████ | 171/188 [11:44:37<06:24, 22.64s/it]mqp-off:encode:  91%|█████████▏| 172/188 [11:44:45<04:53, 18.32s/it]+ kill -0 131095
++ sleep 60
+mqp-off:encode:  92%|█████████▏| 173/188 [11:45:54<08:22, 33.50s/it]mqp-off:encode:  93%|█████████▎| 174/188 [11:46:02<06:00, 25.77s/it]+ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
+mqp-off:encode:  93%|█████████▎| 175/188 [11:48:04<11:50, 54.63s/it]mqp-off:encode:  94%|█████████▎| 176/188 [11:48:25<08:55, 44.66s/it]mqp-off:encode:  94%|█████████▍| 177/188 [11:48:27<05:50, 31.83s/it]+ kill -0 131095
++ sleep 60
+mqp-off:encode:  95%|█████████▍| 178/188 [11:48:50<04:52, 29.24s/it]mqp-off:encode:  95%|█████████▌| 179/188 [11:48:51<03:07, 20.78s/it]mqp-off:encode:  96%|█████████▌| 180/188 [11:49:21<03:08, 23.57s/it]mqp-off:encode:  96%|█████████▋| 181/188 [11:49:28<02:09, 18.55s/it]+ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
+mqp-off:encode:  97%|█████████▋| 182/188 [11:51:09<04:18, 43.15s/it]+ kill -0 131095
++ sleep 60
+mqp-off:encode:  97%|█████████▋| 183/188 [11:52:01<03:48, 45.80s/it]+ kill -0 131095
++ sleep 60
+mqp-off:encode:  98%|█████████▊| 184/188 [11:53:08<03:28, 52.22s/it]mqp-off:encode:  98%|█████████▊| 185/188 [11:53:30<02:09, 43.12s/it]+ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
+mqp-off:encode:  99%|█████████▉| 186/188 [11:55:20<02:06, 63.40s/it]mqp-off:encode:  99%|█████████▉| 187/188 [11:55:32<00:47, 47.76s/it]+ kill -0 131095
++ sleep 60
++ kill -0 131095
++ sleep 60
+mqp-off:encode: 100%|██████████| 188/188 [11:57:33<00:00, 69.86s/it]mqp-off:encode: 100%|██████████| 188/188 [11:57:33<00:00, 229.01s/it]
+[mqp-off] encode: 717.6 min wall
+mqp-off:decode:   0%|          | 0/212 [00:00<?, ?it/s]+ kill -0 131095
++ sleep 60
+mqp-off:decode:   0%|          | 1/212 [00:13<46:30, 13.23s/it]mqp-off:decode:   1%|▏         | 3/212 [00:14<13:08,  3.77s/it]mqp-off:decode:   2%|▏         | 4/212 [00:19<15:29,  4.47s/it]mqp-off:decode:   2%|▏         | 5/212 [00:26<18:01,  5.22s/it]mqp-off:decode:   3%|▎         | 6/212 [00:30<16:01,  4.67s/it]mqp-off:decode:   3%|▎         | 7/212 [00:35<16:50,  4.93s/it]mqp-off:decode:   4%|▍         | 8/212 [00:37<13:09,  3.87s/it]mqp-off:decode:   4%|▍         | 9/212 [00:37<09:27,  2.79s/it]mqp-off:decode:   5%|▍         | 10/212 [00:41<10:49,  3.22s/it]mqp-off:decode:   5%|▌         | 11/212 [00:45<11:32,  3.44s/it]mqp-off:decode:   6%|▌         | 12/212 [00:47<09:55,  2.98s/it]mqp-off:decode:   6%|▌         | 13/212 [00:53<13:03,  3.94s/it]mqp-off:decode:   7%|▋         | 14/212 [00:54<10:07,  3.07s/it]mqp-off:decode:   7%|▋         | 15/212 [00:57<09:49,  2.99s/it]+ kill -0 131095
++ sleep 60
+mqp-off:decode:   8%|▊         | 16/212 [01:03<12:13,  3.74s/it]mqp-off:decode:   8%|▊         | 17/212 [01:04<09:34,  2.94s/it]mqp-off:decode:   8%|▊         | 18/212 [01:05<07:29,  2.32s/it]mqp-off:decode:   9%|▉         | 19/212 [01:10<10:47,  3.35s/it]mqp-off:decode:   9%|▉         | 20/212 [01:11<08:09,  2.55s/it]mqp-off:decode:  10%|▉         | 21/212 [01:15<09:12,  2.89s/it]mqp-off:decode:  10%|█         | 22/212 [01:18<09:41,  3.06s/it]mqp-off:decode:  11%|█         | 23/212 [01:19<07:25,  2.36s/it]mqp-off:decode:  11%|█▏        | 24/212 [01:19<05:17,  1.69s/it]mqp-off:decode:  12%|█▏        | 25/212 [01:29<13:13,  4.24s/it]mqp-off:decode:  12%|█▏        | 26/212 [01:31<11:14,  3.63s/it]mqp-off:decode:  13%|█▎        | 27/212 [01:32<08:44,  2.84s/it]mqp-off:decode:  13%|█▎        | 28/212 [01:39<12:20,  4.02s/it]mqp-off:decode:  14%|█▎        | 29/212 [01:43<12:21,  4.05s/it]mqp-off:decode:  14%|█▍        | 30/212 [01:45<10:16,  3.39s/it]mqp-off:decode:  15%|█▍        | 31/212 [01:45<07:16,  2.41s/it]mqp-off:decode:  15%|█▌        | 32/212 [01:49<08:24,  2.80s/it]mqp-off:decode:  16%|█▌        | 33/212 [01:50<06:43,  2.25s/it]mqp-off:decode:  16%|█▌        | 34/212 [01:52<06:49,  2.30s/it]mqp-off:decode:  17%|█▋        | 35/212 [01:55<07:25,  2.52s/it]mqp-off:decode:  17%|█▋        | 36/212 [01:57<06:47,  2.32s/it]+ kill -0 131095
++ sleep 60
+mqp-off:decode:  17%|█▋        | 37/212 [02:02<08:57,  3.07s/it]mqp-off:decode:  18%|█▊        | 38/212 [02:03<07:26,  2.56s/it]mqp-off:decode:  18%|█▊        | 39/212 [02:04<05:21,  1.86s/it]mqp-off:decode:  19%|█▉        | 40/212 [02:06<05:20,  1.87s/it]mqp-off:decode:  19%|█▉        | 41/212 [02:11<08:47,  3.08s/it]mqp-off:decode:  20%|█▉        | 42/212 [02:12<06:25,  2.27s/it]mqp-off:decode:  20%|██        | 43/212 [02:17<09:02,  3.21s/it]mqp-off:decode:  21%|██        | 45/212 [02:19<06:07,  2.20s/it]mqp-off:decode:  22%|██▏       | 46/212 [02:23<07:19,  2.65s/it]mqp-off:decode:  22%|██▏       | 47/212 [02:25<06:45,  2.46s/it]mqp-off:decode:  23%|██▎       | 48/212 [02:26<05:17,  1.94s/it]mqp-off:decode:  23%|██▎       | 49/212 [02:26<04:07,  1.52s/it]mqp-off:decode:  24%|██▎       | 50/212 [02:28<04:37,  1.71s/it]mqp-off:decode:  24%|██▍       | 51/212 [02:30<04:13,  1.58s/it]mqp-off:decode:  25%|██▌       | 53/212 [02:30<02:38,  1.01it/s]mqp-off:decode:  25%|██▌       | 54/212 [02:31<02:10,  1.21it/s]mqp-off:decode:  26%|██▌       | 55/212 [02:31<02:12,  1.19it/s]mqp-off:decode:  26%|██▋       | 56/212 [02:32<02:17,  1.14it/s]mqp-off:decode:  27%|██▋       | 57/212 [02:34<02:33,  1.01it/s]mqp-off:decode:  28%|██▊       | 59/212 [02:34<01:28,  1.74it/s]mqp-off:decode:  28%|██▊       | 60/212 [02:35<01:57,  1.29it/s]mqp-off:decode:  29%|██▉       | 61/212 [02:36<01:56,  1.29it/s]mqp-off:decode:  30%|██▉       | 63/212 [02:36<01:22,  1.80it/s]mqp-off:decode:  30%|███       | 64/212 [02:37<01:15,  1.96it/s]mqp-off:decode:  31%|███       | 65/212 [02:39<02:07,  1.15it/s]mqp-off:decode:  33%|███▎      | 69/212 [02:39<00:55,  2.58it/s]mqp-off:decode:  33%|███▎      | 70/212 [02:39<00:55,  2.55it/s]mqp-off:decode:  33%|███▎      | 71/212 [02:41<01:39,  1.42it/s]mqp-off:decode:  34%|███▍      | 72/212 [02:42<01:24,  1.66it/s]mqp-off:decode:  35%|███▌      | 75/212 [02:42<00:46,  2.95it/s]mqp-off:decode:  36%|███▌      | 76/212 [02:42<00:44,  3.06it/s]mqp-off:decode:  36%|███▋      | 77/212 [02:44<01:27,  1.55it/s]mqp-off:decode:  38%|███▊      | 80/212 [02:44<00:46,  2.81it/s]mqp-off:decode:  39%|███▊      | 82/212 [02:44<00:40,  3.23it/s]mqp-off:decode:  39%|███▉      | 83/212 [02:46<01:11,  1.79it/s]mqp-off:decode:  40%|███▉      | 84/212 [02:46<01:02,  2.06it/s]mqp-off:decode:  40%|████      | 85/212 [02:46<00:50,  2.49it/s]mqp-off:decode:  41%|████      | 87/212 [02:47<00:33,  3.72it/s]mqp-off:decode:  42%|████▏     | 88/212 [02:47<00:29,  4.21it/s]mqp-off:decode:  42%|████▏     | 89/212 [02:49<01:18,  1.57it/s]mqp-off:decode:  43%|████▎     | 91/212 [02:49<00:51,  2.37it/s]mqp-off:decode:  44%|████▍     | 94/212 [02:49<00:30,  3.92it/s]mqp-off:decode:  45%|████▍     | 95/212 [02:51<01:09,  1.69it/s]mqp-off:decode:  48%|████▊     | 101/212 [02:53<00:48,  2.31it/s]mqp-off:decode:  49%|████▊     | 103/212 [02:53<00:38,  2.83it/s]mqp-off:decode:  50%|█████     | 106/212 [02:53<00:27,  3.81it/s]mqp-off:decode:  50%|█████     | 107/212 [02:55<00:48,  2.17it/s]mqp-off:decode:  51%|█████     | 108/212 [02:55<00:42,  2.46it/s]mqp-off:decode:  51%|█████▏    | 109/212 [02:56<00:38,  2.69it/s]mqp-off:decode:  52%|█████▏    | 111/212 [02:56<00:26,  3.78it/s]mqp-off:decode:  53%|█████▎    | 112/212 [02:56<00:26,  3.72it/s]mqp-off:decode:  53%|█████▎    | 113/212 [02:57<00:52,  1.88it/s]mqp-off:decode:  54%|█████▍    | 115/212 [02:58<00:34,  2.85it/s]mqp-off:decode:  55%|█████▍    | 116/212 [02:58<00:28,  3.32it/s]mqp-off:decode:  55%|█████▌    | 117/212 [02:58<00:30,  3.12it/s]mqp-off:decode:  56%|█████▌    | 119/212 [03:00<00:47,  1.94it/s]mqp-off:decode:  57%|█████▋    | 120/212 [03:00<00:40,  2.25it/s]mqp-off:decode:  58%|█████▊    | 122/212 [03:00<00:26,  3.34it/s]mqp-off:decode:  58%|█████▊    | 123/212 [03:00<00:25,  3.46it/s]mqp-off:decode:  58%|█████▊    | 124/212 [03:00<00:21,  4.00it/s]+ kill -0 131095
++ sleep 60
+mqp-off:decode:  59%|█████▉    | 125/212 [03:02<00:49,  1.74it/s]mqp-off:decode:  59%|█████▉    | 126/212 [03:02<00:41,  2.07it/s]mqp-off:decode:  61%|██████    | 129/212 [03:02<00:20,  4.02it/s]mqp-off:decode:  62%|██████▏   | 131/212 [03:04<00:37,  2.17it/s]mqp-off:decode:  63%|██████▎   | 133/212 [03:04<00:27,  2.85it/s]mqp-off:decode:  64%|██████▎   | 135/212 [03:04<00:20,  3.79it/s]mqp-off:decode:  65%|██████▍   | 137/212 [03:06<00:36,  2.04it/s]mqp-off:decode:  66%|██████▌   | 140/212 [03:07<00:22,  3.15it/s]mqp-off:decode:  67%|██████▋   | 141/212 [03:07<00:22,  3.23it/s]mqp-off:decode:  67%|██████▋   | 142/212 [03:07<00:22,  3.18it/s]mqp-off:decode:  67%|██████▋   | 143/212 [03:09<00:36,  1.88it/s]mqp-off:decode:  68%|██████▊   | 144/212 [03:09<00:29,  2.30it/s]mqp-off:decode:  69%|██████▉   | 147/212 [03:09<00:17,  3.66it/s]mqp-off:decode:  70%|███████   | 149/212 [03:11<00:27,  2.26it/s]mqp-off:decode:  72%|███████▏  | 152/212 [03:11<00:17,  3.38it/s]mqp-off:decode:  72%|███████▏  | 153/212 [03:12<00:23,  2.50it/s]mqp-off:decode:  73%|███████▎  | 154/212 [03:12<00:23,  2.45it/s]mqp-off:decode:  73%|███████▎  | 155/212 [03:13<00:22,  2.53it/s]mqp-off:decode:  74%|███████▎  | 156/212 [03:13<00:18,  3.05it/s]mqp-off:decode:  75%|███████▍  | 158/212 [03:13<00:16,  3.37it/s]mqp-off:decode:  75%|███████▌  | 159/212 [03:14<00:18,  2.89it/s]mqp-off:decode:  75%|███████▌  | 160/212 [03:14<00:18,  2.86it/s]mqp-off:decode:  76%|███████▌  | 161/212 [03:15<00:23,  2.18it/s]mqp-off:decode:  77%|███████▋  | 163/212 [03:15<00:16,  2.94it/s]mqp-off:decode:  78%|███████▊  | 165/212 [03:16<00:18,  2.48it/s]mqp-off:decode:  79%|███████▉  | 167/212 [03:17<00:17,  2.57it/s]mqp-off:decode:  79%|███████▉  | 168/212 [03:17<00:14,  2.94it/s]mqp-off:decode:  80%|███████▉  | 169/212 [03:17<00:12,  3.39it/s]mqp-off:decode:  80%|████████  | 170/212 [03:17<00:10,  3.99it/s]mqp-off:decode:  81%|████████  | 171/212 [03:18<00:15,  2.60it/s]mqp-off:decode:  82%|████████▏ | 173/212 [03:19<00:16,  2.34it/s]mqp-off:decode:  82%|████████▏ | 174/212 [03:19<00:15,  2.50it/s]mqp-off:decode:  83%|████████▎ | 176/212 [03:20<00:10,  3.32it/s]mqp-off:decode:  83%|████████▎ | 177/212 [03:20<00:12,  2.75it/s]mqp-off:decode:  84%|████████▍ | 179/212 [03:21<00:14,  2.25it/s]mqp-off:decode:  85%|████████▍ | 180/212 [03:22<00:13,  2.39it/s]mqp-off:decode:  85%|████████▌ | 181/212 [03:22<00:12,  2.50it/s]mqp-off:decode:  87%|████████▋ | 184/212 [03:22<00:06,  4.45it/s]mqp-off:decode:  87%|████████▋ | 185/212 [03:24<00:12,  2.21it/s]mqp-off:decode:  88%|████████▊ | 186/212 [03:24<00:09,  2.60it/s]mqp-off:decode:  89%|████████▊ | 188/212 [03:24<00:07,  3.34it/s]mqp-off:decode:  89%|████████▉ | 189/212 [03:24<00:07,  3.28it/s]mqp-off:decode:  90%|█████████ | 191/212 [03:26<00:09,  2.19it/s]mqp-off:decode:  91%|█████████ | 193/212 [03:26<00:07,  2.66it/s]mqp-off:decode:  92%|█████████▏| 194/212 [03:26<00:06,  2.93it/s]mqp-off:decode:  93%|█████████▎| 197/212 [03:29<00:07,  1.95it/s]mqp-off:decode:  93%|█████████▎| 198/212 [03:29<00:06,  2.28it/s]mqp-off:decode:  94%|█████████▍| 200/212 [03:29<00:03,  3.16it/s]mqp-off:decode:  95%|█████████▍| 201/212 [03:29<00:03,  3.05it/s]mqp-off:decode:  95%|█████████▌| 202/212 [03:30<00:03,  3.01it/s]mqp-off:decode:  96%|█████████▌| 203/212 [03:31<00:05,  1.73it/s]mqp-off:decode:  96%|█████████▌| 204/212 [03:31<00:04,  1.95it/s]mqp-off:decode:  97%|█████████▋| 205/212 [03:32<00:03,  1.88it/s]mqp-off:decode:  97%|█████████▋| 206/212 [03:32<00:02,  2.27it/s]mqp-off:decode:  98%|█████████▊| 207/212 [03:32<00:01,  2.70it/s]mqp-off:decode:  98%|█████████▊| 208/212 [03:32<00:01,  2.90it/s]mqp-off:decode:  99%|█████████▊| 209/212 [03:33<00:01,  2.05it/s]mqp-off:decode: 100%|█████████▉| 211/212 [03:34<00:00,  3.23it/s]mqp-off:decode: 100%|██████████| 212/212 [03:34<00:00,  1.01s/it]
+[mqp-off] decode: 3.6 min wall
+mqp-off:parse:   0%|          | 0/212 [00:00<?, ?it/s]mqp-off:parse:   0%|          | 1/212 [00:07<25:39,  7.29s/it]mqp-off:parse:   1%|▏         | 3/212 [00:07<07:24,  2.12s/it]mqp-off:parse:   2%|▏         | 4/212 [00:12<10:32,  3.04s/it]mqp-off:parse:   2%|▏         | 5/212 [00:17<12:07,  3.51s/it]mqp-off:parse:   3%|▎         | 6/212 [00:18<10:03,  2.93s/it]mqp-off:parse:   3%|▎         | 7/212 [00:21<09:21,  2.74s/it]mqp-off:parse:   4%|▍         | 8/212 [00:23<09:20,  2.75s/it]mqp-off:parse:   4%|▍         | 9/212 [00:24<07:31,  2.22s/it]mqp-off:parse:   5%|▍         | 10/212 [00:27<07:24,  2.20s/it]mqp-off:parse:   5%|▌         | 11/212 [00:27<05:38,  1.69s/it]+ kill -0 131095
++ sleep 60
+mqp-off:parse:   6%|▌         | 12/212 [00:30<07:14,  2.17s/it]mqp-off:parse:   6%|▌         | 13/212 [00:31<05:45,  1.74s/it]mqp-off:parse:   7%|▋         | 14/212 [00:31<04:16,  1.30s/it]mqp-off:parse:   7%|▋         | 15/212 [00:34<05:14,  1.59s/it]mqp-off:parse:   8%|▊         | 16/212 [00:36<05:39,  1.73s/it]mqp-off:parse:   8%|▊         | 17/212 [00:36<04:28,  1.38s/it]mqp-off:parse:   8%|▊         | 18/212 [00:37<03:26,  1.06s/it]mqp-off:parse:   9%|▉         | 19/212 [00:38<03:14,  1.01s/it]mqp-off:parse:   9%|▉         | 20/212 [00:39<03:56,  1.23s/it]mqp-off:parse:  10%|▉         | 21/212 [00:40<03:47,  1.19s/it]mqp-off:parse:  10%|█         | 22/212 [00:41<03:06,  1.02it/s]mqp-off:parse:  11%|█         | 23/212 [00:41<02:16,  1.39it/s]mqp-off:parse:  11%|█▏        | 24/212 [00:43<03:02,  1.03it/s]mqp-off:parse:  12%|█▏        | 25/212 [00:48<06:52,  2.21s/it]mqp-off:parse:  12%|█▏        | 26/212 [00:49<06:30,  2.10s/it]mqp-off:parse:  13%|█▎        | 27/212 [00:52<07:04,  2.29s/it]mqp-off:parse:  13%|█▎        | 28/212 [00:59<10:57,  3.57s/it]mqp-off:parse:  14%|█▎        | 29/212 [01:00<08:43,  2.86s/it]mqp-off:parse:  14%|█▍        | 30/212 [01:01<07:05,  2.34s/it]mqp-off:parse:  15%|█▍        | 31/212 [01:03<06:37,  2.20s/it]mqp-off:parse:  15%|█▌        | 32/212 [01:05<06:40,  2.23s/it]mqp-off:parse:  16%|█▌        | 33/212 [01:07<05:48,  1.95s/it]mqp-off:parse:  16%|█▌        | 34/212 [01:07<04:15,  1.44s/it]mqp-off:parse:  17%|█▋        | 35/212 [01:08<03:38,  1.23s/it]mqp-off:parse:  17%|█▋        | 36/212 [01:09<03:21,  1.15s/it]mqp-off:parse:  17%|█▋        | 37/212 [01:12<04:58,  1.71s/it]mqp-off:parse:  18%|█▊        | 39/212 [01:12<03:03,  1.06s/it]mqp-off:parse:  19%|█▉        | 40/212 [01:14<03:30,  1.22s/it]mqp-off:parse:  19%|█▉        | 41/212 [01:21<08:09,  2.86s/it]mqp-off:parse:  20%|█▉        | 42/212 [01:24<08:00,  2.83s/it]mqp-off:parse:  20%|██        | 43/212 [01:25<06:05,  2.16s/it]mqp-off:parse:  21%|██        | 44/212 [01:26<05:24,  1.93s/it]mqp-off:parse:  21%|██        | 45/212 [01:26<03:55,  1.41s/it]mqp-off:parse:  22%|██▏       | 46/212 [01:27<03:49,  1.38s/it]+ kill -0 131095
++ sleep 60
+mqp-off:parse:  22%|██▏       | 47/212 [01:29<04:02,  1.47s/it]mqp-off:parse:  23%|██▎       | 48/212 [01:31<04:03,  1.48s/it]mqp-off:parse:  23%|██▎       | 49/212 [01:31<03:08,  1.15s/it]mqp-off:parse:  24%|██▎       | 50/212 [01:31<02:28,  1.09it/s]mqp-off:parse:  24%|██▍       | 51/212 [01:33<02:44,  1.02s/it]mqp-off:parse:  25%|██▍       | 52/212 [01:34<02:42,  1.02s/it]mqp-off:parse:  25%|██▌       | 53/212 [01:34<02:12,  1.20it/s]mqp-off:parse:  26%|██▌       | 55/212 [01:35<01:31,  1.72it/s]mqp-off:parse:  26%|██▋       | 56/212 [01:36<01:47,  1.44it/s]mqp-off:parse:  27%|██▋       | 58/212 [01:36<01:09,  2.21it/s]mqp-off:parse:  28%|██▊       | 59/212 [01:36<01:12,  2.10it/s]mqp-off:parse:  28%|██▊       | 60/212 [01:36<00:58,  2.58it/s]mqp-off:parse:  29%|██▉       | 61/212 [01:37<00:52,  2.89it/s]mqp-off:parse:  29%|██▉       | 62/212 [01:37<00:45,  3.28it/s]mqp-off:parse:  30%|███       | 64/212 [01:37<00:35,  4.14it/s]mqp-off:parse:  31%|███       | 65/212 [01:38<00:41,  3.50it/s]mqp-off:parse:  32%|███▏      | 67/212 [01:38<00:29,  4.99it/s]mqp-off:parse:  33%|███▎      | 70/212 [01:38<00:17,  8.12it/s]mqp-off:parse:  34%|███▍      | 72/212 [01:38<00:14,  9.91it/s]mqp-off:parse:  36%|███▌      | 76/212 [01:38<00:08, 15.14it/s]mqp-off:parse:  37%|███▋      | 79/212 [01:38<00:09, 14.54it/s]mqp-off:parse:  38%|███▊      | 81/212 [01:38<00:09, 14.53it/s]mqp-off:parse:  40%|███▉      | 84/212 [01:39<00:07, 16.44it/s]mqp-off:parse:  41%|████      | 86/212 [01:39<00:07, 16.27it/s]mqp-off:parse:  42%|████▏     | 89/212 [01:39<00:07, 16.45it/s]mqp-off:parse:  44%|████▍     | 93/212 [01:39<00:05, 20.38it/s]mqp-off:parse:  46%|████▌     | 97/212 [01:39<00:04, 24.60it/s]mqp-off:parse:  48%|████▊     | 101/212 [01:39<00:04, 27.34it/s]mqp-off:parse:  50%|████▉     | 105/212 [01:39<00:04, 25.62it/s]mqp-off:parse:  51%|█████     | 108/212 [01:40<00:04, 24.03it/s]mqp-off:parse:  52%|█████▏    | 111/212 [01:40<00:04, 21.19it/s]mqp-off:parse:  54%|█████▍    | 114/212 [01:40<00:04, 21.33it/s]mqp-off:parse:  55%|█████▌    | 117/212 [01:40<00:04, 22.73it/s]mqp-off:parse:  57%|█████▋    | 120/212 [01:40<00:04, 19.93it/s]mqp-off:parse:  58%|█████▊    | 124/212 [01:40<00:03, 23.29it/s]mqp-off:parse:  60%|█████▉    | 127/212 [01:40<00:03, 24.71it/s]mqp-off:parse:  62%|██████▏   | 131/212 [01:41<00:02, 28.09it/s]mqp-off:parse:  63%|██████▎   | 134/212 [01:41<00:03, 26.00it/s]mqp-off:parse:  65%|██████▍   | 137/212 [01:41<00:04, 18.72it/s]mqp-off:parse:  66%|██████▌   | 140/212 [01:41<00:03, 18.74it/s]mqp-off:parse:  67%|██████▋   | 143/212 [01:41<00:04, 14.54it/s]mqp-off:parse:  69%|██████▉   | 147/212 [01:42<00:03, 18.29it/s]mqp-off:parse:  71%|███████   | 150/212 [01:42<00:03, 19.55it/s]mqp-off:parse:  72%|███████▏  | 153/212 [01:42<00:03, 17.26it/s]mqp-off:parse:  74%|███████▎  | 156/212 [01:42<00:03, 15.92it/s]mqp-off:parse:  75%|███████▌  | 160/212 [01:42<00:03, 16.93it/s]mqp-off:parse:  77%|███████▋  | 163/212 [01:42<00:02, 18.50it/s]mqp-off:parse:  78%|███████▊  | 166/212 [01:43<00:02, 18.38it/s]mqp-off:parse:  81%|████████  | 172/212 [01:43<00:01, 22.83it/s]mqp-off:parse:  83%|████████▎ | 175/212 [01:43<00:01, 19.57it/s]mqp-off:parse:  84%|████████▍ | 178/212 [01:43<00:01, 17.86it/s]mqp-off:parse:  85%|████████▍ | 180/212 [01:43<00:01, 17.75it/s]mqp-off:parse:  86%|████████▋ | 183/212 [01:43<00:01, 19.71it/s]mqp-off:parse:  88%|████████▊ | 186/212 [01:44<00:01, 20.54it/s]mqp-off:parse:  89%|████████▉ | 189/212 [01:44<00:01, 18.05it/s]mqp-off:parse:  91%|█████████ | 193/212 [01:44<00:00, 20.54it/s]mqp-off:parse:  92%|█████████▏| 196/212 [01:44<00:00, 20.11it/s]mqp-off:parse:  94%|█████████▍| 199/212 [01:44<00:00, 20.06it/s]mqp-off:parse:  95%|█████████▌| 202/212 [01:44<00:00, 18.80it/s]mqp-off:parse:  96%|█████████▌| 204/212 [01:45<00:00, 17.55it/s]mqp-off:parse:  97%|█████████▋| 206/212 [01:45<00:00, 15.08it/s]mqp-off:parse:  99%|█████████▊| 209/212 [01:45<00:00, 18.10it/s]mqp-off:parse: 100%|██████████| 212/212 [01:45<00:00,  2.01it/s]
+[mqp-off] parse: 1.8 min wall
+VTM recon != encoder recon for: none
++ kill -0 131095
+++ date
++ echo '=== Mon Sep  7 07:57:51 CEST 2026 [mqp3] OFF prepare resume/verify pass ==='
+=== Mon Sep  7 07:57:51 CEST 2026 [mqp3] OFF prepare resume/verify pass ===
++ uv run python mqp_prepare.py --variant off --stage all --enc-workers 8
+[mqp-off] 212 tasks, encode-todo=0
+mqp-off:encode: 0it [00:00, ?it/s]mqp-off:encode: 0it [00:00, ?it/s]
+[mqp-off] encode: 0.0 min wall
+mqp-off:decode:   0%|          | 0/212 [00:00<?, ?it/s]mqp-off:decode:   0%|          | 1/212 [00:15<55:34, 15.80s/it]mqp-off:decode:   1%|          | 2/212 [00:16<23:58,  6.85s/it]mqp-off:decode:   1%|▏         | 3/212 [00:17<14:02,  4.03s/it]mqp-off:decode:   2%|▏         | 4/212 [00:23<17:49,  5.14s/it]mqp-off:decode:   2%|▏         | 5/212 [00:29<18:45,  5.44s/it]mqp-off:decode:   3%|▎         | 6/212 [00:33<16:03,  4.68s/it]mqp-off:decode:   3%|▎         | 7/212 [00:36<14:47,  4.33s/it]mqp-off:decode:   4%|▍         | 8/212 [00:38<11:39,  3.43s/it]mqp-off:decode:   4%|▍         | 9/212 [00:38<08:28,  2.51s/it]mqp-off:decode:   5%|▍         | 10/212 [00:41<08:46,  2.61s/it]mqp-off:decode:   5%|▌         | 11/212 [00:42<07:30,  2.24s/it]mqp-off:decode:   6%|▌         | 12/212 [00:44<07:08,  2.14s/it]mqp-off:decode:   6%|▌         | 13/212 [00:52<12:12,  3.68s/it]mqp-off:decode:   7%|▋         | 14/212 [00:52<09:10,  2.78s/it]mqp-off:decode:   7%|▋         | 15/212 [00:53<07:34,  2.31s/it]mqp-off:decode:   8%|▊         | 16/212 [00:58<09:36,  2.94s/it]mqp-off:decode:   8%|▊         | 17/212 [00:58<06:56,  2.14s/it]mqp-off:decode:   9%|▉         | 19/212 [01:04<08:10,  2.54s/it]mqp-off:decode:   9%|▉         | 20/212 [01:05<06:33,  2.05s/it]mqp-off:decode:  10%|▉         | 21/212 [01:07<06:50,  2.15s/it]mqp-off:decode:  10%|█         | 22/212 [01:11<07:57,  2.51s/it]mqp-off:decode:  12%|█▏        | 25/212 [01:22<09:56,  3.19s/it]mqp-off:decode:  12%|█▏        | 26/212 [01:24<09:06,  2.94s/it]mqp-off:decode:  13%|█▎        | 27/212 [01:26<08:24,  2.73s/it]mqp-off:decode:  13%|█▎        | 28/212 [01:31<10:04,  3.29s/it]mqp-off:decode:  14%|█▎        | 29/212 [01:37<12:07,  3.98s/it]mqp-off:decode:  14%|█▍        | 30/212 [01:38<09:21,  3.09s/it]mqp-off:decode:  15%|█▌        | 32/212 [01:42<08:12,  2.74s/it]mqp-off:decode:  16%|█▌        | 34/212 [01:45<06:25,  2.16s/it]mqp-off:decode:  17%|█▋        | 35/212 [01:50<08:32,  2.89s/it]mqp-off:decode:  17%|█▋        | 36/212 [01:50<06:35,  2.25s/it]mqp-off:decode:  17%|█▋        | 37/212 [01:55<08:08,  2.79s/it]mqp-off:decode:  18%|█▊        | 38/212 [01:55<06:32,  2.26s/it]mqp-off:decode:  18%|█▊        | 39/212 [01:56<05:25,  1.88s/it]mqp-off:decode:  19%|█▉        | 40/212 [01:57<04:45,  1.66s/it]mqp-off:decode:  19%|█▉        | 41/212 [02:04<08:27,  2.97s/it]mqp-off:decode:  20%|█▉        | 42/212 [02:04<06:11,  2.18s/it]mqp-off:decode:  20%|██        | 43/212 [02:09<08:47,  3.12s/it]mqp-off:decode:  21%|██        | 44/212 [02:10<06:23,  2.28s/it]mqp-off:decode:  21%|██        | 45/212 [02:11<05:37,  2.02s/it]mqp-off:decode:  22%|██▏       | 46/212 [02:15<07:22,  2.67s/it]mqp-off:decode:  22%|██▏       | 47/212 [02:17<07:01,  2.55s/it]mqp-off:decode:  23%|██▎       | 48/212 [02:18<05:16,  1.93s/it]mqp-off:decode:  24%|██▎       | 50/212 [02:20<04:17,  1.59s/it]mqp-off:decode:  24%|██▍       | 51/212 [02:21<03:48,  1.42s/it]mqp-off:decode:  25%|██▍       | 52/212 [02:21<02:52,  1.08s/it]mqp-off:decode:  25%|██▌       | 53/212 [02:22<02:36,  1.02it/s]mqp-off:decode:  25%|██▌       | 54/212 [02:23<02:12,  1.19it/s]mqp-off:decode:  26%|██▌       | 55/212 [02:23<01:54,  1.37it/s]mqp-off:decode:  26%|██▋       | 56/212 [02:25<02:47,  1.07s/it]mqp-off:decode:  28%|██▊       | 59/212 [02:26<01:38,  1.55it/s]mqp-off:decode:  28%|██▊       | 60/212 [02:26<01:22,  1.85it/s]mqp-off:decode:  29%|██▉       | 61/212 [02:27<01:36,  1.57it/s]mqp-off:decode:  29%|██▉       | 62/212 [02:28<01:40,  1.50it/s]mqp-off:decode:  30%|██▉       | 63/212 [02:28<01:21,  1.84it/s]mqp-off:decode:  30%|███       | 64/212 [02:29<01:26,  1.71it/s]mqp-off:decode:  31%|███       | 65/212 [02:30<01:56,  1.26it/s]mqp-off:decode:  32%|███▏      | 67/212 [02:30<01:22,  1.77it/s]mqp-off:decode:  32%|███▏      | 68/212 [02:31<01:11,  2.01it/s]mqp-off:decode:  33%|███▎      | 69/212 [02:31<01:01,  2.33it/s]mqp-off:decode:  33%|███▎      | 71/212 [02:32<01:05,  2.16it/s]mqp-off:decode:  34%|███▍      | 72/212 [02:32<01:00,  2.30it/s]mqp-off:decode:  34%|███▍      | 73/212 [02:33<01:20,  1.74it/s]mqp-off:decode:  35%|███▍      | 74/212 [02:34<01:06,  2.09it/s]mqp-off:decode:  35%|███▌      | 75/212 [02:34<00:54,  2.50it/s]mqp-off:decode:  36%|███▋      | 77/212 [02:35<01:16,  1.76it/s]mqp-off:decode:  37%|███▋      | 78/212 [02:35<01:02,  2.16it/s]mqp-off:decode:  37%|███▋      | 79/212 [02:36<01:01,  2.16it/s]mqp-off:decode:  38%|███▊      | 80/212 [02:36<00:48,  2.72it/s]mqp-off:decode:  38%|███▊      | 81/212 [02:37<01:04,  2.03it/s]mqp-off:decode:  39%|███▊      | 82/212 [02:37<00:51,  2.52it/s]mqp-off:decode:  39%|███▉      | 83/212 [02:38<01:05,  1.98it/s]mqp-off:decode:  40%|████      | 85/212 [02:39<01:05,  1.94it/s]mqp-off:decode:  41%|████      | 86/212 [02:39<00:58,  2.17it/s]mqp-off:decode:  41%|████      | 87/212 [02:40<01:02,  1.99it/s]mqp-off:decode:  42%|████▏     | 88/212 [02:40<00:48,  2.54it/s]mqp-off:decode:  42%|████▏     | 89/212 [02:40<00:56,  2.19it/s]mqp-off:decode:  43%|████▎     | 91/212 [02:41<00:55,  2.18it/s]mqp-off:decode:  43%|████▎     | 92/212 [02:42<00:55,  2.18it/s]mqp-off:decode:  44%|████▍     | 93/212 [02:43<01:02,  1.91it/s]mqp-off:decode:  44%|████▍     | 94/212 [02:43<00:53,  2.20it/s]mqp-off:decode:  45%|████▍     | 95/212 [02:43<00:51,  2.29it/s]mqp-off:decode:  46%|████▌     | 97/212 [02:44<00:46,  2.45it/s]mqp-off:decode:  46%|████▌     | 98/212 [02:44<00:47,  2.39it/s]mqp-off:decode:  47%|████▋     | 99/212 [02:45<00:51,  2.17it/s]mqp-off:decode:  47%|████▋     | 100/212 [02:45<00:41,  2.73it/s]mqp-off:decode:  48%|████▊     | 101/212 [02:46<00:52,  2.12it/s]mqp-off:decode:  48%|████▊     | 102/212 [02:46<00:42,  2.59it/s]mqp-off:decode:  49%|████▊     | 103/212 [02:46<00:43,  2.48it/s]mqp-off:decode:  49%|████▉     | 104/212 [02:47<00:38,  2.79it/s]mqp-off:decode:  50%|████▉     | 105/212 [02:48<01:03,  1.68it/s]mqp-off:decode:  50%|█████     | 107/212 [02:48<00:42,  2.46it/s]mqp-off:decode:  51%|█████     | 108/212 [02:48<00:35,  2.97it/s]mqp-off:decode:  51%|█████▏    | 109/212 [02:50<01:02,  1.64it/s]mqp-off:decode:  52%|█████▏    | 111/212 [02:51<00:54,  1.87it/s]mqp-off:decode:  53%|█████▎    | 112/212 [02:51<00:48,  2.06it/s]mqp-off:decode:  53%|█████▎    | 113/212 [02:52<00:51,  1.92it/s]mqp-off:decode:  54%|█████▍    | 115/212 [02:52<00:44,  2.19it/s]mqp-off:decode:  55%|█████▍    | 116/212 [02:53<00:46,  2.06it/s]mqp-off:decode:  55%|█████▌    | 117/212 [02:54<01:05,  1.44it/s]mqp-off:decode:  56%|█████▌    | 118/212 [02:54<00:51,  1.84it/s]mqp-off:decode:  56%|█████▌    | 119/212 [02:54<00:40,  2.28it/s]mqp-off:decode:  57%|█████▋    | 121/212 [02:56<00:44,  2.06it/s]mqp-off:decode:  58%|█████▊    | 122/212 [02:56<00:38,  2.36it/s]mqp-off:decode:  58%|█████▊    | 123/212 [02:57<00:55,  1.60it/s]mqp-off:decode:  59%|█████▉    | 125/212 [02:58<00:51,  1.69it/s]mqp-off:decode:  59%|█████▉    | 126/212 [02:58<00:41,  2.06it/s]mqp-off:decode:  60%|█████▉    | 127/212 [02:58<00:35,  2.40it/s]mqp-off:decode:  61%|██████    | 129/212 [03:00<00:43,  1.93it/s]mqp-off:decode:  61%|██████▏   | 130/212 [03:00<00:34,  2.35it/s]mqp-off:decode:  62%|██████▏   | 131/212 [03:01<00:42,  1.89it/s]mqp-off:decode:  62%|██████▏   | 132/212 [03:01<00:36,  2.18it/s]mqp-off:decode:  63%|██████▎   | 133/212 [03:02<00:40,  1.93it/s]mqp-off:decode:  63%|██████▎   | 134/212 [03:02<00:32,  2.37it/s]mqp-off:decode:  64%|██████▎   | 135/212 [03:02<00:37,  2.05it/s]mqp-off:decode:  65%|██████▍   | 137/212 [03:04<00:43,  1.71it/s]mqp-off:decode:  65%|██████▌   | 138/212 [03:04<00:36,  2.04it/s]mqp-off:decode:  66%|██████▌   | 139/212 [03:04<00:33,  2.17it/s]mqp-off:decode:  66%|██████▌   | 140/212 [03:05<00:26,  2.68it/s]mqp-off:decode:  67%|██████▋   | 141/212 [03:06<00:40,  1.76it/s]mqp-off:decode:  67%|██████▋   | 142/212 [03:06<00:37,  1.89it/s]mqp-off:decode:  67%|██████▋   | 143/212 [03:07<00:37,  1.84it/s]mqp-off:decode:  68%|██████▊   | 145/212 [03:07<00:26,  2.49it/s]mqp-off:decode:  69%|██████▉   | 146/212 [03:07<00:22,  2.98it/s]mqp-off:decode:  69%|██████▉   | 147/212 [03:08<00:30,  2.15it/s]mqp-off:decode:  70%|██████▉   | 148/212 [03:08<00:27,  2.30it/s]mqp-off:decode:  70%|███████   | 149/212 [03:09<00:36,  1.72it/s]mqp-off:decode:  71%|███████   | 151/212 [03:10<00:23,  2.64it/s]mqp-off:decode:  72%|███████▏  | 152/212 [03:10<00:18,  3.19it/s]mqp-off:decode:  72%|███████▏  | 153/212 [03:12<00:45,  1.31it/s]mqp-off:decode:  73%|███████▎  | 155/212 [03:12<00:29,  1.94it/s]mqp-off:decode:  75%|███████▍  | 158/212 [03:12<00:16,  3.31it/s]mqp-off:decode:  75%|███████▌  | 159/212 [03:14<00:33,  1.58it/s]mqp-off:decode:  75%|███████▌  | 160/212 [03:15<00:27,  1.91it/s]mqp-off:decode:  76%|███████▌  | 161/212 [03:15<00:28,  1.80it/s]mqp-off:decode:  77%|███████▋  | 163/212 [03:15<00:17,  2.79it/s]mqp-off:decode:  78%|███████▊  | 165/212 [03:18<00:29,  1.61it/s]mqp-off:decode:  78%|███████▊  | 166/212 [03:18<00:24,  1.86it/s]mqp-off:decode:  79%|███████▉  | 167/212 [03:18<00:21,  2.11it/s]mqp-off:decode:  80%|███████▉  | 169/212 [03:18<00:14,  2.94it/s]mqp-off:decode:  81%|████████  | 171/212 [03:20<00:23,  1.74it/s]mqp-off:decode:  82%|████████▏ | 173/212 [03:21<00:19,  1.97it/s]mqp-off:decode:  82%|████████▏ | 174/212 [03:21<00:16,  2.25it/s]mqp-off:decode:  83%|████████▎ | 176/212 [03:22<00:13,  2.62it/s]mqp-off:decode:  83%|████████▎ | 177/212 [03:24<00:24,  1.41it/s]mqp-off:decode:  84%|████████▍ | 179/212 [03:24<00:15,  2.09it/s]mqp-off:decode:  85%|████████▌ | 181/212 [03:25<00:14,  2.16it/s]mqp-off:decode:  86%|████████▋ | 183/212 [03:27<00:18,  1.56it/s]mqp-off:decode:  87%|████████▋ | 184/212 [03:27<00:16,  1.74it/s]mqp-off:decode:  88%|████████▊ | 187/212 [03:27<00:09,  2.68it/s]mqp-off:decode:  89%|████████▊ | 188/212 [03:28<00:07,  3.04it/s]mqp-off:decode:  89%|████████▉ | 189/212 [03:29<00:13,  1.75it/s]mqp-off:decode:  90%|████████▉ | 190/212 [03:29<00:11,  1.93it/s]mqp-off:decode:  90%|█████████ | 191/212 [03:30<00:09,  2.31it/s]mqp-off:decode:  91%|█████████ | 193/212 [03:30<00:05,  3.46it/s]mqp-off:decode:  92%|█████████▏| 194/212 [03:30<00:05,  3.06it/s]mqp-off:decode:  92%|█████████▏| 195/212 [03:32<00:09,  1.76it/s]mqp-off:decode:  92%|█████████▏| 196/212 [03:32<00:08,  1.99it/s]mqp-off:decode:  93%|█████████▎| 197/212 [03:32<00:06,  2.48it/s]mqp-off:decode:  93%|█████████▎| 198/212 [03:32<00:04,  2.83it/s]mqp-off:decode:  94%|█████████▍| 199/212 [03:32<00:03,  3.30it/s]mqp-off:decode:  95%|█████████▍| 201/212 [03:34<00:05,  1.95it/s]mqp-off:decode:  95%|█████████▌| 202/212 [03:34<00:05,  1.96it/s]mqp-off:decode:  96%|█████████▌| 203/212 [03:35<00:03,  2.33it/s]mqp-off:decode:  97%|█████████▋| 205/212 [03:35<00:02,  3.03it/s]mqp-off:decode:  97%|█████████▋| 206/212 [03:35<00:02,  2.85it/s]mqp-off:decode:  98%|█████████▊| 207/212 [03:36<00:02,  2.21it/s]mqp-off:decode:  98%|█████████▊| 208/212 [03:37<00:01,  2.12it/s]mqp-off:decode: 100%|█████████▉| 211/212 [03:37<00:00,  4.10it/s]mqp-off:decode: 100%|██████████| 212/212 [03:37<00:00,  4.61it/s]mqp-off:decode: 100%|██████████| 212/212 [03:37<00:00,  1.03s/it]
+[mqp-off] decode: 3.7 min wall
+mqp-off:parse:   0%|          | 0/212 [00:00<?, ?it/s]mqp-off:parse:   0%|          | 1/212 [00:00<00:38,  5.41it/s]mqp-off:parse:   1%|▏         | 3/212 [00:00<00:25,  8.24it/s]mqp-off:parse:   2%|▏         | 4/212 [00:01<01:51,  1.86it/s]mqp-off:parse:   2%|▏         | 5/212 [00:02<01:55,  1.79it/s]mqp-off:parse:   3%|▎         | 6/212 [00:02<01:47,  1.91it/s]mqp-off:parse:   3%|▎         | 7/212 [00:03<01:47,  1.91it/s]mqp-off:parse:   4%|▍         | 8/212 [00:03<01:34,  2.15it/s]mqp-off:parse:   4%|▍         | 9/212 [00:03<01:12,  2.82it/s]mqp-off:parse:   5%|▌         | 11/212 [00:04<00:55,  3.63it/s]mqp-off:parse:   6%|▌         | 13/212 [00:04<00:38,  5.11it/s]mqp-off:parse:   7%|▋         | 15/212 [00:04<00:34,  5.73it/s]mqp-off:parse:   8%|▊         | 16/212 [00:04<00:34,  5.71it/s]mqp-off:parse:   8%|▊         | 18/212 [00:04<00:28,  6.80it/s]mqp-off:parse:   9%|▉         | 19/212 [00:05<00:30,  6.30it/s]mqp-off:parse:   9%|▉         | 20/212 [00:05<00:30,  6.34it/s]mqp-off:parse:  10%|█         | 22/212 [00:05<00:23,  8.20it/s]mqp-off:parse:  11%|█         | 23/212 [00:05<00:35,  5.32it/s]mqp-off:parse:  11%|█▏        | 24/212 [00:05<00:35,  5.32it/s]mqp-off:parse:  12%|█▏        | 25/212 [00:07<01:14,  2.52it/s]mqp-off:parse:  12%|█▏        | 26/212 [00:07<01:39,  1.87it/s]mqp-off:parse:  13%|█▎        | 27/212 [00:08<01:28,  2.09it/s]mqp-off:parse:  13%|█▎        | 28/212 [00:08<01:36,  1.91it/s]mqp-off:parse:  14%|█▎        | 29/212 [00:09<01:28,  2.08it/s]mqp-off:parse:  14%|█▍        | 30/212 [00:09<01:33,  1.95it/s]mqp-off:parse:  15%|█▍        | 31/212 [00:10<01:21,  2.22it/s]mqp-off:parse:  17%|█▋        | 35/212 [00:10<00:41,  4.24it/s]mqp-off:parse:  17%|█▋        | 36/212 [00:10<00:43,  4.05it/s]mqp-off:parse:  18%|█▊        | 39/212 [00:11<00:39,  4.41it/s]mqp-off:parse:  19%|█▉        | 40/212 [00:11<00:42,  4.09it/s]mqp-off:parse:  19%|█▉        | 41/212 [00:12<01:05,  2.59it/s]mqp-off:parse:  20%|█▉        | 42/212 [00:13<01:05,  2.60it/s]mqp-off:parse:  20%|██        | 43/212 [00:13<00:57,  2.94it/s]mqp-off:parse:  21%|██        | 44/212 [00:13<00:49,  3.37it/s]mqp-off:parse:  22%|██▏       | 46/212 [00:13<00:36,  4.61it/s]mqp-off:parse:  22%|██▏       | 47/212 [00:14<00:45,  3.65it/s]mqp-off:parse:  23%|██▎       | 48/212 [00:14<00:43,  3.75it/s]mqp-off:parse:  24%|██▍       | 51/212 [00:14<00:26,  6.12it/s]mqp-off:parse:  25%|██▍       | 52/212 [00:14<00:27,  5.78it/s]mqp-off:parse:  25%|██▌       | 54/212 [00:15<00:21,  7.30it/s]mqp-off:parse:  26%|██▌       | 55/212 [00:15<00:23,  6.79it/s]mqp-off:parse:  27%|██▋       | 57/212 [00:15<00:18,  8.18it/s]mqp-off:parse:  28%|██▊       | 60/212 [00:15<00:12, 12.05it/s]mqp-off:parse:  29%|██▉       | 62/212 [00:15<00:13, 11.35it/s]mqp-off:parse:  31%|███       | 66/212 [00:15<00:09, 15.07it/s]mqp-off:parse:  38%|███▊      | 80/212 [00:15<00:03, 39.17it/s]mqp-off:parse:  42%|████▏     | 88/212 [00:16<00:02, 47.83it/s]mqp-off:parse:  50%|█████     | 106/212 [00:16<00:01, 76.00it/s]mqp-off:parse:  55%|█████▌    | 117/212 [00:16<00:01, 83.57it/s]mqp-off:parse:  64%|██████▍   | 136/212 [00:16<00:00, 110.84it/s]mqp-off:parse:  71%|███████   | 151/212 [00:16<00:00, 115.92it/s]mqp-off:parse:  77%|███████▋  | 164/212 [00:16<00:00, 113.01it/s]mqp-off:parse:  88%|████████▊ | 186/212 [00:16<00:00, 136.60it/s]mqp-off:parse:  96%|█████████▌| 203/212 [00:16<00:00, 145.06it/s]mqp-off:parse: 100%|██████████| 212/212 [00:16<00:00, 12.55it/s] 
+[mqp-off] parse: 0.3 min wall
+VTM recon != encoder recon for: none
++ touch mqp_off_ready.marker
+++ date
++ echo '=== Mon Sep  7 08:01:56 CEST 2026 [mqp3] resuming ON encoders (pgid 460588) ==='
+=== Mon Sep  7 08:01:56 CEST 2026 [mqp3] resuming ON encoders (pgid 460588) ===
++ kill -CONT -460588
++ kill -0 460625
++ sleep 60
+++ date
++ echo '=== Mon Sep  7 08:01:56 CEST 2026 [mqp3] waiting for QG2 chain ==='
+=== Mon Sep  7 08:01:56 CEST 2026 [mqp3] waiting for QG2 chain ===
++ '[' -f qg2_done.marker ']'
++ sleep 120
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ '[' -f qg2_done.marker ']'
++ for M in $MODELS
+++ date
++ echo '=== Mon Sep  7 08:03:56 CEST 2026 [mqp3] train martell_hybrid off ==='
+=== Mon Sep  7 08:03:56 CEST 2026 [mqp3] train martell_hybrid off ===
++ uv run python train_mqp.py --model martell_hybrid --variant off
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ for M in $MODELS
++ kill -0 460625
+++ date
++ sleep 60
++ echo '=== Mon Sep  7 08:53:25 CEST 2026 [mqp4] train martell_hybrid off (ON encoders paused) ==='
+=== Mon Sep  7 08:53:25 CEST 2026 [mqp4] train martell_hybrid off (ON encoders paused) ===
++ kill -STOP -460588
++ uv run python train_mqp.py --model martell_hybrid --variant off --num-workers 12
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -CONT -460588
+++ date
++ echo '=== Mon Sep  7 21:10:45 CEST 2026 [mqp4] eval martell_hybrid off (ON encoders running) ==='
+=== Mon Sep  7 21:10:45 CEST 2026 [mqp4] eval martell_hybrid off (ON encoders running) ===
++ uv run python ctc_vtm_evaluate.py --variant off --classes B,C,D,E --models martell_hybrid_mqp_off
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ for M in $MODELS
+++ date
++ echo '=== Mon Sep  7 22:15:52 CEST 2026 [mqp4] train vvc_ppff off (ON encoders paused) ==='
+=== Mon Sep  7 22:15:52 CEST 2026 [mqp4] train vvc_ppff off (ON encoders paused) ===
++ kill -STOP -460588
++ uv run python train_mqp.py --model vvc_ppff --variant off --num-workers 12
++ kill -0 460625
++ sleep 60
++ kill -CONT -460588
+++ date
++ echo '=== Mon Sep  7 22:17:03 CEST 2026 [mqp4] eval vvc_ppff off (ON encoders running) ==='
+=== Mon Sep  7 22:17:03 CEST 2026 [mqp4] eval vvc_ppff off (ON encoders running) ===
++ uv run python ctc_vtm_evaluate.py --variant off --classes B,C,D,E --models vvc_ppff_mqp_off
++ for M in $MODELS
+++ date
++ echo '=== Mon Sep  7 22:17:08 CEST 2026 [mqp4] train stenet_2024 off (ON encoders paused) ==='
+=== Mon Sep  7 22:17:08 CEST 2026 [mqp4] train stenet_2024 off (ON encoders paused) ===
++ kill -STOP -460588
++ uv run python train_mqp.py --model stenet_2024 --variant off --num-workers 12
++ kill -0 460625
++ sleep 60
++ for M in $OFF_MODELS
++ kill -0 460625
++ sleep 60
+++ date
++ echo '=== Mon Sep  7 22:17:58 CEST 2026 [mqp5] train vvc_ppff off (ON encoders paused) ==='
+=== Mon Sep  7 22:17:58 CEST 2026 [mqp5] train vvc_ppff off (ON encoders paused) ===
++ kill -STOP -460588
++ uv run python train_mqp.py --model vvc_ppff --variant off --num-workers 12
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -CONT -460588
+++ date
++ echo '=== Tue Sep  8 11:30:15 CEST 2026 [mqp5] eval vvc_ppff off (ON encoders running) ==='
+=== Tue Sep  8 11:30:15 CEST 2026 [mqp5] eval vvc_ppff off (ON encoders running) ===
++ uv run python ctc_vtm_evaluate.py --variant off --classes B,C,D,E --models vvc_ppff_mqp_off
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ for M in $OFF_MODELS
+++ date
++ echo '=== Tue Sep  8 12:23:59 CEST 2026 [mqp5] train stenet_2024 off (ON encoders paused) ==='
+=== Tue Sep  8 12:23:59 CEST 2026 [mqp5] train stenet_2024 off (ON encoders paused) ===
++ kill -STOP -460588
++ uv run python train_mqp.py --model stenet_2024 --variant off --num-workers 12
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ kill -0 460625
++ sleep 60
++ for M in $OFF_MODELS
++ kill -0 3160614
++ sleep 60
+++ date
++ echo '=== Tue Sep  8 18:52:16 CEST 2026 [mqp6] train stenet_2024 off (encoders paused) ==='
+=== Tue Sep  8 18:52:16 CEST 2026 [mqp6] train stenet_2024 off (encoders paused) ===
++ pause_enc
++ for g in $ENC_PGIDS
++ kill -STOP -3160605
++ for g in $ENC_PGIDS
++ kill -STOP -3161403
++ uv run python train_mqp.py --model stenet_2024 --variant off --num-workers 12
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ for M in $OFF_MODELS
++ kill -0 3160614
++ sleep 60
+++ date
++ echo '=== Tue Sep  8 18:54:44 CEST 2026 [mqp6] train stenet_2024 off (encoders paused) ==='
+=== Tue Sep  8 18:54:44 CEST 2026 [mqp6] train stenet_2024 off (encoders paused) ===
++ pause_enc
++ for g in $ENC_PGIDS
++ kill -STOP -3160605
++ for g in $ENC_PGIDS
++ kill -STOP -3161403
++ uv run python train_mqp.py --model stenet_2024 --variant off --num-workers 12
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ for M in $OFF_MODELS
++ kill -0 3160614
++ sleep 60
+++ date
++ echo '=== Tue Sep  8 19:00:39 CEST 2026 [mqp6] train stenet_2024 off (encoders paused) ==='
+=== Tue Sep  8 19:00:39 CEST 2026 [mqp6] train stenet_2024 off (encoders paused) ===
++ pause_enc
++ for g in $ENC_PGIDS
++ kill -STOP -3160605
++ for g in $ENC_PGIDS
++ kill -STOP -3161403
++ uv run python train_mqp.py --model stenet_2024 --variant off --num-workers 12
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ resume_enc
++ for g in $ENC_PGIDS
++ kill -CONT -3160605
++ for g in $ENC_PGIDS
++ kill -CONT -3161403
+++ date
++ echo '=== Tue Sep  8 20:15:51 CEST 2026 [mqp6] eval stenet_2024 off (A-F) ==='
+=== Tue Sep  8 20:15:51 CEST 2026 [mqp6] eval stenet_2024 off (A-F) ===
++ uv run python ctc_vtm_evaluate.py --variant off --classes A,B,C,D,E,F --models stenet_2024_mqp_off
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ for M in $OFF_MODELS
+++ date
++ echo '=== Tue Sep  8 20:56:55 CEST 2026 [mqp6] train bi_conv_lstm off (encoders paused) ==='
+=== Tue Sep  8 20:56:55 CEST 2026 [mqp6] train bi_conv_lstm off (encoders paused) ===
++ pause_enc
++ for g in $ENC_PGIDS
++ kill -STOP -3160605
++ for g in $ENC_PGIDS
++ kill -STOP -3161403
++ uv run python train_mqp.py --model bi_conv_lstm --variant off --num-workers 12
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ resume_enc
++ for g in $ENC_PGIDS
++ kill -CONT -3160605
++ for g in $ENC_PGIDS
++ kill -CONT -3161403
+++ date
++ echo '=== Tue Sep  8 22:47:12 CEST 2026 [mqp6] eval bi_conv_lstm off (A-F) ==='
+=== Tue Sep  8 22:47:12 CEST 2026 [mqp6] eval bi_conv_lstm off (A-F) ===
++ uv run python ctc_vtm_evaluate.py --variant off --classes A,B,C,D,E,F --models bi_conv_lstm_mqp_off
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ for M in $OFF_MODELS
+++ date
++ echo '=== Tue Sep  8 23:41:21 CEST 2026 [mqp6] train qg_conv_lstm off (encoders paused) ==='
+=== Tue Sep  8 23:41:21 CEST 2026 [mqp6] train qg_conv_lstm off (encoders paused) ===
++ pause_enc
++ for g in $ENC_PGIDS
++ kill -STOP -3160605
++ for g in $ENC_PGIDS
++ kill -STOP -3161403
++ uv run python train_mqp.py --model qg_conv_lstm --variant off --num-workers 12
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ kill -0 3160614
++ sleep 60
++ for M in $OFF_MODELS
++ kill -0 938
++ sleep 60
+++ date
++ echo '=== Wed Sep  9 10:05:40 CEST 2026 [mqp7] train qg_conv_lstm off (encoders paused) ==='
+=== Wed Sep  9 10:05:40 CEST 2026 [mqp7] train qg_conv_lstm off (encoders paused) ===
++ pause_enc
++ kill -STOP -928
++ kill -STOP -929
++ uv run python train_mqp.py --model qg_conv_lstm --variant off --num-workers 12
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ for M in $OFF_MODELS
++ kill -0 938
++ sleep 60
+++ date
++ echo '=== Wed Sep  9 10:09:07 CEST 2026 [mqp8] train qg_conv_lstm off (encoders paused) ==='
+=== Wed Sep  9 10:09:07 CEST 2026 [mqp8] train qg_conv_lstm off (encoders paused) ===
++ pause_enc
++ :
++ uv run python train_mqp.py --model qg_conv_lstm --variant off --num-workers 12
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ resume_enc
++ kill -CONT -928
++ kill -CONT -929
+++ date
++ echo '=== Wed Sep  9 19:09:48 CEST 2026 [mqp8] eval qg_conv_lstm off (A-F) ==='
+=== Wed Sep  9 19:09:48 CEST 2026 [mqp8] eval qg_conv_lstm off (A-F) ===
++ uv run python ctc_vtm_evaluate.py --variant off --classes A,B,C,D,E,F --models qg_conv_lstm_mqp_off
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ for M in $OFF_MODELS
+++ date
++ echo '=== Wed Sep  9 19:25:40 CEST 2026 [mqp8] train martell_hybrid_nometa off (encoders paused) ==='
+=== Wed Sep  9 19:25:40 CEST 2026 [mqp8] train martell_hybrid_nometa off (encoders paused) ===
++ pause_enc
++ :
++ uv run python train_mqp.py --model martell_hybrid_nometa --variant off --num-workers 12
++ kill -0 938
++ sleep 60
+=== Wed Sep  9 19:26:38 CEST 2026 [qg-retry] attempt 1 ===
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
+=== Wed Sep  9 20:49:43 CEST 2026 [nwd] waiting for OFF round done ===
+=== Wed Sep  9 20:49:43 CEST 2026 [nwd] train martell_hybrid off wd=0 ===
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ resume_enc
++ kill -CONT -928
++ kill -CONT -929
+++ date
++ echo '=== Wed Sep  9 22:25:28 CEST 2026 [mqp8] eval martell_hybrid_nometa off (A-F) ==='
+=== Wed Sep  9 22:25:28 CEST 2026 [mqp8] eval martell_hybrid_nometa off (A-F) ===
++ uv run python ctc_vtm_evaluate.py --variant off --classes A,B,C,D,E,F --models martell_hybrid_nometa_mqp_off
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
+=== Thu Sep 10 01:30:51 CEST 2026 [nwd] eval martell_hybrid mqpnwd off (A-F) ===
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
++ kill -0 938
++ sleep 60
+=== Thu Sep 10 09:24:33 CEST 2026 [nwd] done ===
+++ date
++ echo '=== Thu Sep 10 09:26:29 CEST 2026 [mqp9] eval qg off B-F (retry, cache resumes) ==='
+=== Thu Sep 10 09:26:29 CEST 2026 [mqp9] eval qg off B-F (retry, cache resumes) ===
++ uv run python ctc_vtm_evaluate.py --variant off --classes B,C,D,E,F --models qg_conv_lstm_mqp_off
+++ date
++ echo '=== Thu Sep 10 18:07:37 CEST 2026 [mqp10] train martell_hybrid on (wd=0, mqpnwd) ==='
+=== Thu Sep 10 18:07:37 CEST 2026 [mqp10] train martell_hybrid on (wd=0, mqpnwd) ===
++ uv run python train_mqp.py --model martell_hybrid --variant on --num-workers 12 --wd 0 --tag mqpnwd
+++ date
++ echo '=== Thu Sep 10 18:07:44 CEST 2026 [mqp10] eval martell_hybrid mqpnwd on B-E ==='
+=== Thu Sep 10 18:07:44 CEST 2026 [mqp10] eval martell_hybrid mqpnwd on B-E ===
++ uv run python ctc_vtm_evaluate.py --variant on --classes B,C,D,E --models martell_hybrid_mqpnwd_on
++ for M in stenet_2024 bi_conv_lstm
+++ date
++ echo '=== Thu Sep 10 18:07:47 CEST 2026 [mqp10] train stenet_2024 on ==='
+=== Thu Sep 10 18:07:47 CEST 2026 [mqp10] train stenet_2024 on ===
++ uv run python train_mqp.py --model stenet_2024 --variant on --num-workers 12
+++ date
++ echo '=== Thu Sep 10 18:07:48 CEST 2026 [mqp10] eval stenet_2024 on B-E ==='
+=== Thu Sep 10 18:07:48 CEST 2026 [mqp10] eval stenet_2024 on B-E ===
++ uv run python ctc_vtm_evaluate.py --variant on --classes B,C,D,E --models stenet_2024_mqp_on
++ for M in stenet_2024 bi_conv_lstm
+++ date
++ echo '=== Thu Sep 10 18:07:51 CEST 2026 [mqp10] train bi_conv_lstm on ==='
+=== Thu Sep 10 18:07:51 CEST 2026 [mqp10] train bi_conv_lstm on ===
++ uv run python train_mqp.py --model bi_conv_lstm --variant on --num-workers 12
+++ date
++ echo '=== Thu Sep 10 18:07:53 CEST 2026 [mqp10] eval bi_conv_lstm on B-E ==='
+=== Thu Sep 10 18:07:53 CEST 2026 [mqp10] eval bi_conv_lstm on B-E ===
++ uv run python ctc_vtm_evaluate.py --variant on --classes B,C,D,E --models bi_conv_lstm_mqp_on
+++ date
++ echo '=== Thu Sep 10 18:07:55 CEST 2026 [mqp10] qg off leftovers (small tiles) ==='
+=== Thu Sep 10 18:07:55 CEST 2026 [mqp10] qg off leftovers (small tiles) ===
++ VVC_TILE_MAX_ROWS=384
++ uv run python ctc_vtm_evaluate.py --variant off --classes B,C,D,E,F --models qg_conv_lstm_mqp_off
+++ date
++ echo '=== Thu Sep 10 18:10:58 CEST 2026 [mqp11] CROSS-eval mqpnwd_off na kotwicach Z FILTRAMI (B-E) ==='
+=== Thu Sep 10 18:10:58 CEST 2026 [mqp11] CROSS-eval mqpnwd_off na kotwicach Z FILTRAMI (B-E) ===
++ uv run python ctc_vtm_evaluate.py --variant on --classes B,C,D,E --models martell_hybrid_mqpnwd_off
++ kill -0 13920
++ sleep 30
++ kill -0 13920
++ sleep 30
++ kill -0 13920
++ sleep 30
++ kill -0 13920
++ sleep 30
++ kill -0 13920
++ sleep 30
++ kill -0 13920
++ sleep 30
++ kill -0 13920
++ sleep 30
++ kill -0 13920
++ sleep 30
++ kill -0 13920
++ sleep 30
++ kill -0 13920
++ sleep 30
++ kill -0 13920
++ sleep 30
++ kill -0 13920
++ sleep 30
++ kill -0 13920
++ sleep 30
++ kill -0 13920
++ sleep 30
++ kill -0 13920
++ sleep 30
++ kill -0 13920
++ sleep 30
++ kill -0 13920
++ sleep 30
++ kill -0 13920
++ sleep 30
++ kill -0 13920
++ sleep 30
++ kill -0 13920
++ sleep 30
++ kill -0 13920
++ sleep 30
++ kill -0 13920
++ sleep 30
++ kill -0 13920
++ sleep 30
++ kill -0 13920
++ sleep 30
++ kill -0 13920
++ sleep 30
++ kill -0 13920
++ sleep 30
++ kill -0 13920
++ sleep 30
++ kill -0 13920
++ sleep 30
++ kill -0 13920
++ sleep 30
++ kill -0 13920
++ sleep 30
++ kill -0 13920
++ sleep 30
++ kill -0 13920
++ sleep 30
++ kill -0 13920
++ sleep 30
++ kill -0 13920
++ sleep 30
++ kill -0 13920
++ sleep 20
++ kill -0 13920
++ sleep 20
++ kill -0 13920
++ sleep 20
++ kill -0 13920
++ sleep 20
++ kill -0 13920
++ sleep 20
++ kill -0 13920
++ sleep 20
++ kill -0 13920
++ sleep 20
++ kill -0 13920
++ sleep 20
++ kill -0 13920
++ sleep 20
++ kill -0 13920
++ sleep 20
++ kill -0 13920
++ sleep 20
++ kill -0 13920
++ sleep 20
++ kill -0 13920
++ sleep 20
++ kill -0 13920
++ sleep 20
++ kill -0 13920
++ sleep 20
++ kill -0 13920
++ sleep 20
++ kill -0 13920
++ sleep 20
++ kill -0 13920
++ sleep 20
++ kill -0 13920
++ sleep 20
++ kill -0 13920
++ sleep 20
++ kill -0 13920
++ sleep 20
++ kill -0 13920
++ sleep 20
++ kill -0 13920
++ sleep 20
++ kill -0 13920
++ sleep 20
++ kill -0 13920
++ sleep 20
++ kill -0 13920
++ sleep 20
++ kill -0 13920
++ sleep 20
++ kill -0 13920
++ sleep 20
++ kill -0 13920
++ sleep 20
++ kill -0 13920
++ sleep 20
++ kill -0 13920
++ sleep 20
++ kill -0 13920
++ sleep 20
++ kill -0 13920
++ sleep 20
++ kill -0 13920
++ sleep 20
++ kill -0 13920
++ sleep 20
++ kill -0 13920
++ sleep 20
++ kill -0 13920
++ sleep 20
++ kill -0 13920
++ sleep 20
++ kill -0 13920
++ sleep 20
++ kill -0 13920
++ sleep 20
++ kill -0 13920
++ sleep 20
++ kill -0 13920
++ sleep 20
++ kill -0 13920
++ sleep 20
++ kill -0 13920
++ sleep 20
++ kill -0 13920
++ sleep 20
++ kill -0 13920
++ sleep 20
++ kill -0 13920
++ sleep 20
++ kill -0 13920
++ sleep 20
++ kill -0 13920
++ sleep 20
++ kill -0 13920
++ sleep 20
++ kill -0 13920
+++ date
++ echo '=== Thu Sep 10 18:46:56 CEST 2026 [mqp14] (2) train vvc_ppff mqp2 off ==='
+=== Thu Sep 10 18:46:56 CEST 2026 [mqp14] (2) train vvc_ppff mqp2 off ===
++ uv run python train_mqp.py --model vvc_ppff --variant off --num-workers 12 --milestones 30,40,46,50 --tag mqp2
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
++ kill -0 62917
++ sleep 30
+++ date
++ echo '=== Thu Sep 10 21:06:51 CEST 2026 [mqp16] train vvc_ppff mqp3 off (wierna procedura: clamp, wd=1e-4) ==='
+=== Thu Sep 10 21:06:51 CEST 2026 [mqp16] train vvc_ppff mqp3 off (wierna procedura: clamp, wd=1e-4) ===
++ uv run python train_mqp.py --model vvc_ppff --variant off --num-workers 12 --wd 1e-4 --tag mqp3
+++ date
++ echo '=== Fri Sep 11 00:36:40 CEST 2026 [mqp16] eval vvc_ppff mqp3 off (A-F) ==='
+=== Fri Sep 11 00:36:40 CEST 2026 [mqp16] eval vvc_ppff mqp3 off (A-F) ===
++ uv run python ctc_vtm_evaluate.py --variant off --classes A,B,C,D,E,F --models vvc_ppff_mqp3_off
+++ date
++ echo '=== Fri Sep 11 09:22:59 CEST 2026 [mqp17] train martell_hybrid on (wd=0) ==='
+=== Fri Sep 11 09:22:59 CEST 2026 [mqp17] train martell_hybrid on (wd=0) ===
++ uv run python train_mqp.py --model martell_hybrid --variant on --num-workers 12 --wd 0 --tag mqpnwd
+++ date
++ echo '=== Fri Sep 11 09:28:59 CEST 2026 [mqp18] eval vvc_ppff mqp3 off A-F (mini-kafle, timeout 3h) ==='
+=== Fri Sep 11 09:28:59 CEST 2026 [mqp18] eval vvc_ppff mqp3 off A-F (mini-kafle, timeout 3h) ===
++ timeout 10800 env VVC_TILE_MAX_ROWS=256 uv run python ctc_vtm_evaluate.py --variant off --classes A,B,C,D,E,F --models vvc_ppff_mqp3_off
+++ date
++ echo '=== Fri Sep 11 10:23:44 CEST 2026 [mqp18] qg off dokonczenie (male kafle, timeout 3h) ==='
+=== Fri Sep 11 10:23:44 CEST 2026 [mqp18] qg off dokonczenie (male kafle, timeout 3h) ===
++ timeout 10800 env VVC_TILE_MAX_ROWS=384 uv run python ctc_vtm_evaluate.py --variant off --classes B,C,D,E,F --models qg_conv_lstm_mqp_off
+++ date
++ echo '=== Fri Sep 11 14:09:50 CEST 2026 [af-topup] martell bez metadanych: A,F ==='
+=== Fri Sep 11 14:09:50 CEST 2026 [af-topup] martell bez metadanych: A,F ===
++ timeout 7200 uv run python ctc_vtm_evaluate.py --variant off --classes A,B,C,D,E,F --models martell_hybrid_mqp_off
+++ date
++ echo '=== Fri Sep 11 15:58:35 CEST 2026 [af-topup] martell bez metadanych: A,F ==='
+=== Fri Sep 11 15:58:35 CEST 2026 [af-topup] martell bez metadanych: A,F ===
++ timeout 7200 env VVC_TILE_MAX_ROWS=256 uv run python ctc_vtm_evaluate.py --variant off --classes A,B,C,D,E,F --models martell_hybrid_mqp_off
+++ date
++ echo '=== Fri Sep 11 16:53:26 CEST 2026 [af-topup] vvc_ppff: A,F (kafle 256) ==='
+=== Fri Sep 11 16:53:26 CEST 2026 [af-topup] vvc_ppff: A,F (kafle 256) ===
++ timeout 10800 env VVC_TILE_MAX_ROWS=256 uv run python ctc_vtm_evaluate.py --variant off --classes A,B,C,D,E,F --models vvc_ppff_mqp_off
+++ date
++ echo '=== Fri Sep 11 17:10:01 CEST 2026 [af-topup2] vvc_ppff: A,F (kafle 128) ==='
+=== Fri Sep 11 17:10:01 CEST 2026 [af-topup2] vvc_ppff: A,F (kafle 128) ===
++ timeout 10800 env VVC_TILE_MAX_ROWS=128 uv run python ctc_vtm_evaluate.py --variant off --classes A,B,C,D,E,F --models vvc_ppff_mqp_off
+++ date
++ echo '=== Fri Sep 11 18:42:28 CEST 2026 [af-topup2] qg: klasa A (kafle 192) ==='
+=== Fri Sep 11 18:42:28 CEST 2026 [af-topup2] qg: klasa A (kafle 192) ===
++ timeout 14400 env VVC_TILE_MAX_ROWS=192 uv run python ctc_vtm_evaluate.py --variant off --classes A,B,C,D,E,F --models qg_conv_lstm_mqp_off
+=== Fri Sep 11 20:43:57 CEST 2026 [af-topup3] QG-A DONE ===
+++ date
++ echo '=== Fri Sep 11 20:54:14 CEST 2026 [on-round] train martell_hybrid on (wd=0, mqpnwd) ==='
+=== Fri Sep 11 20:54:14 CEST 2026 [on-round] train martell_hybrid on (wd=0, mqpnwd) ===
++ uv run python train_mqp.py --model martell_hybrid --variant on --num-workers 12 --wd 0 --tag mqpnwd
+++ date
++ echo '=== Fri Sep 11 21:25:24 CEST 2026 [on-round] train martell_hybrid on (wd=0, mqpnwd) ==='
+=== Fri Sep 11 21:25:24 CEST 2026 [on-round] train martell_hybrid on (wd=0, mqpnwd) ===
++ uv run python train_mqp.py --model martell_hybrid --variant on --num-workers 12 --wd 0 --tag mqpnwd
+++ date
++ echo '=== Sat Sep 12 00:34:43 CEST 2026 [on-round] eval martell on A-F (kafle 256) ==='
+=== Sat Sep 12 00:34:43 CEST 2026 [on-round] eval martell on A-F (kafle 256) ===
++ timeout 10800 env VVC_TILE_MAX_ROWS=256 uv run python ctc_vtm_evaluate.py --variant on --classes A,B,C,D,E,F --models martell_hybrid_mqpnwd_on
+++ date
++ echo '=== Sat Sep 12 02:31:09 CEST 2026 [on-round] train stenet on ==='
+=== Sat Sep 12 02:31:09 CEST 2026 [on-round] train stenet on ===
++ uv run python train_mqp.py --model stenet_2024 --variant on --num-workers 12
+++ date
++ echo '=== Sat Sep 12 03:46:23 CEST 2026 [on-round] eval stenet on A-F ==='
+=== Sat Sep 12 03:46:23 CEST 2026 [on-round] eval stenet on A-F ===
++ timeout 10800 uv run python ctc_vtm_evaluate.py --variant on --classes A,B,C,D,E,F --models stenet_2024_mqp_on
+++ date
++ echo '=== Sat Sep 12 04:24:41 CEST 2026 [on-round] train bi on ==='
+=== Sat Sep 12 04:24:41 CEST 2026 [on-round] train bi on ===
++ uv run python train_mqp.py --model bi_conv_lstm --variant on --num-workers 12
+++ date
++ echo '=== Sat Sep 12 06:14:49 CEST 2026 [on-round] eval bi on A-F ==='
+=== Sat Sep 12 06:14:49 CEST 2026 [on-round] eval bi on A-F ===
++ timeout 10800 uv run python ctc_vtm_evaluate.py --variant on --classes A,B,C,D,E,F --models bi_conv_lstm_mqp_on
+++ date
++ echo '=== Sat Sep 12 07:06:01 CEST 2026 [on-round] train qg on ==='
+=== Sat Sep 12 07:06:01 CEST 2026 [on-round] train qg on ===
++ uv run python train_mqp.py --model qg_conv_lstm --variant on --num-workers 12
+++ date
++ echo '=== Sat Sep 12 18:37:11 CEST 2026 [on-round] eval qg on B-F (kafle 192) ==='
+=== Sat Sep 12 18:37:11 CEST 2026 [on-round] eval qg on B-F (kafle 192) ===
++ timeout 14400 env VVC_TILE_MAX_ROWS=192 uv run python ctc_vtm_evaluate.py --variant on --classes B,C,D,E,F --models qg_conv_lstm_mqp_on
+++ date
++ echo '=== Sat Sep 12 21:12:22 CEST 2026 [on-round] eval qg on klasa A (kafle 96/64) ==='
+=== Sat Sep 12 21:12:22 CEST 2026 [on-round] eval qg on klasa A (kafle 96/64) ===
++ timeout 18000 env VVC_TILE_MAX_ROWS=96 VVC_TILE_OVERLAP=64 uv run python ctc_vtm_evaluate.py --variant on --classes A,B,C,D,E,F --models qg_conv_lstm_mqp_on
+++ date
++ echo '=== Sat Sep 12 23:07:15 CEST 2026 [on-round] ON ROUND ALL DONE ==='
+=== Sat Sep 12 23:07:15 CEST 2026 [on-round] ON ROUND ALL DONE ===
+++ date
++ echo '=== Sat Sep 12 23:08:54 CEST 2026 [ablacja-on] train martell_hybrid on (metadane nieaktywne) ==='
+=== Sat Sep 12 23:08:54 CEST 2026 [ablacja-on] train martell_hybrid on (metadane nieaktywne) ===
++ uv run python train_mqp.py --model martell_hybrid --variant on --num-workers 12
+++ date
++ echo '=== Sun Sep 13 02:06:56 CEST 2026 [ablacja-on] eval A-F (kafle 256) ==='
+=== Sun Sep 13 02:06:56 CEST 2026 [ablacja-on] eval A-F (kafle 256) ===
++ timeout 10800 env VVC_TILE_MAX_ROWS=256 uv run python ctc_vtm_evaluate.py --variant on --classes A,B,C,D,E,F --models martell_hybrid_mqp_on
+++ date
++ echo '=== Sun Sep 13 04:03:10 CEST 2026 [ablacja-on] DONE ==='
+=== Sun Sep 13 04:03:10 CEST 2026 [ablacja-on] DONE ===

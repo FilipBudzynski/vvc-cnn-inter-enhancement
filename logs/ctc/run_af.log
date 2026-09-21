@@ -1,0 +1,103 @@
+++ date
++ echo '=== Sun Sep  6 11:09:52 CEST 2026 prepare OFF A,F ==='
+=== Sun Sep  6 11:09:52 CEST 2026 prepare OFF A,F ===
++ uv run python ctc_vtm_prepare.py --variant off --classes A,F --stage all
+[off] 32 tasks, encode-todo=32
+off:encode:   0%|          | 0/32 [00:00<?, ?it/s]  enc SteamLocomotiveTrain_60fps_f300 QP37: 105.2 min
+off:encode:   3%|▎         | 1/32 [1:45:12<54:21:37, 6312.81s/it]  enc SteamLocomotiveTrain_60fps_f300 QP32: 179.8 min
+off:encode:   6%|▋         | 2/32 [2:59:51<43:36:50, 5233.70s/it]  enc NebutaFestival_60fps_f300 QP37: 241.1 min
+off:encode:   9%|▉         | 3/32 [4:01:08<36:26:04, 4522.91s/it]  enc SteamLocomotiveTrain_60fps_f300 QP27: 341.7 min
+off:encode:  12%|█▎        | 4/32 [5:41:39<39:48:33, 5118.34s/it]  enc Traffic_2560x1600_30_crop QP37: 129.3 min
+off:encode:  16%|█▌        | 5/32 [6:10:25<29:12:46, 3895.04s/it]  enc Traffic_2560x1600_30_crop QP32: 202.5 min
+off:encode:  19%|█▉        | 6/32 [6:22:23<20:19:49, 2815.00s/it]  enc BasketballDrillText_832x480_50 QP32: 39.1 min
+off:encode:  22%|██▏       | 7/32 [7:01:28<18:28:53, 2661.34s/it]  enc PeopleOnStreet_2560x1600_30_crop QP37: 422.5 min
+off:encode:  25%|██▌       | 8/32 [7:02:31<12:13:39, 1834.16s/it]  enc Traffic_2560x1600_30_crop QP27: 321.6 min
+off:encode:  28%|██▊       | 9/32 [7:06:49<8:34:12, 1341.41s/it]   enc BasketballDrillText_832x480_50 QP27: 57.5 min
+off:encode:  31%|███▏      | 10/32 [7:07:55<5:47:24, 947.49s/it]  enc BasketballDrillText_832x480_50 QP22: 87.4 min
+off:encode:  34%|███▍      | 11/32 [7:09:02<3:57:22, 678.21s/it]  enc BasketballDrillText_832x480_50 QP37: 23.6 min
+off:encode:  38%|███▊      | 12/32 [7:25:04<4:14:50, 764.55s/it]  enc SlideEditing_1280x720_30 QP22: 22.6 min
+off:encode:  41%|████      | 13/32 [7:47:37<4:58:34, 942.84s/it]  enc ChinaSpeed_1024x768_30 QP37: 48.8 min
+off:encode:  44%|████▍     | 14/32 [7:57:53<4:13:10, 843.94s/it]  enc SlideEditing_1280x720_30 QP27: 18.8 min
+off:encode:  47%|████▋     | 15/32 [8:06:23<3:30:35, 743.27s/it]  enc SlideEditing_1280x720_30 QP32: 16.1 min
+off:encode:  50%|█████     | 16/32 [8:13:56<2:54:56, 656.05s/it]  enc SlideEditing_1280x720_30 QP37: 13.2 min
+off:encode:  53%|█████▎    | 17/32 [8:19:33<2:20:01, 560.12s/it]  enc ChinaSpeed_1024x768_30 QP32: 74.6 min
+off:encode:  56%|█████▋    | 18/32 [8:22:29<1:43:45, 444.71s/it]  enc SlideShow_1280x720_20 QP32: 11.7 min
+off:encode:  59%|█████▉    | 19/32 [8:34:10<1:52:58, 521.41s/it]  enc SlideShow_1280x720_20 QP27: 16.9 min
+off:encode:  62%|██████▎   | 20/32 [8:36:25<1:21:04, 405.41s/it]  enc SlideShow_1280x720_20 QP22: 23.5 min
+off:encode:  66%|██████▌   | 21/32 [8:37:28<55:29, 302.71s/it]    enc SlideShow_1280x720_20 QP37: 8.2 min
+off:encode:  69%|██████▉   | 22/32 [8:42:21<49:59, 299.93s/it]  enc ChinaSpeed_1024x768_30 QP27: 118.4 min
+off:encode:  72%|███████▏  | 23/32 [9:05:12<1:33:12, 621.40s/it]=== Mon Sep  7 20:58:15 CEST 2026 [af] waiting for OFF A,F prepare (pid 44530) ===
+  enc Traffic_2560x1600_30_crop QP22: 2058.3 min
+off:encode:  75%|███████▌  | 24/32 [34:18:17<61:30:04, 27675.57s/it]  enc ChinaSpeed_1024x768_30 QP22: 1653.2 min
+off:encode:  78%|███████▊  | 25/32 [34:35:41<38:16:34, 19684.89s/it]  enc PeopleOnStreet_2560x1600_30_crop QP32: 2098.0 min
+off:encode:  81%|████████▏ | 26/32 [34:57:59<23:38:02, 14180.40s/it]  enc PeopleOnStreet_2560x1600_30_crop QP27: 2248.5 min
+off:encode:  84%|████████▍ | 27/32 [37:28:32<17:32:59, 12635.97s/it]  enc NebutaFestival_60fps_f300 QP32: 2277.5 min
+off:encode:  88%|████████▊ | 28/32 [37:57:31<10:24:27, 9366.92s/it]   enc SteamLocomotiveTrain_60fps_f300 QP22: 2349.3 min
+off:encode:  91%|█████████ | 29/32 [39:09:16<6:32:24, 7848.06s/it]   enc PeopleOnStreet_2560x1600_30_crop QP22: 2442.1 min
+off:encode:  94%|█████████▍| 30/32 [40:42:03<3:58:47, 7163.87s/it]  enc NebutaFestival_60fps_f300 QP27: 2724.0 min
+off:encode:  97%|█████████▋| 31/32 [45:24:00<2:48:10, 10090.00s/it]  enc NebutaFestival_60fps_f300 QP22: 2946.1 min
+off:encode: 100%|██████████| 32/32 [49:06:06<00:00, 11060.81s/it]  off:encode: 100%|██████████| 32/32 [49:06:06<00:00, 5523.97s/it] 
+[off] encode: 2946.1 min wall
+off:decode:   0%|          | 0/32 [00:00<?, ?it/s]off:decode:   3%|▎         | 1/32 [01:47<55:19, 107.09s/it]off:decode:   6%|▋         | 2/32 [02:04<27:02, 54.09s/it] off:decode:   9%|▉         | 3/32 [02:07<14:52, 30.77s/it]off:decode:  12%|█▎        | 4/32 [02:21<11:15, 24.13s/it]off:decode:  16%|█▌        | 5/32 [02:58<13:00, 28.91s/it]off:decode:  19%|█▉        | 6/32 [03:48<15:35, 36.00s/it]off:decode:  22%|██▏       | 7/32 [03:50<10:22, 24.88s/it]off:decode:  25%|██▌       | 8/32 [03:56<07:38, 19.11s/it]off:decode:  28%|██▊       | 9/32 [03:58<05:13, 13.62s/it]off:decode:  31%|███▏      | 10/32 [04:10<04:46, 13.00s/it]off:decode:  34%|███▍      | 11/32 [04:26<04:53, 13.96s/it]off:decode:  38%|███▊      | 12/32 [04:41<04:47, 14.36s/it]off:decode:  41%|████      | 13/32 [04:54<04:22, 13.80s/it]off:decode:  44%|████▍     | 14/32 [05:04<03:48, 12.69s/it]off:decode:  47%|████▋     | 15/32 [05:14<03:21, 11.84s/it]off:decode:  50%|█████     | 16/32 [05:14<02:15,  8.50s/it]off:decode:  53%|█████▎    | 17/32 [05:33<02:54, 11.66s/it]off:decode:  56%|█████▋    | 18/32 [05:35<02:00,  8.64s/it]off:decode:  59%|█████▉    | 19/32 [05:38<01:30,  6.99s/it]off:decode:  62%|██████▎   | 20/32 [05:44<01:19,  6.60s/it]off:decode:  66%|██████▌   | 21/32 [05:45<00:55,  5.07s/it]off:decode:  69%|██████▉   | 22/32 [05:52<00:55,  5.55s/it]off:decode:  72%|███████▏  | 23/32 [05:54<00:39,  4.42s/it]off:decode:  75%|███████▌  | 24/32 [05:57<00:33,  4.16s/it]off:decode:  78%|███████▊  | 25/32 [06:01<00:28,  4.11s/it]off:decode:  81%|████████▏ | 26/32 [06:04<00:21,  3.62s/it]off:decode:  84%|████████▍ | 27/32 [06:09<00:20,  4.08s/it]off:decode:  88%|████████▊ | 28/32 [06:11<00:14,  3.52s/it]off:decode:  91%|█████████ | 29/32 [06:11<00:07,  2.59s/it]off:decode:  94%|█████████▍| 30/32 [06:16<00:06,  3.02s/it]off:decode:  97%|█████████▋| 31/32 [06:20<00:03,  3.33s/it]off:decode: 100%|██████████| 32/32 [06:20<00:00,  2.59s/it]off:decode: 100%|██████████| 32/32 [06:20<00:00, 11.90s/it]
+[off] decode: 6.4 min wall
+off:parse:   0%|          | 0/32 [00:00<?, ?it/s]off:parse:   3%|▎         | 1/32 [00:33<17:21, 33.61s/it]off:parse:   6%|▋         | 2/32 [00:40<08:57, 17.93s/it]off:parse:   9%|▉         | 3/32 [00:48<06:28, 13.41s/it]off:parse:  12%|█▎        | 4/32 [00:58<05:32, 11.88s/it]off:parse:  16%|█▌        | 5/32 [01:53<12:22, 27.51s/it]off:parse:  19%|█▉        | 6/32 [02:04<09:31, 22.00s/it]off:parse:  22%|██▏       | 7/32 [02:23<08:40, 20.81s/it]off:parse:  25%|██▌       | 8/32 [02:36<07:24, 18.53s/it]off:parse:  28%|██▊       | 9/32 [02:46<06:05, 15.91s/it]off:parse:  31%|███▏      | 10/32 [02:51<04:32, 12.40s/it]off:parse:  34%|███▍      | 11/32 [03:01<04:06, 11.75s/it]off:parse:  38%|███▊      | 12/32 [03:04<03:02,  9.14s/it]off:parse:  41%|████      | 13/32 [03:31<04:33, 14.38s/it]off:parse:  44%|████▍     | 14/32 [03:35<03:25, 11.42s/it]off:parse:  47%|████▋     | 15/32 [03:37<02:23,  8.45s/it]off:parse:  50%|█████     | 16/32 [03:40<01:51,  6.97s/it]off:parse:  53%|█████▎    | 17/32 [03:41<01:13,  4.92s/it]off:parse:  56%|█████▋    | 18/32 [03:41<00:48,  3.50s/it]off:parse:  59%|█████▉    | 19/32 [03:43<00:40,  3.09s/it]off:parse:  62%|██████▎   | 20/32 [03:51<00:55,  4.63s/it]off:parse:  66%|██████▌   | 21/32 [03:52<00:38,  3.47s/it]off:parse:  69%|██████▉   | 22/32 [03:59<00:44,  4.43s/it]off:parse:  72%|███████▏  | 23/32 [03:59<00:28,  3.14s/it]off:parse:  75%|███████▌  | 24/32 [03:59<00:17,  2.24s/it]off:parse:  78%|███████▊  | 25/32 [03:59<00:11,  1.71s/it]off:parse:  81%|████████▏ | 26/32 [04:04<00:15,  2.51s/it]off:parse:  84%|████████▍ | 27/32 [04:04<00:09,  1.85s/it]off:parse:  88%|████████▊ | 28/32 [04:04<00:05,  1.35s/it]off:parse:  91%|█████████ | 29/32 [04:04<00:03,  1.04s/it]off:parse:  94%|█████████▍| 30/32 [04:09<00:03,  1.95s/it]off:parse:  97%|█████████▋| 31/32 [04:09<00:01,  1.43s/it]off:parse: 100%|██████████| 32/32 [04:09<00:00,  7.79s/it]
+[off] parse: 4.2 min wall
+VTM recon != encoder recon for: none
+=== Tue Sep  8 12:28:16 CEST 2026 [af] OFF verify pass ===
+[off] 32 tasks, encode-todo=0
+off:encode: 0it [00:00, ?it/s]off:encode: 0it [00:00, ?it/s]
+[off] encode: 0.0 min wall
+off:decode:   0%|          | 0/32 [00:00<?, ?it/s]off:decode:   3%|▎         | 1/32 [01:22<42:27, 82.16s/it]off:decode:   6%|▋         | 2/32 [01:34<20:24, 40.83s/it]off:decode:   9%|▉         | 3/32 [01:35<10:59, 22.74s/it]off:decode:  12%|█▎        | 4/32 [01:47<08:35, 18.41s/it]off:decode:  16%|█▌        | 5/32 [02:15<09:58, 22.16s/it]off:decode:  19%|█▉        | 6/32 [02:59<12:42, 29.34s/it]off:decode:  22%|██▏       | 7/32 [03:01<08:30, 20.43s/it]off:decode:  25%|██▌       | 8/32 [03:04<05:57, 14.89s/it]off:decode:  28%|██▊       | 9/32 [03:11<04:44, 12.36s/it]off:decode:  31%|███▏      | 10/32 [03:13<03:21,  9.17s/it]off:decode:  34%|███▍      | 11/32 [03:27<03:47, 10.84s/it]off:decode:  38%|███▊      | 12/32 [03:41<03:54, 11.72s/it]off:decode:  41%|████      | 13/32 [03:52<03:39, 11.54s/it]off:decode:  44%|████▍     | 14/32 [04:00<03:08, 10.48s/it]off:decode:  47%|████▋     | 15/32 [04:04<02:22,  8.39s/it]off:decode:  50%|█████     | 16/32 [04:10<02:05,  7.81s/it]off:decode:  53%|█████▎    | 17/32 [04:25<02:28,  9.89s/it]off:decode:  56%|█████▋    | 18/32 [04:28<01:51,  7.95s/it]off:decode:  59%|█████▉    | 19/32 [04:31<01:23,  6.44s/it]off:decode:  62%|██████▎   | 20/32 [04:32<00:55,  4.65s/it]off:decode:  66%|██████▌   | 21/32 [04:35<00:46,  4.26s/it]off:decode:  69%|██████▉   | 22/32 [04:43<00:52,  5.27s/it]off:decode:  72%|███████▏  | 23/32 [04:44<00:36,  4.04s/it]off:decode:  75%|███████▌  | 24/32 [04:48<00:31,  3.95s/it]off:decode:  78%|███████▊  | 25/32 [04:48<00:20,  2.94s/it]off:decode:  81%|████████▏ | 26/32 [04:51<00:17,  2.92s/it]off:decode:  84%|████████▍ | 27/32 [04:52<00:11,  2.21s/it]off:decode:  88%|████████▊ | 28/32 [04:59<00:15,  3.87s/it]off:decode:  91%|█████████ | 29/32 [04:59<00:08,  2.76s/it]off:decode:  94%|█████████▍| 30/32 [05:02<00:05,  2.76s/it]off:decode:  97%|█████████▋| 31/32 [05:03<00:02,  2.08s/it]off:decode: 100%|██████████| 32/32 [05:05<00:00,  2.14s/it]off:decode: 100%|██████████| 32/32 [05:05<00:00,  9.55s/it]
+[off] decode: 5.1 min wall
+off:parse:   0%|          | 0/32 [00:00<?, ?it/s]off:parse:   3%|▎         | 1/32 [00:02<01:27,  2.83s/it]off:parse:   6%|▋         | 2/32 [00:05<01:16,  2.54s/it]off:parse:   9%|▉         | 3/32 [00:06<00:57,  1.98s/it]off:parse:  12%|█▎        | 4/32 [00:10<01:14,  2.66s/it]off:parse:  16%|█▌        | 5/32 [00:20<02:25,  5.41s/it]off:parse:  19%|█▉        | 6/32 [00:22<01:54,  4.39s/it]off:parse:  22%|██▏       | 7/32 [00:26<01:42,  4.11s/it]off:parse:  25%|██▌       | 8/32 [00:28<01:23,  3.46s/it]off:parse:  28%|██▊       | 9/32 [00:28<00:57,  2.52s/it]off:parse:  31%|███▏      | 10/32 [00:29<00:41,  1.90s/it]off:parse:  34%|███▍      | 11/32 [00:31<00:38,  1.84s/it]off:parse:  38%|███▊      | 12/32 [00:34<00:43,  2.18s/it]off:parse:  41%|████      | 13/32 [00:35<00:38,  2.05s/it]off:parse:  44%|████▍     | 14/32 [00:35<00:26,  1.46s/it]off:parse:  47%|████▋     | 15/32 [00:36<00:18,  1.12s/it]off:parse:  50%|█████     | 16/32 [00:36<00:13,  1.20it/s]off:parse:  56%|█████▋    | 18/32 [00:36<00:06,  2.04it/s]off:parse:  59%|█████▉    | 19/32 [00:37<00:06,  1.93it/s]off:parse:  62%|██████▎   | 20/32 [00:38<00:08,  1.46it/s]off:parse:  66%|██████▌   | 21/32 [00:38<00:05,  1.85it/s]off:parse:  69%|██████▉   | 22/32 [00:38<00:04,  2.18it/s]off:parse:  75%|███████▌  | 24/32 [00:38<00:02,  3.60it/s]off:parse:  78%|███████▊  | 25/32 [00:39<00:01,  4.01it/s]off:parse:  97%|█████████▋| 31/32 [00:39<00:00,  9.77it/s]off:parse: 100%|██████████| 32/32 [00:39<00:00,  1.23s/it]
+[off] parse: 0.7 min wall
+VTM recon != encoder recon for: none
+=== Tue Sep  8 12:34:09 CEST 2026 [af] prepare ON A,F ===
+[on] 32 tasks, encode-todo=32
+on:encode:   0%|          | 0/32 [00:00<?, ?it/s][on] 32 tasks, encode-todo=32
+on:encode:   0%|          | 0/32 [00:00<?, ?it/s]/usr/lib/python3.14/multiprocessing/resource_tracker.py:475: UserWarning: resource_tracker: There appear to be 6 leaked semaphore objects to clean up at shutdown: {'/mp-cbvxx42d', '/mp-xkymnrj0', '/mp-f9vj2kzp', '/mp-bwevfz0c', '/mp-mp0l4ed7', '/mp-t0a1adxb'}
+  warnings.warn(
+[on] 32 tasks, encode-todo=32
+on:encode:   0%|          | 0/32 [00:00<?, ?it/s][on] 32 tasks, encode-todo=32
+on:encode:   0%|          | 0/32 [00:00<?, ?it/s]  enc NebutaFestival_60fps_f300 QP27: 942.8 min
+on:encode:   3%|▎         | 1/32 [15:42:50<487:08:16, 56570.85s/it]  enc NebutaFestival_60fps_f300 QP22: 1110.0 min
+on:encode:   6%|▋         | 2/32 [18:30:02<243:17:18, 29194.63s/it]  enc NebutaFestival_60fps_f300 QP37: 97.5 min
+on:encode:   9%|▉         | 3/32 [20:07:30<149:18:14, 18534.28s/it]  enc NebutaFestival_60fps_f300 QP32: 382.4 min
+on:encode:  12%|█▎        | 4/32 [22:05:16<108:56:27, 14006.68s/it]  enc PeopleOnStreet_2560x1600_30_crop QP27: 341.9 min
+on:encode:  16%|█▌        | 5/32 [27:47:12<122:39:20, 16354.09s/it]  enc PeopleOnStreet_2560x1600_30_crop QP22: 491.8 min
+on:encode:  19%|█▉        | 6/32 [28:19:21<82:41:24, 11449.42s/it]   enc PeopleOnStreet_2560x1600_30_crop QP37: 160.6 min
+on:encode:  22%|██▏       | 7/32 [31:00:00<75:23:57, 10857.51s/it]  enc PeopleOnStreet_2560x1600_30_crop QP32: 239.9 min
+on:encode:  25%|██▌       | 8/32 [31:47:05<55:20:11, 8300.48s/it]   enc SteamLocomotiveTrain_60fps_f300 QP27: 136.9 min
+on:encode:  28%|██▊       | 9/32 [34:03:59<52:51:29, 8273.45s/it]  enc SteamLocomotiveTrain_60fps_f300 QP32: 74.6 min
+on:encode:  31%|███▏      | 10/32 [35:18:34<43:23:34, 7100.65s/it]/usr/lib/python3.14/multiprocessing/resource_tracker.py:475: UserWarning: resource_tracker: There appear to be 6 leaked semaphore objects to clean up at shutdown: {'/mp-rp94u4c5', '/mp-enuqisvn', '/mp-644my_2f', '/mp-i52_0pnu', '/mp-jzqjfo9z', '/mp-mdr7gkar'}
+  warnings.warn(
+[on] 32 tasks, encode-todo=22
+on:encode:   0%|          | 0/22 [00:00<?, ?it/s]  enc SteamLocomotiveTrain_60fps_f300 QP37: 47.4 min
+on:encode:   5%|▍         | 1/22 [47:25<16:35:53, 2845.39s/it]  enc Traffic_2560x1600_30_crop QP27: 128.0 min
+on:encode:   9%|▉         | 2/22 [2:55:25<31:36:21, 5689.07s/it]  enc Traffic_2560x1600_30_crop QP22: 240.1 min
+on:encode:  14%|█▎        | 3/22 [4:00:08<25:40:27, 4864.58s/it]  enc Traffic_2560x1600_30_crop QP32: 79.0 min
+on:encode:  18%|█▊        | 4/22 [4:14:27<16:24:56, 3283.11s/it]  enc Traffic_2560x1600_30_crop QP37: 49.7 min
+on:encode:  23%|██▎       | 5/22 [4:49:49<13:31:36, 2864.50s/it]  enc BasketballDrillText_832x480_50 QP22: 40.7 min
+on:encode:  27%|██▋       | 6/22 [4:55:08<8:53:05, 1999.08s/it]   enc BasketballDrillText_832x480_50 QP32: 18.6 min
+on:encode:  32%|███▏      | 7/22 [5:13:46<7:07:43, 1710.90s/it]  enc BasketballDrillText_832x480_50 QP27: 27.5 min
+on:encode:  36%|███▋      | 8/22 [5:17:19<4:47:55, 1234.00s/it]  enc BasketballDrillText_832x480_50 QP37: 11.3 min
+on:encode:  41%|████      | 9/22 [5:25:01<3:35:07, 992.89s/it]   enc ChinaSpeed_1024x768_30 QP27: 52.0 min
+on:encode:  45%|████▌     | 10/22 [6:17:01<5:29:53, 1649.48s/it]  enc ChinaSpeed_1024x768_30 QP22: 77.7 min
+on:encode:  50%|█████     | 11/22 [6:35:02<4:30:29, 1475.39s/it]  enc ChinaSpeed_1024x768_30 QP32: 35.1 min
+on:encode:  55%|█████▍    | 12/22 [6:52:05<3:42:58, 1337.86s/it]  enc ChinaSpeed_1024x768_30 QP37: 23.2 min
+on:encode:  59%|█████▉    | 13/22 [6:58:15<2:36:42, 1044.76s/it]  enc SlideEditing_1280x720_30 QP22: 11.2 min
+on:encode:  64%|██████▎   | 14/22 [7:03:20<1:49:29, 821.14s/it]   enc SlideEditing_1280x720_30 QP27: 9.9 min
+on:encode:  68%|██████▊   | 15/22 [7:08:06<1:17:00, 660.06s/it]  enc SlideEditing_1280x720_30 QP32: 7.6 min
+on:encode:  73%|███████▎  | 16/22 [7:10:56<51:13, 512.30s/it]    enc SteamLocomotiveTrain_60fps_f300 QP22: 432.5 min
+on:encode:  77%|███████▋  | 17/22 [7:12:30<32:12, 386.50s/it]  enc SlideEditing_1280x720_30 QP37: 6.5 min
+on:encode:  82%|████████▏ | 18/22 [7:14:35<20:32, 308.12s/it]  enc SlideShow_1280x720_20 QP32: 6.0 min
+on:encode:  86%|████████▋ | 19/22 [7:20:33<16:09, 323.17s/it]  enc SlideShow_1280x720_20 QP27: 8.6 min
+on:encode:  91%|█████████ | 20/22 [7:21:04<07:50, 235.38s/it]  enc SlideShow_1280x720_20 QP22: 12.2 min
+on:encode:  95%|█████████▌| 21/22 [7:23:09<03:22, 202.32s/it]  enc SlideShow_1280x720_20 QP37: 4.4 min
+on:encode: 100%|██████████| 22/22 [7:25:00<00:00, 174.81s/it]on:encode: 100%|██████████| 22/22 [7:25:00<00:00, 1213.67s/it]
+[on] encode: 445.0 min wall
+on:decode:   0%|          | 0/32 [00:00<?, ?it/s]on:decode:   3%|▎         | 1/32 [01:04<33:29, 64.82s/it]on:decode:   6%|▋         | 2/32 [01:21<18:19, 36.64s/it]on:decode:   9%|▉         | 3/32 [01:22<09:44, 20.15s/it]on:decode:  12%|█▎        | 4/32 [01:28<06:54, 14.80s/it]on:decode:  16%|█▌        | 5/32 [01:55<08:31, 18.93s/it]on:decode:  19%|█▉        | 6/32 [02:27<10:12, 23.56s/it]on:decode:  22%|██▏       | 7/32 [02:28<06:41, 16.07s/it]on:decode:  25%|██▌       | 8/32 [02:31<04:46, 11.92s/it]on:decode:  28%|██▊       | 9/32 [02:31<03:09,  8.24s/it]on:decode:  31%|███▏      | 10/32 [02:39<03:02,  8.28s/it]on:decode:  34%|███▍      | 11/32 [02:51<03:16,  9.35s/it]on:decode:  38%|███▊      | 12/32 [03:02<03:18,  9.94s/it]on:decode:  41%|████      | 13/32 [03:11<03:01,  9.56s/it]on:decode:  44%|████▍     | 14/32 [03:18<02:38,  8.80s/it]on:decode:  47%|████▋     | 15/32 [03:20<01:54,  6.74s/it]on:decode:  50%|█████     | 16/32 [03:24<01:35,  5.99s/it]on:decode:  53%|█████▎    | 17/32 [03:30<01:27,  5.85s/it]on:decode:  56%|█████▋    | 18/32 [03:35<01:17,  5.53s/it]on:decode:  59%|█████▉    | 19/32 [03:41<01:13,  5.64s/it]on:decode:  66%|██████▌   | 21/32 [03:41<00:34,  3.14s/it]on:decode:  69%|██████▉   | 22/32 [03:47<00:39,  3.90s/it]on:decode:  72%|███████▏  | 23/32 [03:47<00:26,  2.93s/it]on:decode:  75%|███████▌  | 24/32 [03:54<00:30,  3.83s/it]on:decode:  78%|███████▊  | 25/32 [03:54<00:19,  2.79s/it]on:decode:  81%|████████▏ | 26/32 [03:54<00:12,  2.03s/it]on:decode:  84%|████████▍ | 27/32 [03:59<00:14,  2.97s/it]on:decode:  91%|█████████ | 29/32 [03:59<00:05,  1.68s/it]on:decode:  94%|█████████▍| 30/32 [04:05<00:05,  2.51s/it]on:decode: 100%|██████████| 32/32 [04:05<00:00,  1.55s/it]on:decode: 100%|██████████| 32/32 [04:05<00:00,  7.67s/it]
+[on] decode: 4.1 min wall
+on:parse:   0%|          | 0/32 [00:00<?, ?it/s]on:parse:   3%|▎         | 1/32 [00:19<09:58, 19.30s/it]on:parse:   6%|▋         | 2/32 [00:27<06:27, 12.93s/it]on:parse:   9%|▉         | 3/32 [00:32<04:23,  9.08s/it]on:parse:  12%|█▎        | 4/32 [00:36<03:16,  7.01s/it]on:parse:  16%|█▌        | 5/32 [01:06<07:00, 15.59s/it]on:parse:  19%|█▉        | 6/32 [01:15<05:46, 13.32s/it]on:parse:  22%|██▏       | 7/32 [01:28<05:27, 13.09s/it]on:parse:  25%|██▌       | 8/32 [01:35<04:31, 11.33s/it]on:parse:  28%|██▊       | 9/32 [01:39<03:27,  9.01s/it]on:parse:  31%|███▏      | 10/32 [01:44<02:47,  7.60s/it]on:parse:  34%|███▍      | 11/32 [01:47<02:12,  6.32s/it]on:parse:  38%|███▊      | 12/32 [01:50<01:42,  5.14s/it]on:parse:  41%|████      | 13/32 [02:06<02:43,  8.61s/it]on:parse:  44%|████▍     | 14/32 [02:07<01:53,  6.32s/it]on:parse:  47%|████▋     | 15/32 [02:11<01:34,  5.56s/it]on:parse:  50%|█████     | 16/32 [02:12<01:06,  4.14s/it]on:parse:  53%|█████▎    | 17/32 [02:12<00:44,  2.99s/it]on:parse:  56%|█████▋    | 18/32 [02:14<00:35,  2.52s/it]on:parse:  62%|██████▎   | 20/32 [02:20<00:32,  2.71s/it]on:parse:  66%|██████▌   | 21/32 [02:22<00:28,  2.62s/it]on:parse:  69%|██████▉   | 22/32 [02:24<00:24,  2.46s/it]on:parse:  72%|███████▏  | 23/32 [02:24<00:16,  1.84s/it]on:parse:  78%|███████▊  | 25/32 [02:25<00:08,  1.22s/it]on:parse:  81%|████████▏ | 26/32 [02:27<00:08,  1.46s/it]on:parse:  88%|████████▊ | 28/32 [02:27<00:03,  1.12it/s]on:parse:  91%|█████████ | 29/32 [02:28<00:02,  1.15it/s]on:parse:  94%|█████████▍| 30/32 [02:30<00:02,  1.17s/it]on:parse:  97%|█████████▋| 31/32 [02:30<00:00,  1.11it/s]on:parse: 100%|██████████| 32/32 [02:30<00:00,  4.71s/it]
+[on] parse: 2.5 min wall
+VTM recon != encoder recon for: none

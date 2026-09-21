@@ -1,0 +1,86 @@
+=== Waiting for no-meta 10-video BD-rate ===
+  no-meta BD-rate done.
+=== Waiting for 10-video perceptual eval (all 5) ===
+  10-video perceptual done.
+=== Rebuilding tables ===
+% BD-rate / BD-PSNR on the 10-video Xiph test set (3x 720p talking-head + 7x 1080p
+% mix of motion, texture, sports). 5 QPs (22/27/32/37/42), 64 frames each,
+% VVenC v1.15 fast preset, ALF=0 SAO=0. Metric: Bjontegaard BD-rate vs unfiltered VTM.
+
+\begin{table}[h]
+\centering
+\caption{BD-rate (\%) i BD-PSNR (dB) na 10-wideo zbiorze testowym Xiph (3x 720p talking-head + 7x 1080p), 5 QPs (22/27/32/37/42). Ablacja \emph{no metadata}: ten sam Martell-Hybrid bez modu\l{}u MetadataAttention.}
+\begin{tabular}{l|cc|cc|cc}
+\hline
+ & \multicolumn{2}{c|}{\textbf{Y}} & \multicolumn{2}{c|}{\textbf{U}} & \multicolumn{2}{c}{\textbf{V}} \\
+\textbf{Model} & rate & PSNR & rate & PSNR & rate & PSNR \\
+\hline
+Bi-ConvLSTM~\cite{deng2019bi} & $+0.00$\% & $+0.000$ & $-1.26$\% & $+0.025$ & $-1.68$\% & $+0.035$ \\
+STENet~\cite{zhang2024stenet} & $+0.00$\% & $+0.000$ & $\mathbf{-1.91}$\% & $\mathbf{+0.037}$ & $-1.95$\% & $+0.041$ \\
+VVC-PPFF~\cite{borowski2024vvcppff} & $-1.82$\% & $+0.057$ & $-1.59$\% & $+0.031$ & $\mathbf{-2.54}$\% & $\mathbf{+0.053}$ \\
+Martell-Hybrid (no metadata) & $-2.09$\% & $+0.048$ & $-1.43$\% & $+0.028$ & $-1.76$\% & $+0.037$ \\
+\textbf{Martell-Hybrid (proposed)} & $\mathbf{-3.06}$\% & $\mathbf{+0.082}$ & $-1.39$\% & $+0.027$ & $-1.83$\% & $+0.038$ \\
+\hline
+\end{tabular}
+\label{tab:bdrate_720p}
+\end{table}
+
+Wrote table_bdrate_720p.tex
+
+=== BD-rate (% — lower is better) / BD-PSNR (dB — higher is better) ===
+Model                                        Y rate     Y PSNR     U rate     U PSNR     V rate     V PSNR
+------------------------------------------------------------------------------------------------------
+Bi-ConvLSTM                                   +0.00     +0.000      -1.26     +0.025      -1.68     +0.035
+STENet                                        +0.00     +0.000      -1.91     +0.037      -1.95     +0.041
+VVC-PPFF                                      -1.82     +0.057      -1.59     +0.031      -2.54     +0.053
+Martell-Hybrid (no metadata)                  -2.09     +0.048      -1.43     +0.028      -1.76     +0.037
+Martell-Hybrid (proposed)                     -3.06     +0.082      -1.39     +0.027      -1.83     +0.038
+
+Anchor (VTM decoded, no enhancement):
+  SSIM=0.9249  MS-SSIM=0.9710  LPIPS-Alex=0.1789  LPIPS-VGG=0.2994
+
+% Perceptual quality metrics on the 3-video JVET Class-E 720p subset
+% (Johnny, vidyo1, vidyo3), 5 QPs (22/27/32/37/42), 64 frames each.
+% Metrics computed on Y plane (replicated to 3 channels for LPIPS/MS-SSIM).
+% Anchor = unfiltered VTM output. Delta = enhanced - anchor.
+% SSIM/MS-SSIM: higher is better (positive delta = improvement).
+% LPIPS: lower is better (NEGATIVE delta = improvement).
+
+\begin{table}[h]
+\centering
+\caption{Metryki percepcyjne (SSIM, MS-SSIM, LPIPS) na podzbiorze JVET Class-E (Johnny, vidyo1, vidyo3 -- 720p60). Pokazane wartoÅ›ci po wzmocnieniu oraz delta wzgl\k{e}dem nieprzefiltrowanego VTM. Dla SSIM/MS-SSIM wy\.zsze = lepsze; dla LPIPS ni\.zsze = lepsze.}
+\begin{tabular}{l|cc|cc|cc|cc}
+\hline
+ & \multicolumn{2}{c|}{\textbf{SSIM} $\uparrow$} & \multicolumn{2}{c|}{\textbf{MS-SSIM} $\uparrow$} & \multicolumn{2}{c|}{\textbf{LPIPS-Alex} $\downarrow$} & \multicolumn{2}{c}{\textbf{LPIPS-VGG} $\downarrow$} \\
+\textbf{Model} & enh & $\Delta$ & enh & $\Delta$ & enh & $\Delta$ & enh & $\Delta$ \\
+\hline
+VTM (anchor)            & 0.9249 & -- & 0.9710 & -- & 0.1789 & -- & 0.2994 & -- \\
+\hline
+Bi-ConvLSTM~\cite{deng2019bi} & 0.9249 & $+0.0000$ & 0.9710 & $+0.0000$ & 0.1789 & $+0.0000$ & 0.2994 & $+0.0000$ \\
+STENet~\cite{zhang2024stenet} & 0.9249 & $+0.0000$ & 0.9710 & $+0.0000$ & 0.1789 & $+0.0000$ & 0.2994 & $+0.0000$ \\
+VVC-PPFF~\cite{borowski2024vvcppff} & 0.9259 & $+0.0009$ & 0.9712 & $+0.0002$ & 0.1845 & $+0.0056$ & 0.3010 & $+0.0016$ \\
+Martell-Hybrid (no metadata) & 0.9278 & $+0.0028$ & 0.9722 & $+0.0012$ & 0.2004 & $+0.0215$ & 0.3215 & $+0.0221$ \\
+\textbf{Martell-Hybrid (proposed)} & 0.9280 & $+0.0030$ & 0.9723 & $+0.0013$ & 0.2003 & $+0.0215$ & 0.3202 & $+0.0207$ \\
+\hline
+\end{tabular}
+\label{tab:perceptual_720p}
+\end{table}
+
+Wrote table_perceptual_720p.tex
+
+=== Summary (Y-channel, mean over 3 videos x 5 QPs x 62 frames) ===
+Model                                          SSIM    MS-SSIM    LPIPS-A    LPIPS-V
+--------------------------------------------------------------------------------------
+VTM (anchor)                                 0.9249     0.9710     0.1789     0.2994
+Bi-ConvLSTM                                  0.9249     0.9710     0.1789     0.2994
+  Δ vs anchor                               +0.0000    +0.0000    +0.0000    +0.0000
+STENet                                       0.9249     0.9710     0.1789     0.2994
+  Δ vs anchor                               +0.0000    +0.0000    +0.0000    +0.0000
+VVC-PPFF                                     0.9259     0.9712     0.1845     0.3010
+  Δ vs anchor                               +0.0009    +0.0002    +0.0056    +0.0016
+Martell-Hybrid (no metadata)                 0.9278     0.9722     0.2004     0.3215
+  Δ vs anchor                               +0.0028    +0.0012    +0.0215    +0.0221
+Martell-Hybrid (proposed)                    0.9280     0.9723     0.2003     0.3202
+  Δ vs anchor                               +0.0030    +0.0013    +0.0215    +0.0207
+
+=== ALL DONE ===

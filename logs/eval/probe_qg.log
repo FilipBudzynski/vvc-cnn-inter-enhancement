@@ -1,0 +1,14 @@
+Loaded 329 frame triplets for val
+init: |res| mean=2.91e-01 max=2.98e+00  dY(out)=-26.0321
+  grad encoder.net.0.conv.weight                  ||g||=5.59e-01 ||w||=4.59e+00
+  grad encoder.net.4.weight                       ||g||=9.75e-01 ||w||=4.62e+00
+  grad meta_encoder.0.weight                      ||g||=2.05e-03 ||w||=2.35e+00
+  grad lstm_fwd.conv_xh.weight                    ||g||=1.05e+00 ||w||=9.23e+00
+  grad lstm_fwd.conv_q.weight                     ||g||=4.25e-03 ||w||=6.53e+00
+  grad lstm_bwd.conv_xh.weight                    ||g||=1.02e+00 ||w||=9.24e+00
+  grad lstm_bwd.conv_q.weight                     ||g||=4.10e-03 ||w||=6.52e+00
+  grad decoder.net.0.conv.weight                  ||g||=1.32e+00 ||w||=4.62e+00
+qg_conv_lstm [MSE lr=0.0001 wd=0] lr=0.0001 wd=0
+    loss/dY-> s0:0.15178/-26.032dB  s50:0.00073/-2.689dB  s100:0.00045/-1.298dB  s150:0.00037/-0.848dB  s200:0.00033/-0.599dB  s250:0.00031/-0.438dB  s300:0.00029/-0.323dB  s350:0.00028/-0.238dB  s400:0.00027/-0.172dB
+qg_conv_lstm [MSE lr=0.001 wd=0] lr=0.001 wd=0
+    loss/dY-> s0:0.15178/-26.032dB  s50:0.00042/-1.072dB  s100:0.00031/-0.542dB  s150:0.00029/-0.364dB  s200:0.00027/-0.250dB  s250:0.00026/-0.172dB  s300:0.00026/-0.117dB  s350:0.00025/-0.080dB  s400:0.00025/-0.054dB
