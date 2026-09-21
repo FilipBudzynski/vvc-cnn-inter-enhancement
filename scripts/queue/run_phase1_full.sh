@@ -1,7 +1,7 @@
 #!/bin/bash
 # Phase 1: Martell-Hybrid with AMP, batch 16, patch 132 (200 epochs) + BD-rate and perceptual eval
 set -e
-cd /home/filip/vvc-cnn-inter-enhancement
+cd "$(dirname "$0")/../.."
 
 # 1. Train 200 epok AMP @ batch 16, patch 132
 echo "=================================================="

@@ -1,6 +1,7 @@
 #!/bin/bash
 # Full evaluation of the no-metadata ablation (BD-rate full frame, patch, perceptual)
 set -e
+cd "$(dirname "$0")/../.."
 mkdir -p bdrate_results
 
 CKPT="checkpoints/martell_hybrid_nometa_best.pt"

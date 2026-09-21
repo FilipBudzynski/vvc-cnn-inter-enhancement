@@ -1,7 +1,7 @@
 #!/bin/bash
 # Phase 2: Martell-Hybrid with AMP, patch 256 (200 epochs) + eval on 256 and 132 patches
 set -e
-cd /home/filip/vvc-cnn-inter-enhancement
+cd "$(dirname "$0")/../.."
 
 # 1. Train 200 epok @ patch 256, batch 8 (256^2 ~4x VRAM patcha 132)
 echo "=================================================="

@@ -1,7 +1,7 @@
 #!/bin/bash
 # VVC-PPFF repeat with late LR milestones (tag mqp2) + evals
 set -x
-cd /home/filip/vvc-cnn-inter-enhancement
+cd "$(dirname "$0")/../.."
 {
   echo "=== $(date) [extras2] waiting for MQP ALL DONE ==="
   until grep -q "MQP ALL DONE" output_vtm/run_mqp.log; do sleep 300; done

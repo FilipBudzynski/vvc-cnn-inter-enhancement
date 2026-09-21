@@ -1,6 +1,7 @@
 #!/bin/bash
 # Patch-based (132x132) BD-rate and perceptual evals on the 10-video test set
 set -e
+cd "$(dirname "$0")/../.."
 mkdir -p bdrate_results
 
 # 1. Patch BD-rate for missing models

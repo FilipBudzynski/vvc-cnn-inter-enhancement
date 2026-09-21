@@ -1,6 +1,6 @@
 #!/bin/bash
 # Proposed model, multi-QP training without weight decay (tag mqpnwd) + CTC eval A-F
-cd /home/filip/vvc-cnn-inter-enhancement
+cd "$(dirname "$0")/../.."
 {
   echo "=== $(date) [nwd] waiting for OFF round done ==="
   until grep -q "OFF round done" output_vtm/run_mqp.log; do sleep 120; done

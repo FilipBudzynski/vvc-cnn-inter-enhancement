@@ -1,6 +1,6 @@
 #!/bin/bash
 # VTM CTC classes A and F: data preparation only
-cd /home/filip/vvc-cnn-inter-enhancement
+cd "$(dirname "$0")/../.."
 {
   echo "=== $(date) [af] waiting for OFF A,F prepare (pid 44530) ==="
   while kill -0 44530 2>/dev/null; do sleep 120; done

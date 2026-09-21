@@ -1,7 +1,7 @@
 #!/bin/bash
 # Phase 3: Martell-UNet, patch 256 (200 epochs) + eval on 256 and 132 patches
 set -e
-cd /home/filip/vvc-cnn-inter-enhancement
+cd "$(dirname "$0")/../.."
 
 # 1. Train 200 epok
 echo "=================================================="

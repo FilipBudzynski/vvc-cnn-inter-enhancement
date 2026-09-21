@@ -1,6 +1,7 @@
 #!/bin/bash
 # Perceptual eval (SSIM, MS-SSIM, LPIPS) for the trained models, sequentially
 set -e
+cd "$(dirname "$0")/../.."
 mkdir -p bdrate_results
 
 VIDEOS="Johnny_1280x720_60,vidyo1_720p_60fps,vidyo3_720p_60fps"

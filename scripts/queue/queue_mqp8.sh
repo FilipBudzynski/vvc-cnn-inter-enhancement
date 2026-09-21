@@ -1,7 +1,7 @@
 #!/bin/bash
 # Multi-QP training and CTC eval of all compared architectures, filters-off round
 set -x
-cd /home/filip/vvc-cnn-inter-enhancement
+cd "$(dirname "$0")/../.."
 ON_PGID=$1; ON_PID=$2; AF_PGID=$3
 OFF_MODELS="qg_conv_lstm martell_hybrid_nometa"
 ON_MODELS="martell_hybrid vvc_ppff stenet_2024 bi_conv_lstm qg_conv_lstm martell_hybrid_nometa"

@@ -1,6 +1,7 @@
 #!/bin/bash
 # Perceptual eval on the 10-video test set
 set -e
+cd "$(dirname "$0")/../.."
 mkdir -p bdrate_results
 
 VIDEOS="Johnny_1280x720_60,controlled_burn_1080p,pedestrian_area_1080p25,red_kayak_1080p,rush_hour_1080p25,sunflower_1080p25,touchdown_pass_1080p,tractor_1080p25,vidyo1_720p_60fps,vidyo3_720p_60fps"

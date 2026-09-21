@@ -1,7 +1,7 @@
 #!/bin/bash
 # Leave-one-out ablation, continued: all four MV channels jointly, then remaining channels
 set -x
-cd /home/filip/vvc-cnn-inter-enhancement
+cd "$(dirname "$0")/../.."
 NAMES=(QP PredMode Depth Boundary MVL0_X MVL0_Y MVL1_X MVL1_Y FrameType)
 {
   echo "=== $(date) [abl2] train bez WSZYSTKICH wektorow ruchu (ch 4,5,6,7) ==="

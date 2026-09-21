@@ -1,7 +1,7 @@
 #!/bin/bash
 # Leave-one-out ablation, final part: Depth eval, PredMode resume, FrameType
 set -x
-cd /home/filip/vvc-cnn-inter-enhancement
+cd "$(dirname "$0")/../.."
 {
   echo "=== $(date) [resume] eval bez Depth B-E (checkpoint already trained) ==="
   timeout 7200 env VVC_ZERO_META=2 VVC_TILE_MAX_ROWS=256 uv run python ctc_vtm_evaluate.py --variant off --classes B,C,D,E --models martell_hybrid_abl2_off > output_vtm/eval_abl2_off.log 2>&1

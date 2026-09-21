@@ -1,7 +1,7 @@
 #!/bin/bash
 # Leave-one-out metadata channel ablation: 9 trainings, channel zeroed in training and eval
 set -x
-cd /home/filip/vvc-cnn-inter-enhancement
+cd "$(dirname "$0")/../.."
 NAMES=(QP PredMode Depth Boundary MVL0_X MVL0_Y MVL1_X MVL1_Y FrameType)
 {
   for CH in 0 4 5 6 7 2 3 1 8; do

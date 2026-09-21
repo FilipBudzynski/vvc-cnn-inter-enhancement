@@ -1,7 +1,7 @@
 #!/bin/bash
 # Multi-QP training of the proposed model on VTM data (both filter variants) + CTC eval
 set -x
-cd /home/filip/vvc-cnn-inter-enhancement
+cd "$(dirname "$0")/../.."
 until grep -q "AF ALL DONE" output_vtm/run_af.log 2>/dev/null && [ -f perc_done.marker ]; do sleep 300; done
 {
   echo "=== $(date) mqp prepare OFF ==="

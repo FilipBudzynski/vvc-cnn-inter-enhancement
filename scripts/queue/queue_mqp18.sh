@@ -1,7 +1,7 @@
 #!/bin/bash
 # VVC-PPFF (mqp3) evaluation A-F, remaining filters-on trainings and evals
 set -x
-cd /home/filip/vvc-cnn-inter-enhancement
+cd "$(dirname "$0")/../.."
 {
   echo "=== $(date) [mqp18] eval vvc_ppff mqp3 off A-F (mini-kafle, timeout 3h) ==="
   timeout 10800 env VVC_TILE_MAX_ROWS=256 uv run python ctc_vtm_evaluate.py --variant off --classes A,B,C,D,E,F --models vvc_ppff_mqp3_off > output_vtm/eval_mqp3_vvc_ppff_off.log 2>&1

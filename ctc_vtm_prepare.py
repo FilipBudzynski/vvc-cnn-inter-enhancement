@@ -1,4 +1,4 @@
-"""VTM-based CTC preparation (promotor's methodology):
+"""VTM-based preparation of the JVET CTC test data (encode, decode with trace, parse).
 
 Usage:
     uv run python ctc_vtm_prepare.py --variant off --classes D,C,E,B

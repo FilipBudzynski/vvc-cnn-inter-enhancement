@@ -1,7 +1,7 @@
 #!/bin/bash
 # Filters-on round: multi-QP trainings and CTC evals A-F
 set -x
-cd /home/filip/vvc-cnn-inter-enhancement
+cd "$(dirname "$0")/../.."
 {
   echo "=== $(date) [on-round] train martell_hybrid on (wd=0, mqpnwd) ==="
   uv run python train_mqp.py --model martell_hybrid --variant on --num-workers 12 --wd 0 --tag mqpnwd > martell_hybrid_mqpnwd_on_run.log 2>&1

@@ -1,7 +1,7 @@
 #!/bin/bash
 # VTM CTC study, classes B-E: prepare both in-loop filter variants, then evaluate all models
 set -x
-cd /home/filip/vvc-cnn-inter-enhancement
+cd "$(dirname "$0")/../.."
 mkdir -p output_vtm
 {
   echo "=== $(date) prepare OFF ==="

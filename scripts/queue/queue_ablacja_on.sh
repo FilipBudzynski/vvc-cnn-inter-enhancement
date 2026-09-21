@@ -1,7 +1,7 @@
 #!/bin/bash
 # Metadata-inactive variant in the filters-on setting (training + CTC eval A-F)
 set -x
-cd /home/filip/vvc-cnn-inter-enhancement
+cd "$(dirname "$0")/../.."
 {
   echo "=== $(date) [ablacja-on] train martell_hybrid on (metadane nieaktywne) ==="
   uv run python train_mqp.py --model martell_hybrid --variant on --num-workers 12 > martell_hybrid_mqp_on_run.log 2>&1

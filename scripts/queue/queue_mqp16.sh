@@ -1,7 +1,7 @@
 #!/bin/bash
 # VVC-PPFF trained with its original procedure (tag mqp3), remaining filters-on trainings
 set -x
-cd /home/filip/vvc-cnn-inter-enhancement
+cd "$(dirname "$0")/../.."
 {
   echo "=== $(date) [mqp16] train vvc_ppff mqp3 off (wierna procedura: clamp, wd=1e-4) ==="
   uv run python train_mqp.py --model vvc_ppff --variant off --num-workers 12 --wd 1e-4 --tag mqp3 > vvc_ppff_mqp3_off_run.log 2>&1
