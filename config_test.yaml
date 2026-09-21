@@ -1,0 +1,19 @@
+dataset:
+  orig_dir: "data"
+  train_dir: "output_test/decoded"
+  val_dir: "output_test/decoded"
+  test_dir: "output_test/decoded"
+
+encoder:
+  data_dir: "data"
+  output_dir: "output_test/encoded"
+  qp: [22, 27, 32, 37, 42]
+  frames_to_encode: 64
+  preset: "fast"
+  alf: 0
+  sao: 0
+  max_workers: 4
+
+decoder:
+  output_path: "output_test/decoded"
+  max_workers: 4

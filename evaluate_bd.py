@@ -17,6 +17,7 @@ Usage:
 
 import argparse
 import json
+import os
 import pickle
 import re
 from pathlib import Path
@@ -170,12 +171,47 @@ def load_vvc_ppff(ckpt_path: str) -> torch.nn.Module:
     return model
 
 
+def load_vvc_ppff_meta(ckpt_path: str) -> torch.nn.Module:
+    from enhancer.models.vvc_ppff_meta import VVCPPFFMeta
+    model = VVCPPFFMeta(in_channels=3, metadata_channels=9,
+                        base_channels=128, num_blocks=16).to(DEVICE)
+    state = torch.load(ckpt_path, map_location=DEVICE, weights_only=True)
+    model.load_state_dict(state)
+    model.eval()
+    return model
+
+
 def load_snow_wide(ckpt_path: str) -> torch.nn.Module:
     from enhancer.models.snow_wide import SnowWideEnhancer
     class Cfg:
         base_channels = 64
         metadata_channels = 19
     model = SnowWideEnhancer(Cfg()).to(DEVICE)
+    state = torch.load(ckpt_path, map_location=DEVICE, weights_only=True)
+    model.load_state_dict(state)
+    model.eval()
+    return model
+
+
+def load_martell_nometa(ckpt_path: str) -> torch.nn.Module:
+    from enhancer.models.snow_wide_nometa import SnowWideEnhancerNoMeta
+    class Cfg:
+        base_channels = 64
+    model = SnowWideEnhancerNoMeta(Cfg()).to(DEVICE)
+    state = torch.load(ckpt_path, map_location=DEVICE, weights_only=True)
+    model.load_state_dict(state)
+    model.eval()
+    return model
+
+
+def load_martell_unet(ckpt_path: str) -> torch.nn.Module:
+    from enhancer.models.snow_wide_unet import SnowWideEnhancerUNet
+    class Cfg:
+        base_channels = 64
+        unet_mid_channels = 96
+        unet_bottom_channels = 128
+        unet_bottleneck_blocks = 4
+    model = SnowWideEnhancerUNet(Cfg()).to(DEVICE)
     state = torch.load(ckpt_path, map_location=DEVICE, weights_only=True)
     model.load_state_dict(state)
     model.eval()
@@ -207,6 +243,21 @@ def load_bi_conv_lstm(ckpt_path: str) -> torch.nn.Module:
     return model
 
 
+def load_qg_conv_lstm(ckpt_path: str) -> torch.nn.Module:
+    from enhancer.models.qg_conv_lstm import QGConvLSTMEnhancer
+    class Cfg:
+        base_channels = 64
+        kernel_size = 5
+        cnn_layers = 5
+        metadata_channels = 9
+        quality_embed = 16
+    model = QGConvLSTMEnhancer(Cfg()).to(DEVICE)
+    state = torch.load(ckpt_path, map_location=DEVICE, weights_only=True)
+    model.load_state_dict(state)
+    model.eval()
+    return model
+
+
 def run_model(model: torch.nn.Module, kind: str, prev: torch.Tensor,
               curr: torch.Tensor, nxt: torch.Tensor, meta: torch.Tensor) -> torch.Tensor:
     """Returns enhanced [3,H,W] float tensor in [0,1]."""
@@ -214,8 +265,13 @@ def run_model(model: torch.nn.Module, kind: str, prev: torch.Tensor,
     c = curr[None].to(DEVICE)
     n = nxt[None].to(DEVICE)
     m = meta[None].to(DEVICE)
+    _zm = os.environ.get("VVC_ZERO_META", "")
+    if _zm:
+        m = m.clone(); m[:, [int(x) for x in _zm.split(",")]] = 0
     with torch.no_grad():
         if kind == "vvc_ppff":
+            out = model(c, m).clamp(0, 1)
+        elif kind == "vvc_ppff_meta":
             out = model(c, m).clamp(0, 1)
         elif kind == "stenet":
             # STENet returns (enhanced, synth); we use enhanced.
@@ -224,6 +280,9 @@ def run_model(model: torch.nn.Module, kind: str, prev: torch.Tensor,
         elif kind == "bi_conv_lstm":
             # Bi-ConvLSTM ignores metadata (paper's vanilla ConvLSTM baseline)
             out = model(c, p, n, None).clamp(0, 1)
+        elif kind == "martell_nometa":
+            # NoMeta ablation: forward signature accepts metadata but ignores it
+            out = model(c, p, n).clamp(0, 1)
         else:
             out = model(c, p, n, m).clamp(0, 1)
     return out[0]
@@ -295,8 +354,7 @@ def evaluate_video_qp(video: str, qp: int, args, model, kind: str) -> dict:
             "U": float(np.mean(enh_psnr_u)),
             "V": float(np.mean(enh_psnr_v)),
         },
-        # Anchor PSNR computed on the same interior-frame slice, for an apples-to-apples
-        # delta. Tiny difference vs the all-frame anchor in practice.
+        # Anchor PSNR computed on the same interior-frame slice, for delta
         "psnr_anchor_interior": {
             "Y": float(np.mean([psnr_uint8(Y_o[i], Y_d[i]) for i in range(1, n_frames - 1)])),
             "U": float(np.mean([psnr_uint8(U_o[i], U_d[i]) for i in range(1, n_frames - 1)])),
@@ -344,8 +402,10 @@ def aggregate_and_bd(per_video: dict, qps: list[int]) -> dict:
 # ---------- CLI ----------
 
 def main():
+    from gpu_lock import acquire_gpu
+    acquire_gpu("evaluate_bd")
     parser = argparse.ArgumentParser()
-    parser.add_argument("--model", choices=["martell", "snow_wide", "vvc_ppff", "stenet", "bi_conv_lstm"], required=True)
+    parser.add_argument("--model", choices=["martell", "martell_nometa", "martell_unet", "snow_wide", "vvc_ppff", "vvc_ppff_meta", "stenet", "bi_conv_lstm", "qg_conv_lstm"], required=True)
     parser.add_argument("--checkpoint", required=True)
     parser.add_argument("--qps", default="22,27,32,37,42")
     parser.add_argument("--orig-dir", type=Path, default=Path("data_eval"))
@@ -366,9 +426,12 @@ def main():
     print(f"QPs: {qps}")
     print(f"Device: {DEVICE}, Model: {args.model}, Checkpoint: {args.checkpoint}")
 
-    loaders = {"martell": load_martell, "snow_wide": load_snow_wide,
-               "vvc_ppff": load_vvc_ppff, "stenet": load_stenet,
-               "bi_conv_lstm": load_bi_conv_lstm}
+    loaders = {"martell": load_martell, "martell_nometa": load_martell_nometa,
+               "martell_unet": load_martell_unet,
+               "snow_wide": load_snow_wide,
+               "vvc_ppff": load_vvc_ppff, "vvc_ppff_meta": load_vvc_ppff_meta,
+               "stenet": load_stenet, "bi_conv_lstm": load_bi_conv_lstm,
+               "qg_conv_lstm": load_qg_conv_lstm}
     model = loaders[args.model](args.checkpoint)
 
     per_video = {}
